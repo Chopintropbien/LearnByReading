@@ -10,20 +10,26 @@
 import UIKit
 
 
+
+
 enum Lang: String{
     case DeviceLanguage = "DeviceLanguage"
-//    case fr = "fr"
+    case fr = "fr"
     case en = "en"
-//    case es = "es"
-//    case ru = "ru"
+    case es = "es"
+    case ru = "ru"
 //    case zh = "zh-Hant" // chinees trad
 //    case ar = "ar"
 //    case it = "it"
 //    case ja = "ja"
     
-//    static let allValues = [DeviceLanguage, fr, en, es, ru, zh, ar, it, ja]
-    static let allValues = [en]
+    static let allValues = [fr, en, es, ru]
+    static let numberLang: Int = allValues.count
 }
+
+let learningLang = Lang.en // TODO: change emplacement
+
+
 
 let kNotificationLanguageChanged: String = "kNotificationLanguageChanged";
 
@@ -31,11 +37,11 @@ func Localization(_ string:String) -> String{
     return Localisator.sharedInstance.localizedStringForKey(string)
 }
 
-func SetLanguage(_ language: Lang) -> Bool {
+func SetLanguageNav(_ language: Lang) -> Bool {
     return Localisator.sharedInstance.setLanguage(language)
 }
 
-func GetLanguage() -> Lang {
+func GetLanguageNav() -> Lang {
     return Localisator.sharedInstance.currentLanguage
 }
 

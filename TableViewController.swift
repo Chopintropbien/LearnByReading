@@ -1,16 +1,14 @@
 //
-//  ChooseTextToRead.swift
+//  TableViewController.swift
 //  LearnByLearning
 //
-//  Created by Lauriane Mollier on 22/01/2017.
+//  Created by Lauriane Mollier on 12/02/2017.
 //  Copyright © 2017 Lauriane Mollier. All rights reserved.
 //
 
 import UIKit
 
-class ChooseTextToRead: UITableViewController {
-    
-    var home: Home!
+class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,36 +29,23 @@ class ChooseTextToRead: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return 0
     }
 
-    
-    // initiat table view
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        var cell = tableView.dequeueReusableCell(withIdentifier: "CELL")
-        
-        if (cell == nil) {
-            cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "CELL")
-            cell!.backgroundColor = UIColor.clear
-            cell!.textLabel?.textColor = UIColor.darkGray
-            let selectedBackgroundView = UIView(frame: CGRect(x: 0, y: 0, width: cell!.frame.size.width, height: cell!.frame.size.height))
-            selectedBackgroundView.backgroundColor = UIColor.gray.withAlphaComponent(0.2)
-            cell!.selectedBackgroundView = selectedBackgroundView
-        }
-        
-        cell!.textLabel?.text = "English"
-        
-        return cell!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
+        return cell
     }
-    
-    
-    
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -97,16 +82,14 @@ class ChooseTextToRead: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
-    
-    // method to run when table view cell is tapped
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Segue to the second view controller
-        home.performSegue(withIdentifier: home.segueIdShowText, sender: self)
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
-
- 
+    */
 
 }

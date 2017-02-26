@@ -10,16 +10,27 @@ import UIKit
 
 class VocForText: UITableViewController {
     
-    var home: Home!
+    var text: TraductedText!
+    var voc: [(Word, Word)]!
+    
+    @IBOutlet weak var addTradButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        voc = UserSave.getVocSaved(text: text)
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+//        addTradButton.accessibilityElementsHidden = false
+        tabBarController?.navigationItem.rightBarButtonItem = addTradButton
+        voc = UserSave.getVocSaved(text: text)
+        tableView.reloadData()  
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,51 +47,65 @@ class VocForText: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return voc.count
     }
+    
+    
     
     
     // initiat table view
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell = tableView.dequeueReusableCell(withIdentifier: "CELL")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TraductionCell", for: indexPath) as! TraductionCell
         
-        if (cell == nil) {
-            cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "CELL")
-            cell!.backgroundColor = UIColor.clear
-            cell!.textLabel?.textColor = UIColor.darkGray
-            let selectedBackgroundView = UIView(frame: CGRect(x: 0, y: 0, width: cell!.frame.size.width, height: cell!.frame.size.height))
-            selectedBackgroundView.backgroundColor = UIColor.gray.withAlphaComponent(0.2)
-            cell!.selectedBackgroundView = selectedBackgroundView
-        }
         
-        cell!.textLabel?.text = "English"
         
-        return cell!
+        
+        return cell
+        
+        
+//        var cell = tableView.dequeueReusableCell(withIdentifier: "CELL")
+//        
+//        if (cell == nil) {
+//            cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "CELL")
+//            cell!.backgroundColor = UIColor.clear
+//            cell!.textLabel?.textColor = UIColor.darkGray
+//            let selectedBackgroundView = UIView(frame: CGRect(x: 0, y: 0, width: cell!.frame.size.width, height: cell!.frame.size.height))
+//            selectedBackgroundView.backgroundColor = UIColor.gray.withAlphaComponent(0.2)
+//            cell!.selectedBackgroundView = selectedBackgroundView
+//        }
+//        
+//        cell!.textLabel?.text = "Word: Traduction"
+        
     }
     
     
     
     
-    /*
-     // Override to support conditional editing of the table view.
-     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the specified item to be editable.
-     return true
-     }
-     */
     
-    /*
-     // Override to support editing the table view.
-     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-     if editingStyle == .delete {
-     // Delete the row from the data source
-     tableView.deleteRows(at: [indexPath], with: .fade)
-     } else if editingStyle == .insert {
-     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-     }
-     }
-     */
+    // Override to support conditional editing of the table view.
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+    
+    
+    
+    // Override to support editing the table view.
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            UserSave.removeWordFromVocSaved(text: text, word: voc[indexPath.row])
+            voc.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     
     /*
      // Override to support rearranging the table view.
@@ -98,6 +123,12 @@ class VocForText: UITableViewController {
      */
     
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "AddVoc"){
+            let cv = segue.destination as! AddTraductionVocForText
+            cv.text = text
+        }
+    }
     
     
 }

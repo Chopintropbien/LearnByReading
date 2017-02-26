@@ -25,7 +25,6 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         static let allValues = [home, languageToLearn, settings, inviteYourFriend, gradeApp]
         static let numberCells = allValues.count
-        
     }
     
     var iconArray:Array = [UIImage]()

@@ -10,9 +10,10 @@ import UIKit
 
 class ReadTextOriginal: UIViewController {
 
+    var text: TraductedText!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 

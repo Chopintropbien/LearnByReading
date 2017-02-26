@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9823AE871E61CD4E00AB376C /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823AE861E61CD4E00AB376C /* Word.swift */; };
+		9823AE891E61CFA400AB376C /* TextsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823AE881E61CFA400AB376C /* TextsData.swift */; };
+		9823AE8B1E61D74200AB376C /* UserSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823AE8A1E61D74200AB376C /* UserSave.swift */; };
+		983B529D1E4F8BDA004F820F /* TraductionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B529C1E4F8BDA004F820F /* TraductionCell.swift */; };
+		983B529F1E4F8BED004F820F /* AddTraductionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B529E1E4F8BEC004F820F /* AddTraductionCell.swift */; };
+		983B52A41E50E378004F820F /* AddText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B52A31E50E378004F820F /* AddText.swift */; };
+		983B52A61E50E45A004F820F /* AddTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B52A51E50E45A004F820F /* AddTextCell.swift */; };
+		987E15041E6173230080C9B6 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E15031E6173230080C9B6 /* Text.swift */; };
+		987E15081E61803F0080C9B6 /* AddTraductionVocForText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E15071E61803F0080C9B6 /* AddTraductionVocForText.swift */; };
 		988A72BC1E352DF600BDE635 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988A72BB1E352DF600BDE635 /* AppDelegate.swift */; };
 		988A72C31E352DF600BDE635 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988A72C11E352DF600BDE635 /* Main.storyboard */; };
 		988A72C51E352DF600BDE635 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988A72C41E352DF600BDE635 /* Assets.xcassets */; };
@@ -14,8 +23,7 @@
 		988A72D31E352DF600BDE635 /* LearnByLearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988A72D21E352DF600BDE635 /* LearnByLearningTests.swift */; };
 		988A72DE1E352DF600BDE635 /* LearnByLearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988A72DD1E352DF600BDE635 /* LearnByLearningUITests.swift */; };
 		988A72EC1E352EEA00BDE635 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988A72EB1E352EEA00BDE635 /* Home.swift */; };
-		988A72EE1E352F3000BDE635 /* ChooseTextToRead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988A72ED1E352F3000BDE635 /* ChooseTextToRead.swift */; };
-		988A72F01E352F6E00BDE635 /* ReadText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988A72EF1E352F6E00BDE635 /* ReadText.swift */; };
+		988A72F01E352F6E00BDE635 /* ReadTextTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988A72EF1E352F6E00BDE635 /* ReadTextTabBarController.swift */; };
 		988A72F91E367A3500BDE635 /* VocForText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988A72F81E367A3500BDE635 /* VocForText.swift */; };
 		98D73E141E369C1800BAF0C1 /* ReadTextOriginal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D73E131E369C1800BAF0C1 /* ReadTextOriginal.swift */; };
 		98D73E161E369C7A00BAF0C1 /* ReadTextTraduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D73E151E369C7A00BAF0C1 /* ReadTextTraduction.swift */; };
@@ -27,6 +35,9 @@
 		98E8BB251E4CF39D002134B0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E8BB241E4CF39D002134B0 /* SettingsViewController.swift */; };
 		98E8BB271E4CF3B4002134B0 /* InviteFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E8BB261E4CF3B4002134B0 /* InviteFriendViewController.swift */; };
 		98E8BB291E4CF3DF002134B0 /* GradeAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E8BB281E4CF3DF002134B0 /* GradeAppViewController.swift */; };
+		98EC9EF71E4D012B0062F9F2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98EC9EF31E4D012B0062F9F2 /* Localizable.strings */; };
+		98EC9EF81E4D012B0062F9F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98EC9EF51E4D012B0062F9F2 /* InfoPlist.strings */; };
+		98EC9F021E4DB40E0062F9F2 /* CurrentLanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EC9F011E4DB40E0062F9F2 /* CurrentLanguageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +58,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9823AE861E61CD4E00AB376C /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		9823AE881E61CFA400AB376C /* TextsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextsData.swift; sourceTree = "<group>"; };
+		9823AE8A1E61D74200AB376C /* UserSave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSave.swift; sourceTree = "<group>"; };
+		983B529C1E4F8BDA004F820F /* TraductionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraductionCell.swift; sourceTree = "<group>"; };
+		983B529E1E4F8BEC004F820F /* AddTraductionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTraductionCell.swift; sourceTree = "<group>"; };
+		983B52A31E50E378004F820F /* AddText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddText.swift; sourceTree = "<group>"; };
+		983B52A51E50E45A004F820F /* AddTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTextCell.swift; sourceTree = "<group>"; };
+		987E15031E6173230080C9B6 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		987E15071E61803F0080C9B6 /* AddTraductionVocForText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTraductionVocForText.swift; sourceTree = "<group>"; };
 		988A72B81E352DF600BDE635 /* LearnByLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnByLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		988A72BB1E352DF600BDE635 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		988A72C21E352DF600BDE635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,8 +80,7 @@
 		988A72DD1E352DF600BDE635 /* LearnByLearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnByLearningUITests.swift; sourceTree = "<group>"; };
 		988A72DF1E352DF600BDE635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		988A72EB1E352EEA00BDE635 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		988A72ED1E352F3000BDE635 /* ChooseTextToRead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseTextToRead.swift; sourceTree = "<group>"; };
-		988A72EF1E352F6E00BDE635 /* ReadText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadText.swift; sourceTree = "<group>"; };
+		988A72EF1E352F6E00BDE635 /* ReadTextTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadTextTabBarController.swift; sourceTree = "<group>"; };
 		988A72F81E367A3500BDE635 /* VocForText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VocForText.swift; sourceTree = "<group>"; };
 		98D73E131E369C1800BAF0C1 /* ReadTextOriginal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadTextOriginal.swift; sourceTree = "<group>"; };
 		98D73E151E369C7A00BAF0C1 /* ReadTextTraduction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadTextTraduction.swift; sourceTree = "<group>"; };
@@ -75,6 +94,13 @@
 		98E8BB241E4CF39D002134B0 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		98E8BB261E4CF3B4002134B0 /* InviteFriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteFriendViewController.swift; sourceTree = "<group>"; };
 		98E8BB281E4CF3DF002134B0 /* GradeAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeAppViewController.swift; sourceTree = "<group>"; };
+		98EC9EF41E4D012B0062F9F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		98EC9EF61E4D012B0062F9F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		98EC9EF91E4D01550062F9F2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		98EC9EFA1E4D01550062F9F2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		98EC9EFB1E4D01550062F9F2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		98EC9EFC1E4D01560062F9F2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		98EC9F011E4DB40E0062F9F2 /* CurrentLanguageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentLanguageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +128,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		983B52A21E50E264004F820F /* AddText */ = {
+			isa = PBXGroup;
+			children = (
+				983B52A31E50E378004F820F /* AddText.swift */,
+				983B52A51E50E45A004F820F /* AddTextCell.swift */,
+			);
+			name = AddText;
+			sourceTree = "<group>";
+		};
+		987E15021E6173090080C9B6 /* Texts */ = {
+			isa = PBXGroup;
+			children = (
+				987E15031E6173230080C9B6 /* Text.swift */,
+				9823AE861E61CD4E00AB376C /* Word.swift */,
+				9823AE881E61CFA400AB376C /* TextsData.swift */,
+				9823AE8A1E61D74200AB376C /* UserSave.swift */,
+			);
+			name = Texts;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		988A72AF1E352DF600BDE635 = {
 			isa = PBXGroup;
 			children = (
@@ -125,20 +172,23 @@
 		988A72BA1E352DF600BDE635 /* LearnByLearning */ = {
 			isa = PBXGroup;
 			children = (
-				98E8BB231E4CF383002134B0 /* Settings */,
+				987E15021E6173090080C9B6 /* Texts */,
+				983B52A21E50E264004F820F /* AddText */,
 				988A72F11E36791700BDE635 /* Library */,
-				988A72C91E352DF600BDE635 /* Info.plist */,
+				98EC9EF31E4D012B0062F9F2 /* Localizable.strings */,
+				98EC9EF51E4D012B0062F9F2 /* InfoPlist.strings */,
+				98E8BB231E4CF383002134B0 /* Settings */,
+				98EC9EFE1E4D02D00062F9F2 /* Language */,
 				98D73E171E369C8400BAF0C1 /* ReadText */,
 				98E8BB101E4CE18F002134B0 /* menu */,
 				988A72EB1E352EEA00BDE635 /* Home.swift */,
-				988A72ED1E352F3000BDE635 /* ChooseTextToRead.swift */,
+				98E8BB261E4CF3B4002134B0 /* InviteFriendViewController.swift */,
+				98E8BB281E4CF3DF002134B0 /* GradeAppViewController.swift */,
 				988A72C11E352DF600BDE635 /* Main.storyboard */,
 				988A72C41E352DF600BDE635 /* Assets.xcassets */,
 				988A72C61E352DF600BDE635 /* LaunchScreen.storyboard */,
+				988A72C91E352DF600BDE635 /* Info.plist */,
 				988A72BB1E352DF600BDE635 /* AppDelegate.swift */,
-				98E8BB211E4CF375002134B0 /* MyLanguagesViewController.swift */,
-				98E8BB261E4CF3B4002134B0 /* InviteFriendViewController.swift */,
-				98E8BB281E4CF3DF002134B0 /* GradeAppViewController.swift */,
 			);
 			path = LearnByLearning;
 			sourceTree = "<group>";
@@ -173,10 +223,13 @@
 		98D73E171E369C8400BAF0C1 /* ReadText */ = {
 			isa = PBXGroup;
 			children = (
-				988A72EF1E352F6E00BDE635 /* ReadText.swift */,
+				988A72EF1E352F6E00BDE635 /* ReadTextTabBarController.swift */,
 				98D73E131E369C1800BAF0C1 /* ReadTextOriginal.swift */,
 				98D73E151E369C7A00BAF0C1 /* ReadTextTraduction.swift */,
 				988A72F81E367A3500BDE635 /* VocForText.swift */,
+				983B529C1E4F8BDA004F820F /* TraductionCell.swift */,
+				983B529E1E4F8BEC004F820F /* AddTraductionCell.swift */,
+				987E15071E61803F0080C9B6 /* AddTraductionVocForText.swift */,
 			);
 			name = ReadText;
 			sourceTree = "<group>";
@@ -206,6 +259,15 @@
 				98E8BB241E4CF39D002134B0 /* SettingsViewController.swift */,
 			);
 			name = Settings;
+			sourceTree = "<group>";
+		};
+		98EC9EFE1E4D02D00062F9F2 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				98E8BB211E4CF375002134B0 /* MyLanguagesViewController.swift */,
+				98EC9F011E4DB40E0062F9F2 /* CurrentLanguageCell.swift */,
+			);
+			name = Language;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +363,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 988A72AF1E352DF600BDE635;
 			productRefGroup = 988A72B91E352DF600BDE635 /* Products */;
@@ -320,8 +383,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				988A72C81E352DF600BDE635 /* LaunchScreen.storyboard in Resources */,
+				98EC9EF71E4D012B0062F9F2 /* Localizable.strings in Resources */,
 				988A72C51E352DF600BDE635 /* Assets.xcassets in Resources */,
 				988A72C31E352DF600BDE635 /* Main.storyboard in Resources */,
+				98EC9EF81E4D012B0062F9F2 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,21 +411,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				987E15081E61803F0080C9B6 /* AddTraductionVocForText.swift in Sources */,
 				98E8BB0F1E4CE0E7002134B0 /* SWRevealViewController.m in Sources */,
-				988A72F01E352F6E00BDE635 /* ReadText.swift in Sources */,
+				9823AE891E61CFA400AB376C /* TextsData.swift in Sources */,
+				983B52A41E50E378004F820F /* AddText.swift in Sources */,
+				988A72F01E352F6E00BDE635 /* ReadTextTabBarController.swift in Sources */,
 				98E8BB291E4CF3DF002134B0 /* GradeAppViewController.swift in Sources */,
 				98D73E141E369C1800BAF0C1 /* ReadTextOriginal.swift in Sources */,
 				98E8BB121E4CE1A4002134B0 /* MenuViewController.swift in Sources */,
+				983B52A61E50E45A004F820F /* AddTextCell.swift in Sources */,
 				98D73E161E369C7A00BAF0C1 /* ReadTextTraduction.swift in Sources */,
 				988A72F91E367A3500BDE635 /* VocForText.swift in Sources */,
 				98E8BB271E4CF3B4002134B0 /* InviteFriendViewController.swift in Sources */,
+				987E15041E6173230080C9B6 /* Text.swift in Sources */,
+				983B529D1E4F8BDA004F820F /* TraductionCell.swift in Sources */,
 				98E8BB221E4CF375002134B0 /* MyLanguagesViewController.swift in Sources */,
+				983B529F1E4F8BED004F820F /* AddTraductionCell.swift in Sources */,
+				98EC9F021E4DB40E0062F9F2 /* CurrentLanguageCell.swift in Sources */,
 				98E8BB141E4CE1C9002134B0 /* MenuCell.swift in Sources */,
-				988A72EE1E352F3000BDE635 /* ChooseTextToRead.swift in Sources */,
+				9823AE871E61CD4E00AB376C /* Word.swift in Sources */,
 				98E8BB1A1E4CEF00002134B0 /* Localisator.swift in Sources */,
 				98E8BB251E4CF39D002134B0 /* SettingsViewController.swift in Sources */,
 				988A72EC1E352EEA00BDE635 /* Home.swift in Sources */,
 				988A72BC1E352DF600BDE635 /* AppDelegate.swift in Sources */,
+				9823AE8B1E61D74200AB376C /* UserSave.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +474,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				988A72C21E352DF600BDE635 /* Base */,
+				98EC9EF91E4D01550062F9F2 /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -408,8 +483,27 @@
 			isa = PBXVariantGroup;
 			children = (
 				988A72C71E352DF600BDE635 /* Base */,
+				98EC9EFA1E4D01550062F9F2 /* fr */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		98EC9EF31E4D012B0062F9F2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98EC9EF41E4D012B0062F9F2 /* en */,
+				98EC9EFB1E4D01550062F9F2 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		98EC9EF51E4D012B0062F9F2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98EC9EF61E4D012B0062F9F2 /* en */,
+				98EC9EFC1E4D01560062F9F2 /* fr */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -419,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -469,6 +564,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

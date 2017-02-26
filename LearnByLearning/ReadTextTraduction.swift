@@ -9,6 +9,8 @@
 import UIKit
 
 class ReadTextTraduction: UIViewController {
+    
+    var text: TraductedText!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,9 @@ class ReadTextTraduction: UIViewController {
     }
     
 
+    
+    
+    
     /*
     // MARK: - Navigation
 
