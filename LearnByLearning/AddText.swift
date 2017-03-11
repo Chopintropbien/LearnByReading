@@ -8,14 +8,39 @@
 
 import UIKit
 
+
+extension UIViewController {
+    func performSegueToReturnBack(text: TraductedText)  {
+        if let nav = self.navigationController {
+            for aVC in nav.viewControllers {
+                if(aVC is Home){
+                   (aVC as! Home).newDowload = text
+                }
+                nav.popViewController(animated: false)
+            }
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+}
+
+
 class AddText: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var basicLevelTable: UITableView!
     @IBOutlet weak var intermadiateLevelTable: UITableView!
     
+    var texts: [(TraductedText, Bool)]!
+    var basicText: [(TraductedText, Bool)]!
+    var intermediateText: [(TraductedText, Bool)]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        texts = UserSave.getAllText()
+        basicText = texts.filter({$0.0.level == Level.A2})
+        intermediateText = texts.filter({$0.0.level == Level.B1})
+        
+        
         // Do any additional setup after loading the view.
     }
 
@@ -30,15 +55,13 @@ class AddText: UIViewController, UITableViewDelegate, UITableViewDataSource {
         // Return the number of items in the sample data structure.
         
         var count:Int?
-        
         if tableView == self.basicLevelTable {
-            count = 2
+            count = basicText.count
         }
         
         if tableView == self.intermadiateLevelTable {
-            count =  3
+            count =  intermediateText.count
         }
-        
         return count!
         
     }
@@ -49,15 +72,63 @@ class AddText: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         if tableView == self.basicLevelTable {
             cell = tableView.dequeueReusableCell(withIdentifier: "AddTextCell", for: indexPath) as! AddTextCell
+            
+            if(basicText[indexPath.row].1){
+                cell?.accessoryType = .checkmark
+            }
         }
-        
-        if tableView == self.intermadiateLevelTable {
+        else if tableView == self.intermadiateLevelTable {
             cell = tableView.dequeueReusableCell(withIdentifier: "AddTextCell", for: indexPath) as! AddTextCell
             
+            if(intermediateText[indexPath.row].1){
+                cell?.accessoryType = .checkmark
+            }
         }
+        
+        
+        
         return cell!
     }
 
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let cell = tableView.cellForRow(at: indexPath) as! AddTextCell
+        
+        if tableView == self.basicLevelTable {
+            basicText[indexPath.row].1 = !basicText[indexPath.row].1
+
+            if (basicText[indexPath.row].1){
+                cell.accessoryType = .checkmark
+            }
+            else{
+                cell.accessoryType = .none
+            }
+            
+            UserSave.saveText(texts: basicText + intermediateText)
+            performSegueToReturnBack(text: basicText[indexPath.row].0)
+            
+        }
+        else if tableView == self.intermadiateLevelTable {
+            intermediateText[indexPath.row].1 = !intermediateText[indexPath.row].1
+            
+            if (intermediateText[indexPath.row].1){
+                cell.accessoryType = .checkmark
+            }
+            else{
+                cell.accessoryType = .none
+            }
+            
+            UserSave.saveText(texts: basicText + intermediateText)
+            performSegueToReturnBack(text: intermediateText[indexPath.row].0)
+        }
+        
+        
+        
+    }
+    
+    
+    
     
     
     /*

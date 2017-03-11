@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StoreKit
 
 class GradeAppViewController: UIViewController {
 
@@ -26,6 +27,13 @@ class GradeAppViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    @IBAction func rateMe(sender: AnyObject) {
+        let appStoreAppID = "1169020385"
+        UIApplication.shared.open(URL(string: "itms-apps://itunes.apple.com/app/id" + appStoreAppID)!)
+    }
+
+
 
     /*
     // MARK: - Navigation

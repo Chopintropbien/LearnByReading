@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98226BD21E7408BC00060F26 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98226BD11E7408BC00060F26 /* HomeCell.swift */; };
 		9823AE871E61CD4E00AB376C /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823AE861E61CD4E00AB376C /* Word.swift */; };
 		9823AE891E61CFA400AB376C /* TextsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823AE881E61CFA400AB376C /* TextsData.swift */; };
 		9823AE8B1E61D74200AB376C /* UserSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823AE8A1E61D74200AB376C /* UserSave.swift */; };
+		9823AE8E1E652A9B00AB376C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9823AE8D1E652A9B00AB376C /* MessageUI.framework */; };
+		9823AE901E65783800AB376C /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823AE8F1E65783800AB376C /* HelpViewController.swift */; };
+		9823AE921E65CBA800AB376C /* LearningLang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823AE911E65CBA800AB376C /* LearningLang.swift */; };
+		9823AE941E65CBBC00AB376C /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823AE931E65CBBC00AB376C /* Lang.swift */; };
+		9823AE981E66028200AB376C /* LanguageNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823AE971E66028200AB376C /* LanguageNav.swift */; };
 		983B529D1E4F8BDA004F820F /* TraductionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B529C1E4F8BDA004F820F /* TraductionCell.swift */; };
 		983B529F1E4F8BED004F820F /* AddTraductionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B529E1E4F8BEC004F820F /* AddTraductionCell.swift */; };
 		983B52A41E50E378004F820F /* AddText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B52A31E50E378004F820F /* AddText.swift */; };
 		983B52A61E50E45A004F820F /* AddTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B52A51E50E45A004F820F /* AddTextCell.swift */; };
-		987E15041E6173230080C9B6 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E15031E6173230080C9B6 /* Text.swift */; };
+		987E15041E6173230080C9B6 /* TraductedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E15031E6173230080C9B6 /* TraductedText.swift */; };
 		987E15081E61803F0080C9B6 /* AddTraductionVocForText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E15071E61803F0080C9B6 /* AddTraductionVocForText.swift */; };
 		988A72BC1E352DF600BDE635 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988A72BB1E352DF600BDE635 /* AppDelegate.swift */; };
 		988A72C31E352DF600BDE635 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988A72C11E352DF600BDE635 /* Main.storyboard */; };
@@ -27,6 +33,7 @@
 		988A72F91E367A3500BDE635 /* VocForText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988A72F81E367A3500BDE635 /* VocForText.swift */; };
 		98D73E141E369C1800BAF0C1 /* ReadTextOriginal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D73E131E369C1800BAF0C1 /* ReadTextOriginal.swift */; };
 		98D73E161E369C7A00BAF0C1 /* ReadTextTraduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D73E151E369C7A00BAF0C1 /* ReadTextTraduction.swift */; };
+		98DDC6CB1E7453A6004A367C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DDC6CA1E7453A6004A367C /* Color.swift */; };
 		98E8BB0F1E4CE0E7002134B0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E8BB0E1E4CE0E7002134B0 /* SWRevealViewController.m */; };
 		98E8BB121E4CE1A4002134B0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E8BB111E4CE1A4002134B0 /* MenuViewController.swift */; };
 		98E8BB141E4CE1C9002134B0 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E8BB131E4CE1C9002134B0 /* MenuCell.swift */; };
@@ -58,14 +65,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		98226BD11E7408BC00060F26 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		9823AE861E61CD4E00AB376C /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		9823AE881E61CFA400AB376C /* TextsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextsData.swift; sourceTree = "<group>"; };
 		9823AE8A1E61D74200AB376C /* UserSave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSave.swift; sourceTree = "<group>"; };
+		9823AE8D1E652A9B00AB376C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		9823AE8F1E65783800AB376C /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		9823AE911E65CBA800AB376C /* LearningLang.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningLang.swift; sourceTree = "<group>"; };
+		9823AE931E65CBBC00AB376C /* Lang.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lang.swift; sourceTree = "<group>"; };
+		9823AE971E66028200AB376C /* LanguageNav.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageNav.swift; sourceTree = "<group>"; };
+		9823AE991E66E3B800AB376C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		9823AE9A1E66E3B800AB376C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9823AE9B1E66E3B800AB376C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9823AE9C1E66E3C100AB376C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		9823AE9D1E66E3C100AB376C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9823AE9E1E66E3C100AB376C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		983B529C1E4F8BDA004F820F /* TraductionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraductionCell.swift; sourceTree = "<group>"; };
 		983B529E1E4F8BEC004F820F /* AddTraductionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTraductionCell.swift; sourceTree = "<group>"; };
 		983B52A31E50E378004F820F /* AddText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddText.swift; sourceTree = "<group>"; };
 		983B52A51E50E45A004F820F /* AddTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTextCell.swift; sourceTree = "<group>"; };
-		987E15031E6173230080C9B6 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		987E15031E6173230080C9B6 /* TraductedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraductedText.swift; sourceTree = "<group>"; };
 		987E15071E61803F0080C9B6 /* AddTraductionVocForText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTraductionVocForText.swift; sourceTree = "<group>"; };
 		988A72B81E352DF600BDE635 /* LearnByLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnByLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		988A72BB1E352DF600BDE635 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +103,7 @@
 		988A72F81E367A3500BDE635 /* VocForText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VocForText.swift; sourceTree = "<group>"; };
 		98D73E131E369C1800BAF0C1 /* ReadTextOriginal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadTextOriginal.swift; sourceTree = "<group>"; };
 		98D73E151E369C7A00BAF0C1 /* ReadTextTraduction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadTextTraduction.swift; sourceTree = "<group>"; };
+		98DDC6CA1E7453A6004A367C /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		98E8BB0C1E4CE0D2002134B0 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		98E8BB0D1E4CE0E6002134B0 /* LearnByLearning-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LearnByLearning-Bridging-Header.h"; sourceTree = "<group>"; };
 		98E8BB0E1E4CE0E7002134B0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -108,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9823AE8E1E652A9B00AB376C /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +149,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98226BD01E74089B00060F26 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				988A72EB1E352EEA00BDE635 /* Home.swift */,
+				98226BD11E7408BC00060F26 /* HomeCell.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		9823AE8C1E652A9A00AB376C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9823AE8D1E652A9B00AB376C /* MessageUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9823AE951E65CC1400AB376C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9823AE961E65CC1C00AB376C /* Lang */,
+				987E15021E6173090080C9B6 /* Texts */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9823AE961E65CC1C00AB376C /* Lang */ = {
+			isa = PBXGroup;
+			children = (
+				9823AE911E65CBA800AB376C /* LearningLang.swift */,
+				98E8BB191E4CEF00002134B0 /* Localisator.swift */,
+				9823AE931E65CBBC00AB376C /* Lang.swift */,
+			);
+			name = Lang;
+			sourceTree = "<group>";
+		};
 		983B52A21E50E264004F820F /* AddText */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,7 +197,7 @@
 		987E15021E6173090080C9B6 /* Texts */ = {
 			isa = PBXGroup;
 			children = (
-				987E15031E6173230080C9B6 /* Text.swift */,
+				987E15031E6173230080C9B6 /* TraductedText.swift */,
 				9823AE861E61CD4E00AB376C /* Word.swift */,
 				9823AE881E61CFA400AB376C /* TextsData.swift */,
 				9823AE8A1E61D74200AB376C /* UserSave.swift */,
@@ -156,6 +213,7 @@
 				988A72D11E352DF600BDE635 /* LearnByLearningTests */,
 				988A72DC1E352DF600BDE635 /* LearnByLearningUITests */,
 				988A72B91E352DF600BDE635 /* Products */,
+				9823AE8C1E652A9A00AB376C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,7 +230,7 @@
 		988A72BA1E352DF600BDE635 /* LearnByLearning */ = {
 			isa = PBXGroup;
 			children = (
-				987E15021E6173090080C9B6 /* Texts */,
+				9823AE951E65CC1400AB376C /* Model */,
 				983B52A21E50E264004F820F /* AddText */,
 				988A72F11E36791700BDE635 /* Library */,
 				98EC9EF31E4D012B0062F9F2 /* Localizable.strings */,
@@ -181,7 +239,8 @@
 				98EC9EFE1E4D02D00062F9F2 /* Language */,
 				98D73E171E369C8400BAF0C1 /* ReadText */,
 				98E8BB101E4CE18F002134B0 /* menu */,
-				988A72EB1E352EEA00BDE635 /* Home.swift */,
+				98226BD01E74089B00060F26 /* Home */,
+				9823AE8F1E65783800AB376C /* HelpViewController.swift */,
 				98E8BB261E4CF3B4002134B0 /* InviteFriendViewController.swift */,
 				98E8BB281E4CF3DF002134B0 /* GradeAppViewController.swift */,
 				988A72C11E352DF600BDE635 /* Main.storyboard */,
@@ -189,6 +248,7 @@
 				988A72C61E352DF600BDE635 /* LaunchScreen.storyboard */,
 				988A72C91E352DF600BDE635 /* Info.plist */,
 				988A72BB1E352DF600BDE635 /* AppDelegate.swift */,
+				98DDC6CA1E7453A6004A367C /* Color.swift */,
 			);
 			path = LearnByLearning;
 			sourceTree = "<group>";
@@ -215,7 +275,6 @@
 			isa = PBXGroup;
 			children = (
 				98E8BB0B1E4CE0BA002134B0 /* SWRevealViewController */,
-				98E8BB191E4CEF00002134B0 /* Localisator.swift */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -257,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				98E8BB241E4CF39D002134B0 /* SettingsViewController.swift */,
+				9823AE971E66028200AB376C /* LanguageNav.swift */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -364,6 +424,8 @@
 				en,
 				Base,
 				fr,
+				es,
+				ru,
 			);
 			mainGroup = 988A72AF1E352DF600BDE635;
 			productRefGroup = 988A72B91E352DF600BDE635 /* Products */;
@@ -411,6 +473,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9823AE901E65783800AB376C /* HelpViewController.swift in Sources */,
 				987E15081E61803F0080C9B6 /* AddTraductionVocForText.swift in Sources */,
 				98E8BB0F1E4CE0E7002134B0 /* SWRevealViewController.m in Sources */,
 				9823AE891E61CFA400AB376C /* TextsData.swift in Sources */,
@@ -419,19 +482,24 @@
 				98E8BB291E4CF3DF002134B0 /* GradeAppViewController.swift in Sources */,
 				98D73E141E369C1800BAF0C1 /* ReadTextOriginal.swift in Sources */,
 				98E8BB121E4CE1A4002134B0 /* MenuViewController.swift in Sources */,
+				9823AE981E66028200AB376C /* LanguageNav.swift in Sources */,
 				983B52A61E50E45A004F820F /* AddTextCell.swift in Sources */,
 				98D73E161E369C7A00BAF0C1 /* ReadTextTraduction.swift in Sources */,
 				988A72F91E367A3500BDE635 /* VocForText.swift in Sources */,
 				98E8BB271E4CF3B4002134B0 /* InviteFriendViewController.swift in Sources */,
-				987E15041E6173230080C9B6 /* Text.swift in Sources */,
+				987E15041E6173230080C9B6 /* TraductedText.swift in Sources */,
 				983B529D1E4F8BDA004F820F /* TraductionCell.swift in Sources */,
+				9823AE921E65CBA800AB376C /* LearningLang.swift in Sources */,
 				98E8BB221E4CF375002134B0 /* MyLanguagesViewController.swift in Sources */,
 				983B529F1E4F8BED004F820F /* AddTraductionCell.swift in Sources */,
 				98EC9F021E4DB40E0062F9F2 /* CurrentLanguageCell.swift in Sources */,
 				98E8BB141E4CE1C9002134B0 /* MenuCell.swift in Sources */,
 				9823AE871E61CD4E00AB376C /* Word.swift in Sources */,
 				98E8BB1A1E4CEF00002134B0 /* Localisator.swift in Sources */,
+				98DDC6CB1E7453A6004A367C /* Color.swift in Sources */,
 				98E8BB251E4CF39D002134B0 /* SettingsViewController.swift in Sources */,
+				9823AE941E65CBBC00AB376C /* Lang.swift in Sources */,
+				98226BD21E7408BC00060F26 /* HomeCell.swift in Sources */,
 				988A72EC1E352EEA00BDE635 /* Home.swift in Sources */,
 				988A72BC1E352DF600BDE635 /* AppDelegate.swift in Sources */,
 				9823AE8B1E61D74200AB376C /* UserSave.swift in Sources */,
@@ -475,6 +543,8 @@
 			children = (
 				988A72C21E352DF600BDE635 /* Base */,
 				98EC9EF91E4D01550062F9F2 /* fr */,
+				9823AE991E66E3B800AB376C /* es */,
+				9823AE9C1E66E3C100AB376C /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -493,6 +563,8 @@
 			children = (
 				98EC9EF41E4D012B0062F9F2 /* en */,
 				98EC9EFB1E4D01550062F9F2 /* fr */,
+				9823AE9A1E66E3B800AB376C /* es */,
+				9823AE9D1E66E3C100AB376C /* ru */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -502,6 +574,8 @@
 			children = (
 				98EC9EF61E4D012B0062F9F2 /* en */,
 				98EC9EFC1E4D01560062F9F2 /* fr */,
+				9823AE9B1E66E3B800AB376C /* es */,
+				9823AE9E1E66E3C100AB376C /* ru */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

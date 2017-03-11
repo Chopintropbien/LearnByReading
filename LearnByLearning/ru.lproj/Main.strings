@@ -1,0 +1,165 @@
+
+/* Class = "UILabel"; text = "Text title"; ObjectID = "0bj-kC-kvA"; */
+"0bj-kC-kvA.text" = "Text title";
+
+/* Class = "UILabel"; text = "Intermediate Level"; ObjectID = "1Dr-26-6Zn"; */
+"1Dr-26-6Zn.text" = "Intermediate Level";
+
+/* Class = "UIButton"; normalTitle = "9,99$ / Month (1 month)"; ObjectID = "2Ed-oc-fOx"; */
+"2Ed-oc-fOx.normalTitle" = "9,99$ / Month (1 month)";
+
+/* Class = "UIButton"; normalTitle = "Credits"; ObjectID = "3Mz-90-WQg"; */
+"3Mz-90-WQg.normalTitle" = "Credits";
+
+/* Class = "UILabel"; text = "Courant language"; ObjectID = "3zd-b4-P92"; */
+"3zd-b4-P92.text" = "Courant language";
+
+/* Class = "UIButton"; normalTitle = "Share with SMS"; ObjectID = "4fu-WS-B2f"; */
+"4fu-WS-B2f.normalTitle" = "Share with SMS";
+
+/* Class = "UITextView"; text = "Write you meaasge"; ObjectID = "7aL-eB-1TF"; */
+"7aL-eB-1TF.text" = "Write you meaasge";
+
+/* Class = "UILabel"; text = "Do you think that some of your friend would be interessing by this App? Invite them!"; ObjectID = "7gz-cW-4RE"; */
+"7gz-cW-4RE.text" = "Do you think that some of your friend would be interessing by this App? Invite them!";
+
+/* Class = "UITabBarItem"; title = "Original Text"; ObjectID = "7r6-i0-va7"; */
+"7r6-i0-va7.title" = "Original Text";
+
+/* Class = "UIButton"; normalTitle = "⏭"; ObjectID = "Ahj-5q-Rqu"; */
+"Ahj-5q-Rqu.normalTitle" = "⏭";
+
+/* Class = "UILabel"; text = "General"; ObjectID = "BIO-Da-5h9"; */
+"BIO-Da-5h9.text" = "General";
+
+/* Class = "UIButton"; normalTitle = "⏪"; ObjectID = "CKJ-6I-WB2"; */
+"CKJ-6I-WB2.normalTitle" = "⏪";
+
+/* Class = "UILabel"; text = "Choose an other language"; ObjectID = "CMo-vs-nfl"; */
+"CMo-vs-nfl.text" = "Choose an other language";
+
+/* Class = "UIBarButtonItem"; title = "+ traduction"; ObjectID = "EF5-OV-dwb"; */
+"EF5-OV-dwb.title" = "+ traduction";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "EQz-QP-6OQ"; */
+"EQz-QP-6OQ.text" = "Label";
+
+/* Class = "UILabel"; text = "Translation title"; ObjectID = "HMM-p6-L20"; */
+"HMM-p6-L20.text" = "Translation title";
+
+/* Class = "UIButton"; normalTitle = "Navigation language"; ObjectID = "JNB-sF-bIf"; */
+"JNB-sF-bIf.normalTitle" = "Navigation language";
+
+/* Class = "UIButton"; normalTitle = "You abonnement"; ObjectID = "JSP-YZ-xUP"; */
+"JSP-YZ-xUP.normalTitle" = "You abonnement";
+
+/* Class = "UILabel"; text = "Do you like our App? It would be very great if you can grade us with 5 stars!"; ObjectID = "KB6-Qv-GQF"; */
+"KB6-Qv-GQF.text" = "Do you like our App? It would be very great if you can grade us with 5 stars!";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "KYR-mO-jdv"; */
+"KYR-mO-jdv.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "PMN-RE-7T6"; */
+"PMN-RE-7T6.text" = "Label";
+
+/* Class = "UILabel"; text = "Grammar explaination. So Interesting!!!! That is so perfect, Oh lalalalalal!"; ObjectID = "QFw-7C-deg"; */
+"QFw-7C-deg.text" = "Grammar explaination. So Interesting!!!! That is so perfect, Oh lalalalalal!";
+
+/* Class = "UILabel"; text = "How can we help you? "; ObjectID = "R77-Os-lkv"; */
+"R77-Os-lkv.text" = "How can we help you? ";
+
+/* Class = "UILabel"; text = "Let's choose an abonment to acces to all the functionnalities avalable in this app"; ObjectID = "RfU-aD-rpx"; */
+"RfU-aD-rpx.text" = "Let's choose an abonment to acces to all the functionnalities avalable in this app";
+
+/* Class = "UITabBarItem"; title = "Traduction"; ObjectID = "S87-7l-pM8"; */
+"S87-7l-pM8.title" = "Traduction";
+
+/* Class = "UILabel"; text = "Translation title"; ObjectID = "TJH-rb-0fY"; */
+"TJH-rb-0fY.text" = "Translation title";
+
+/* Class = "UILabel"; text = "Choose your text that you want to add"; ObjectID = "Tyg-Rw-RhI"; */
+"Tyg-Rw-RhI.text" = "Choose your text that you want to add";
+
+/* Class = "UIButton"; normalTitle = "⬇"; ObjectID = "VVH-sa-1RJ"; */
+"VVH-sa-1RJ.normalTitle" = "⬇";
+
+/* Class = "UILabel"; text = "French"; ObjectID = "Wz1-Hf-VL0"; */
+"Wz1-Hf-VL0.text" = "French";
+
+/* Class = "UILabel"; text = "Basic Level"; ObjectID = "YBa-MZ-S7q"; */
+"YBa-MZ-S7q.text" = "Basic Level";
+
+/* Class = "UITextView"; text = "Wanderfull text!!!!!! Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in \\n reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium \n\n\nadipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "YcP-1c-XeG"; */
+"YcP-1c-XeG.text" = "Wanderfull text!!!!!! Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in \\n reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium \n\n\nadipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UIButton"; normalTitle = "Access to the AppStore"; ObjectID = "YjC-NG-49d"; */
+"YjC-NG-49d.normalTitle" = "Access to the AppStore";
+
+/* Class = "UIButton"; normalTitle = "3,33$ / Month (12 month)"; ObjectID = "ZZe-cY-Kn6"; */
+"ZZe-cY-Kn6.normalTitle" = "3,33$ / Month (12 month)";
+
+/* Class = "UIButton"; normalTitle = "6,66$ / Month (3 month)"; ObjectID = "aKD-8X-Lll"; */
+"aKD-8X-Lll.normalTitle" = "6,66$ / Month (3 month)";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "dF5-x0-0qm"; */
+"dF5-x0-0qm.normalTitle" = "Done";
+
+/* Class = "UIButton"; normalTitle = "Sources"; ObjectID = "hG9-ka-Xeh"; */
+"hG9-ka-Xeh.normalTitle" = "Sources";
+
+/* Class = "UILabel"; text = "Title in original "; ObjectID = "iWo-Dx-Kdz"; */
+"iWo-Dx-Kdz.text" = "Title in original ";
+
+/* Class = "UITabBarItem"; title = "Vocabulary"; ObjectID = "keb-t5-Fz7"; */
+"keb-t5-Fz7.title" = "Vocabulary";
+
+/* Class = "UIButton"; normalTitle = "▶️"; ObjectID = "n6d-Ab-vL0"; */
+"n6d-Ab-vL0.normalTitle" = "▶️";
+
+/* Class = "UITextView"; text = "Wanderfull text!!!!!! Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in \\n reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium \n\n\nadipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "nuf-Ig-qd1"; */
+"nuf-Ig-qd1.text" = "Wanderfull text!!!!!! Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in \\n reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium \n\n\nadipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UIButton"; normalTitle = "Send a email to"; ObjectID = "oHM-ta-VIy"; */
+"oHM-ta-VIy.normalTitle" = "Send a email to";
+
+/* Class = "UILabel"; text = "App purchase"; ObjectID = "p91-FS-ecx"; */
+"p91-FS-ecx.text" = "App purchase";
+
+/* Class = "UIButton"; normalTitle = "Restore App purshase"; ObjectID = "qBm-6R-S4E"; */
+"qBm-6R-S4E.normalTitle" = "Restore App purshase";
+
+/* Class = "UILabel"; text = "About"; ObjectID = "qHC-Ig-jc3"; */
+"qHC-Ig-jc3.text" = "About";
+
+/* Class = "UIButton"; normalTitle = "5,55$ / Month (6 month)"; ObjectID = "sN4-Cj-xRF"; */
+"sN4-Cj-xRF.normalTitle" = "5,55$ / Month (6 month)";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "t3e-Ii-xYg"; */
+"t3e-Ii-xYg.normalTitle" = "Send";
+
+/* Class = "UILabel"; text = "Text title"; ObjectID = "w3U-OS-BoN"; */
+"w3U-OS-BoN.text" = "Text title";
+
+/* Class = "UILabel"; text = "Word: traduction"; ObjectID = "wBK-cS-gOP"; */
+"wBK-cS-gOP.text" = "Word: traduction";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "wJu-bB-GKc"; */
+"wJu-bB-GKc.title" = "Title";
+
+/* Class = "UILabel"; text = "Choose an abonment "; ObjectID = "xFb-TA-ImC"; */
+"xFb-TA-ImC.text" = "Choose an abonment ";
+
+/* Class = "UIButton"; normalTitle = "⬇"; ObjectID = "xI7-AQ-Frk"; */
+"xI7-AQ-Frk.normalTitle" = "⬇";
+
+/* Class = "UILabel"; text = "Title in original "; ObjectID = "yhw-e4-dey"; */
+"yhw-e4-dey.text" = "Title in original ";
+
+/* Class = "UIButton"; normalTitle = "Share on Facebook"; ObjectID = "zAJ-z9-diF"; */
+"zAJ-z9-diF.normalTitle" = "Share on Facebook";
+
+/* Class = "UIButton"; normalTitle = "Term and condition"; ObjectID = "zCl-SD-itU"; */
+"zCl-SD-itU.normalTitle" = "Term and condition";
+
+/* Class = "UIButton"; normalTitle = "Add new text "; ObjectID = "zeJ-FW-pNZ"; */
+"zeJ-FW-pNZ.normalTitle" = "Add new text ";

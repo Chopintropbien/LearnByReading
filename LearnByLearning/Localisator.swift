@@ -12,24 +12,6 @@ import UIKit
 
 
 
-enum Lang: String{
-    case DeviceLanguage = "DeviceLanguage"
-    case fr = "fr"
-    case en = "en"
-    case es = "es"
-    case ru = "ru"
-//    case zh = "zh-Hant" // chinees trad
-//    case ar = "ar"
-//    case it = "it"
-//    case ja = "ja"
-    
-    static let allValues = [fr, en, es, ru]
-    static let numberLang: Int = allValues.count
-}
-
-let learningLang = Lang.en // TODO: change emplacement
-
-
 
 let kNotificationLanguageChanged: String = "kNotificationLanguageChanged";
 

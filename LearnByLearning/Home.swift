@@ -11,9 +11,11 @@ import UIKit
 
 class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    
     @IBOutlet weak var tblTableView: UITableView!
     @IBOutlet weak var btnMenuButton: UIBarButtonItem!
     
+    var newDowload: TraductedText?
     fileprivate var texts: [TraductedText]!
 
     override func viewDidLoad() {
@@ -29,8 +31,18 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
             //            revealViewController().rightViewRevealWidth = 150
             //            extraButton.target = revealViewController()
             //            extraButton.action = "rightRevealToggle:"
-        } 
+        }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if(newDowload != nil){
+            performSegue(withIdentifier: "showTextSegue", sender: self)
+        }
+        
+        self.texts = UserSave.getTextSaved()
+        tblTableView.reloadData()
+    }
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -46,40 +58,45 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
     // initiat table view
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell = tableView.dequeueReusableCell(withIdentifier: "CELL")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath) as! HomeCell
         
-        if (cell == nil) {
-            cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "CELL")
-            cell!.backgroundColor = UIColor.clear
-            cell!.textLabel?.textColor = UIColor.darkGray
-            let selectedBackgroundView = UIView(frame: CGRect(x: 0, y: 0, width: cell!.frame.size.width, height: cell!.frame.size.height))
-            selectedBackgroundView.backgroundColor = UIColor.gray.withAlphaComponent(0.2)
-            cell!.selectedBackgroundView = selectedBackgroundView
-        }
+        cell.title.text = texts[indexPath.row].title
+        cell.author.text = texts[indexPath.row].author
+        cell.level = texts[indexPath.row].level
         
-        cell!.textLabel?.text = texts[indexPath.row].title
-        
-        return cell!
+        return cell
     }
     
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         // Segue to the second view controller
+        let selectedCell = tblTableView.cellForRow(at: indexPath) as! HomeCell
+        selectedCell.selecte()
+        
         performSegue(withIdentifier: "showTextSegue", sender: self)
         
     }
+    
 
     
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if segue.identifier == "showTextSegue"{
             let cv = segue.destination as? ReadTextTabBarController
-            let row = tblTableView.indexPathForSelectedRow?.row
-            cv?.text = texts[row!]
+            
+            if(newDowload != nil){
+                cv?.text = newDowload
+                newDowload = nil
+            }
+            else{
+                let row = tblTableView.indexPathForSelectedRow?.row
+                cv?.text = texts[row!]
+            }
+            
         }
     }
- 
-
 }

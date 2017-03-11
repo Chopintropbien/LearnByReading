@@ -12,7 +12,9 @@ import UIKit
 class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     @IBOutlet weak var tblTableView: UITableView!
-    @IBOutlet weak var imgProfile: UIImageView!
+    
+    @IBOutlet weak var bigHomeButton: UIButton!
+
     
     
     public enum CellsMenu: String{
@@ -20,8 +22,8 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         case languageToLearn = "My language"
         case settings = "Settings"
         case inviteYourFriend = "Invite your friend"
-//        case help = "Help"
         case gradeApp = "Grade the app"
+        case help = "Help"
         
         static let allValues = [home, languageToLearn, settings, inviteYourFriend, gradeApp]
         static let numberCells = allValues.count
@@ -32,16 +34,26 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        iconArray = [UIImage(named:"home")!,UIImage(named:"message")!,UIImage(named:"map")!,UIImage(named:"setting")!]
+        iconArray = [UIImage(named:"home menu")!, UIImage(named:"language menu")!, UIImage(named:"settings menu")!, UIImage(named:"invite friend menu")!, UIImage(named:"grade app menu")!, UIImage(named:"help menu")! ]
         
+        tblTableView.selectRow(at: IndexPath(row: 0, section: 0), animated: false, scrollPosition: .none)
+        let selectedCell = tblTableView.cellForRow(at: IndexPath(row: 0, section: 0))!
+        selectedCell.contentView.backgroundColor = selectCellColor
+
         
         // set the profil image
-        imgProfile.layer.borderWidth = 2
-        imgProfile.layer.borderColor = UIColor.green.cgColor
-        imgProfile.layer.cornerRadius = 50
+        bigHomeButton.layer.masksToBounds = false
+        bigHomeButton.clipsToBounds = true
         
-        imgProfile.layer.masksToBounds = false
-        imgProfile.clipsToBounds = true
+        bigHomeButton.layer.shadowColor = UIColor.black.cgColor
+        bigHomeButton.layer.shadowOpacity = 1
+        bigHomeButton.layer.shadowOffset = CGSize.zero
+        bigHomeButton.layer.shadowRadius = 3
+        bigHomeButton.layer.cornerRadius = 50
+        
+        bigHomeButton.layer.shouldRasterize = true
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -56,16 +68,30 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCell", for: indexPath) as! MenuCell
         
-        
         cell.lblMenuname.text! = Localization(CellsMenu.allValues[indexPath.row].rawValue)
-        cell.imgIcon.image = iconArray[indexPath.row % 4]
+        cell.imgIcon.image = iconArray[indexPath.row]
         
         return cell
     }
     
     
+
     
+    // if tableView is set in attribute inspector with selection to multiple Selection it should work.
+    
+    // Just set it back in deselect
+    
+
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let cellToDeSelect:UITableViewCell = tableView.cellForRow(at: indexPath)!
+        cellToDeSelect.contentView.backgroundColor = UIColor.white
+    }
+    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedCell = tableView.cellForRow(at: indexPath)!
+        selectedCell.contentView.backgroundColor = selectCellColor
+        
         
         let revealviewcontroller:SWRevealViewController = self.revealViewController()
         
@@ -87,6 +113,9 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             
         case 4:
             newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "GradeAppViewController") as! GradeAppViewController
+        
+        case 5:
+            newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "HelpViewController") as! HelpViewController
             
         default:
             newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "Home") as! Home
@@ -97,6 +126,16 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
         revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
     
+    }
+    
+    @IBAction func bigHomeButtonAction(_ sender: UIButton) {
+        let revealviewcontroller: SWRevealViewController = self.revealViewController()
+        
+        let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        var newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "Home") as! Home
+        let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
+        revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
+        
     }
     /*
      // MARK: - Navigation

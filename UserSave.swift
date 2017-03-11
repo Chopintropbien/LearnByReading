@@ -15,27 +15,61 @@ class UserSave {
     static fileprivate let userDefaults = UserDefaults.standard
     static fileprivate let separator = ";"
     
-    static fileprivate let kTextPresentedHomeDefaultKey = "kTextPresentedHomeDefaultKey"
-
+    
+    
+    // texts associated with a lang that the user wants to learn
+    
+    static fileprivate func kTextPresentedHomeDefaultKey() -> String{
+        return "kTextPresentedHomeDefaultKey" + GetLanguageNav().rawValue + "-" + GetLearningLang().rawValue
+    }
     
     static public func getTextSaved() -> [TraductedText]{
-        let textPresentedHomeSaved = userDefaults.object(forKey: kTextPresentedHomeDefaultKey) as? String ?? "en-0"
-        
-        let textsId = textPresentedHomeSaved.components(separatedBy: separator)
-        
-        var texts = [TraductedText]()
-        for id in textsId{
-            if let t = TextsData.get(id: id){
-                if t.isOriginalTextLang(lang: learningLang) && t.isTranslationAvailable(lang: GetLanguageNav()){
-                    texts.append(t)
-                }
-            }
+        var textPresentedHomeSaved = userDefaults.object(forKey: kTextPresentedHomeDefaultKey()) as? String
+        if (textPresentedHomeSaved == nil){
+            textPresentedHomeSaved = TextsData.getIdsTextsFirstDowload()
+            userDefaults.setValue(textPresentedHomeSaved, forKey: kTextPresentedHomeDefaultKey())
+            userDefaults.synchronize()
         }
-        return texts
+        
+        let textsId = textPresentedHomeSaved!.components(separatedBy: separator)
+        return TextsData.get(ids: textsId)
+    }
+    
+    // bool -> already saved by user
+    static func getAllText() -> [(TraductedText, Bool)]{
+        let saved = userDefaults.object(forKey: kTextPresentedHomeDefaultKey()) as! String
+        let ids = saved.components(separatedBy: separator)
+        
+        return TextsData.getAllText().map({ (t) in
+            (t, ids.contains(where: { (s) -> Bool in
+                s == t.id
+            }))
+        })
+    }
+    
+    static func removeTextFromTextsSaved(text: TraductedText){
+        let saved = userDefaults.object(forKey: kTextPresentedHomeDefaultKey()) as! String
+        var ids = saved.components(separatedBy: separator)
+        let newIds = ids.remove(at: ids.index(of: text.id)!)
+        
+        userDefaults.setValue(newIds, forKey: kTextPresentedHomeDefaultKey())
+        userDefaults.synchronize()
+    }
+    
+    static func saveText(texts: [(TraductedText, Bool)]){
+        let ids = texts.filter({$0.1}).map({$0.0.id}).joined(separator: separator)
+        userDefaults.setValue(ids, forKey: kTextPresentedHomeDefaultKey())
+        userDefaults.synchronize()
     }
     
     
     
+    
+
+    
+    
+    
+    // Voc associated with a text
     
     static fileprivate func kVocForTextDefaultKey(text: TraductedText) -> String{
         return "kVocForTextDefaultKey" + text.id
