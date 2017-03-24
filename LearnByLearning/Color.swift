@@ -17,3 +17,10 @@ let C1Color = UIColor(red: 246/255.0, green: 47/255.0, blue: 94/255.0, alpha: 1)
 
 
 let selectCellColor = UIColor(red: 244/255.0, green: 244/255.0, blue: 244/255.0, alpha: 1)
+
+let almostBlack = UIColor(red: 46/255.0, green: 46/255.0, blue: 46/255.0, alpha: 1)
+let darkGray = UIColor(red: 74/255.0, green: 74/255.0, blue: 74/255.0, alpha: 1)
+let gray = UIColor(red: 155/255.0, green: 155/255.0, blue: 155/255.0, alpha: 1)
+
+let mainColor = UIColor(red: 245/255.0, green: 166/255.0, blue: 35/255.0, alpha: 1)
+

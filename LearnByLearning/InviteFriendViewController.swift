@@ -13,14 +13,28 @@ class InviteFriendViewController: UIViewController, MFMailComposeViewControllerD
 
     @IBOutlet weak var menu: UIBarButtonItem!
     
+    @IBOutlet weak var sendEmailButton: InviteFriendButton!
+    @IBOutlet weak var sendSmsButton: InviteFriendButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         
-        revealViewController().rearViewRevealWidth = 200
+        revealViewController().rearViewRevealWidth = -100
         menu.target = revealViewController()
         menu.action = #selector(SWRevealViewController.revealToggle(_:))
+        
+        self.navigationController!.navigationBar.tintColor = almostBlack
+        self.title = Localization("Settings title")
+        let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
+        self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : almostBlack]
+        
+        
+        // desugn button
+        sendEmailButton.setUp(img: #imageLiteral(resourceName: "email icon"))
+        sendSmsButton.setUp(img: #imageLiteral(resourceName: "sms icon"))
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -113,8 +127,6 @@ class InviteFriendViewController: UIViewController, MFMailComposeViewControllerD
         case .sent:
             print("Message was sent")
             self.dismiss(animated: true, completion: nil)
-        default:
-            break;
         }
     }
     

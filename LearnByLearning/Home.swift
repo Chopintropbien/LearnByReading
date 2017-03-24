@@ -23,15 +23,17 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         self.texts = UserSave.getTextSaved()
         
-        if revealViewController() != nil {
-            //            revealViewController().rearViewRevealWidth = 62
-            btnMenuButton.target = revealViewController()
-            btnMenuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            
-            //            revealViewController().rightViewRevealWidth = 150
-            //            extraButton.target = revealViewController()
-            //            extraButton.action = "rightRevealToggle:"
-        }
+        
+        /* set nav menu */
+        
+        revealViewController().rearViewRevealWidth = -100
+        btnMenuButton.target = revealViewController()
+        btnMenuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+        
+        self.navigationController!.navigationBar.tintColor = UIColor.white
+        self.title = Localization("Home title")
+        let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
+        self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : UIColor.white]
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,7 +62,7 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath) as! HomeCell
         
-        cell.title.text = texts[indexPath.row].title
+        cell.title.text = texts[indexPath.row].originalText.title
         cell.author.text = texts[indexPath.row].author
         cell.level = texts[indexPath.row].level
         
@@ -69,10 +71,9 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         // Segue to the second view controller
-        let selectedCell = tblTableView.cellForRow(at: indexPath) as! HomeCell
-        selectedCell.selecte()
+//        let selectedCell = tblTableView.cellForRow(at: indexPath) as! HomeCell
+//        selectedCell.selecte()
         
         performSegue(withIdentifier: "showTextSegue", sender: self)
         

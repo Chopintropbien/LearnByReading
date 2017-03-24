@@ -10,13 +10,13 @@ import UIKit
 
 
 extension UIViewController {
-    func performSegueToReturnBack(text: TraductedText)  {
+    func performSegueToReturnBack(text: TraductedText?)  {
         if let nav = self.navigationController {
             for aVC in nav.viewControllers {
                 if(aVC is Home){
                    (aVC as! Home).newDowload = text
                 }
-                nav.popViewController(animated: false)
+                nav.popViewController(animated: true)
             }
         } else {
             self.dismiss(animated: true, completion: nil)
@@ -25,23 +25,105 @@ extension UIViewController {
 }
 
 
+extension CALayer {
+    
+    func moveBorderToWith(width: CGFloat){
+        let thickness: CGFloat = 4
+        
+        let moovingBorder = self.sublayers!.last!
+        
+        moovingBorder.frame = CGRect.init(x: 0, y: frame.height - thickness, width: width, height: thickness)
+    }
+    
+    func addBorderFixBorder() {
+        
+        let thickness: CGFloat = 4
+        
+        let fixedBorder = CALayer()
+        fixedBorder.frame = CGRect.init(x: 0, y: frame.height - thickness, width: frame.width, height: thickness)
+        fixedBorder.backgroundColor = UIColor.white.cgColor
+        self.addSublayer(fixedBorder)
+        
+        let moovingBorder = CALayer()
+        moovingBorder.frame = CGRect.init(x: 0, y: frame.height - thickness, width: 0, height: thickness)
+        moovingBorder.backgroundColor = mainColor.cgColor
+        self.addSublayer(moovingBorder)
+        
+        
+    }
+}
+
+
+
+enum Difficulty{
+    case basic
+    case intermediate
+    case hard
+}
+
 class AddText: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var basicLevelTable: UITableView!
-    @IBOutlet weak var intermadiateLevelTable: UITableView!
+    @IBOutlet weak var levelView: UIView!
+    @IBOutlet weak var basicButton: UIButton!
+    @IBOutlet weak var intermediateButton: UIButton!
+    @IBOutlet weak var hardButton: UIButton!
+    
+
+    @IBOutlet weak var table: UITableView!
+    
+    @IBOutlet weak var doneButton: UIButton!
     
     var texts: [(TraductedText, Bool)]!
     var basicText: [(TraductedText, Bool)]!
     var intermediateText: [(TraductedText, Bool)]!
+    var hardText: [(TraductedText, Bool)]!
+    
+    var currentText: [(TraductedText, Bool)]!
+    var currentDifficulty = Difficulty.basic
+    
+    
+    var widthBorderItem1: CGFloat!
+    var widthBorderItem2: CGFloat!
+    var widthBorderItem3: CGFloat!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         texts = UserSave.getAllText()
         basicText = texts.filter({$0.0.level == Level.A2})
         intermediateText = texts.filter({$0.0.level == Level.B1})
+        hardText = texts.filter({$0.0.level == Level.C1})
+        
+        currentText = basicText
         
         
+        basicButton.contentHorizontalAlignment = .left
+        intermediateButton.contentHorizontalAlignment = .center
+        hardButton.contentHorizontalAlignment = .right
+        
+        
+        
+        // design
+        self.levelView.layer.addBorderFixBorder()
+        
+        self.navigationController!.navigationBar.tintColor = UIColor.white
+        self.title = Localization("Add text title")
+        let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
+        self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : UIColor.white]
+        
+
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let offset: CGFloat = 5
+        
+        widthBorderItem1 = CGFloat(basicButton.titleLabel!.frame.width) + offset
+        widthBorderItem2 = CGFloat(basicButton.frame.width) + CGFloat(intermediateButton.titleLabel!.frame.width) + CGFloat(intermediateButton.titleLabel!.frame.minX) + offset
+        widthBorderItem3 = levelView.frame.width
+        
+        self.levelView.layer.moveBorderToWith(width: widthBorderItem1)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,79 +135,77 @@ class AddText: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of items in the sample data structure.
-        
-        var count:Int?
-        if tableView == self.basicLevelTable {
-            count = basicText.count
-        }
-        
-        if tableView == self.intermadiateLevelTable {
-            count =  intermediateText.count
-        }
-        return count!
-        
+        return currentText.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell: UITableViewCell?
+        let cell: AddTextCell = tableView.dequeueReusableCell(withIdentifier: "AddTextCell", for: indexPath) as! AddTextCell
         
-        if tableView == self.basicLevelTable {
-            cell = tableView.dequeueReusableCell(withIdentifier: "AddTextCell", for: indexPath) as! AddTextCell
-            
-            if(basicText[indexPath.row].1){
-                cell?.accessoryType = .checkmark
-            }
-        }
-        else if tableView == self.intermadiateLevelTable {
-            cell = tableView.dequeueReusableCell(withIdentifier: "AddTextCell", for: indexPath) as! AddTextCell
-            
-            if(intermediateText[indexPath.row].1){
-                cell?.accessoryType = .checkmark
-            }
-        }
-        
-        
-        
-        return cell!
+        cell.title.text = currentText[indexPath.row].0.originalText.title
+        cell.author.text = currentText[indexPath.row].0.author
+        cell.level = currentText[indexPath.row].0.level
+        cell.isDownloaded = currentText[indexPath.row].1
+
+        return cell
     }
+
 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         tableView.deselectRow(at: indexPath, animated: true)
         let cell = tableView.cellForRow(at: indexPath) as! AddTextCell
         
-        if tableView == self.basicLevelTable {
-            basicText[indexPath.row].1 = !basicText[indexPath.row].1
+        
+        currentText[indexPath.row].1 = !currentText[indexPath.row].1
+        cell.isDownloaded = currentText[indexPath.row].1
 
-            if (basicText[indexPath.row].1){
-                cell.accessoryType = .checkmark
-            }
-            else{
-                cell.accessoryType = .none
-            }
-            
-            UserSave.saveText(texts: basicText + intermediateText)
-            performSegueToReturnBack(text: basicText[indexPath.row].0)
-            
-        }
-        else if tableView == self.intermadiateLevelTable {
-            intermediateText[indexPath.row].1 = !intermediateText[indexPath.row].1
-            
-            if (intermediateText[indexPath.row].1){
-                cell.accessoryType = .checkmark
-            }
-            else{
-                cell.accessoryType = .none
-            }
-            
-            UserSave.saveText(texts: basicText + intermediateText)
-            performSegueToReturnBack(text: intermediateText[indexPath.row].0)
+        switch currentDifficulty {
+        case Difficulty.basic:
+            basicText = currentText
+        case Difficulty.intermediate:
+            intermediateText = currentText
+        case Difficulty.hard:
+            hardText = currentText
         }
         
-        
-        
+        var allText = basicText + intermediateText
+        allText = allText + hardText
+        UserSave.saveText(texts: allText)
+//        performSegueToReturnBack(text: basicText[indexPath.row].0)
+        // TODO choose what to do
     }
+    
+    
+    
+    @IBAction func changeToBasic(_ sender: UIButton) {
+        currentDifficulty = Difficulty.basic
+        currentText = basicText
+        self.levelView.layer.moveBorderToWith(width: widthBorderItem1)
+        table.reloadData()
+    }
+    
+    @IBAction func changeToIntermadiate(_ sender: UIButton) {
+        currentDifficulty = Difficulty.intermediate
+        currentText = intermediateText
+        self.levelView.layer.moveBorderToWith(width: widthBorderItem2)
+        table.reloadData()
+    }
+    
+    @IBAction func changeToHard(_ sender: UIButton) {
+        currentDifficulty = Difficulty.hard
+        currentText = hardText
+        self.levelView.layer.moveBorderToWith(width: widthBorderItem3)
+        table.reloadData()
+    }
+    
+    
+    @IBAction func returnHome(_ sender: UIButton) {
+        performSegueToReturnBack(text: nil) // TODO change and choose what to do
+    }
+    
+    
     
     
     

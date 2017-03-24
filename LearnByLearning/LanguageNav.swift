@@ -15,9 +15,16 @@ class LanguageNav: UITableViewController {
     
 
     override func viewWillAppear(_ animated: Bool) {
-        self.title = Localization("Language")
+        
         self.langs = TextsData.langInWichYouCanLearn(thisLang: GetLearningLang())
         selectedMenuItem = langs.index(of: GetLanguageNav())
+        
+        
+        
+        self.navigationController!.navigationBar.tintColor = UIColor.white
+        self.title = Localization("Nav Language title")
+        let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
+        self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : UIColor.black]
 
         tableView.selectRow(at: IndexPath(row: selectedMenuItem, section: 0), animated: false, scrollPosition: .middle)
     }

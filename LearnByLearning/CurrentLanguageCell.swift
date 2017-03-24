@@ -10,8 +10,17 @@ import UIKit
 
 class CurrentLanguageCell: UITableViewCell {
 
+    @IBOutlet weak var view: UIView!
     @IBOutlet weak var flag: UIImageView!
     @IBOutlet weak var languageLabel: UILabel!
+    
+    var lang: Lang = Lang.en{
+        didSet{
+            languageLabel.text! = Lang.originalName(lang: lang)
+            flag.image = Lang.originalFlag(lang: lang)
+            view.layer.cornerRadius = 3
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,5 +32,11 @@ class CurrentLanguageCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
+    func selecte(){
+//        view.backgroundColor = UIColor(red: 240/255.0, green: 240/255.0, blue: 240/255.0, alpha: 1)
+    }
+    
 
 }

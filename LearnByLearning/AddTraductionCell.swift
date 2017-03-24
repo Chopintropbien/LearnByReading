@@ -9,9 +9,11 @@
 import UIKit
 
 class AddTraductionCell: UITableViewCell {
-
-    @IBOutlet weak var worldLabel: UILabel!
     
+    @IBOutlet weak var normalizedWorldLabel: UILabel!
+    @IBOutlet weak var traduction: UILabel!
+    @IBOutlet weak var worldInTextLabel: UILabel!
+
     var _addedToList: Bool = true
     var addedToList: Bool {
         get{

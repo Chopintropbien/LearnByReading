@@ -14,6 +14,7 @@ enum Lang: String{
     case en = "en"
     case es = "es"
     case ru = "ru"
+    case de = "de"
     //    case zh = "zh-Hant" // chinees trad
     //    case ar = "ar"
     //    case it = "it"
@@ -44,4 +45,38 @@ enum Lang: String{
             return "Undefine"
         }
     }
+    
+    static func originalFlag(lang: Lang) -> UIImage{
+        switch(lang){
+        case Lang.en:
+            return #imageLiteral(resourceName: "united-kingdom flag")
+        case Lang.fr:
+            return #imageLiteral(resourceName: "france flag")
+        case Lang.es:
+            return #imageLiteral(resourceName: "spain flag")
+        case Lang.ru:
+            return #imageLiteral(resourceName: "russia flag")
+        default:
+            return #imageLiteral(resourceName: "united-kingdom flag")
+        }
+    }
+    
+    static func backgroundImage(lang: Lang) -> UIImage{
+        switch(lang){
+        case Lang.en:
+            return #imageLiteral(resourceName: "home background")
+        case Lang.fr:
+            return #imageLiteral(resourceName: "france flag")
+        case Lang.es:
+            return #imageLiteral(resourceName: "spain flag")
+        case Lang.ru:
+            return #imageLiteral(resourceName: "russia flag")
+        default:
+            return #imageLiteral(resourceName: "united-kingdom flag")
+        }
+    }
+    
+    
+    
+    
 }

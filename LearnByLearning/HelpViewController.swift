@@ -19,9 +19,14 @@ class HelpViewController: UIViewController, MFMailComposeViewControllerDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        revealViewController().rearViewRevealWidth = 200
+        revealViewController().rearViewRevealWidth = -100
         menu.target = revealViewController()
         menu.action = #selector(SWRevealViewController.revealToggle(_:))
+        
+        self.navigationController!.navigationBar.tintColor = UIColor.white
+        self.title = Localization("Help title")
+        let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
+        self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : UIColor.white]
 
         // Do any additional setup after loading the view.
     }

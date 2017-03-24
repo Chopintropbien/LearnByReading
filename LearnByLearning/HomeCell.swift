@@ -14,6 +14,7 @@ class HomeCell: UITableViewCell {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var author: UILabel!
     @IBOutlet weak var levelLabel: UILabel!
+    @IBOutlet weak var icon: UIImageView!
     
     var level: Level = Level.A2 {
         didSet {

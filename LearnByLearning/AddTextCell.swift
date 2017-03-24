@@ -8,8 +8,20 @@
 
 import UIKit
 
-class AddTextCell: UITableViewCell {
-
+class AddTextCell: HomeCell {
+    
+    var isDownloaded: Bool = false{
+        didSet{
+            if(isDownloaded){
+                self.icon.image = #imageLiteral(resourceName: "check icon")
+            }
+            else{
+                self.icon.image = #imageLiteral(resourceName: "download icon")
+            }
+            self.icon.reloadInputViews()
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

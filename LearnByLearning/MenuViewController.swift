@@ -25,7 +25,7 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         case gradeApp = "Grade the app"
         case help = "Help"
         
-        static let allValues = [home, languageToLearn, settings, inviteYourFriend, gradeApp]
+        static let allValues = [home, languageToLearn, settings, inviteYourFriend, gradeApp, help]
         static let numberCells = allValues.count
     }
     
@@ -132,7 +132,7 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let revealviewcontroller: SWRevealViewController = self.revealViewController()
         
         let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        var newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "Home") as! Home
+        let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "Home") as! Home
         let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
         revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
         

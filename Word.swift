@@ -12,45 +12,17 @@ import Foundation
 class Word: Hashable{
     
     let hashValue: Int
-    
     let lang: Lang
-    let wordInText: String
-    let neutralWord: String?
-    let explation: String?
-    let order: Int // order of apparition in the text
+    let neutralWord: String
     
-    let isInUserSartedList: Bool // the word appear on the voc list on the first dowload.
-    
-    
-    init(lang: Lang, order: Int, word: String, isInUserSartedList: Bool = false) {
+    init(lang: Lang, neutralWord: String) {
         self.lang = lang
-        self.wordInText = word
-        self.neutralWord = nil
-        self.explation = nil
-        self.order = order
-        self.isInUserSartedList = isInUserSartedList
-        
-        self.hashValue = word.hashValue
-    }
-
-    
-    init(lang: Lang, order: Int, wordInText: String, neutralWord: String, explation: String, isInUserSartedList: Bool = false) {
-        self.lang = lang
-        self.wordInText = wordInText
         self.neutralWord = neutralWord
-        self.order = order
-        self.explation = explation
-        self.isInUserSartedList = isInUserSartedList
-        
-        self.hashValue = wordInText.hashValue
-    }
-    
-    
-    func id() -> String {
-        return wordInText
-    }
-    
 
+        self.hashValue = (neutralWord + lang.rawValue).hashValue
+    }
+    
+    
     /// Returns a Boolean value indicating whether two values are equal.
     ///
     /// Equality is the inverse of inequality. For any values `a` and `b`,
@@ -61,10 +33,25 @@ class Word: Hashable{
     ///   - rhs: Another value to compare.
     public static func ==(lhs: Word, rhs: Word) -> Bool {
         return lhs.lang == rhs.lang &&
-            lhs.wordInText == rhs.wordInText &&
-            lhs.neutralWord == rhs.neutralWord &&
-            lhs.explation == rhs.explation &&
-            lhs.order == rhs.order
+            lhs.neutralWord == rhs.neutralWord
+    }
+    
+    
+    
+}
+
+class OriginalWord: Word{
+    let wordInText: String
+    let isInUserSartedList: Bool // the word appear on the voc list on the first dowload.
+    
+    init(lang: Lang, wordInText: String, neutralWord: String, isInUserSartedList: Bool = true) {
+        self.wordInText = wordInText
+        self.isInUserSartedList = true
+        super.init(lang: lang, neutralWord: neutralWord)
+    }
+    
+    func id() -> String {
+        return wordInText + lang.rawValue
     }
 }
 

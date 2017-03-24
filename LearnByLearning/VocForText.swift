@@ -11,14 +11,15 @@ import UIKit
 class VocForText: UITableViewController {
     
     var text: TraductedText!
-    var voc: [(Word, Word)]!
+    var voc: [(OriginalWord, Word)]!
     
     @IBOutlet weak var addTradButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addTradButton.accessibilityElementsHidden = false
         voc = UserSave.getVocSaved(text: text)
-        tableView.allowsSelection = false;
+        tableView.allowsSelection = false
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -28,7 +29,6 @@ class VocForText: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        addTradButton.accessibilityElementsHidden = false
         tabBarController?.navigationItem.rightBarButtonItem = addTradButton
         voc = UserSave.getVocSaved(text: text)
         tableView.reloadData()  
@@ -59,9 +59,9 @@ class VocForText: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "TraductionCell", for: indexPath) as! TraductionCell
         
-        
-        
-        
+        cell.originalWordLabel.text = voc[indexPath.row].0.neutralWord
+        cell.traductionLabel.text = voc[indexPath.row].1.neutralWord
+
         return cell
         
         

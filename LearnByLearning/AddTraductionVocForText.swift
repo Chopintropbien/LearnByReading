@@ -11,12 +11,14 @@ import UIKit
 class AddTraductionVocForText: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var cancel: UIButton!
-    @IBOutlet weak var done: UIButton!
+    
+    @IBOutlet weak var cancel: UIBarButtonItem!
+    @IBOutlet weak var done: UIBarButtonItem!
+
     
     var text: TraductedText!
-    var allVoc: [((Word, Word), Bool)]!
-    var filtered = [((Word, Word), Bool)]()
+    var allVoc: [((OriginalWord, Word), Bool)]!
+    var filtered = [((OriginalWord, Word), Bool)]()
     
     private var searchBarActivated = false
     
@@ -25,6 +27,7 @@ class AddTraductionVocForText: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         allVoc = UserSave.getVocInfoSaved(text: text)
+        navigationItem.hidesBackButton = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,7 +57,11 @@ class AddTraductionVocForText: UIViewController, UITableViewDelegate, UITableVie
         // Configure the cell...
         
         if searchBarActivated{
-            cell.worldLabel.text = self.filtered[indexPath.row].0.0.wordInText
+            cell.normalizedWorldLabel.text = self.filtered[indexPath.row].0.0.neutralWord
+            cell.worldInTextLabel.text = self.filtered[indexPath.row].0.0.wordInText
+            cell.traduction.text = self.filtered[indexPath.row].0.1.neutralWord
+            
+            
             if(filtered[indexPath.row].1){
                 cell.accessoryType = .checkmark
             }
@@ -63,7 +70,10 @@ class AddTraductionVocForText: UIViewController, UITableViewDelegate, UITableVie
             }
         }
         else{
-            cell.worldLabel.text = self.allVoc[indexPath.row].0.0.wordInText
+            cell.normalizedWorldLabel.text = self.allVoc[indexPath.row].0.0.neutralWord
+            cell.worldInTextLabel.text = "(" + self.allVoc[indexPath.row].0.0.wordInText + ")"
+            cell.traduction.text = self.allVoc[indexPath.row].0.1.neutralWord
+            
             if(allVoc[indexPath.row].1){
                 cell.accessoryType = .checkmark
             }
@@ -89,6 +99,8 @@ class AddTraductionVocForText: UIViewController, UITableViewDelegate, UITableVie
                 w.0 == filtered[indexPath.row].0
             })!
             filtered[indexPath.row].1 = !filtered[indexPath.row].1
+            
+            
         }
         allVoc[idxInAllVocArray].1 = !allVoc[idxInAllVocArray].1
         
@@ -104,12 +116,13 @@ class AddTraductionVocForText: UIViewController, UITableViewDelegate, UITableVie
     
     
     
-    @IBAction func cancel(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        navigationController?.popViewController(animated: true)
+        
     }
-    @IBAction func done(_ sender: UIButton) {
+    @IBAction func done(_ sender: UIBarButtonItem) {
         UserSave.saveVocWantedByUser(text: text, vocs: allVoc)
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true) 
     }
     
     

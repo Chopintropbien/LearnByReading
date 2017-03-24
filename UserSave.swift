@@ -75,7 +75,7 @@ class UserSave {
         return "kVocForTextDefaultKey" + text.id
     }
     
-    static public func getVocSaved(text: TraductedText) -> [(Word, Word)]{
+    static public func getVocSaved(text: TraductedText) -> [(OriginalWord, Word)]{
         if let vocSaved = userDefaults.object(forKey: kVocForTextDefaultKey(text: text)) as? String{
             let vocIds = vocSaved.components(separatedBy: separator)
             return text.getVocSavedByUser(ids: vocIds, lang: GetLanguageNav())
@@ -87,7 +87,7 @@ class UserSave {
         }
     }
     
-    static public func getVocInfoSaved(text: TraductedText) -> [((Word, Word), Bool)]{
+    static public func getVocInfoSaved(text: TraductedText) -> [((OriginalWord, Word), Bool)]{
         if let vocSaved = userDefaults.object(forKey: kVocForTextDefaultKey(text: text)) as? String{
             let vocIds = vocSaved.components(separatedBy: separator)
             return text.getVocInfoSaved(ids: vocIds, lang: GetLanguageNav())
@@ -97,19 +97,19 @@ class UserSave {
         }
     }
     
-    static public func saveVocWantedByUser(text: TraductedText, vocs: [((Word, Word), Bool)]){
+    static public func saveVocWantedByUser(text: TraductedText, vocs: [((OriginalWord, Word), Bool)]){
         let key = vocs.filter{$0.1}.map{ $0.0.0.id()}.joined(separator: separator)
         userDefaults.setValue(key, forKey: kVocForTextDefaultKey(text: text))
         userDefaults.synchronize()
     }
     
-    static public func saveVocWantedByUser(text: TraductedText, vocs: [(Word, Word)]){
+    static public func saveVocWantedByUser(text: TraductedText, vocs: [(OriginalWord, Word)]){
         let key = vocs.map{ $0.0.id()}.joined(separator: separator)
         userDefaults.setValue(key, forKey: kVocForTextDefaultKey(text: text))
         userDefaults.synchronize()
     }
     
-    static public func removeWordFromVocSaved(text: TraductedText, word: (Word, Word)){
+    static public func removeWordFromVocSaved(text: TraductedText, word: (OriginalWord, Word)){
         let vocSaved = userDefaults.object(forKey: kVocForTextDefaultKey(text: text)) as! String
         var vocIds = vocSaved.components(separatedBy: separator)
         vocIds.remove(at: vocIds.index(of: word.0.id())!)

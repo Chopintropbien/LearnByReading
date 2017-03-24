@@ -12,8 +12,8 @@ class TraductionCell: UITableViewCell {
 
     
     
-    @IBOutlet weak var worldLabel: UILabel!
-    @IBOutlet weak var grammarLabel: UILabel!
+    @IBOutlet weak var originalWordLabel: UILabel!
+    @IBOutlet weak var traductionLabel: UILabel!
     
     
     override func awakeFromNib() {

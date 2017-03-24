@@ -19,6 +19,7 @@ class MyLanguagesViewController: UIViewController, UITableViewDelegate, UITableV
     var currentLang: Lang!
     var otherLangToLearn: [Lang]!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,13 +28,22 @@ class MyLanguagesViewController: UIViewController, UITableViewDelegate, UITableV
         revealViewController().rearViewRevealWidth = -100
         menu.target = revealViewController()
         menu.action = #selector(SWRevealViewController.revealToggle(_:))
+        
+        self.navigationController!.navigationBar.tintColor = UIColor.white
+        self.title = Localization("Language title")
+        let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
+        self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : UIColor.white]
+        
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         currentLang = GetLearningLang()
         otherLangToLearn = TextsData.langYouCanLearnWith(langNav: GetLanguageNav(), learningLang: GetLearningLang())
         
-        print(otherLangToLearn)
-        currentLangLabel.text = GetLearningLang().rawValue
+        
+        currentLangLabel.text = Lang.originalName(lang: currentLang)
+        currentLangImg.image = Lang.originalFlag(lang: currentLang)
+        
         tableView.reloadData()
     }
 
@@ -47,11 +57,10 @@ class MyLanguagesViewController: UIViewController, UITableViewDelegate, UITableV
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCell", for: indexPath) as! MenuCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CurrentLanguageCell", for: indexPath) as! CurrentLanguageCell
         
+        cell.lang = otherLangToLearn[indexPath.row]
         
-        cell.lblMenuname.text! = otherLangToLearn[indexPath.row].rawValue
-//        cell.imgIcon.image = UIImage(named:"home")!
         
         return cell
     }
@@ -60,6 +69,10 @@ class MyLanguagesViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         SetLearningLang(lang: otherLangToLearn[indexPath.row])
+        let selectedCell = tableView.cellForRow(at: indexPath) as! CurrentLanguageCell
+        selectedCell.selecte()
+
+        
 
         let home = self.storyboard?.instantiateViewController(withIdentifier: "Home") as! Home
 
