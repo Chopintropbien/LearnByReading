@@ -10,6 +10,14 @@
 		981F89611E7F1C8F00D1BF9D /* languageCollecVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981F89601E7F1C8F00D1BF9D /* languageCollecVCell.swift */; };
 		981F89631E7F1CCC00D1BF9D /* ChooseLanguageToLearnCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981F89621E7F1CCC00D1BF9D /* ChooseLanguageToLearnCollectionVC.swift */; };
 		981F896C1E80457800D1BF9D /* GM Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981F896B1E80457800D1BF9D /* GM Food.swift */; };
+		9821944F1E8BA70600043300 /* ChoosePaymentPlanCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9821944E1E8BA70600043300 /* ChoosePaymentPlanCV.swift */; };
+		982194511E8BA72300043300 /* ChoosePaymentPlanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982194501E8BA72300043300 /* ChoosePaymentPlanButton.swift */; };
+		982194531E8BF21100043300 /* HighlightChoosePaymentPlanButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982194521E8BF21100043300 /* HighlightChoosePaymentPlanButtonView.swift */; };
+		982194561E8C033C00043300 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982194551E8C033C00043300 /* IAPHelper.swift */; };
+		9821945C1E8CD7E000043300 /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982194581E8CD7E000043300 /* SideMenuManager.swift */; };
+		9821945D1E8CD7E000043300 /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982194591E8CD7E000043300 /* SideMenuTransition.swift */; };
+		9821945E1E8CD7E000043300 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9821945A1E8CD7E000043300 /* UISideMenuNavigationController.swift */; };
+		9821945F1E8CD7E000043300 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9821945B1E8CD7E000043300 /* UITableViewVibrantCell.swift */; };
 		98226BD21E7408BC00060F26 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98226BD11E7408BC00060F26 /* HomeCell.swift */; };
 		9823AE871E61CD4E00AB376C /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823AE861E61CD4E00AB376C /* Word.swift */; };
 		9823AE891E61CFA400AB376C /* TextsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823AE881E61CFA400AB376C /* TextsData.swift */; };
@@ -61,7 +69,6 @@
 		98DDC6CB1E7453A6004A367C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DDC6CA1E7453A6004A367C /* Color.swift */; };
 		98E538B51E8059040067E639 /* El jardín de Val.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E538B41E8059040067E639 /* El jardín de Val.swift */; };
 		98E538B71E80596F0067E639 /* TemplateText .swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E538B61E80596F0067E639 /* TemplateText .swift */; };
-		98E8BB0F1E4CE0E7002134B0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E8BB0E1E4CE0E7002134B0 /* SWRevealViewController.m */; };
 		98E8BB121E4CE1A4002134B0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E8BB111E4CE1A4002134B0 /* MenuViewController.swift */; };
 		98E8BB141E4CE1C9002134B0 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E8BB131E4CE1C9002134B0 /* MenuCell.swift */; };
 		98E8BB1A1E4CEF00002134B0 /* Localisator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E8BB191E4CEF00002134B0 /* Localisator.swift */; };
@@ -95,6 +102,14 @@
 		981F89601E7F1C8F00D1BF9D /* languageCollecVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = languageCollecVCell.swift; sourceTree = "<group>"; };
 		981F89621E7F1CCC00D1BF9D /* ChooseLanguageToLearnCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseLanguageToLearnCollectionVC.swift; sourceTree = "<group>"; };
 		981F896B1E80457800D1BF9D /* GM Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GM Food.swift"; sourceTree = "<group>"; };
+		9821944E1E8BA70600043300 /* ChoosePaymentPlanCV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosePaymentPlanCV.swift; sourceTree = "<group>"; };
+		982194501E8BA72300043300 /* ChoosePaymentPlanButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosePaymentPlanButton.swift; sourceTree = "<group>"; };
+		982194521E8BF21100043300 /* HighlightChoosePaymentPlanButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightChoosePaymentPlanButtonView.swift; sourceTree = "<group>"; };
+		982194551E8C033C00043300 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		982194581E8CD7E000043300 /* SideMenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuManager.swift; sourceTree = "<group>"; };
+		982194591E8CD7E000043300 /* SideMenuTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTransition.swift; sourceTree = "<group>"; };
+		9821945A1E8CD7E000043300 /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISideMenuNavigationController.swift; sourceTree = "<group>"; };
+		9821945B1E8CD7E000043300 /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewVibrantCell.swift; sourceTree = "<group>"; };
 		98226BD11E7408BC00060F26 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		9823AE861E61CD4E00AB376C /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		9823AE881E61CFA400AB376C /* TextsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextsData.swift; sourceTree = "<group>"; };
@@ -156,9 +171,6 @@
 		98DDC6CA1E7453A6004A367C /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		98E538B41E8059040067E639 /* El jardín de Val.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "El jardín de Val.swift"; sourceTree = "<group>"; };
 		98E538B61E80596F0067E639 /* TemplateText .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TemplateText .swift"; sourceTree = "<group>"; };
-		98E8BB0C1E4CE0D2002134B0 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		98E8BB0D1E4CE0E6002134B0 /* LearnByLearning-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LearnByLearning-Bridging-Header.h"; sourceTree = "<group>"; };
-		98E8BB0E1E4CE0E7002134B0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		98E8BB111E4CE1A4002134B0 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		98E8BB131E4CE1C9002134B0 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		98E8BB191E4CEF00002134B0 /* Localisator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localisator.swift; sourceTree = "<group>"; };
@@ -258,6 +270,35 @@
 			children = (
 			);
 			name = C1;
+			sourceTree = "<group>";
+		};
+		9821944D1E8BA6D200043300 /* ChoosePaymentPlan */ = {
+			isa = PBXGroup;
+			children = (
+				9821944E1E8BA70600043300 /* ChoosePaymentPlanCV.swift */,
+				982194501E8BA72300043300 /* ChoosePaymentPlanButton.swift */,
+				982194521E8BF21100043300 /* HighlightChoosePaymentPlanButtonView.swift */,
+			);
+			name = ChoosePaymentPlan;
+			sourceTree = "<group>";
+		};
+		982194541E8C032B00043300 /* In-App Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				982194551E8C033C00043300 /* IAPHelper.swift */,
+			);
+			name = "In-App Purchase";
+			sourceTree = "<group>";
+		};
+		982194571E8CD7C800043300 /* Slide manager */ = {
+			isa = PBXGroup;
+			children = (
+				982194581E8CD7E000043300 /* SideMenuManager.swift */,
+				982194591E8CD7E000043300 /* SideMenuTransition.swift */,
+				9821945A1E8CD7E000043300 /* UISideMenuNavigationController.swift */,
+				9821945B1E8CD7E000043300 /* UITableViewVibrantCell.swift */,
+			);
+			name = "Slide manager";
 			sourceTree = "<group>";
 		};
 		98226BD01E74089B00060F26 /* Home */ = {
@@ -384,6 +425,9 @@
 		988A72BA1E352DF600BDE635 /* LearnByLearning */ = {
 			isa = PBXGroup;
 			children = (
+				982194571E8CD7C800043300 /* Slide manager */,
+				982194541E8C032B00043300 /* In-App Purchase */,
+				9821944D1E8BA6D200043300 /* ChoosePaymentPlan */,
 				981F895F1E7F1C5100D1BF9D /* FirstVisit */,
 				9823AE951E65CC1400AB376C /* Model */,
 				983B52A21E50E264004F820F /* AddText */,
@@ -393,7 +437,7 @@
 				98E8BB231E4CF383002134B0 /* Settings */,
 				98EC9EFE1E4D02D00062F9F2 /* Language */,
 				98D73E171E369C8400BAF0C1 /* ReadText */,
-				98E8BB101E4CE18F002134B0 /* menu */,
+				98E8BB101E4CE18F002134B0 /* Menu */,
 				98226BD01E74089B00060F26 /* Home */,
 				9823AE8F1E65783800AB376C /* HelpViewController.swift */,
 				987D351D1E7E9A98008434A8 /* InviteFriend */,
@@ -430,7 +474,6 @@
 			isa = PBXGroup;
 			children = (
 				987D34F51E7D6D7B008434A8 /* AudioText */,
-				98E8BB0B1E4CE0BA002134B0 /* SWRevealViewController */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -466,23 +509,13 @@
 			name = A2;
 			sourceTree = "<group>";
 		};
-		98E8BB0B1E4CE0BA002134B0 /* SWRevealViewController */ = {
-			isa = PBXGroup;
-			children = (
-				98E8BB0C1E4CE0D2002134B0 /* SWRevealViewController.h */,
-				98E8BB0E1E4CE0E7002134B0 /* SWRevealViewController.m */,
-				98E8BB0D1E4CE0E6002134B0 /* LearnByLearning-Bridging-Header.h */,
-			);
-			name = SWRevealViewController;
-			sourceTree = "<group>";
-		};
-		98E8BB101E4CE18F002134B0 /* menu */ = {
+		98E8BB101E4CE18F002134B0 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
 				98E8BB111E4CE1A4002134B0 /* MenuViewController.swift */,
 				98E8BB131E4CE1C9002134B0 /* MenuCell.swift */,
 			);
-			name = menu;
+			name = Menu;
 			sourceTree = "<group>";
 		};
 		98E8BB231E4CF383002134B0 /* Settings */ = {
@@ -672,10 +705,10 @@
 			files = (
 				9823AE901E65783800AB376C /* HelpViewController.swift in Sources */,
 				987E15081E61803F0080C9B6 /* AddTraductionVocForText.swift in Sources */,
-				98E8BB0F1E4CE0E7002134B0 /* SWRevealViewController.m in Sources */,
 				987D351C1E7DB768008434A8 /* preferedReadingSpeed.swift in Sources */,
 				9823AE891E61CFA400AB376C /* TextsData.swift in Sources */,
 				981F896C1E80457800D1BF9D /* GM Food.swift in Sources */,
+				9821945F1E8CD7E000043300 /* UITableViewVibrantCell.swift in Sources */,
 				983B52A41E50E378004F820F /* AddText.swift in Sources */,
 				988A72F01E352F6E00BDE635 /* ReadTextTabBarController.swift in Sources */,
 				98E8BB291E4CF3DF002134B0 /* GradeAppViewController.swift in Sources */,
@@ -685,7 +718,9 @@
 				983B52A61E50E45A004F820F /* AddTextCell.swift in Sources */,
 				98D73E161E369C7A00BAF0C1 /* ReadTextTraduction.swift in Sources */,
 				988A72F91E367A3500BDE635 /* VocForText.swift in Sources */,
+				9821944F1E8BA70600043300 /* ChoosePaymentPlanCV.swift in Sources */,
 				98E8BB271E4CF3B4002134B0 /* InviteFriendViewController.swift in Sources */,
+				9821945C1E8CD7E000043300 /* SideMenuManager.swift in Sources */,
 				987E15041E6173230080C9B6 /* TraductedText.swift in Sources */,
 				983B529D1E4F8BDA004F820F /* TraductionCell.swift in Sources */,
 				9823AE921E65CBA800AB376C /* LearningLang.swift in Sources */,
@@ -695,11 +730,14 @@
 				98E8BB141E4CE1C9002134B0 /* MenuCell.swift in Sources */,
 				9823AE871E61CD4E00AB376C /* Word.swift in Sources */,
 				98E8BB1A1E4CEF00002134B0 /* Localisator.swift in Sources */,
+				982194531E8BF21100043300 /* HighlightChoosePaymentPlanButtonView.swift in Sources */,
 				98DDC6CB1E7453A6004A367C /* Color.swift in Sources */,
 				98E8BB251E4CF39D002134B0 /* SettingsViewController.swift in Sources */,
 				98E538B71E80596F0067E639 /* TemplateText .swift in Sources */,
 				98E538B51E8059040067E639 /* El jardín de Val.swift in Sources */,
+				982194561E8C033C00043300 /* IAPHelper.swift in Sources */,
 				987D34F41E7D2B0F008434A8 /* SpeedButton.swift in Sources */,
+				982194511E8BA72300043300 /* ChoosePaymentPlanButton.swift in Sources */,
 				9823AE941E65CBBC00AB376C /* Lang.swift in Sources */,
 				987D351F1E7E9AB9008434A8 /* InviteFriendButton.swift in Sources */,
 				981F89611E7F1C8F00D1BF9D /* languageCollecVCell.swift in Sources */,
@@ -709,6 +747,8 @@
 				981F89631E7F1CCC00D1BF9D /* ChooseLanguageToLearnCollectionVC.swift in Sources */,
 				988A72BC1E352DF600BDE635 /* AppDelegate.swift in Sources */,
 				9823AE8B1E61D74200AB376C /* UserSave.swift in Sources */,
+				9821945D1E8CD7E000043300 /* SideMenuTransition.swift in Sources */,
+				9821945E1E8CD7E000043300 /* UISideMenuNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -892,7 +932,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Meitopi.LearnByLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "LearnByLearning/LearnByLearning-Bridging-Header.h";
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -909,7 +952,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Meitopi.LearnByLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "LearnByLearning/LearnByLearning-Bridging-Header.h";
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				"SWIFT_OBJC_INTERFACE_HEADER_NAME[arch=*]" = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

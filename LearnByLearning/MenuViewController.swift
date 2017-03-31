@@ -26,6 +26,23 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         case help = "Help"
         
         static let allValues = [home, languageToLearn, settings, inviteYourFriend, gradeApp, help]
+        static func getCorrespondingIdSegue(cell: CellsMenu) -> String{
+            switch cell {
+            case CellsMenu.home:
+                return "showHome"
+            case CellsMenu.languageToLearn:
+                return "showMyLanguagesViewController"
+            case CellsMenu.settings:
+                return "showSettingsViewController"
+            case CellsMenu.inviteYourFriend:
+                return "showInviteFriendViewController"
+            case CellsMenu.gradeApp:
+                return "showGradeAppViewController"
+            case CellsMenu.help:
+                return "showHelpViewController"
+            }
+        }
+        
         static let numberCells = allValues.count
     }
     
@@ -91,52 +108,55 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedCell = tableView.cellForRow(at: indexPath)!
         selectedCell.contentView.backgroundColor = selectCellColor
+
+        let idSeque = CellsMenu.getCorrespondingIdSegue(cell: CellsMenu.allValues[indexPath.row])
+        self.performSegue(withIdentifier: idSeque, sender: self)
         
         
-        let revealviewcontroller:SWRevealViewController = self.revealViewController()
-        
-        let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        var newViewcontroller: UIViewController
-        
-        switch((indexPath as NSIndexPath).row){
-        case 0:
-            newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "Home") as! Home
-            
-        case 1:
-            newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "MyLanguagesViewController") as! MyLanguagesViewController
-            
-        case 2:
-            newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "SettingsViewController") as! SettingsViewController
-            
-        case 3:
-            newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "InviteFriendViewController") as! InviteFriendViewController
-            
-        case 4:
-            newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "GradeAppViewController") as! GradeAppViewController
-        
-        case 5:
-            newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "HelpViewController") as! HelpViewController
-            
-        default:
-            newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "Home") as! Home
-            
-        }
-        
-        
-        let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
-        revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
+//        let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        var newViewcontroller: UIViewController
+//        
+//        switch((indexPath as NSIndexPath).row){
+//        case 0:
+//            newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "Home") as! Home
+//            
+//        case 1:
+//            newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "MyLanguagesViewController") as! MyLanguagesViewController
+//            
+//        case 2:
+//            newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "SettingsViewController") as! SettingsViewController
+//            
+//        case 3:
+//            newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "InviteFriendViewController") as! InviteFriendViewController
+//            
+//        case 4:
+//            newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "GradeAppViewController") as! GradeAppViewController
+//        
+//        case 5:
+//            newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "HelpViewController") as! HelpViewController
+//            
+//        default:
+//            newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "Home") as! Home
+//            
+//        }
+//        
+//        
+//        let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
+//        revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
     
     }
     
-    @IBAction func bigHomeButtonAction(_ sender: UIButton) {
-        let revealviewcontroller: SWRevealViewController = self.revealViewController()
-        
-        let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "Home") as! Home
-        let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
-        revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
-        
+    
+    
+    @IBAction func showHome(_ sender: UIButton) {
+        let idSeque = CellsMenu.getCorrespondingIdSegue(cell: CellsMenu.home)
+        self.performSegue(withIdentifier: idSeque, sender: self)
     }
+    
+    
+    
+   
+
     /*
      // MARK: - Navigation
      

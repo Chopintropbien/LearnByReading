@@ -12,19 +12,15 @@ private let reuseIdCLTOL = "languageCollecVCell"
 
 class ChooseLanguageToLearnCollectionVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    @IBOutlet weak var collectionView: UICollectionView!
     var langToLearn: [Lang]!
+    let idSegueClicOnCell = "chooseLanguageToLearn"
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        langToLearn = Lang.getAllExept(langs: [GetLanguageNav()])
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdCLTOL)
+        langToLearn = TextsData.langYouCanLearnWith(langNav: GetLanguageNav())
 
         // Do any additional setup after loading the view.
     }
@@ -35,17 +31,6 @@ class ChooseLanguageToLearnCollectionVC: UIViewController, UICollectionViewDataS
     }
     
     
-//    func collectio
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     // MARK: UICollectionViewDataSource
 
@@ -67,22 +52,30 @@ class ChooseLanguageToLearnCollectionVC: UIViewController, UICollectionViewDataS
         return cell
     }
 
-    // MARK: UICollectionViewDelegate
+    
 
     
+
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        assert(sender as? UICollectionViewCell != nil, "sender is not a collection view")
+        
+        if let indexPath = self.collectionView?.indexPath(for: sender as! UICollectionViewCell) {
+            if segue.identifier == idSegueClicOnCell {
+                SetLearningLang(lang: langToLearn[indexPath.row])
+            }
+        } else {
+            // Error sender is not a cell or cell is not in collectionView.
+        }
+    }
     
     
     
+    
+    /*
+    // MARK: UICollectionViewDelegate
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        SetLearningLang(lang: langToLearn[indexPath.row])
-        
-        
-        let revealviewcontroller: SWRevealViewController = self.revealViewController()
-        let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "Home") as! Home
-        let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
-        revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
     }
     
     
@@ -111,9 +104,10 @@ class ChooseLanguageToLearnCollectionVC: UIViewController, UICollectionViewDataS
 
     func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
         
-        
+        print("eeeeeeee")
     
     }
     
+ */
 
 }

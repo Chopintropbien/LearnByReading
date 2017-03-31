@@ -17,7 +17,6 @@ class languageCollecVCell: UICollectionViewCell {
         }
     }
     
-    
     @IBOutlet weak var flag: UIImageView!
     @IBOutlet weak var language: UILabel!
     

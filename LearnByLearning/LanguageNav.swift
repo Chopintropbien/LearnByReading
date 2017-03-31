@@ -20,7 +20,6 @@ class LanguageNav: UITableViewController {
         selectedMenuItem = langs.index(of: GetLanguageNav())
         
         
-        
         self.navigationController!.navigationBar.tintColor = UIColor.white
         self.title = Localization("Nav Language title")
         let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
@@ -83,19 +82,8 @@ class LanguageNav: UITableViewController {
 
             self.selectedMenuItem = (indexPath as NSIndexPath).row
             
-            switch (self.langs[indexPath.row]) {
-            case Lang.en:
-                SetLanguageNav(Lang.en)
-            case Lang.fr:
-                SetLanguageNav(Lang.fr)
-            case Lang.es:
-                SetLanguageNav(Lang.es)
-            case Lang.ru:
-                SetLanguageNav(Lang.ru)
-            default:
-                SetLanguageNav(Lang.en)
-            }
-
+            SetLanguageNav(self.langs[indexPath.row])
+            
             tableView.reloadData()
             tableView.selectRow(at: IndexPath(row: self.selectedMenuItem, section: 0), animated: false, scrollPosition: .middle)
         }))

@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
@@ -21,14 +20,25 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // https://github.com/jonkykong/SideMenu
+        // Define the menus
+        let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let menu = mainstoryboard.instantiateViewController(withIdentifier: "menuViewController") as! MenuViewController
+        let menuLeftNavigationController = UISideMenuNavigationController(rootViewController: menu)
+        menuLeftNavigationController.leftSide = true
+        SideMenuManager.menuLeftNavigationController = menuLeftNavigationController
+
+//         Enable gestures. The left and/or right menus must be set up above for these to work.
+//         Note that these continue to work on the Navigation Controller independent of the view controller it displays!
+        SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+        SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+
+        
+        
         self.texts = UserSave.getTextSaved()
         
         
         /* set nav menu */
-        
-        revealViewController().rearViewRevealWidth = -100
-        btnMenuButton.target = revealViewController()
-        btnMenuButton.action = #selector(SWRevealViewController.revealToggle(_:))
         
         self.navigationController!.navigationBar.tintColor = UIColor.white
         self.title = Localization("Home title")
@@ -99,5 +109,12 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
             
         }
+    }
+    
+    
+    // MARK: - Navigation
+    @IBAction func showSideMenu(_ sender: UIBarButtonItem) {
+        present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
+        
     }
 }

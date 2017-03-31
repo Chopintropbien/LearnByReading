@@ -15,11 +15,9 @@ class GradeAppViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         // Do any additional setup after loading the view.
         
-        revealViewController().rearViewRevealWidth = -100
-        menu.target = revealViewController()
-        menu.action = #selector(SWRevealViewController.revealToggle(_:))
         
         self.navigationController!.navigationBar.tintColor = almostBlack
         self.title = Localization("Rate app title")
@@ -40,14 +38,11 @@ class GradeAppViewController: UIViewController {
 
 
 
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func showSideMenu(_ sender: UIBarButtonItem) {
+        present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
+        
     }
-    */
 
 }

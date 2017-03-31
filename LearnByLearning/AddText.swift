@@ -154,27 +154,36 @@ class AddText: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        tableView.deselectRow(at: indexPath, animated: true)
-        let cell = tableView.cellForRow(at: indexPath) as! AddTextCell
-        
-        
-        currentText[indexPath.row].1 = !currentText[indexPath.row].1
-        cell.isDownloaded = currentText[indexPath.row].1
-
-        switch currentDifficulty {
-        case Difficulty.basic:
-            basicText = currentText
-        case Difficulty.intermediate:
-            intermediateText = currentText
-        case Difficulty.hard:
-            hardText = currentText
+        if(true){
+            //
+            performSegue(withIdentifier: "showPayement", sender: self)
+        }
+        else{
+            tableView.deselectRow(at: indexPath, animated: true)
+            let cell = tableView.cellForRow(at: indexPath) as! AddTextCell
+            
+            
+            currentText[indexPath.row].1 = !currentText[indexPath.row].1
+            cell.isDownloaded = currentText[indexPath.row].1
+            
+            switch currentDifficulty {
+            case Difficulty.basic:
+                basicText = currentText
+            case Difficulty.intermediate:
+                intermediateText = currentText
+            case Difficulty.hard:
+                hardText = currentText
+            }
+            
+            var allText = basicText + intermediateText
+            allText = allText + hardText
+            UserSave.saveText(texts: allText)
+            //        performSegueToReturnBack(text: basicText[indexPath.row].0)
+            // TODO choose what to do
         }
         
-        var allText = basicText + intermediateText
-        allText = allText + hardText
-        UserSave.saveText(texts: allText)
-//        performSegueToReturnBack(text: basicText[indexPath.row].0)
-        // TODO choose what to do
+        
+
     }
     
     

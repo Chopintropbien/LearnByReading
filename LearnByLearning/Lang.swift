@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum Lang: String{
     case DeviceLanguage = "DeviceLanguage"
@@ -22,7 +23,7 @@ enum Lang: String{
     
     
     
-    static var allValues: [Lang] = [fr, en, es, ru]
+    static var allValues: [Lang] = [fr, en, es, ru, de]
     static let numberLang: Int = allValues.count
     
     static func getAllExept(langs: [Lang]) -> [Lang]{
@@ -41,6 +42,8 @@ enum Lang: String{
             return "Español"
         case Lang.ru:
             return "Русский"
+        case Lang.de:
+            return "Deutsch"
         default:
             return "Undefine"
         }
@@ -56,6 +59,8 @@ enum Lang: String{
             return #imageLiteral(resourceName: "spain flag")
         case Lang.ru:
             return #imageLiteral(resourceName: "russia flag")
+        case Lang.de:
+            return #imageLiteral(resourceName: "german flag")
         default:
             return #imageLiteral(resourceName: "united-kingdom flag")
         }
@@ -64,15 +69,17 @@ enum Lang: String{
     static func backgroundImage(lang: Lang) -> UIImage{
         switch(lang){
         case Lang.en:
-            return #imageLiteral(resourceName: "home background")
+            return #imageLiteral(resourceName: "united-kingdom background")
         case Lang.fr:
-            return #imageLiteral(resourceName: "france flag")
+            return #imageLiteral(resourceName: "france background")
         case Lang.es:
-            return #imageLiteral(resourceName: "spain flag")
+            return #imageLiteral(resourceName: "spain background")
         case Lang.ru:
-            return #imageLiteral(resourceName: "russia flag")
+            return #imageLiteral(resourceName: "russia background")
+        case Lang.de:
+            return #imageLiteral(resourceName: "german background")
         default:
-            return #imageLiteral(resourceName: "united-kingdom flag")
+            return #imageLiteral(resourceName: "united-kingdom background")
         }
     }
     

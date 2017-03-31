@@ -51,7 +51,16 @@ class TextsData{
     
     
     
-    
+    static func langYouCanLearnWith(langNav: Lang) -> [Lang]{
+        return Lang.allValues.filter({ l in
+            TextsData.texts.contains(where: { t in
+                return t.originalText.0 == l && t.traductedText.contains(where: { d in
+                    return d.0 == langNav
+                })
+            })
+        })
+        
+    }
     
     static func langYouCanLearnWith(langNav: Lang, learningLang: Lang) -> [Lang]{
         return Lang.getAllExept(langs: [langNav, learningLang]).filter({ l in
