@@ -12,18 +12,43 @@ import AVFoundation
 
 class ReadTextOriginal: UIViewController {
 
-    var originalText: Text = El_jardín_de_Val.originalText {
+    var text: TraductedText = Alibi {
         didSet{
-            print("eeee")
             /* Text setting */
-            textTitle.text = originalText.title
-            textCore.text = originalText.text
+            textTitle.text = text.originalText.title
+            textCore.text = text.originalText.text
+            nameAudio = text.titleAudio
+            
+            /* audio */
+            
+            slider.minimumTrackTintColor = mainColor
+            switch PreferedReadingSpeed.get() {
+            case ReadingSpeed.slow:
+                self.chooseSlowSpeed(slowButton)
+            case ReadingSpeed.intermediate:
+                self.chooseIntermediateSpeed(mediumButton)
+            case ReadingSpeed.fast:
+                self.chooseFastSpeed(fastButton)
+            }
+            
+            _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(ReadTextOriginal.updateSlider), userInfo: nil, repeats: true)
+            
+            do{
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            }
+            catch{
+               print(error)
+            }
         }
     }
     
+    
+    
+    // speed
     @IBOutlet weak var speedButton: UIBarButtonItem!
 
     @IBOutlet weak var choseSpeedview: UIView!
+    @IBOutlet weak var setSpeedLabel: UILabel!
     @IBOutlet weak var slowButton: SpeedButton!
     @IBOutlet weak var mediumButton: SpeedButton!
     @IBOutlet weak var fastButton: SpeedButton!
@@ -48,12 +73,11 @@ class ReadTextOriginal: UIViewController {
     @IBOutlet weak var textTitle: UILabel!
     @IBOutlet weak var textCore: UITextView!
     
+    @IBOutlet weak var customBack: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        nameAudio = "1" //text.originalText.title
-        
+
         /* design */
         slowButton.setUp(selected: true)
         mediumButton.setUp(selected: false)
@@ -65,31 +89,20 @@ class ReadTextOriginal: UIViewController {
         choseSpeedview.layer.shadowColor = UIColor.lightGray.cgColor
         choseSpeedview.layer.cornerRadius = 4
         
+        /* text */
+        setText()
         
-        /* audio */
-
-        slider.minimumTrackTintColor = mainColor
-        switch PreferedReadingSpeed.get() {
-        case ReadingSpeed.slow:
-             self.chooseSlowSpeed(slowButton)
-        case ReadingSpeed.intermediate:
-            self.chooseIntermediateSpeed(mediumButton)
-        case ReadingSpeed.fast:
-            self.chooseFastSpeed(fastButton)
-        }
-
-        _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(ReadTextOriginal.updateSlider), userInfo: nil, repeats: true)
     }
-    
-    
-    
-    
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.accessibilityElementsHidden = false
         speedButton.accessibilityElementsHidden = false
         tabBarController?.navigationItem.rightBarButtonItem = speedButton
+        tabBarController?.navigationItem.leftBarButtonItem = customBack
+        
     }
+    
+    
     
     override func viewWillDisappear(_ animated: Bool) {
         self.pause()
@@ -98,6 +111,15 @@ class ReadTextOriginal: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func setText(){
+        self.title = Localization("ReadTextOriginal title")
+        self.setSpeedLabel.text = Localization("set speed")
+        self.slowButton.setTitle(Localization("slow"), for: .normal)
+        self.mediumButton.setTitle(Localization("medium"), for: .normal)
+        self.fastButton.setTitle(Localization("fast"), for: .normal)
+        self.tabBarItem.title = Localization("ORIGINAL")
     }
     
     
@@ -229,12 +251,21 @@ class ReadTextOriginal: UIViewController {
         }
         else{
             audioPlayer?.play()
-            playPauseButton.setImage(#imageLiteral(resourceName: "pause"), for: .normal)
+            setPayOrPauseImg()
         }
     }
     func pause(){
         audioPlayer?.pause()
-        playPauseButton.setImage(#imageLiteral(resourceName: "play"), for: .normal)
+        setPayOrPauseImg()
+    }
+    
+    func setPayOrPauseImg(){
+        if (audioPlayer?.isPlaying)!{
+            playPauseButton.setImage(#imageLiteral(resourceName: "pause"), for: .normal)
+        }
+        else{
+            playPauseButton.setImage(#imageLiteral(resourceName: "play"), for: .normal)
+        }
     }
     
     
@@ -242,6 +273,7 @@ class ReadTextOriginal: UIViewController {
         audioPlayer?.stop()
         audioPlayer?.currentTime = TimeInterval(slider.value)
         audioPlayer?.play()
+        setPayOrPauseImg()
     }
     
     
@@ -256,15 +288,12 @@ class ReadTextOriginal: UIViewController {
         let seconds = Int(t) % 60
         actualTimeLabel.text = String(format:"%02i:%02i", minutes, seconds)
     }
-    
-    /*
+
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+
+    @IBAction func back(_ sender: UIBarButtonItem) {
+        self.navigationController?.popViewController(animated: true)
     }
-    */
 
 }

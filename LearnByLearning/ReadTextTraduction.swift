@@ -15,21 +15,33 @@ class ReadTextTraduction: UIViewController {
     @IBOutlet weak var textTitle: UILabel!
     @IBOutlet weak var textCore: UITextView!
 
+    @IBOutlet weak var customBack: UIBarButtonItem!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationController?.accessibilityElementsHidden = true
 
-        
         textTitle.text = traduction.title
         textCore.text = traduction.text
+        
         
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         tabBarController?.navigationItem.rightBarButtonItem = nil
+        tabBarController?.navigationItem.leftBarButtonItem = customBack
+        
+        /* text */
+        setText()
     }
+    
+    func setText(){
+        self.title = Localization("ReadTextTraduction title")
+        self.tabBarItem.title = Localization("TRANSLATION")
+    }
+
     
 
     override func didReceiveMemoryWarning() {
@@ -43,14 +55,18 @@ class ReadTextTraduction: UIViewController {
     
     
     
-    /*
+    
+    
     // MARK: - Navigation
-
+    @IBAction func back(_ sender: UIBarButtonItem) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

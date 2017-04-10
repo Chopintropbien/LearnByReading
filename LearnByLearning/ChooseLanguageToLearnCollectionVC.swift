@@ -104,7 +104,6 @@ class ChooseLanguageToLearnCollectionVC: UIViewController, UICollectionViewDataS
 
     func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
         
-        print("eeeeeeee")
     
     }
     

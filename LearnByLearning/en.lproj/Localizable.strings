@@ -1,0 +1,469 @@
+/* Common */
+
+// Ok
+"Ok" = "";
+
+"yes" = "";
+
+"no" = "";
+
+// Cancel
+"Cancel" = "";
+
+// Please wait...
+"Please wait..." = "Annuler";
+
+// Could not send email
+"Could Not Send Email alert title" = "";
+
+// Your device could not send e-mail.  Please check e-mail configuration and try again.
+"Could Not Send Email alert core" = "";
+
+
+
+
+/* Home */
+
+// Home title
+"Home title" = "";
+
+// Add new text button
+"Add new text" = "";
+
+
+
+/* ReadTextOriginal */
+
+//ReadTextOriginal title
+"ReadTextOriginal title" = "";
+
+// set speed label
+"set speed" = "";
+
+// slow speed button
+"slow" = "";
+
+// medium speed button
+"medium" = "";
+
+// fast speed button
+"fast" = "";
+
+// ORIGINAL tabBarItem
+"ORIGINAL" = "";
+
+
+
+/* ReadTextTraduction */
+
+
+
+// ReadTextTraduction title
+"ReadTextTraduction title" = "";
+
+// TRANSLATION tabBarItem
+"TRANSLATION" = "";
+
+
+
+/* VocForText */
+
+// VocForText title
+"VocForText title" = "";
+
+// VOCABULARY tabBarItem
+"VOCABULARY" = "";
+
+
+
+/* AddTraductionVocForText */
+
+//
+"AddTraductionVocForText title" = "";
+
+// Cancel UIBarButtonItem
+"Cancel" = "";
+
+// Done UIBarButtonItem
+"Done AddTraductionVocForText" = "";
+
+
+
+/* AddText */
+
+// AddText title
+"AddText title" = "";
+
+// basic level button
+"basic level" = "";
+
+// intermediate level button
+"intermediate level" = "";
+
+// hard level button
+"hard level" = "";
+
+// Done button AddText
+"Done AddText" = "";
+
+
+/* ChoosePaymentPlanCV */
+
+// ChoosePaymentPlanCV title
+"ChoosePaymentPlanCV title" = "";
+
+// explanation choose PaymentPlan
+"explanation" = "";
+
+// Can not make payment title
+"Can not make payment title" = "";
+
+// Can not make payment body
+"Can not make payment body" = "";
+
+
+
+
+/* ChoosePaymentPlanButtonView */
+
+//
+"1MONTH" = "";
+"%@ every month" = "%@ every month";
+
+"3MONTH" = "";
+"6MONTH" = "";
+"Just %@ /Month" = "Just %@ /Month";
+"%@ every %d /Month" = "%@ every %d month";
+
+"YEAR" = "";
+"%@ every year" = "%@ every year";
+
+
+
+
+
+/* HighlightChoosePaymentPlanButtonView */
+
+// MOST POPULAR banner
+"MOST POPULAR" = "";
+
+
+/* MenuViewController */
+
+// MenuViewController title
+"MenuViewController title" = "";
+
+
+
+/* MyLanguagesViewController */
+
+// MyLanguagesViewController title
+"MyLanguagesViewController title" = "";
+
+// Choose an other language to learn
+"Choose an other language to learn" = "";
+
+// Download other language to learn
+"Download other language to learn" = "";
+
+
+
+/* InviteFriendViewController */
+
+// InviteFriendViewController title
+"InviteFriendViewController title" = "";
+
+// Do you love the app? label
+"Do you love the app?" = "";
+
+// You friend will surely love it too! Label
+"You friend will surely love it too! Share with them you experience!" = "";
+
+// Send a SMS button
+"Send a SMS" = "";
+
+// Send an e-mail button
+"Send an e-mail" = "";
+
+// mail subjet
+"mail subjet InviteFriendViewController" = "";
+
+// mail body
+"mail body InviteFriendViewController" = "";
+
+// SMS body
+"SMS body InviteFriendViewController" = "";
+
+// Can not send SMS title
+"Can not send SMS title" = "";
+
+// Can not send SMS body
+"Can not send SMS body" = "";
+
+
+/* GradeAppViewController */
+
+// GradeAppViewController title
+"GradeAppViewController title" = "";
+
+// Love the app? app
+"Love the app?" = "";
+
+// Grade the app label
+"Grade the app" = "";
+
+// Access to the AppStore button
+"Access to the AppStore" = "";
+
+
+
+/* HelpViewController */
+
+// HelpViewController title
+"HelpViewController title" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+
+/* SettingsViewController */
+
+// Settings title
+"Settings title" = "";
+
+//
+"General" = "";
+
+//
+"Navigation language" = "";
+
+//
+"App purshase" = "";
+
+//
+"Your abonnement" = "";
+
+//
+"About" = "";
+
+//
+"Credits" = "";
+
+//
+"Term and conditions" = "";
+
+
+
+/* LanguageNav */
+
+//
+"LanguageNav title" = "";
+
+// refreshAlert title
+"Refresh" = "";
+
+// refreshAlert core
+"All data will be lost." = "";
+
+
+
+
+
+/* CreditsVC title */
+
+// CreditsVC title
+"CreditsVC title" = "";
+
+// Translation russian-
+"Translation russian-english" = "";
+
+"Translation russian-spanish" = "";
+
+"Translation russian-german" = "";
+
+"Translation russian-french" = "";
+
+"Translation russian-italien" = "";
+
+
+// Translation german-
+"Translation german-english" = "";
+
+"Translation german-spanish" = "";
+
+"Translation german-french" = "";
+
+"Translation german-russian" = "";
+
+"Translation german-italien" = "";
+
+
+// Translation english-
+"Translation english-russian" = "";
+
+"Translation english-spanish" = "";
+
+"Translation english-french" = "";
+
+"Translation english-russian" = "";
+
+"Translation english-italien" = "";
+
+
+// Translation spanish-
+"Translation spanish-english" = "";
+
+"Translation spanish-russian" = "";
+
+"Translation spanish-french" = "";
+
+"Translation spanish-italien" = "";
+
+"Translation spanish-german" = "";
+
+// Translation french-
+"Translation french-english" = "";
+
+"Translation french-german" = "";
+
+"Translation french-italien" = "";
+
+"Translation french-russian" = "";
+
+"Translation german-spanish" = "";
+
+
+// Translation italien-
+"Translation italien-english" = "";
+
+"Translation italien-russian" = "";
+
+"Translation italien-french" = "";
+
+"Translation italien-german" = "";
+
+"Translation italien-spanish" = "";
+
+
+
+/* Lang */
+
+"English" = "";
+
+"French" = "";
+
+"Spanish" = "";
+
+"Russian" = "";
+
+"German" = "";
+
+"Italien" = "";
+
+
+
+/* GradeAppViewController */
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+
+/* GradeAppViewController */
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+
+/* GradeAppViewController */
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+
+/* GradeAppViewController */
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+
+
+
+
+
+
+
+
+
+

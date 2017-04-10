@@ -13,8 +13,14 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var menu: UIBarButtonItem!
 
     
+
+    @IBOutlet weak var generalLabel: UILabel!
     @IBOutlet weak var languageButton: SettingButton!
+    
+    @IBOutlet weak var aboLabel: UILabel!
     @IBOutlet weak var aboButton: SettingButton!
+    
+    @IBOutlet weak var aboutLabel: UILabel!
     @IBOutlet weak var creditsButton: SettingButton!
     @IBOutlet weak var termAndConditionButton: SettingButton!
     
@@ -33,9 +39,25 @@ class SettingsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController!.navigationBar.tintColor = UIColor.white
-        self.title = Localization("Settings")
         let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : UIColor.white]
+        
+        /* Text */
+        setText()
+    }
+    
+    func setText(){
+        self.title = Localization("Settings title")
+        
+        self.generalLabel.text = Localization("General")
+        self.languageButton.setTitle(Localization("Navigation language"), for: .normal)
+        
+        self.aboLabel.text = Localization("App purshase")
+        self.aboButton.setTitle(Localization("Your abonnement"), for: .normal)
+        
+        self.aboutLabel.text = Localization("About")
+        self.creditsButton.setTitle(Localization("Credits"), for: .normal)
+        self.termAndConditionButton.setTitle(Localization("Term and conditions"), for: .normal)
     }
 
     override func didReceiveMemoryWarning() {

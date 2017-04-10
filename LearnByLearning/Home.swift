@@ -14,7 +14,8 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tblTableView: UITableView!
     @IBOutlet weak var btnMenuButton: UIBarButtonItem!
     
-    var newDowload: TraductedText?
+    @IBOutlet weak var addTextButton: UIButton!
+    
     fileprivate var texts: [TraductedText]!
 
     override func viewDidLoad() {
@@ -41,18 +42,17 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
         /* set nav menu */
         
         self.navigationController!.navigationBar.tintColor = UIColor.white
-        self.title = Localization("Home title")
         let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : UIColor.white]
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if(newDowload != nil){
-            performSegue(withIdentifier: "showTextSegue", sender: self)
-        }
-        
         self.texts = UserSave.getTextSaved()
         tblTableView.reloadData()
+        
+        /* text */
+        self.title = Localization("Home title")
+        addTextButton.setTitle(Localization("Add new text"), for: .normal)
     }
     
     
@@ -98,16 +98,9 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         if segue.identifier == "showTextSegue"{
             let cv = segue.destination as? ReadTextTabBarController
-            
-            if(newDowload != nil){
-                cv?.text = newDowload
-                newDowload = nil
-            }
-            else{
-                let row = tblTableView.indexPathForSelectedRow?.row
-                cv?.text = texts[row!]
-            }
-            
+            let row = tblTableView.indexPathForSelectedRow?.row
+            cv?.text = texts[row!]
+
         }
     }
     

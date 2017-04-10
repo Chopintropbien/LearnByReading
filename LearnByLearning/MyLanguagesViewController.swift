@@ -14,6 +14,8 @@ class MyLanguagesViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var tableView: UITableView!
     
     
+    @IBOutlet weak var chooseOtherLanguageLabel: UILabel!
+    
     @IBOutlet weak var currentLangLabel: UILabel!
     @IBOutlet weak var currentLangImg: UIImageView!
     var currentLang: Lang!
@@ -22,28 +24,30 @@ class MyLanguagesViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-        
-        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        // design
         self.navigationController!.navigationBar.tintColor = UIColor.white
-        self.title = Localization("Language title")
         let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : UIColor.white]
         
-        
-    }
-    override func viewWillAppear(_ animated: Bool) {
+        // data
         currentLang = GetLearningLang()
         otherLangToLearn = TextsData.langYouCanLearnWith(langNav: GetLanguageNav(), learningLang: GetLearningLang())
-        
-        
         currentLangLabel.text = Lang.originalName(lang: currentLang)
         currentLangImg.image = Lang.originalFlag(lang: currentLang)
-        
         tableView.reloadData()
+        
+        
+        /* Text */
+        setText()
+        
     }
-
+    func setText(){
+        self.title = Localization("MyLanguagesViewController title")
+        self.chooseOtherLanguageLabel.text = Localization("Choose an other language to learn")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

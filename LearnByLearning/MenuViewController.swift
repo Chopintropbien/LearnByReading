@@ -18,14 +18,14 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     
     public enum CellsMenu: String{
-        case home = "Home"
-        case languageToLearn = "My language"
-        case settings = "Settings"
-        case inviteYourFriend = "Invite your friend"
-        case gradeApp = "Grade the app"
-        case help = "Help"
+        case home = "Home title"
+        case languageToLearn = "MyLanguagesViewController title"
+        case settings = "Settings title"
+        case inviteYourFriend = "InviteFriendViewController title"
+        case gradeApp = "GradeAppViewController title"
+        case help = "HelpViewController title"
         
-        static let allValues = [home, languageToLearn, settings, inviteYourFriend, gradeApp, help]
+        static let allValues = [home, /*languageToLearn,*/ settings, inviteYourFriend, gradeApp/*, help*/]
         static func getCorrespondingIdSegue(cell: CellsMenu) -> String{
             switch cell {
             case CellsMenu.home:
@@ -43,15 +43,32 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             }
         }
         
+        static func iconArray(cell: CellsMenu) -> UIImage{
+            switch cell {
+            case CellsMenu.home:
+                return #imageLiteral(resourceName: "home menu")
+            case CellsMenu.languageToLearn:
+                return #imageLiteral(resourceName: "language menu")
+            case CellsMenu.settings:
+                return #imageLiteral(resourceName: "settings menu")
+            case CellsMenu.inviteYourFriend:
+                return #imageLiteral(resourceName: "invite friend menu")
+            case CellsMenu.gradeApp:
+                return #imageLiteral(resourceName: "grade app menu")
+            case CellsMenu.help:
+                return #imageLiteral(resourceName: "help menu")
+            }
+        }
+        
         static let numberCells = allValues.count
     }
-    
-    var iconArray:Array = [UIImage]()
-    
+
+    override func viewWillAppear(_ animated: Bool) {
+        self.title = Localization("MenuViewController title")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        iconArray = [UIImage(named:"home menu")!, UIImage(named:"language menu")!, UIImage(named:"settings menu")!, UIImage(named:"invite friend menu")!, UIImage(named:"grade app menu")!, UIImage(named:"help menu")! ]
         
         tblTableView.selectRow(at: IndexPath(row: 0, section: 0), animated: false, scrollPosition: .none)
         let selectedCell = tblTableView.cellForRow(at: IndexPath(row: 0, section: 0))!
@@ -86,7 +103,7 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCell", for: indexPath) as! MenuCell
         
         cell.lblMenuname.text! = Localization(CellsMenu.allValues[indexPath.row].rawValue)
-        cell.imgIcon.image = iconArray[indexPath.row]
+        cell.imgIcon.image = CellsMenu.iconArray(cell: CellsMenu.allValues[indexPath.row])
         
         return cell
     }

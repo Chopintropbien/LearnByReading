@@ -9,31 +9,45 @@
 import UIKit
 import MessageUI
 
+
+
+
 class InviteFriendViewController: UIViewController, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate {
 
     @IBOutlet weak var menu: UIBarButtonItem!
+    
+    
+    @IBOutlet weak var loveAppLabel: UILabel!
+    @IBOutlet weak var doYouLikeToShareLabel: UILabel!
     
     @IBOutlet weak var sendEmailButton: InviteFriendButton!
     @IBOutlet weak var sendSmsButton: InviteFriendButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         
-        
-        
-        // Do any additional setup after loading the view.
-
-        
+        // design
         self.navigationController!.navigationBar.tintColor = almostBlack
-        self.title = Localization("Settings title")
         let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : almostBlack]
-        
         
         // desugn button
         sendEmailButton.setUp(img: #imageLiteral(resourceName: "email icon"))
         sendSmsButton.setUp(img: #imageLiteral(resourceName: "sms icon"))
         
+        /* Text */
+        setText()
+    }
+    
+    func setText(){
+        self.title = Localization("InviteFriendViewController title")
+        self.loveAppLabel.text = Localization("Do you love the app?")
+        self.doYouLikeToShareLabel.text = Localization("You friend will surely love it too! Share with them you experience!")
+        self.sendSmsButton.setTitle(Localization("Send a SMS"), for: .normal)
+        self.sendEmailButton.setTitle(Localization("Send an e-mail"), for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,6 +65,7 @@ class InviteFriendViewController: UIViewController, MFMailComposeViewControllerD
         }
     }
     
+    // WhatsApp
     
     @IBAction func sendTextMessageButtonTapped(sender: UIButton) {
         let urlString = "Sending WhatsApp message through app in Swift"
@@ -66,19 +81,21 @@ class InviteFriendViewController: UIViewController, MFMailComposeViewControllerD
     }
     
     
+    // mail
+    
     func configuredMailComposeViewController() -> MFMailComposeViewController {
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
         
-        mailComposerVC.setToRecipients(["mollierlauriane@gmail.com"])
-        mailComposerVC.setSubject("Sending you an in-app e-mail...")
-        mailComposerVC.setMessageBody("Sending e-mail in-app is not so bad!", isHTML: false)
+        mailComposerVC.setToRecipients([])
+        mailComposerVC.setSubject(Localization("mail subjet InviteFriendViewController"))
+        mailComposerVC.setMessageBody(Localization("mail body InviteFriendViewController"), isHTML: false)
         
         return mailComposerVC
     }
     
     func showSendMailErrorAlert() {
-        let sendMailErrorAlert = UIAlertController(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", preferredStyle: .alert)
+        let sendMailErrorAlert = UIAlertController(title: Localization("Could Not Send Email alert title"), message: Localization("Could Not Send Email alert core"), preferredStyle: .alert)
 
         sendMailErrorAlert.show(self, sender: self)
     }
@@ -106,13 +123,26 @@ class InviteFriendViewController: UIViewController, MFMailComposeViewControllerD
     // SMS
     
     @IBAction func sendMessage(sender: AnyObject) {
-        let messageVC = MFMessageComposeViewController()
         
-        messageVC.body = "Enter a message";
-        messageVC.recipients = ["Enter tel-nr"]
-        messageVC.messageComposeDelegate = self;
+        if (MFMessageComposeViewController.canSendText()) {
+            let messageVC = MFMessageComposeViewController()
+            
+            messageVC.body = Localization("SMS body InviteFriendViewController");
+            messageVC.recipients = []
+            messageVC.messageComposeDelegate = self;
+            
+            self.present(messageVC, animated: false, completion: nil)
+        }
+        else if let topController = UIApplication.topViewController() {
+            // TODO
+            let alert = UIAlertController(title: Localization("Can not send SMS title"), message: Localization("Can not send SMS body"), preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: Localization("Ok"), style: UIAlertActionStyle.default, handler: nil))
+            topController.present(alert, animated: true, completion: nil)
+        }
+        else{
+            // TODO
+        }
         
-        self.present(messageVC, animated: false, completion: nil)
     }
     
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
@@ -136,7 +166,6 @@ class InviteFriendViewController: UIViewController, MFMailComposeViewControllerD
     
     @IBAction func showSideMenu(_ sender: UIBarButtonItem) {
         present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
-        
     }
 
 }

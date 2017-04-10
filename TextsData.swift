@@ -32,9 +32,9 @@ class TextsData{
     static func getIdsTextsFirstDowload() -> String{
         switch GetLearningLang() {
         case Lang.en:
-            return El_jardín_de_Val.id
+            return ZakoldovannyjKrug.id
         default:
-            return El_jardín_de_Val.id
+            return ZakoldovannyjKrug.id
         }
     }
     
@@ -85,6 +85,6 @@ class TextsData{
     
 
     
-    static public let texts: [TraductedText] = [El_jardín_de_Val]
+    static public let texts: [TraductedText] = [Sjurpriz, Svezhyj, ZakoldovannyjKrug]
     
 }

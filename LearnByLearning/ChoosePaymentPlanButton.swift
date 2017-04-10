@@ -7,6 +7,33 @@
 //
 
 import UIKit
+import StoreKit
+
+extension Decimal {
+    // The floating point number looks like 3.14
+    func format() -> String {
+        let format = ".2"
+        return String(format: "%\(format)f", self as CVarArg)
+    }
+}
+
+extension SKProduct {
+    
+    func localizedPrice(nbMonth: Decimal) -> (perMonth: String, total: String) {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+
+        formatter.locale = self.priceLocale
+
+        
+        let total = formatter.string(from: self.price)!
+        let perM = ((self.price as Decimal) + 0.01 ) / nbMonth - 0.01 // TODO just work with euro and $
+        let perMonth = formatter.string(for: perM)
+        return (perMonth!, total)
+    }
+    
+}
+
 
 class ChoosePaymentPlanButtonView: UIView {
     
@@ -16,6 +43,36 @@ class ChoosePaymentPlanButtonView: UIView {
     let button = UIButton()
     let nbMonthView = UIView()
     
+    // digit label
+    let nbMonthLabel = UILabel()
+    
+    // month label
+    let monthLabel = UILabel()
+    
+    /* price */
+    let pricePerMonthLabel = UILabel()
+    let totalPriceLabel = UILabel()
+    
+    var product: SKProduct? {
+        didSet{
+            button.addTarget(self, action: #selector(buyProduct), for: .touchUpInside)
+            
+            /* Set text */
+            self.setText(product: product!)
+        }
+    }
+    
+
+    
+    func buyProduct(sender: UIButton!) {
+        if(self.product != nil){
+           StoreManager.shared.buy(product: self.product!)
+        }
+        else{
+            print("Product not set")
+        }
+        
+    }
     
     
     public func setUp(){
@@ -50,8 +107,6 @@ class ChoosePaymentPlanButtonView: UIView {
         button.addSubview(nbMonthView)
         
         // digit label
-        let nbMonthLabel = UILabel()
-        nbMonthLabel.text = "1 "
         nbMonthLabel.font = UIFont(name: "Avenir-Black", size: 36)
         nbMonthLabel.textColor = UIColor.white
         nbMonthLabel.textAlignment = .center
@@ -59,8 +114,6 @@ class ChoosePaymentPlanButtonView: UIView {
         nbMonthView.addSubview(nbMonthLabel)
         
         // month label
-        let monthLabel = UILabel()
-        monthLabel.text = "MONTH"
         monthLabel.font = UIFont(name: "Avenir-Black", size: 20)
         monthLabel.textColor = UIColor.white
         monthLabel.textAlignment = .center
@@ -71,8 +124,6 @@ class ChoosePaymentPlanButtonView: UIView {
         
         
         /* price */
-        
-        let pricePerMonthLabel = UILabel()
         pricePerMonthLabel.frame = nbMonthLabel.frame
         pricePerMonthLabel.frame.origin.x = nbMonthView.frame.size.width
         pricePerMonthLabel.frame.size.width = button.frame.size.width - nbMonthView.frame.size.width
@@ -80,10 +131,9 @@ class ChoosePaymentPlanButtonView: UIView {
         pricePerMonthLabel.adjustsFontSizeToFitWidth = true
         pricePerMonthLabel.textAlignment = .center
         pricePerMonthLabel.textColor = darkGray
-        pricePerMonthLabel.text = "Just 4,99$ a month"
         button.addSubview(pricePerMonthLabel)
         
-        let totalPriceLabel = UILabel()
+        
         totalPriceLabel.frame = monthLabel.frame
         totalPriceLabel.frame.origin.x = monthLabel.frame.size.width
         totalPriceLabel.frame.size.width = button.frame.size.width - monthLabel.frame.size.width
@@ -91,8 +141,50 @@ class ChoosePaymentPlanButtonView: UIView {
         totalPriceLabel.adjustsFontSizeToFitWidth = true
         totalPriceLabel.textColor = gray
         totalPriceLabel.textAlignment = .center
-        totalPriceLabel.text = "For a total of 20,99$"
         button.addSubview(totalPriceLabel)
+        
+    }
+    
+    func setText(product: SKProduct){
+        switch product.productIdentifier {
+        case "lauriane.molllier.learnByReading.russian.1month":
+            let nbMonth = 1
+            nbMonthLabel.text = String(nbMonth)
+            monthLabel.text = Localization(String(nbMonth) + "MONTH")
+            
+            let price = product.localizedPrice(nbMonth: Decimal(nbMonth))
+            pricePerMonthLabel.text = String(format:Localization("Just %@ /Month"), price.perMonth)
+            totalPriceLabel.text = String(format:Localization("%@ every month"), price.total, nbMonth)
+
+            
+        case "lauriane.molllier.learnByReading.russian.3month":
+            let nbMonth = 3
+            nbMonthLabel.text = String(nbMonth)
+            monthLabel.text = Localization(String(nbMonth) + "MONTH")
+            
+            let price = product.localizedPrice(nbMonth: Decimal(nbMonth))
+            pricePerMonthLabel.text = String(format:Localization("Just %@ /Month"), price.perMonth)
+            totalPriceLabel.text = String(format:Localization("%@ every %d /Month"), price.total, nbMonth)
+        case "lauriane.molllier.learnByReading.russian.6month":
+            let nbMonth = 6
+            nbMonthLabel.text = String(nbMonth)
+            monthLabel.text = Localization(String(nbMonth) + "MONTH")
+            
+            let price = product.localizedPrice(nbMonth: Decimal(nbMonth))
+            pricePerMonthLabel.text = String(format:Localization("Just %@ /Month"), price.perMonth)
+            totalPriceLabel.text = String(format:Localization("%@ every %d /Month"), price.total, nbMonth)
+        case "lauriane.molllier.learnByReading.russian.12month":
+            let nbMonth = 12
+            nbMonthLabel.text = String(nbMonth)
+            monthLabel.text = Localization("YEAR")
+            
+            let price = product.localizedPrice(nbMonth: Decimal(nbMonth))
+            pricePerMonthLabel.text = String(format:Localization("Just %@ /Month"), price.perMonth)
+            totalPriceLabel.text = String(format:Localization("%@ every year"), price.total, nbMonth)
+        default:
+            print("ERROR: id product no valid")
+        }
+        
 
     }
 

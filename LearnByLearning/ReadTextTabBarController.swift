@@ -54,16 +54,20 @@ class ReadTextTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.selectedIndex = 1
+    
         // Do any additional setup after loading the view.
         
         if let rtt = self.viewControllers?[0] as? ReadTextTraduction{
             rtt.traduction = text.getTranslatedText(lang: GetLanguageNav())!
+            rtt.setText()
         }
         if let rto = self.viewControllers?[1] as? ReadTextOriginal{
-            rto.originalText = text.originalText
+            rto.text = text
+            rto.setText()
         }
         if let vft = self.viewControllers?[2] as? VocForText{
             vft.text = text
+            vft.setText()
         }
         
         

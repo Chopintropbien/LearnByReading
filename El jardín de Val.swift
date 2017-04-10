@@ -28,4 +28,4 @@ let El_jardín_de_Val: TraductedText = TraductedText(
           OriginalWord(lang: Lang.es , wordInText: "se muda", neutralWord: "mudarse") : [Word(lang: Lang.en, neutralWord: "move / change"), Word(lang: Lang.de, neutralWord: "umkleiden / einziehen ")],
           OriginalWord(lang: Lang.es , wordInText: "nuevos", neutralWord: "nuevo/a") : [Word(lang: Lang.en, neutralWord: "new"), Word(lang: Lang.de, neutralWord: "neu ")],
           OriginalWord(lang: Lang.es , wordInText: "conocen", neutralWord: "conocer") : [Word(lang: Lang.en, neutralWord: "know"), Word(lang: Lang.de, neutralWord: "kennen")]
-    ], level: Level.A2, author: "Shantel Ivits at BC Open Textbooks")
+    ], level: Level.A2, author: "Shantel Ivits at BC Open Textbooks", titleAudio: "")

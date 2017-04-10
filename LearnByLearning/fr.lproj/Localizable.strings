@@ -1,202 +1,457 @@
-/* verbes */
-" verbes" = " verbes";
+/* Common */
 
-/* Niveau avancé */
-"Advanced Level" = "Advanced Level";
-
-/* Tous (niveau) */
-"All" = "All";
-
-/* Niveau Elémentaire */
-"Basic Level" = "Basic Level ";
-
-/* Choisissez votre niveau */
-"Choose your level" = "Choose your level";
-
-/* Classés par ordre alphabétique */
-"Classified by alphabetical order" = "Classified by alphabetical order";
-
-/* Classés celon la forme: */
-"Classified by form" = "Classified by form";
-
-/* Tous niveaux */
-"Every Level" = "Every Level";
-
-
-/* Niveau Intermédiare */
-"Intermediate Level" = "Intermediate Level";
-
-/* Les verbes forts */
-"Irregular verbs" = "Irregular verbs";
-
-/* Suivant button */
-"Next" = "Next";
-
-/* Aléatoire */
-"Random" = "Random";
-
-/* Ordre aléatoire */
-"Random order" = "Random order";
-
-/* SELECT (en majuscule) */
-"SELECT" = "SELECT";
-
-/* Essayer de vous souvenir de ces */
-"Try to remember this " = "Try to remember this ";
-
-
-
-
-
-
-
-/* No internet connection */
-"No internet connection" = "No internet connection";
-
-"This page is only accessible with a connection internet." = "Sorry, this part of the application require an internet connection to access to AppStore.";
-
-
-/* not allowed to buy this product */
-"Your are not allowed to buy this product" = "Permission denied";
-
-"Our application in accessible by all people 4+" = "If you are seeing this page, please contacte us. Our application should be accessible by all people aged 4 years and older.";
-
-
-/* buy page */
-"Do you want to learn even more verbs?" = "Do you want to learn even more verbs?";
-
-"Full access to all verbs in " = "Full access to all verbs in ";
-" level" = "-level";
-
-"or" = "or";
-
-"Full access to ALL verbs in ALL level" = "Full access to ALL verbs in ALL level";
-
-
-
-
-
-"Finish" = "Finish";
-
-
-/* Settings */
-
-"Settings" = "Settings";
-
-"Grammar and help" = "Grammar and help";
-
-"Grammar" = "Grammar";
-
-"Help" = "Help";
-
-"General" = "General";
-
-"Language" = "Language";
-
-"Number of reading" = "Number of readings";
-
-"Number of random verb" = "Number of random verbs";
-
-"Number of random verb title" = "Random verbs";
-
-"Service action" = "Service action";
-
-"Restore previus purchases" = "Restore previous purchases";
-
-
-
-/* inAppPurshase */
-"Internet connection to slow :" = "Internet connection too slow";
-
+// Ok
 "Ok" = "Ok";
 
-"Unable to get your previous purchases" = "Unable to get your previous purchases";
+"yes" = "Oui";
 
-"Transaction Error:" = "Transaction Error:";
+"no" = "Non";
 
-"Action available only with an internet connection" = "Action available only with an internet connection";
+// Cancel
+"Cancel" = "Annuler";
 
-"Please wait..." = "Please wait…";
+// Please wait...
+"Please wait..." = "Patientez...";
 
-"Transaction successful:" = "Transaction successful:";
+// Could not send email
+"Could Not Send Email alert title" = "Impossiblilité d'envoyer un mail";
 
-"Previous purchases restored" = "Previous purchases restored:";
-
-
-
-
-
-
-
-
-/*specific german app*/
-
-/* Voici les verbes forts allemand de forme */
-"Here are german irregular verbs by form: unclassifiable" = "Here are german irregular verbs by form: unclassifiable";
-
-/* Voici les verbes forts allemand de forme */
-"Here are german irregular verbs by form: weak-irregular" = "Here are german irregular verbs by form: weak-irregular";
-
-/* Voici les verbes forts allemand commençant par */
-"Here are german irregular verbs who begins by: " = "Here are german irregular verbs who begins by: ";
-
-/* Voici les verbes forts allemand de forme */
-"Here are german irregular verbs by form: " = "Here are german irregular verbs by form: ";
-"Here are german irregular verbs who begins by: Part2" = "";
-
-/* inclassable button */
-"unclassifiable" = "unclassifiable";
-
-/* faible irrégulière catégorie */
-"weak-irregular-feminin" = "weak-irregular";
-
-/* faible irrégulier button */
-"weak-irregular-masculin" = "weak-irregular";
-
-
-
-/* grammar */
-
-"intro" = "There are 3 types of verbs in German.  Each category of verbs takes characteristic endings for its past participles and its simple past forms.\n\nStrong verbs are ”irregular” (though not necessarily in all their forms), weak verbs are ”regular” and ”irregular-weak verbs” are a small class of verbs that take weak verb endings but are, nevertheless, irregular.";
-
-"titleWeak" = "1. Weak [regular] verbs";
-
-"textWeak" = "These are the verbs with no stem-vowel changes in any tense. They take -te endings in Simple Past, and -t endings for their past participles:";
-
-"titleStrong" = "2. Strong [irregular] verbs";
-
-"textStrong" = "These are the verbs that have stem-vowel changes in one or more of the tenses (possibly including the present tense). In the Simple Past, they take the same endings as modal verbs (i.e. in particular, no endings for 1st and 3rd person singular); their past participles end in -en:";
-
-"titleIrregularWeak" = "3. Irregular-weak verbs";
-
-"textIrregularWeak" = "These are verbs with weak verb endings [-te endings in Simple Past and Subjunctive II, and -t endings for their past participles], but which, nevertheless, are NOT regular (i.e. they do have vowel changes). The following 8 mixed verbs (and their compounds) are very common:";
-
-
-
-/* Help */
-
-"introTitle" = "Application Presentation";
-
-"introText1" = "In our application, you will learn verbs according to the following picture.\n\nFirst come the infinitive form (surrounded) and then, the present of this verb, the preterit and the past participle, all conjugated in the third person singular: ”er/sie/es”";
-
-"introText2" = "Once you have selected a level, you can learn German irregular verbs different ways.";
-
-"titleRandomOrder" = "1. Learning with random order";
-
-"textRandomOrder" = "This method is perfect to review verbs. You will have to remember a certain number of verbs randomly selected in your level. (This amount can be changed in the settings)";
-
-"titleClassifiedForm" = "2. Learning classified by form";
-
-"textClassifiedForm" = "Most of the German irregular verbs follow certain patterns. With our App, you have the opportunity to learn them sorted by form.\n\nA form is composed of 3 vowels, for example, ”i - a – u.” This means that the vowel of the root will be ”i” for the infinitive form, ”a” for the preterit and ”u” for the past participle";
-
-"titleAlphabetical" = "3. Alphabetical order";
-
-"textAlphabetical" = "If you prefer, you can learn the verbs simply by sorting in alphabetical order. ";
+// Your device could not send e-mail.  Please check e-mail configuration and try again.
+"Could Not Send Email alert core" = "Votre appareil ne peut pas envoyer d'email. Vérifier vos configurations et réessayer ultérieurement.";
 
 
 
 
+/* Home */
 
+// Home title
+"Home title" = "Accueil";
+
+// Add new text button
+"Add new text" = "Plus de textes";
+
+
+
+/* ReadTextOriginal */
+
+//ReadTextOriginal title
+"ReadTextOriginal title" = "Texte original";
+
+// set speed label
+"set speed" = "Vitesse de lecture";
+
+// slow speed button
+"slow" = "Lente";
+
+// medium speed button
+"medium" = "Moyenne";
+
+// fast speed button
+"fast" = "Rapide";
+
+// ORIGINAL tabBarItem
+"ORIGINAL" = "ORIGINAL";
+
+
+
+/* ReadTextTraduction */
+
+// ReadTextTraduction title
+"ReadTextTraduction title" = "Traduction";
+
+// TRANSLATION tabBarItem
+"TRANSLATION" = "TRADUCTION";
+
+
+
+/* VocForText */
+
+// VocForText title
+"VocForText title" = "Vocabulaire";
+
+// VOCABULARY tabBarItem
+"VOCABULARY" = "VOCABULAIRE";
+
+
+
+/* AddTraductionVocForText */
+
+//
+"AddTraductionVocForText title" = "Ajouter des mots";
+
+// Done UIBarButtonItem
+"Done AddTraductionVocForText" = "Sauver";
+
+
+
+/* AddText */
+
+// AddText title
+"AddText title" = "Plus des textes";
+
+// basic level button
+"basic level" = "Basique";
+
+// intermediate level button
+"intermediate level" = "Intermédiaire";
+
+// hard level button
+"hard level" = "Avancé";
+
+// Done button AddText
+"Done AddText" = "Sauver";
+
+
+/* ChoosePaymentPlanCV */
+
+// ChoosePaymentPlanCV title
+"ChoosePaymentPlanCV title" = "Choisissez un abonnement";
+
+// explanation choose PaymentPlan
+"explanation" = "Choissez un abonnement pour pouvoir avoir accès à toutes les fonctionnalités de la langue choisie";
+
+// Can not make payment title
+"Can not make payment title" = "Impossibilité de paiement";
+
+// Can not make payment body
+"Can not make payment body" = "Vous n'êtes pas authorisé-e à accéder aux paiements de cette application. Vérifier vos configurations et réessayer ultérieurement.";
+
+
+/* ChoosePaymentPlanButtonView */
+
+//
+"1MONTH" = "MOIS";
+"%@ every month" = "%@ tous les mois";
+
+"3MONTH" = "MOIS";
+"6MONTH" = "MOIS";
+"Just %@ /Month" = "Seulement %@ /Mois";
+"%@ every %d /Month" = "%@ tous les %d mois";
+
+"YEAR" = "AN";
+"%@ every year" = "%@ tous les ans";
+
+
+
+
+
+/* HighlightChoosePaymentPlanButtonView */
+
+// MOST POPULAR banner
+"MOST POPULAR" = "RECOMMANDÉ";
+
+
+/* MenuViewController */
+
+// MenuViewController title
+"MenuViewController title" = "Menu";
+
+
+
+/* MyLanguagesViewController */
+
+// MyLanguagesViewController title
+"MyLanguagesViewController title" = "Mes langues";
+
+// Choose an other language to learn
+"Choose an other language to learn" = "Choissez une autre langue à apprendre";
+
+// Download other language to learn
+"Download other language to learn" = "Télécharger une autre langue à apprendre";
+
+
+
+/* InviteFriendViewController */
+
+// InviteFriendViewController title
+"InviteFriendViewController title" = "Inviter vos amis";
+
+// Do you love the app? label
+"Do you love the app?" = "Aimez-vous notre application?";
+
+// You friend will surely love it too! Label
+"You friend will surely love it too! Share with them you experience!" = "Vos amis vont surement aussi l'adorer. Pertager votre expérience!";
+
+// Send a SMS button
+"Send a SMS" = "Envoyer un SMS";
+
+// Send an e-mail button
+"Send an e-mail" = "Envoyer un email";
+
+// mail subjet
+"mail subjet InviteFriendViewController" = "";
+
+// mail body
+"mail body InviteFriendViewController" = "";
+
+// SMS body
+"SMS body InviteFriendViewController" = "";
+
+// Can not send SMS title
+"Can not send SMS title" = "";
+
+// Can not send SMS body
+"Can not send SMS body" = "";
+
+
+/* GradeAppViewController */
+
+// GradeAppViewController title
+"GradeAppViewController title" = "Notez l'App";
+
+// Love the app? app
+"Love the app?" = "Aimez-vous notre application?";
+
+// Grade the app label
+"Grade the app" = "Aidez nous à nous faire connaître et mettez 5 étoiles sur l'AppStore";
+
+// Access to the AppStore button
+"Access to the AppStore" = "Accès à l'AppStore";
+
+
+
+/* HelpViewController */
+
+// HelpViewController title
+"HelpViewController title" = "Aide";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+
+/* SettingsViewController */
+
+// Settings title
+"Settings title" = "Paramètres";
+
+//
+"General" = "Général";
+
+//
+"Navigation language" = "Langue de navigation";
+
+//
+"App purshase" = "Achats intégrés";
+
+//
+"Your abonnement" = "Votre abonnement";
+
+//
+"About" = "À propos";
+
+//
+"Credits" = "Crédits";
+
+//
+"Term and conditions" = "CGV";
+
+
+
+/* LanguageNav */
+
+//
+"LanguageNav title" = "Langue de navigation";
+
+// refreshAlert title
+"Refresh" = "Modifier la langue de navigation";
+
+// refreshAlert core]
+"All data will be lost." = "Êtes-vous certain-e de modifier la langue de navigation?";
+
+
+//"All data will be lost." = "Si vous modifier la langue de navigation, certains textes ne seront plus disponible dans la nouvelle langue";
+
+
+
+
+
+/* CreditsVC title */
+
+// CreditsVC title
+"CreditsVC title" = "Crédits";
+
+// Translation russian-
+"Translation russian-english" = "Traduction russe-anglais";
+
+"Translation russian-spanish" = "Traduction russe-espagnol";
+
+"Translation russian-german" = "Traduction russe-allemand";
+
+"Translation russian-french" = "Traduction russe-français";
+
+"Translation russian-italien" = "Traduction russe-italien";
+
+
+// Translation german-
+"Translation german-english" = "";
+
+"Translation german-spanish" = "";
+
+"Translation german-french" = "";
+
+"Translation german-russian" = "";
+
+"Translation german-italien" = "";
+
+
+// Translation english-
+"Translation english-russian" = "";
+
+"Translation english-spanish" = "";
+
+"Translation english-french" = "";
+
+"Translation english-russian" = "";
+
+"Translation english-italien" = "";
+
+
+// Translation spanish-
+"Translation spanish-english" = "";
+
+"Translation spanish-russian" = "";
+
+"Translation spanish-french" = "";
+
+"Translation spanish-italien" = "";
+
+"Translation spanish-german" = "";
+
+// Translation french-
+"Translation french-english" = "";
+
+"Translation french-german" = "";
+
+"Translation french-italien" = "";
+
+"Translation french-russian" = "";
+
+"Translation german-spanish" = "";
+
+
+// Translation italien-
+"Translation italien-english" = "";
+
+"Translation italien-russian" = "";
+
+"Translation italien-french" = "";
+
+"Translation italien-german" = "";
+
+"Translation italien-spanish" = "";
+
+
+
+/* Lang */
+
+"English" = "Anglais";
+
+"French" = "Français";
+
+"Spanish" = "Espagnol";
+
+"Russian" = "Russe";
+
+"German" = "Allemand";
+
+"Italien" = "Italien";
+
+
+
+/* GradeAppViewController */
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+
+/* GradeAppViewController */
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+
+/* GradeAppViewController */
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+
+/* GradeAppViewController */
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
 
 
 

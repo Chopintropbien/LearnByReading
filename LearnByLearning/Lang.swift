@@ -49,6 +49,23 @@ enum Lang: String{
         }
     }
     
+    static func nameLoacalizated(lang: Lang) -> String{
+        switch(lang){
+        case Lang.en:
+            return Localization("English")
+        case Lang.fr:
+            return Localization("French")
+        case Lang.es:
+            return Localization("Spanish")
+        case Lang.ru:
+            return Localization("Russian")
+        case Lang.de:
+            return Localization("German")
+        default:
+            return "Undefine"
+        }
+    }
+    
     static func originalFlag(lang: Lang) -> UIImage{
         switch(lang){
         case Lang.en:

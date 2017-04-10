@@ -28,7 +28,7 @@ func GetLearningLang() -> Lang{
 
 func defaultLang() -> Lang{
     if(GetLanguageNav() == Lang.en){
-        return Lang.es
+        return Lang.ru
     }else{
         return Lang.en
     }

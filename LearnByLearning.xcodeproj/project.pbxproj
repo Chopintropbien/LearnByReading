@@ -13,7 +13,7 @@
 		9821944F1E8BA70600043300 /* ChoosePaymentPlanCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9821944E1E8BA70600043300 /* ChoosePaymentPlanCV.swift */; };
 		982194511E8BA72300043300 /* ChoosePaymentPlanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982194501E8BA72300043300 /* ChoosePaymentPlanButton.swift */; };
 		982194531E8BF21100043300 /* HighlightChoosePaymentPlanButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982194521E8BF21100043300 /* HighlightChoosePaymentPlanButtonView.swift */; };
-		982194561E8C033C00043300 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982194551E8C033C00043300 /* IAPHelper.swift */; };
+		982194561E8C033C00043300 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982194551E8C033C00043300 /* StoreManager.swift */; };
 		9821945C1E8CD7E000043300 /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982194581E8CD7E000043300 /* SideMenuManager.swift */; };
 		9821945D1E8CD7E000043300 /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982194591E8CD7E000043300 /* SideMenuTransition.swift */; };
 		9821945E1E8CD7E000043300 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9821945A1E8CD7E000043300 /* UISideMenuNavigationController.swift */; };
@@ -27,6 +27,17 @@
 		9823AE921E65CBA800AB376C /* LearningLang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823AE911E65CBA800AB376C /* LearningLang.swift */; };
 		9823AE941E65CBBC00AB376C /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823AE931E65CBBC00AB376C /* Lang.swift */; };
 		9823AE981E66028200AB376C /* LanguageNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823AE971E66028200AB376C /* LanguageNav.swift */; };
+		9826BB091E94FB4A00E7CD1E /* Свежий.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826BB081E94FB4A00E7CD1E /* Свежий.swift */; };
+		9826BB0C1E95096B00E7CD1E /* Заколдованный круг.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826BB0B1E95096B00E7CD1E /* Заколдованный круг.swift */; };
+		9826BB0E1E95099100E7CD1E /* Сюрприз.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826BB0D1E95099100E7CD1E /* Сюрприз.swift */; };
+		9826BB101E9509C000E7CD1E /* Алиби.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826BB0F1E9509C000E7CD1E /* Алиби.swift */; };
+		9826BB161E9509F200E7CD1E /* Проверка.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826BB151E9509F200E7CD1E /* Проверка.swift */; };
+		9826BB191E950A1400E7CD1E /* Быть как все.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826BB181E950A1400E7CD1E /* Быть как все.swift */; };
+		9826BB1C1E950A3000E7CD1E /* Мы и налоги.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826BB1B1E950A3000E7CD1E /* Мы и налоги.swift */; };
+		982D2AF11E9C24A400B590B1 /* YourAbonnementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982D2AF01E9C24A400B590B1 /* YourAbonnementVC.swift */; };
+		982ECD481E8F9234003B66F9 /* CreditsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982ECD471E8F9234003B66F9 /* CreditsVC.swift */; };
+		982ECD4A1E8FA0A3003B66F9 /* ReceiptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982ECD491E8FA0A3003B66F9 /* ReceiptManager.swift */; };
+		982ECD4C1E9120EB003B66F9 /* WaitAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982ECD4B1E9120EA003B66F9 /* WaitAlert.swift */; };
 		983B529D1E4F8BDA004F820F /* TraductionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B529C1E4F8BDA004F820F /* TraductionCell.swift */; };
 		983B529F1E4F8BED004F820F /* AddTraductionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B529E1E4F8BEC004F820F /* AddTraductionCell.swift */; };
 		983B52A41E50E378004F820F /* AddText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B52A31E50E378004F820F /* AddText.swift */; };
@@ -34,18 +45,18 @@
 		987D34ED1E798A76008434A8 /* SettingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987D34EC1E798A76008434A8 /* SettingButton.swift */; };
 		987D34F21E7AE3EE008434A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 987D34F01E7AE3EE008434A8 /* Main.storyboard */; };
 		987D34F41E7D2B0F008434A8 /* SpeedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987D34F31E7D2B0F008434A8 /* SpeedButton.swift */; };
-		987D35091E7D6DA3008434A8 /* 1-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34F71E7D6DA3008434A8 /* 1-fast.mp3 */; };
-		987D350A1E7D6DA3008434A8 /* 1-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34F81E7D6DA3008434A8 /* 1-mid.mp3 */; };
-		987D350B1E7D6DA3008434A8 /* 1-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34F91E7D6DA3008434A8 /* 1-slow.mp3 */; };
-		987D350C1E7D6DA3008434A8 /* 2-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34FA1E7D6DA3008434A8 /* 2-fast.mp3 */; };
-		987D350D1E7D6DA3008434A8 /* 2-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34FB1E7D6DA3008434A8 /* 2-mid.mp3 */; };
-		987D350E1E7D6DA3008434A8 /* 2-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34FC1E7D6DA3008434A8 /* 2-slow.mp3 */; };
-		987D350F1E7D6DA3008434A8 /* 3-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34FD1E7D6DA3008434A8 /* 3-fast.mp3 */; };
-		987D35101E7D6DA3008434A8 /* 3-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34FE1E7D6DA3008434A8 /* 3-mid.mp3 */; };
-		987D35111E7D6DA3008434A8 /* 3-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34FF1E7D6DA3008434A8 /* 3-slow.mp3 */; };
-		987D35121E7D6DA3008434A8 /* 4-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35001E7D6DA3008434A8 /* 4-fast.mp3 */; };
-		987D35131E7D6DA3008434A8 /* 4-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35011E7D6DA3008434A8 /* 4-mid.mp3 */; };
-		987D35141E7D6DA3008434A8 /* 4-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35021E7D6DA3008434A8 /* 4-slow.mp3 */; };
+		987D35091E7D6DA3008434A8 /* Sjurpriz-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34F71E7D6DA3008434A8 /* Sjurpriz-fast.mp3 */; };
+		987D350A1E7D6DA3008434A8 /* Sjurpriz-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34F81E7D6DA3008434A8 /* Sjurpriz-mid.mp3 */; };
+		987D350B1E7D6DA3008434A8 /* Sjurpriz-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34F91E7D6DA3008434A8 /* Sjurpriz-slow.mp3 */; };
+		987D350C1E7D6DA3008434A8 /* Svezhyj-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34FA1E7D6DA3008434A8 /* Svezhyj-fast.mp3 */; };
+		987D350D1E7D6DA3008434A8 /* Svezhyj-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34FB1E7D6DA3008434A8 /* Svezhyj-mid.mp3 */; };
+		987D350E1E7D6DA3008434A8 /* Svezhyj-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34FC1E7D6DA3008434A8 /* Svezhyj-slow.mp3 */; };
+		987D350F1E7D6DA3008434A8 /* ZakoldovannyjKrug-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34FD1E7D6DA3008434A8 /* ZakoldovannyjKrug-fast.mp3 */; };
+		987D35101E7D6DA3008434A8 /* ZakoldovannyjKrug-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34FE1E7D6DA3008434A8 /* ZakoldovannyjKrug-mid.mp3 */; };
+		987D35111E7D6DA3008434A8 /* ZakoldovannyjKrug-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34FF1E7D6DA3008434A8 /* ZakoldovannyjKrug-slow.mp3 */; };
+		987D35121E7D6DA3008434A8 /* Alibi-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35001E7D6DA3008434A8 /* Alibi-fast.mp3 */; };
+		987D35131E7D6DA3008434A8 /* Alibi-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35011E7D6DA3008434A8 /* Alibi-mid.mp3 */; };
+		987D35141E7D6DA3008434A8 /* Alibi-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35021E7D6DA3008434A8 /* Alibi-slow.mp3 */; };
 		987D35151E7D6DA3008434A8 /* 5-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35031E7D6DA3008434A8 /* 5-fast.mp3 */; };
 		987D35161E7D6DA3008434A8 /* 5-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35041E7D6DA3008434A8 /* 5-mid.mp3 */; };
 		987D35171E7D6DA3008434A8 /* 5-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35051E7D6DA3008434A8 /* 5-slow.mp3 */; };
@@ -105,7 +116,7 @@
 		9821944E1E8BA70600043300 /* ChoosePaymentPlanCV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosePaymentPlanCV.swift; sourceTree = "<group>"; };
 		982194501E8BA72300043300 /* ChoosePaymentPlanButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosePaymentPlanButton.swift; sourceTree = "<group>"; };
 		982194521E8BF21100043300 /* HighlightChoosePaymentPlanButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightChoosePaymentPlanButtonView.swift; sourceTree = "<group>"; };
-		982194551E8C033C00043300 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		982194551E8C033C00043300 /* StoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		982194581E8CD7E000043300 /* SideMenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuManager.swift; sourceTree = "<group>"; };
 		982194591E8CD7E000043300 /* SideMenuTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTransition.swift; sourceTree = "<group>"; };
 		9821945A1E8CD7E000043300 /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISideMenuNavigationController.swift; sourceTree = "<group>"; };
@@ -123,6 +134,17 @@
 		9823AE9B1E66E3B800AB376C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9823AE9D1E66E3C100AB376C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9823AE9E1E66E3C100AB376C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9826BB081E94FB4A00E7CD1E /* Свежий.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Свежий.swift"; sourceTree = "<group>"; };
+		9826BB0B1E95096B00E7CD1E /* Заколдованный круг.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Заколдованный круг.swift"; sourceTree = "<group>"; };
+		9826BB0D1E95099100E7CD1E /* Сюрприз.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Сюрприз.swift"; sourceTree = "<group>"; };
+		9826BB0F1E9509C000E7CD1E /* Алиби.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Алиби.swift"; sourceTree = "<group>"; };
+		9826BB151E9509F200E7CD1E /* Проверка.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Проверка.swift"; sourceTree = "<group>"; };
+		9826BB181E950A1400E7CD1E /* Быть как все.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Быть как все.swift"; sourceTree = "<group>"; };
+		9826BB1B1E950A3000E7CD1E /* Мы и налоги.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Мы и налоги.swift"; sourceTree = "<group>"; };
+		982D2AF01E9C24A400B590B1 /* YourAbonnementVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourAbonnementVC.swift; sourceTree = "<group>"; };
+		982ECD471E8F9234003B66F9 /* CreditsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsVC.swift; sourceTree = "<group>"; };
+		982ECD491E8FA0A3003B66F9 /* ReceiptManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptManager.swift; sourceTree = "<group>"; };
+		982ECD4B1E9120EA003B66F9 /* WaitAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitAlert.swift; sourceTree = "<group>"; };
 		983B529C1E4F8BDA004F820F /* TraductionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraductionCell.swift; sourceTree = "<group>"; };
 		983B529E1E4F8BEC004F820F /* AddTraductionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTraductionCell.swift; sourceTree = "<group>"; };
 		983B52A31E50E378004F820F /* AddText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddText.swift; sourceTree = "<group>"; };
@@ -130,18 +152,18 @@
 		987D34EC1E798A76008434A8 /* SettingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingButton.swift; sourceTree = "<group>"; };
 		987D34F11E7AE3EE008434A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LearnByLearning/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		987D34F31E7D2B0F008434A8 /* SpeedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedButton.swift; sourceTree = "<group>"; };
-		987D34F71E7D6DA3008434A8 /* 1-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "1-fast.mp3"; sourceTree = "<group>"; };
-		987D34F81E7D6DA3008434A8 /* 1-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "1-mid.mp3"; sourceTree = "<group>"; };
-		987D34F91E7D6DA3008434A8 /* 1-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "1-slow.mp3"; sourceTree = "<group>"; };
-		987D34FA1E7D6DA3008434A8 /* 2-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "2-fast.mp3"; sourceTree = "<group>"; };
-		987D34FB1E7D6DA3008434A8 /* 2-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "2-mid.mp3"; sourceTree = "<group>"; };
-		987D34FC1E7D6DA3008434A8 /* 2-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "2-slow.mp3"; sourceTree = "<group>"; };
-		987D34FD1E7D6DA3008434A8 /* 3-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "3-fast.mp3"; sourceTree = "<group>"; };
-		987D34FE1E7D6DA3008434A8 /* 3-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "3-mid.mp3"; sourceTree = "<group>"; };
-		987D34FF1E7D6DA3008434A8 /* 3-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "3-slow.mp3"; sourceTree = "<group>"; };
-		987D35001E7D6DA3008434A8 /* 4-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "4-fast.mp3"; sourceTree = "<group>"; };
-		987D35011E7D6DA3008434A8 /* 4-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "4-mid.mp3"; sourceTree = "<group>"; };
-		987D35021E7D6DA3008434A8 /* 4-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "4-slow.mp3"; sourceTree = "<group>"; };
+		987D34F71E7D6DA3008434A8 /* Sjurpriz-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Sjurpriz-fast.mp3"; path = "LearnByLearning/Sjurpriz-fast.mp3"; sourceTree = "<group>"; };
+		987D34F81E7D6DA3008434A8 /* Sjurpriz-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Sjurpriz-mid.mp3"; path = "LearnByLearning/Sjurpriz-mid.mp3"; sourceTree = "<group>"; };
+		987D34F91E7D6DA3008434A8 /* Sjurpriz-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Sjurpriz-slow.mp3"; path = "LearnByLearning/Sjurpriz-slow.mp3"; sourceTree = "<group>"; };
+		987D34FA1E7D6DA3008434A8 /* Svezhyj-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Svezhyj-fast.mp3"; path = "LearnByLearning/Svezhyj-fast.mp3"; sourceTree = "<group>"; };
+		987D34FB1E7D6DA3008434A8 /* Svezhyj-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Svezhyj-mid.mp3"; path = "LearnByLearning/Svezhyj-mid.mp3"; sourceTree = "<group>"; };
+		987D34FC1E7D6DA3008434A8 /* Svezhyj-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Svezhyj-slow.mp3"; path = "LearnByLearning/Svezhyj-slow.mp3"; sourceTree = "<group>"; };
+		987D34FD1E7D6DA3008434A8 /* ZakoldovannyjKrug-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "ZakoldovannyjKrug-fast.mp3"; path = "LearnByLearning/ZakoldovannyjKrug-fast.mp3"; sourceTree = "<group>"; };
+		987D34FE1E7D6DA3008434A8 /* ZakoldovannyjKrug-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "ZakoldovannyjKrug-mid.mp3"; path = "LearnByLearning/ZakoldovannyjKrug-mid.mp3"; sourceTree = "<group>"; };
+		987D34FF1E7D6DA3008434A8 /* ZakoldovannyjKrug-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "ZakoldovannyjKrug-slow.mp3"; path = "LearnByLearning/ZakoldovannyjKrug-slow.mp3"; sourceTree = "<group>"; };
+		987D35001E7D6DA3008434A8 /* Alibi-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Alibi-fast.mp3"; path = "LearnByLearning/Alibi-fast.mp3"; sourceTree = "<group>"; };
+		987D35011E7D6DA3008434A8 /* Alibi-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Alibi-mid.mp3"; path = "LearnByLearning/Alibi-mid.mp3"; sourceTree = "<group>"; };
+		987D35021E7D6DA3008434A8 /* Alibi-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Alibi-slow.mp3"; path = "LearnByLearning/Alibi-slow.mp3"; sourceTree = "<group>"; };
 		987D35031E7D6DA3008434A8 /* 5-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "5-fast.mp3"; sourceTree = "<group>"; };
 		987D35041E7D6DA3008434A8 /* 5-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "5-mid.mp3"; sourceTree = "<group>"; };
 		987D35051E7D6DA3008434A8 /* 5-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "5-slow.mp3"; sourceTree = "<group>"; };
@@ -224,6 +246,7 @@
 		981F89641E80450300D1BF9D /* TextsData */ = {
 			isa = PBXGroup;
 			children = (
+				9826BB031E94FAFF00E7CD1E /* Russian */,
 				98E538B21E8058DC0067E639 /* Spanish */,
 				981F89651E80451B00D1BF9D /* English */,
 				9823AE881E61CFA400AB376C /* TextsData.swift */,
@@ -285,7 +308,8 @@
 		982194541E8C032B00043300 /* In-App Purchase */ = {
 			isa = PBXGroup;
 			children = (
-				982194551E8C033C00043300 /* IAPHelper.swift */,
+				982194551E8C033C00043300 /* StoreManager.swift */,
+				982ECD491E8FA0A3003B66F9 /* ReceiptManager.swift */,
 			);
 			name = "In-App Purchase";
 			sourceTree = "<group>";
@@ -338,6 +362,120 @@
 			name = Lang;
 			sourceTree = "<group>";
 		};
+		9826BB031E94FAFF00E7CD1E /* Russian */ = {
+			isa = PBXGroup;
+			children = (
+				9826BB071E94FB2700E7CD1E /* C1 */,
+				9826BB061E94FB2200E7CD1E /* B2 */,
+				9826BB051E94FB1B00E7CD1E /* B1 */,
+				9826BB041E94FB1400E7CD1E /* A2 */,
+			);
+			name = Russian;
+			sourceTree = "<group>";
+		};
+		9826BB041E94FB1400E7CD1E /* A2 */ = {
+			isa = PBXGroup;
+			children = (
+				9826BB1A1E950A2400E7CD1E /* Мы и налоги */,
+				9826BB171E9509FC00E7CD1E /* Быть как все */,
+				9826BB141E9509E600E7CD1E /* Проверка */,
+				9826BB131E9509DA00E7CD1E /* Заколдованный круг */,
+				9826BB121E9509CE00E7CD1E /* Сюрприз */,
+				9826BB111E9509C400E7CD1E /* Алиби */,
+				9826BB0A1E94FCE100E7CD1E /* Свежий */,
+			);
+			name = A2;
+			sourceTree = "<group>";
+		};
+		9826BB051E94FB1B00E7CD1E /* B1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = B1;
+			sourceTree = "<group>";
+		};
+		9826BB061E94FB2200E7CD1E /* B2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = B2;
+			sourceTree = "<group>";
+		};
+		9826BB071E94FB2700E7CD1E /* C1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = C1;
+			sourceTree = "<group>";
+		};
+		9826BB0A1E94FCE100E7CD1E /* Свежий */ = {
+			isa = PBXGroup;
+			children = (
+				987D34FA1E7D6DA3008434A8 /* Svezhyj-fast.mp3 */,
+				987D34FB1E7D6DA3008434A8 /* Svezhyj-mid.mp3 */,
+				987D34FC1E7D6DA3008434A8 /* Svezhyj-slow.mp3 */,
+				9826BB081E94FB4A00E7CD1E /* Свежий.swift */,
+			);
+			name = "Свежий";
+			sourceTree = "<group>";
+		};
+		9826BB111E9509C400E7CD1E /* Алиби */ = {
+			isa = PBXGroup;
+			children = (
+				9826BB0F1E9509C000E7CD1E /* Алиби.swift */,
+				987D35001E7D6DA3008434A8 /* Alibi-fast.mp3 */,
+				987D35011E7D6DA3008434A8 /* Alibi-mid.mp3 */,
+				987D35021E7D6DA3008434A8 /* Alibi-slow.mp3 */,
+			);
+			name = "Алиби";
+			sourceTree = "<group>";
+		};
+		9826BB121E9509CE00E7CD1E /* Сюрприз */ = {
+			isa = PBXGroup;
+			children = (
+				987D34F71E7D6DA3008434A8 /* Sjurpriz-fast.mp3 */,
+				987D34F81E7D6DA3008434A8 /* Sjurpriz-mid.mp3 */,
+				987D34F91E7D6DA3008434A8 /* Sjurpriz-slow.mp3 */,
+				9826BB0D1E95099100E7CD1E /* Сюрприз.swift */,
+			);
+			name = "Сюрприз";
+			sourceTree = "<group>";
+		};
+		9826BB131E9509DA00E7CD1E /* Заколдованный круг */ = {
+			isa = PBXGroup;
+			children = (
+				9826BB0B1E95096B00E7CD1E /* Заколдованный круг.swift */,
+				987D34FD1E7D6DA3008434A8 /* ZakoldovannyjKrug-fast.mp3 */,
+				987D34FE1E7D6DA3008434A8 /* ZakoldovannyjKrug-mid.mp3 */,
+				987D34FF1E7D6DA3008434A8 /* ZakoldovannyjKrug-slow.mp3 */,
+			);
+			name = "Заколдованный круг";
+			sourceTree = "<group>";
+		};
+		9826BB141E9509E600E7CD1E /* Проверка */ = {
+			isa = PBXGroup;
+			children = (
+				9826BB151E9509F200E7CD1E /* Проверка.swift */,
+			);
+			name = "Проверка";
+			sourceTree = "<group>";
+		};
+		9826BB171E9509FC00E7CD1E /* Быть как все */ = {
+			isa = PBXGroup;
+			children = (
+				9826BB181E950A1400E7CD1E /* Быть как все.swift */,
+			);
+			name = "Быть как все";
+			sourceTree = "<group>";
+		};
+		9826BB1A1E950A2400E7CD1E /* Мы и налоги */ = {
+			isa = PBXGroup;
+			children = (
+				9826BB1B1E950A3000E7CD1E /* Мы и налоги.swift */,
+			);
+			name = "Мы и налоги";
+			sourceTree = "<group>";
+		};
 		983B52A21E50E264004F820F /* AddText */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,23 +491,12 @@
 				987D34F61E7D6D8B008434A8 /* Russian */,
 			);
 			name = AudioText;
+			path = LearnByLearning;
 			sourceTree = "<group>";
 		};
 		987D34F61E7D6D8B008434A8 /* Russian */ = {
 			isa = PBXGroup;
 			children = (
-				987D34F71E7D6DA3008434A8 /* 1-fast.mp3 */,
-				987D34F81E7D6DA3008434A8 /* 1-mid.mp3 */,
-				987D34F91E7D6DA3008434A8 /* 1-slow.mp3 */,
-				987D34FA1E7D6DA3008434A8 /* 2-fast.mp3 */,
-				987D34FB1E7D6DA3008434A8 /* 2-mid.mp3 */,
-				987D34FC1E7D6DA3008434A8 /* 2-slow.mp3 */,
-				987D34FD1E7D6DA3008434A8 /* 3-fast.mp3 */,
-				987D34FE1E7D6DA3008434A8 /* 3-mid.mp3 */,
-				987D34FF1E7D6DA3008434A8 /* 3-slow.mp3 */,
-				987D35001E7D6DA3008434A8 /* 4-fast.mp3 */,
-				987D35011E7D6DA3008434A8 /* 4-mid.mp3 */,
-				987D35021E7D6DA3008434A8 /* 4-slow.mp3 */,
 				987D35031E7D6DA3008434A8 /* 5-fast.mp3 */,
 				987D35041E7D6DA3008434A8 /* 5-mid.mp3 */,
 				987D35051E7D6DA3008434A8 /* 5-slow.mp3 */,
@@ -392,6 +519,7 @@
 		987E15021E6173090080C9B6 /* Texts */ = {
 			isa = PBXGroup;
 			children = (
+				987D34F51E7D6D7B008434A8 /* AudioText */,
 				981F89641E80450300D1BF9D /* TextsData */,
 				987E15031E6173230080C9B6 /* TraductedText.swift */,
 				9823AE861E61CD4E00AB376C /* Word.swift */,
@@ -425,13 +553,11 @@
 		988A72BA1E352DF600BDE635 /* LearnByLearning */ = {
 			isa = PBXGroup;
 			children = (
-				982194571E8CD7C800043300 /* Slide manager */,
-				982194541E8C032B00043300 /* In-App Purchase */,
+				988A72F11E36791700BDE635 /* Library */,
 				9821944D1E8BA6D200043300 /* ChoosePaymentPlan */,
 				981F895F1E7F1C5100D1BF9D /* FirstVisit */,
 				9823AE951E65CC1400AB376C /* Model */,
 				983B52A21E50E264004F820F /* AddText */,
-				988A72F11E36791700BDE635 /* Library */,
 				98EC9EF31E4D012B0062F9F2 /* Localizable.strings */,
 				98EC9EF51E4D012B0062F9F2 /* InfoPlist.strings */,
 				98E8BB231E4CF383002134B0 /* Settings */,
@@ -439,9 +565,9 @@
 				98D73E171E369C8400BAF0C1 /* ReadText */,
 				98E8BB101E4CE18F002134B0 /* Menu */,
 				98226BD01E74089B00060F26 /* Home */,
-				9823AE8F1E65783800AB376C /* HelpViewController.swift */,
 				987D351D1E7E9A98008434A8 /* InviteFriend */,
 				98E8BB281E4CF3DF002134B0 /* GradeAppViewController.swift */,
+				9823AE8F1E65783800AB376C /* HelpViewController.swift */,
 				987D34F01E7AE3EE008434A8 /* Main.storyboard */,
 				988A72C41E352DF600BDE635 /* Assets.xcassets */,
 				988A72C61E352DF600BDE635 /* LaunchScreen.storyboard */,
@@ -473,7 +599,9 @@
 		988A72F11E36791700BDE635 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				987D34F51E7D6D7B008434A8 /* AudioText */,
+				982194541E8C032B00043300 /* In-App Purchase */,
+				982194571E8CD7C800043300 /* Slide manager */,
+				982ECD4B1E9120EA003B66F9 /* WaitAlert.swift */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -524,6 +652,8 @@
 				98E8BB241E4CF39D002134B0 /* SettingsViewController.swift */,
 				9823AE971E66028200AB376C /* LanguageNav.swift */,
 				987D34EC1E798A76008434A8 /* SettingButton.swift */,
+				982ECD471E8F9234003B66F9 /* CreditsVC.swift */,
+				982D2AF01E9C24A400B590B1 /* YourAbonnementVC.swift */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -657,28 +787,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				987D35161E7D6DA3008434A8 /* 5-mid.mp3 in Resources */,
-				987D350C1E7D6DA3008434A8 /* 2-fast.mp3 in Resources */,
+				987D350C1E7D6DA3008434A8 /* Svezhyj-fast.mp3 in Resources */,
 				988A72C81E352DF600BDE635 /* LaunchScreen.storyboard in Resources */,
-				987D35131E7D6DA3008434A8 /* 4-mid.mp3 in Resources */,
+				987D35131E7D6DA3008434A8 /* Alibi-mid.mp3 in Resources */,
 				987D35151E7D6DA3008434A8 /* 5-fast.mp3 in Resources */,
 				987D35191E7D6DA3008434A8 /* 25-mid.mp3 in Resources */,
-				987D35101E7D6DA3008434A8 /* 3-mid.mp3 in Resources */,
+				987D35101E7D6DA3008434A8 /* ZakoldovannyjKrug-mid.mp3 in Resources */,
 				987D34F21E7AE3EE008434A8 /* Main.storyboard in Resources */,
 				987D35181E7D6DA3008434A8 /* 25-fast.mp3 in Resources */,
 				98EC9EF71E4D012B0062F9F2 /* Localizable.strings in Resources */,
-				987D350B1E7D6DA3008434A8 /* 1-slow.mp3 in Resources */,
-				987D35091E7D6DA3008434A8 /* 1-fast.mp3 in Resources */,
+				987D350B1E7D6DA3008434A8 /* Sjurpriz-slow.mp3 in Resources */,
+				987D35091E7D6DA3008434A8 /* Sjurpriz-fast.mp3 in Resources */,
 				987D35171E7D6DA3008434A8 /* 5-slow.mp3 in Resources */,
-				987D35141E7D6DA3008434A8 /* 4-slow.mp3 in Resources */,
-				987D35121E7D6DA3008434A8 /* 4-fast.mp3 in Resources */,
-				987D350A1E7D6DA3008434A8 /* 1-mid.mp3 in Resources */,
+				987D35141E7D6DA3008434A8 /* Alibi-slow.mp3 in Resources */,
+				987D35121E7D6DA3008434A8 /* Alibi-fast.mp3 in Resources */,
+				987D350A1E7D6DA3008434A8 /* Sjurpriz-mid.mp3 in Resources */,
 				988A72C51E352DF600BDE635 /* Assets.xcassets in Resources */,
-				987D350D1E7D6DA3008434A8 /* 2-mid.mp3 in Resources */,
+				987D350D1E7D6DA3008434A8 /* Svezhyj-mid.mp3 in Resources */,
 				987D351A1E7D6DA3008434A8 /* 25-slow.mp3 in Resources */,
 				98EC9EF81E4D012B0062F9F2 /* InfoPlist.strings in Resources */,
-				987D350F1E7D6DA3008434A8 /* 3-fast.mp3 in Resources */,
-				987D350E1E7D6DA3008434A8 /* 2-slow.mp3 in Resources */,
-				987D35111E7D6DA3008434A8 /* 3-slow.mp3 in Resources */,
+				987D350F1E7D6DA3008434A8 /* ZakoldovannyjKrug-fast.mp3 in Resources */,
+				987D350E1E7D6DA3008434A8 /* Svezhyj-slow.mp3 in Resources */,
+				987D35111E7D6DA3008434A8 /* ZakoldovannyjKrug-slow.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,6 +847,9 @@
 				9823AE981E66028200AB376C /* LanguageNav.swift in Sources */,
 				983B52A61E50E45A004F820F /* AddTextCell.swift in Sources */,
 				98D73E161E369C7A00BAF0C1 /* ReadTextTraduction.swift in Sources */,
+				982D2AF11E9C24A400B590B1 /* YourAbonnementVC.swift in Sources */,
+				9826BB191E950A1400E7CD1E /* Быть как все.swift in Sources */,
+				982ECD4C1E9120EB003B66F9 /* WaitAlert.swift in Sources */,
 				988A72F91E367A3500BDE635 /* VocForText.swift in Sources */,
 				9821944F1E8BA70600043300 /* ChoosePaymentPlanCV.swift in Sources */,
 				98E8BB271E4CF3B4002134B0 /* InviteFriendViewController.swift in Sources */,
@@ -725,19 +858,27 @@
 				983B529D1E4F8BDA004F820F /* TraductionCell.swift in Sources */,
 				9823AE921E65CBA800AB376C /* LearningLang.swift in Sources */,
 				98E8BB221E4CF375002134B0 /* MyLanguagesViewController.swift in Sources */,
+				982ECD4A1E8FA0A3003B66F9 /* ReceiptManager.swift in Sources */,
 				983B529F1E4F8BED004F820F /* AddTraductionCell.swift in Sources */,
 				98EC9F021E4DB40E0062F9F2 /* CurrentLanguageCell.swift in Sources */,
 				98E8BB141E4CE1C9002134B0 /* MenuCell.swift in Sources */,
 				9823AE871E61CD4E00AB376C /* Word.swift in Sources */,
+				9826BB0C1E95096B00E7CD1E /* Заколдованный круг.swift in Sources */,
+				9826BB0E1E95099100E7CD1E /* Сюрприз.swift in Sources */,
 				98E8BB1A1E4CEF00002134B0 /* Localisator.swift in Sources */,
+				9826BB161E9509F200E7CD1E /* Проверка.swift in Sources */,
+				982ECD481E8F9234003B66F9 /* CreditsVC.swift in Sources */,
+				9826BB091E94FB4A00E7CD1E /* Свежий.swift in Sources */,
 				982194531E8BF21100043300 /* HighlightChoosePaymentPlanButtonView.swift in Sources */,
 				98DDC6CB1E7453A6004A367C /* Color.swift in Sources */,
 				98E8BB251E4CF39D002134B0 /* SettingsViewController.swift in Sources */,
 				98E538B71E80596F0067E639 /* TemplateText .swift in Sources */,
 				98E538B51E8059040067E639 /* El jardín de Val.swift in Sources */,
-				982194561E8C033C00043300 /* IAPHelper.swift in Sources */,
+				982194561E8C033C00043300 /* StoreManager.swift in Sources */,
+				9826BB101E9509C000E7CD1E /* Алиби.swift in Sources */,
 				987D34F41E7D2B0F008434A8 /* SpeedButton.swift in Sources */,
 				982194511E8BA72300043300 /* ChoosePaymentPlanButton.swift in Sources */,
+				9826BB1C1E950A3000E7CD1E /* Мы и налоги.swift in Sources */,
 				9823AE941E65CBBC00AB376C /* Lang.swift in Sources */,
 				987D351F1E7E9AB9008434A8 /* InviteFriendButton.swift in Sources */,
 				981F89611E7F1C8F00D1BF9D /* languageCollecVCell.swift in Sources */,
@@ -930,7 +1071,7 @@
 				DEVELOPMENT_TEAM = EQPGG2M7LV;
 				INFOPLIST_FILE = LearnByLearning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Meitopi.LearnByLearning;
+				PRODUCT_BUNDLE_IDENTIFIER = lauriane.molllier.learnByReading.russian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_DISABLE_SAFETY_CHECKS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -950,7 +1091,7 @@
 				DEVELOPMENT_TEAM = EQPGG2M7LV;
 				INFOPLIST_FILE = LearnByLearning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Meitopi.LearnByLearning;
+				PRODUCT_BUNDLE_IDENTIFIER = lauriane.molllier.learnByReading.russian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_DISABLE_SAFETY_CHECKS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;

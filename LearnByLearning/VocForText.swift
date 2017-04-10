@@ -15,11 +15,14 @@ class VocForText: UITableViewController {
     
     @IBOutlet weak var addTradButton: UIBarButtonItem!
     
+    @IBOutlet weak var customBack: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         addTradButton.accessibilityElementsHidden = false
         voc = UserSave.getVocSaved(text: text)
         tableView.allowsSelection = false
+        
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -30,9 +33,19 @@ class VocForText: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         tabBarController?.navigationItem.rightBarButtonItem = addTradButton
+        tabBarController?.navigationItem.leftBarButtonItem = customBack
         voc = UserSave.getVocSaved(text: text)
-        tableView.reloadData()  
+        tableView.reloadData()
+        
+        /* text */
+        setText()
     }
+    
+    func setText(){
+        self.title = Localization("VocForText title")
+        self.tabBarItem.title = Localization("VOCABULARY")
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -129,6 +142,10 @@ class VocForText: UITableViewController {
             let cv = segue.destination as! AddTraductionVocForText
             cv.text = text
         }
+    }
+    
+    @IBAction func back(_ sender: UIBarButtonItem) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     

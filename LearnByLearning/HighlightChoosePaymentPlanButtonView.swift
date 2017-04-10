@@ -26,7 +26,7 @@ class HighlightChoosePaymentPlanButtonView: ChoosePaymentPlanButtonView {
         let labelHighlightWidth = button.frame.size.width * 0.40
         let labelHighlightX = nbMonthView.frame.size.width + (self.frame.size.width - nbMonthView.frame.size.width - labelHighlightWidth) * 0.5
         labelHighlight.frame = CGRect(x: labelHighlightX, y: 0, width: labelHighlightWidth, height: marginTopMostPopular * 2)
-        labelHighlight.text = "MOST POPULAR"
+        labelHighlight.text = Localization("MOST POPULAR")
         labelHighlight.textColor = UIColor.white
         labelHighlight.textAlignment = .center
         

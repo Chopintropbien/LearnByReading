@@ -24,15 +24,17 @@ class TraductedText{
     let traductedText: [Text]
     let level: Level
     let author: String
+    let titleAudio: String
     
     var voc: [OriginalWord: [Word]]
     
-    public init(originalText: Text, traductedText: [Text], voc: [OriginalWord: [Word]], level: Level, author: String){
+    public init(originalText: Text, traductedText: [Text], voc: [OriginalWord: [Word]], level: Level, author: String, titleAudio: String){
         self.originalText = originalText
         self.traductedText = traductedText
         self.voc = voc
         self.level = level
         self.author = author
+        self.titleAudio = titleAudio
         
         self.id = originalText.1
     }

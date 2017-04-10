@@ -29,10 +29,21 @@ class AddTraductionVocForText: UIViewController, UITableViewDelegate, UITableVie
         allVoc = UserSave.getVocInfoSaved(text: text)
         navigationItem.hidesBackButton = true
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        /* text */
+        setText()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func setText(){
+        self.title = Localization("AddTraductionVocForText title")
+        self.cancel.title = Localization("Cancel")
+         self.done.title = Localization("Done AddTraductionVocForText")
     }
 
     // MARK: - Table view data source

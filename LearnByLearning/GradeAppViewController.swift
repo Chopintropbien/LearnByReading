@@ -11,18 +11,30 @@ import StoreKit
 
 class GradeAppViewController: UIViewController {
 
+    @IBOutlet weak var loveAppLabel: UILabel!
+    
+    @IBOutlet weak var gradeAppLabel: UILabel!
+    
+    @IBOutlet weak var accessAppStroreButton: UIButton!
     @IBOutlet weak var menu: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        // Do any additional setup after loading the view.
-        
-        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        // design
         self.navigationController!.navigationBar.tintColor = almostBlack
-        self.title = Localization("Rate app title")
         let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : almostBlack]
+        
+        /* Text */
+        setText()
+    }
+    
+    func setText(){
+        self.title = Localization("GradeAppViewController title")
+        self.loveAppLabel.text = Localization("Love the app?")
+        self.gradeAppLabel.text = Localization("Grade the app")
+        self.accessAppStroreButton.setTitle(Localization("Access to the AppStore"), for: .normal)
     }
 
     override func didReceiveMemoryWarning() {

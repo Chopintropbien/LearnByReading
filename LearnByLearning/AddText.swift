@@ -13,9 +13,6 @@ extension UIViewController {
     func performSegueToReturnBack(text: TraductedText?)  {
         if let nav = self.navigationController {
             for aVC in nav.viewControllers {
-                if(aVC is Home){
-                   (aVC as! Home).newDowload = text
-                }
                 nav.popViewController(animated: true)
             }
         } else {
@@ -99,19 +96,21 @@ class AddText: UIViewController, UITableViewDelegate, UITableViewDataSource {
         basicButton.contentHorizontalAlignment = .left
         intermediateButton.contentHorizontalAlignment = .center
         hardButton.contentHorizontalAlignment = .right
-        
-        
-        
+
+        // Do any additional setup after loading the view.
+    }
+    
+
+    override func viewWillAppear(_ animated: Bool) {
         // design
         self.levelView.layer.addBorderFixBorder()
         
         self.navigationController!.navigationBar.tintColor = UIColor.white
-        self.title = Localization("Add text title")
         let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : UIColor.white]
         
-
-        // Do any additional setup after loading the view.
+        /* text */
+        setText()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -121,9 +120,14 @@ class AddText: UIViewController, UITableViewDelegate, UITableViewDataSource {
         widthBorderItem2 = CGFloat(basicButton.frame.width) + CGFloat(intermediateButton.titleLabel!.frame.width) + CGFloat(intermediateButton.titleLabel!.frame.minX) + offset
         widthBorderItem3 = levelView.frame.width
         
-        self.levelView.layer.moveBorderToWith(width: widthBorderItem1)
-        
-        
+    }
+    
+    func setText(){
+        self.title = Localization("AddText title")
+        self.basicButton.setTitle(Localization("basic level"), for: .normal)
+        self.intermediateButton.setTitle(Localization("intermediate level"), for: .normal)
+        self.hardButton.setTitle(Localization("hard level"), for: .normal)
+        self.doneButton.setTitle(Localization("Done AddText"), for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
@@ -154,11 +158,7 @@ class AddText: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if(true){
-            //
-            performSegue(withIdentifier: "showPayement", sender: self)
-        }
-        else{
+        if(StoreManager.shared.receiptManager.isTrial || StoreManager.shared.receiptManager.isSubscribed){
             tableView.deselectRow(at: indexPath, animated: true)
             let cell = tableView.cellForRow(at: indexPath) as! AddTextCell
             
@@ -166,24 +166,12 @@ class AddText: UIViewController, UITableViewDelegate, UITableViewDataSource {
             currentText[indexPath.row].1 = !currentText[indexPath.row].1
             cell.isDownloaded = currentText[indexPath.row].1
             
-            switch currentDifficulty {
-            case Difficulty.basic:
-                basicText = currentText
-            case Difficulty.intermediate:
-                intermediateText = currentText
-            case Difficulty.hard:
-                hardText = currentText
-            }
-            
-            var allText = basicText + intermediateText
-            allText = allText + hardText
-            UserSave.saveText(texts: allText)
             //        performSegueToReturnBack(text: basicText[indexPath.row].0)
             // TODO choose what to do
         }
-        
-        
-
+        else{
+            performSegue(withIdentifier: "showPayement", sender: self)
+        }
     }
     
     
@@ -211,6 +199,18 @@ class AddText: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     @IBAction func returnHome(_ sender: UIButton) {
+        switch currentDifficulty {
+        case Difficulty.basic:
+            basicText = currentText
+        case Difficulty.intermediate:
+            intermediateText = currentText
+        case Difficulty.hard:
+            hardText = currentText
+        }
+        
+        var allText = basicText + intermediateText
+        allText = allText + hardText
+        UserSave.saveText(texts: allText)
         performSegueToReturnBack(text: nil) // TODO change and choose what to do
     }
     

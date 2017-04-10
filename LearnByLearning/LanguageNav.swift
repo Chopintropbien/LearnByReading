@@ -20,12 +20,19 @@ class LanguageNav: UITableViewController {
         selectedMenuItem = langs.index(of: GetLanguageNav())
         
         
-        self.navigationController!.navigationBar.tintColor = UIColor.white
-        self.title = Localization("Nav Language title")
+        self.navigationController!.navigationBar.tintColor = UIColor.black
         let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : UIColor.black]
 
         tableView.selectRow(at: IndexPath(row: selectedMenuItem, section: 0), animated: false, scrollPosition: .middle)
+        
+        
+        /* Text */
+        setText()
+    }
+    
+    func setText(){
+        self.title = Localization("LanguageNav title")
     }
     
     
@@ -72,13 +79,13 @@ class LanguageNav: UITableViewController {
     }
     
 
-    
+    // TODO!!!! reset home text
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
         
-        let refreshAlert = UIAlertController(title: "Refresh", message: "All data will be lost.", preferredStyle: UIAlertControllerStyle.alert)
+        let refreshAlert = UIAlertController(title: Localization("Refresh"), message: Localization("All data will be lost."), preferredStyle: UIAlertControllerStyle.alert)
         
-        refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+        refreshAlert.addAction(UIAlertAction(title: Localization("yes"), style: .default, handler: { (action: UIAlertAction!) in
 
             self.selectedMenuItem = (indexPath as NSIndexPath).row
             
@@ -86,9 +93,11 @@ class LanguageNav: UITableViewController {
             
             tableView.reloadData()
             tableView.selectRow(at: IndexPath(row: self.selectedMenuItem, section: 0), animated: false, scrollPosition: .middle)
+            
+            self.setText()
         }))
         
-        refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+        refreshAlert.addAction(UIAlertAction(title: Localization("no"), style: .cancel, handler: { (action: UIAlertAction!) in
         }))
         
         present(refreshAlert, animated: true, completion: nil)
