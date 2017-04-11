@@ -27,5 +27,5 @@ let ZakoldovannyjKrug: TraductedText = TraductedText(
              text: "")
         ],
     voc: [
-        OriginalWord(lang: Lang.es , wordInText: "", neutralWord: "") : [Word(lang: Lang.en, neutralWord: ""), Word(lang: Lang.de, neutralWord: "")]
+        OriginalWord(lang: Lang.es , wordInText: "", neutralWord: "") : [Word(lang: Lang.en, neutralWord: ""), Word(lang: Lang.es, neutralWord: ""), Word(lang: Lang.de, neutralWord: ""), Word(lang: Lang.fr, neutralWord: "")]
     ], level: Level.B1, author: "По Вячеславу Сысоеву", titleAudio: "ZakoldovannyjKrug")

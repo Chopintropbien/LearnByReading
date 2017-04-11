@@ -34,6 +34,10 @@ class ChoosePaymentPlanCV: UIViewController {
         plan2.setUp()
         plan3.setUp()
         plan4.setUp()
+        
+        self.navigationController!.navigationBar.tintColor = UIColor.black
+        let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
+        self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : UIColor.black]
     
         /* Text */
         setText()

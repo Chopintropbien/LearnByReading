@@ -14,10 +14,10 @@
 "Please wait..." = "Patientez...";
 
 // Could not send email
-"Could Not Send Email alert title" = "Impossiblilité d'envoyer un mail";
+"Could Not Send Email alert title" = "Impossibilité d'envoyer un mail";
 
 // Your device could not send e-mail.  Please check e-mail configuration and try again.
-"Could Not Send Email alert core" = "Votre appareil ne peut pas envoyer d'email. Vérifier vos configurations et réessayer ultérieurement.";
+"Could Not Send Email alert core" = "Votre appareil ne peut pas envoyer d'email. Vérifiez vos configurations et réessayez ultérieurement.";
 
 
 
@@ -87,7 +87,7 @@
 /* AddText */
 
 // AddText title
-"AddText title" = "Plus des textes";
+"AddText title" = "Plus de textes";
 
 // basic level button
 "basic level" = "Basique";
@@ -114,7 +114,7 @@
 "Can not make payment title" = "Impossibilité de paiement";
 
 // Can not make payment body
-"Can not make payment body" = "Vous n'êtes pas authorisé-e à accéder aux paiements de cette application. Vérifier vos configurations et réessayer ultérieurement.";
+"Can not make payment body" = "Vous n'êtes pas authorisé(e) à accéder aux paiements de cette application. Vérifiez vos configurations et réessayez ultérieurement.";
 
 
 /* ChoosePaymentPlanButtonView */
@@ -154,7 +154,7 @@
 "MyLanguagesViewController title" = "Mes langues";
 
 // Choose an other language to learn
-"Choose an other language to learn" = "Choissez une autre langue à apprendre";
+"Choose an other language to learn" = "Choisir une autre langue à apprendre";
 
 // Download other language to learn
 "Download other language to learn" = "Télécharger une autre langue à apprendre";
@@ -170,7 +170,7 @@
 "Do you love the app?" = "Aimez-vous notre application?";
 
 // You friend will surely love it too! Label
-"You friend will surely love it too! Share with them you experience!" = "Vos amis vont surement aussi l'adorer. Pertager votre expérience!";
+"You friend will surely love it too! Share with them you experience!" = "Vos amis vont sûrement aussi l'adorer. Pertagez votre expérience!";
 
 // Send a SMS button
 "Send a SMS" = "Envoyer un SMS";
@@ -188,22 +188,22 @@
 "SMS body InviteFriendViewController" = "";
 
 // Can not send SMS title
-"Can not send SMS title" = "";
+"Can not send SMS title" = "Impossibilité d'envoyer des SMS";
 
 // Can not send SMS body
-"Can not send SMS body" = "";
+"Can not send SMS body" = "Votre appareil ne peut pas envoyer de SMS. Vérifiez vos configurations et réessayez ultérieurement.";
 
 
 /* GradeAppViewController */
 
 // GradeAppViewController title
-"GradeAppViewController title" = "Notez l'App";
+"GradeAppViewController title" = "Noter l'App";
 
 // Love the app? app
 "Love the app?" = "Aimez-vous notre application?";
 
 // Grade the app label
-"Grade the app" = "Aidez nous à nous faire connaître et mettez 5 étoiles sur l'AppStore";
+"Grade the app" = "Aidez-nous à nous faire connaître et mettez 5 étoiles sur l'AppStore";
 
 // Access to the AppStore button
 "Access to the AppStore" = "Accès à l'AppStore";
@@ -268,13 +268,23 @@
 "Refresh" = "Modifier la langue de navigation";
 
 // refreshAlert core]
-"All data will be lost." = "Êtes-vous certain-e de modifier la langue de navigation?";
+"All data will be lost." = "Êtes-vous certain(e) de modifier la langue de navigation ?";
 
 
-//"All data will be lost." = "Si vous modifier la langue de navigation, certains textes ne seront plus disponible dans la nouvelle langue";
+//"All data will be lost." = "Si vous modifiez la langue de navigation, certains textes ne seront plus disponibles dans la nouvelle langue";
 
 
 
+/* YourAbonnementVC */
+
+//
+"YourAbonnementVC title" = "Vous êtes abonné(e) jusqu'au: ";
+
+"Your subcribtion runs till" = "";
+
+"To modify you subcribtion" = "Pour mofifier votre abonnement, allez dans";
+
+"settings > iTunes" = "Général > iTunes & App Store";
 
 
 /* CreditsVC title */

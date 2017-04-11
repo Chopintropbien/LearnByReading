@@ -30,7 +30,7 @@
                                 <rect key="frame" x="16" y="64" width="288" height="42"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFk-c6-zaL">
-                                        <rect key="frame" x="0.0" y="0.0" width="69" height="35"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="76.5" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="fci-cJ-bfD"/>
                                         </constraints>
@@ -43,9 +43,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnD-w4-VQg">
-                                        <rect key="frame" x="69" y="0.0" width="150" height="35"/>
+                                        <rect key="frame" x="76.5" y="0.0" width="135" height="35"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="ERo-B2-46Y"/>
+                                            <constraint firstAttribute="width" constant="135" id="ERo-B2-46Y"/>
                                             <constraint firstAttribute="height" constant="35" id="eWt-aK-4IN"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="19"/>
@@ -57,7 +57,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwT-62-sLA">
-                                        <rect key="frame" x="219" y="0.0" width="69" height="35"/>
+                                        <rect key="frame" x="211.5" y="0.0" width="76.5" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="zDD-LO-zOc"/>
                                         </constraints>
@@ -1755,6 +1755,8 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="Jgm-9b-k55" id="ORx-nD-6Xb"/>
+                        <outlet property="whereToChangeExplainationLabel" destination="iff-ED-D7y" id="8fg-cW-F0b"/>
+                        <outlet property="whereToChangeLabel" destination="xkH-Vw-KlZ" id="8ml-BG-lnB"/>
                         <outlet property="yourSubcription" destination="dOn-X2-KXD" id="Es6-pw-cT4"/>
                     </connections>
                 </viewController>

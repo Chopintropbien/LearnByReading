@@ -280,6 +280,18 @@
 
 
 
+/* YourAbonnementVC */
+
+//
+"YourAbonnementVC title" = "";
+
+"Your subcribtion runs till" = "";
+
+"To modify you subcribtion" = "";
+
+"settings > iTunes" = "";
+
+
 
 /* CreditsVC title */
 
