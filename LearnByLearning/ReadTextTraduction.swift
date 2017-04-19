@@ -30,6 +30,12 @@ class ReadTextTraduction: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        // design
+        self.navigationController!.navigationBar.tintColor = almostBlack
+        let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
+        self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : almostBlack]
+        
+        
         tabBarController?.navigationItem.rightBarButtonItem = nil
         tabBarController?.navigationItem.leftBarButtonItem = customBack
         

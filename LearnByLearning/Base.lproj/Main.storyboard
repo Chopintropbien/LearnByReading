@@ -329,23 +329,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tN5-UE-rIi" customClass="ChoosePaymentPlanButtonView" customModule="LearnByLearning" customModuleProvider="target">
-                                <rect key="frame" x="40" y="202" width="240" height="75"/>
+                                <rect key="frame" x="20" y="202" width="280" height="75"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="cvm-73-qxA"/>
-                                    <constraint firstAttribute="width" constant="240" id="lOX-ub-LLH"/>
+                                    <constraint firstAttribute="width" constant="280" id="lOX-ub-LLH"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5q-tS-Sml" customClass="ChoosePaymentPlanButtonView" customModule="LearnByLearning" customModuleProvider="target">
-                                <rect key="frame" x="40" y="287" width="240" height="75"/>
+                                <rect key="frame" x="20" y="287" width="280" height="75"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCL-jf-zn9" customClass="HighlightChoosePaymentPlanButtonView" customModule="LearnByLearning" customModuleProvider="target">
-                                <rect key="frame" x="40" y="372" width="240" height="75"/>
+                                <rect key="frame" x="20" y="372" width="280" height="75"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0eB-BT-omI" customClass="ChoosePaymentPlanButtonView" customModule="LearnByLearning" customModuleProvider="target">
-                                <rect key="frame" x="40" y="457" width="240" height="75"/>
+                                <rect key="frame" x="20" y="457" width="280" height="75"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -577,7 +577,7 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                                 <rect key="frame" x="0.0" y="28" width="320" height="61"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ed5-rD-kix" id="EIq-cu-il1">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBK-cS-gOP">
@@ -668,7 +668,7 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                                         <rect key="frame" x="0.0" y="28" width="320" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ujv-kA-Gyn" id="ULh-uz-DPL">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9b-aA-J3V">
@@ -946,7 +946,7 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="67" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zwD-UH-PFY">
-                                <rect key="frame" x="0.0" y="99" width="320" height="425"/>
+                                <rect key="frame" x="0.0" y="121" width="320" height="403"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="Bsa-9W-C6k">
                                     <rect key="frame" x="0.0" y="95" width="320" height="44"/>
@@ -999,7 +999,7 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PV-6h-efX">
-                                <rect key="frame" x="57" y="49" width="100" height="100"/>
+                                <rect key="frame" x="57" y="71" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.96470588239999999" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="2yr-yW-r7M"/>
@@ -1016,7 +1016,7 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                             <constraint firstItem="8PV-6h-efX" firstAttribute="leading" secondItem="CeD-zQ-6SK" secondAttribute="leadingMargin" constant="41" id="D7M-7J-5Pr"/>
                             <constraint firstAttribute="trailing" secondItem="zwD-UH-PFY" secondAttribute="trailing" id="H6r-ry-0ng"/>
                             <constraint firstItem="zwD-UH-PFY" firstAttribute="top" secondItem="8PV-6h-efX" secondAttribute="bottom" constant="-50" id="JL0-Nh-Vm3"/>
-                            <constraint firstItem="8PV-6h-efX" firstAttribute="top" secondItem="e3a-fu-HLP" secondAttribute="bottom" constant="-15" id="Qmg-RA-xs3"/>
+                            <constraint firstItem="8PV-6h-efX" firstAttribute="top" secondItem="e3a-fu-HLP" secondAttribute="bottom" constant="7" id="Qmg-RA-xs3"/>
                             <constraint firstItem="zwD-UH-PFY" firstAttribute="leading" secondItem="CeD-zQ-6SK" secondAttribute="leading" id="d7p-h9-hJ1"/>
                             <constraint firstItem="5JP-yl-7Gv" firstAttribute="top" secondItem="zwD-UH-PFY" secondAttribute="bottom" id="q9S-bS-EKB"/>
                         </constraints>
@@ -1675,7 +1675,7 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qhx-4d-IXN" id="NET-NT-jO8">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1845,6 +1845,11 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                                                 <constraint firstAttribute="bottom" secondItem="pGf-qC-vpD" secondAttribute="bottom" constant="9" id="WOU-Yd-FdT"/>
                                                 <constraint firstAttribute="trailing" secondItem="pGf-qC-vpD" secondAttribute="trailing" constant="14" id="dvj-eU-SAp"/>
                                             </constraints>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <mask key="constraints">
+                                                    <include reference="NQ6-vq-Uyv"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>

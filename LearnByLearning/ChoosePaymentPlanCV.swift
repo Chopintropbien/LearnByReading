@@ -38,6 +38,8 @@ class ChoosePaymentPlanCV: UIViewController {
         self.navigationController!.navigationBar.tintColor = UIColor.black
         let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : UIColor.black]
+        
+        self.navigationItem.setHidesBackButton(true, animated: false)
     
         /* Text */
         setText()

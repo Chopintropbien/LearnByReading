@@ -27,11 +27,12 @@ func GetLearningLang() -> Lang{
 }
 
 func defaultLang() -> Lang{
-    if(GetLanguageNav() == Lang.en){
-        return Lang.ru
-    }else{
-        return Lang.en
-    }
+    return Lang.ru
+//    if(GetLanguageNav() == Lang.en){
+//        return Lang.ru
+//    }else{
+//        return Lang.ru
+//    }
 }
 
 func SetLearningLang(lang: Lang){

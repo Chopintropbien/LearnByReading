@@ -27,5 +27,19 @@ let ZakoldovannyjKrug: TraductedText = TraductedText(
              text: "")
         ],
     voc: [
-        OriginalWord(lang: Lang.es , wordInText: "", neutralWord: "") : [Word(lang: Lang.en, neutralWord: ""), Word(lang: Lang.es, neutralWord: ""), Word(lang: Lang.de, neutralWord: ""), Word(lang: Lang.fr, neutralWord: "")]
+        OriginalWord(lang: Lang.es , wordInText: "заколдованный", neutralWord: "заколдованный") : [Word(lang: Lang.en, neutralWord: "vicious"), Word(lang: Lang.es, neutralWord: "vicioso"), Word(lang: Lang.de, neutralWord: "verhext")],
+        OriginalWord(lang: Lang.es , wordInText: "круг", neutralWord: "круг") : [Word(lang: Lang.en, neutralWord: "circle"), Word(lang: Lang.es, neutralWord: "círculo"), Word(lang: Lang.de, neutralWord: "Kreis")],
+        OriginalWord(lang: Lang.es , wordInText: "у", neutralWord: "у") : [Word(lang: Lang.en, neutralWord: "at"), Word(lang: Lang.es, neutralWord: "en"), Word(lang: Lang.de, neutralWord: "bei")],
+        OriginalWord(lang: Lang.es , wordInText: "слесаря", neutralWord: "слесарь") : [Word(lang: Lang.en, neutralWord: "locksmith"), Word(lang: Lang.es, neutralWord: "cerrajero "), Word(lang: Lang.de, neutralWord: "Klempner")],
+        OriginalWord(lang: Lang.es , wordInText: "сантехника", neutralWord: "сантехник") : [Word(lang: Lang.en, neutralWord: "plumber"), Word(lang: Lang.es, neutralWord: "fontanero"), Word(lang: Lang.de, neutralWord: "Klempner")],
+        OriginalWord(lang: Lang.es , wordInText: "слесаря-сантехника", neutralWord: "слесарь-сантехник") : [Word(lang: Lang.en, neutralWord: "maintenance man"), Word(lang: Lang.es, neutralWord: "cerrajero-fontanero"), Word(lang: Lang.de, neutralWord: "Klempner")],
+        OriginalWord(lang: Lang.es , wordInText: "Семёнова", neutralWord: "Семёнов") : [Word(lang: Lang.en, neutralWord: "Semyonov"), Word(lang: Lang.es, neutralWord: "Semionov"), Word(lang: Lang.de, neutralWord: "Semjonow")],
+        OriginalWord(lang: Lang.es , wordInText: "сломался", neutralWord: "ломаться/сломаться (кто? что?)") : [Word(lang: Lang.en, neutralWord: "to break"), Word(lang: Lang.es, neutralWord: "estropear;romper"), Word(lang: Lang.de, neutralWord: "kaputtgehen")],
+        OriginalWord(lang: Lang.es , wordInText: "телевизор", neutralWord: "телевизор") : [Word(lang: Lang.en, neutralWord: "television set"), Word(lang: Lang.es, neutralWord: "televisor"), Word(lang: Lang.de, neutralWord: "Fernseher")],
+        OriginalWord(lang: Lang.es , wordInText: "бывает", neutralWord: "бывает") : [Word(lang: Lang.en, neutralWord: "sometimes happens"), Word(lang: Lang.es, neutralWord: "a veces pasa"), Word(lang: Lang.de, neutralWord: "das kann passieren")],
+        OriginalWord(lang: Lang.es , wordInText: "вызвал", neutralWord: "вызывать/вызвать (кого? что?)") : [Word(lang: Lang.en, neutralWord: "to call"), Word(lang: Lang.es, neutralWord: "llamar "), Word(lang: Lang.de, neutralWord: "holen")],
+        OriginalWord(lang: Lang.es , wordInText: "телемастера", neutralWord: "телемастер") : [Word(lang: Lang.en, neutralWord: "head technician"), Word(lang: Lang.es, neutralWord: "técnico superior"), Word(lang: Lang.de, neutralWord: "Fernsehfachmann")],
+        OriginalWord(lang: Lang.es , wordInText: "ждите", neutralWord: "ждать (кого? что?)") : [Word(lang: Lang.en, neutralWord: "to wait"), Word(lang: Lang.es, neutralWord: "esperar"), Word(lang: Lang.de, neutralWord: "warten")],
+        OriginalWord(lang: Lang.es , wordInText: "будет", neutralWord: "быть") : [Word(lang: Lang.en, neutralWord: "to be"), Word(lang: Lang.es, neutralWord: "estar"), Word(lang: Lang.de, neutralWord: "sein")],
+        OriginalWord(lang: Lang.es , wordInText: "обещали", neutralWord: "обещать/пообещать (кому? что?)") : [Word(lang: Lang.en, neutralWord: "to promise"), Word(lang: Lang.es, neutralWord: "prometer"), Word(lang: Lang.de, neutralWord: "versprechen")]
     ], level: Level.B1, author: "По Вячеславу Сысоеву", titleAudio: "ZakoldovannyjKrug")

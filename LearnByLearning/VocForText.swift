@@ -32,6 +32,12 @@ class VocForText: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        // design
+        self.navigationController!.navigationBar.tintColor = almostBlack
+        let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
+        self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : almostBlack]
+        
         tabBarController?.navigationItem.rightBarButtonItem = addTradButton
         tabBarController?.navigationItem.leftBarButtonItem = customBack
         voc = UserSave.getVocSaved(text: text)

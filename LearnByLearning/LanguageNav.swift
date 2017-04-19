@@ -24,6 +24,7 @@ class LanguageNav: UITableViewController {
         let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : UIColor.black]
 
+        
         tableView.selectRow(at: IndexPath(row: selectedMenuItem, section: 0), animated: false, scrollPosition: .middle)
         
         
@@ -98,6 +99,7 @@ class LanguageNav: UITableViewController {
         }))
         
         refreshAlert.addAction(UIAlertAction(title: Localization("no"), style: .cancel, handler: { (action: UIAlertAction!) in
+            self.selectedMenuItem = (indexPath as NSIndexPath).row
         }))
         
         present(refreshAlert, animated: true, completion: nil)

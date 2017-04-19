@@ -91,14 +91,21 @@ class ReadTextOriginal: UIViewController {
         
         /* text */
         setText()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        // design
+        self.navigationController!.navigationBar.tintColor = almostBlack
+        let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
+        self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : almostBlack]
+        
         navigationController?.accessibilityElementsHidden = false
         speedButton.accessibilityElementsHidden = false
         tabBarController?.navigationItem.rightBarButtonItem = speedButton
         tabBarController?.navigationItem.leftBarButtonItem = customBack
+        
+        
         
     }
     

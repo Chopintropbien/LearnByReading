@@ -33,6 +33,11 @@ class AddTraductionVocForText: UIViewController, UITableViewDelegate, UITableVie
     override func viewWillAppear(_ animated: Bool) {
         /* text */
         setText()
+        
+        // design
+        self.navigationController!.navigationBar.tintColor = almostBlack
+        let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
+        self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : almostBlack]
     }
 
     override func didReceiveMemoryWarning() {

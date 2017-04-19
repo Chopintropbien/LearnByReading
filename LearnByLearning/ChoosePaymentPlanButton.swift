@@ -175,7 +175,7 @@ class ChoosePaymentPlanButtonView: UIView {
             totalPriceLabel.text = String(format:Localization("%@ every %d /Month"), price.total, nbMonth)
         case "lauriane.molllier.learnByReading.russian.12month":
             let nbMonth = 12
-            nbMonthLabel.text = String(nbMonth)
+            nbMonthLabel.text = String("1")
             monthLabel.text = Localization("YEAR")
             
             let price = product.localizedPrice(nbMonth: Decimal(nbMonth))

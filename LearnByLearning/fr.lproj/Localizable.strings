@@ -21,7 +21,6 @@
 
 
 
-
 /* Home */
 
 // Home title
@@ -38,7 +37,7 @@
 "ReadTextOriginal title" = "Texte original";
 
 // set speed label
-"set speed" = "Vitesse de lecture";
+"set speed" = "Lecture";
 
 // slow speed button
 "slow" = "Lente";
@@ -126,7 +125,10 @@
 "3MONTH" = "MOIS";
 "6MONTH" = "MOIS";
 "Just %@ /Month" = "Seulement %@ /Mois";
-"%@ every %d /Month" = "%@ tous les %d mois";
+
+"%@ every 3 months" = "%@ tous les %d mois";
+"%@ every 6 months" = "%@ tous les %d mois";
+
 
 "YEAR" = "AN";
 "%@ every year" = "%@ tous les ans";
@@ -278,9 +280,11 @@
 /* YourAbonnementVC */
 
 //
-"YourAbonnementVC title" = "Vous êtes abonné(e) jusqu'au: ";
+"YourAbonnementVC title" = "Abonnement";
 
-"Your subcribtion runs till" = "";
+"Your subcribtion runs till" = "Vous êtes abonné(e) jusqu'au: ";
+
+"Your did not subcribe to anything" = "Vous n'êtes pas abonné(e)";
 
 "To modify you subcribtion" = "Pour mofifier votre abonnement, allez dans";
 
@@ -291,6 +295,10 @@
 
 // CreditsVC title
 "CreditsVC title" = "Crédits";
+
+"traductors" = "Traducteurs";
+
+"reader" = "Lecteur";
 
 // Translation russian-
 "Translation russian-english" = "Traduction russe-anglais";

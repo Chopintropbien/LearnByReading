@@ -141,6 +141,8 @@
 		9826BB151E9509F200E7CD1E /* Проверка.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Проверка.swift"; sourceTree = "<group>"; };
 		9826BB181E950A1400E7CD1E /* Быть как все.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Быть как все.swift"; sourceTree = "<group>"; };
 		9826BB1B1E950A3000E7CD1E /* Мы и налоги.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Мы и налоги.swift"; sourceTree = "<group>"; };
+		982731631EA7691D007FFF73 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		982731641EA7691E007FFF73 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		982D2AF01E9C24A400B590B1 /* YourAbonnementVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourAbonnementVC.swift; sourceTree = "<group>"; };
 		982ECD471E8F9234003B66F9 /* CreditsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsVC.swift; sourceTree = "<group>"; };
 		982ECD491E8FA0A3003B66F9 /* ReceiptManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptManager.swift; sourceTree = "<group>"; };
@@ -768,6 +770,7 @@
 				fr,
 				es,
 				ru,
+				de,
 			);
 			mainGroup = 988A72AF1E352DF600BDE635;
 			productRefGroup = 988A72B91E352DF600BDE635 /* Products */;
@@ -950,6 +953,7 @@
 				98EC9EFB1E4D01550062F9F2 /* fr */,
 				9823AE9A1E66E3B800AB376C /* es */,
 				9823AE9D1E66E3C100AB376C /* ru */,
+				982731631EA7691D007FFF73 /* de */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -961,6 +965,7 @@
 				98EC9EFC1E4D01560062F9F2 /* fr */,
 				9823AE9B1E66E3B800AB376C /* es */,
 				9823AE9E1E66E3C100AB376C /* ru */,
+				982731641EA7691E007FFF73 /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

@@ -39,16 +39,18 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
         self.texts = UserSave.getTextSaved()
         
         
-        /* set nav menu */
         
-        self.navigationController!.navigationBar.tintColor = UIColor.white
-        let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
-        self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : UIColor.white]
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.texts = UserSave.getTextSaved()
         tblTableView.reloadData()
+        
+        /* set nav menu */
+        
+        self.navigationController!.navigationBar.tintColor = UIColor.white
+        let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
+        self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : UIColor.white]
         
         /* text */
         self.title = Localization("Home title")

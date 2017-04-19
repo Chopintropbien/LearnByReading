@@ -1,0 +1,405 @@
+/* Common */
+
+// Ok
+"Ok" = "Ок";
+
+"yes" = "Да";
+
+"no" = "Нет";
+
+// Cancel
+"Cancel" = "Отменить";
+
+// Please wait...
+"Please wait..." = "Пожалуйста, подождите...";
+
+// Could not send email
+"Could Not Send Email alert title" = "Емайл не отправлен";
+
+// Your device could not send e-mail.  Please check e-mail configuration and try again.
+"Could Not Send Email alert core" = "Устройство не отправляет емайл. Пожалуйста, проверьте настройку и повторите.";
+
+
+
+
+/* Home */
+
+// Home title
+"Home title" = "Начало";
+
+// Add new text button
+"Add new text" = "Новый текст";
+
+
+
+/* ReadTextOriginal */
+
+//ReadTextOriginal title
+"ReadTextOriginal title" = "Основной текст";
+
+// set speed label
+"set speed" = "Скорость";
+
+// slow speed button
+"slow" = "Медленная";
+
+// medium speed button
+"medium" = "Средняя";
+
+// fast speed button
+"fast" = "Быстрая";
+
+// ORIGINAL tabBarItem
+"ORIGINAL" = "ОСНОВНОЙ";
+
+
+
+/* ReadTextTraduction */
+
+
+
+// ReadTextTraduction title
+"ReadTextTraduction title" = "Перевод";
+
+// TRANSLATION tabBarItem
+"TRANSLATION" = "ПЕРЕВОД";
+
+
+
+/* VocForText */
+
+// VocForText title
+"VocForText title" = "ЛЕКСИКА";
+
+// VOCABULARY tabBarItem
+"VOCABULARY" = "Лексика";
+
+
+
+/* AddTraductionVocForText */
+
+//
+"AddTraductionVocForText title" = "Добавить слова";
+
+// Cancel UIBarButtonItem
+"Cancel" = "Отменить";
+
+// Done UIBarButtonItem
+"Done AddTraductionVocForText" = "Готово";
+
+
+
+/* AddText */
+
+// AddText title
+"AddText title" = "Добавить текст";
+
+// basic level button
+"basic level" = "Простой";
+
+// intermediate level button
+"intermediate level" = "Средний";
+
+// hard level button
+"hard level" = "Сложный";
+
+// Done button AddText
+"Done AddText" = "Готово";
+
+
+/* ChoosePaymentPlanCV */
+
+// ChoosePaymentPlanCV title
+"ChoosePaymentPlanCV title" = "Выбрать подписку";
+
+// explanation choose PaymentPlan
+"explanation" = "Подписаться для полного доступа к функциям выбранного языка";
+
+// Can not make payment title
+"Can not make payment title" = "Не возможно заплатить";
+
+// Can not make payment body
+"Can not make payment body" = "Вы не можете заплатить. Пожалуйста, проверьте настройки и повторите.";
+
+
+
+
+/* ChoosePaymentPlanButtonView */
+
+//
+"1MONTH" = "МЕСЯЦ";
+"%@ every month" = "%@ every month";
+
+"3MONTH" = "МЕСЯЦА";
+"6MONTH" = "MЕСЯЦЕВ";
+"Just %@ /Month" = "Только %@ /Месяц";
+
+"%@ every 3 months" = "%@ за %d месяца";
+"%@ every 6 months" = "%@ за %d месяцев";
+
+
+"YEAR" = "ГОД";
+"%@ every year" = "%@ в год";
+
+
+
+
+
+/* HighlightChoosePaymentPlanButtonView */
+
+// MOST POPULAR banner
+"MOST POPULAR" = "ПОПУЛЯРНЫЙ";
+
+
+/* MenuViewController */
+
+// MenuViewController title
+"MenuViewController title" = "Меню";
+
+
+
+/* MyLanguagesViewController */
+
+// MyLanguagesViewController title
+"MyLanguagesViewController title" = "Мои Языки";
+
+// Choose an other language to learn
+"Choose an other language to learn" = "Выберите другой язык для учения";
+
+// Download other language to learn
+"Download other language to learn" = "Скачайте другой язык для учения";
+
+
+
+/* InviteFriendViewController */
+
+// InviteFriendViewController title
+"InviteFriendViewController title" = "Пригласить друзей";
+
+// Do you love the app? label
+"Do you love the app?" = "Понравилось?";
+
+// You friend will surely love it too! Label
+"You friend will surely love it too! Share with them you experience!" = "Твоим друзьям точно понравится! Поделись с ними своим опытом!";
+
+// Send a SMS button
+"Send a SMS" = "Отправить СМС";
+
+// Send an e-mail button
+"Send an e-mail" = "Отправить емайл";
+
+// mail subjet
+"mail subjet InviteFriendViewController" = "Знаешь Polyglott?";
+
+// mail body
+"mail body InviteFriendViewController" = "Привет,\n\nЯ только что узнал/а про новое проложение для учёбы Английского. Оно называется Polyglott.\nОно состоит из коротких текстов, приспособленных твоему уровню! Текст читает реальный голос, на языке который ты желаешь выучить, на выбранной тобой скорости. Переводятся те слова, которые не знаешь, и вдобавок есть перевод самого текста.\n\nПопробуй сейчас!";
+
+// SMS body
+"SMS body InviteFriendViewController" = "Привет! Я только что узнал/а про новое приложение  для учёбы Английского.\nВзгляни, это круто!";
+
+// Can not send SMS title
+"Can not send SMS title" = "СМС не отправлено";
+
+// Can not send SMS body
+"Can not send SMS body" = "Устройство не отправляет СМС. Пожалуйста, проверьте настройку и повторите.";
+
+
+/* GradeAppViewController */
+
+// GradeAppViewController title
+"GradeAppViewController title" = "Оценить";
+
+// Love the app? app
+"Love the app?" = "Понравилось?";
+
+// Grade the app label
+"Grade the app" = "Помоги нам продвинуть приложение, поставь 5 звёзд!";
+
+// Access to the AppStore button
+"Access to the AppStore" = "Доступ к AppStore";
+
+
+
+/* HelpViewController */
+
+// HelpViewController title
+"HelpViewController title" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+//
+"" = "";
+
+
+/* SettingsViewController */
+
+// Settings title
+"Settings title" = "Настройки";
+
+//
+"General" = "Общие";
+
+//
+"Navigation language" = "Язык навигации";
+
+//
+"App purshase" = "Покупки";
+
+//
+"Your abonnement" = "Ваши подписки";
+
+//
+"About" = "О нас";
+
+//
+"Credits" = "Кредиты";
+
+//
+"Term and conditions" = "Правила и условия";
+
+
+
+/* LanguageNav */
+
+//
+"LanguageNav title" = "Навигация";
+
+// refreshAlert title
+"Refresh" = "Поменять язык навигации";
+
+// refreshAlert core
+"All data will be lost." = "Желаете поменять язык навигации?"; //Некоторые тексты недоступны на новом языке
+
+
+
+
+/* YourAbonnementVC */
+
+//
+"YourAbonnementVC title" = "Подписка";
+
+"Your subcribtion runs till" = "Подписка действительна до:";
+
+"Your did not subcribe to anything" = "У вас нет подписок";
+
+"To modify you subcribtion" = "Что-бы изменить подписку войдите в:";
+
+"settings > iTunes" = "Настройки > iTunes & App Store";
+
+
+
+/* CreditsVC title */
+
+// CreditsVC title
+"CreditsVC title" = "Титры";
+
+"traductors" = "Переводчики";
+
+"reader" = "Читатель";
+
+// Translation russian-
+"Translation russian-english" = "Перевод русский-английский ";
+
+"Translation russian-spanish" = "Перевод русский-испанский";
+
+"Translation russian-german" = "Перевод русский-немецкий";
+
+"Translation russian-french" = "Перевод русский-французский";
+
+"Translation russian-italien" = "Перевод русский-итальянский";
+
+
+// Translation german-
+"Translation german-english" = "Перевод немецкий-английский";
+
+"Translation german-spanish" = "Перевод немецкий-испанский";
+
+"Translation german-french" = "Перевод немецкий-французский";
+
+"Translation german-russian" = "Перевод немецкий-русский";
+
+"Translation german-italien" = "Перевод немецкий-итальянский";
+
+
+// Translation english-
+"Translation english-russian" = "Перевод английский-русский";
+
+"Translation english-spanish" = "Перевод английский-испанский";
+
+"Translation english-french" = "Перевод английский-французский";
+
+"Translation english-russian" = "Перевод английский-немецкий";
+
+"Translation english-italien" = "Перевод английский-итальянский";
+
+
+// Translation spanish-
+"Translation spanish-english" = "Перевод испанский-английский";
+
+"Translation spanish-russian" = "Перевод испанский-русский";
+
+"Translation spanish-french" = "Перевод испанский-французский";
+
+"Translation spanish-italien" = "Перевод испанский-итальянский";
+
+"Translation spanish-german" = "Перевод испанский-немецкий";
+
+// Translation french-
+"Translation french-english" = "Перевод французский-английский";
+
+"Translation french-german" = "Перевод французский-немецкий";
+
+"Translation french-italien" = "Перевод французский-итальянский";
+
+"Translation french-russian" = "Перевод французский-русский";
+
+"Translation german-spanish" = "Перевод французский-испанский";
+
+
+// Translation italien-
+"Translation italien-english" = "Перевод итальянский-английский";
+
+"Translation italien-russian" = "Перевод итальянский-русский";
+
+"Translation italien-french" = "Перевод итальянский-французский";
+
+"Translation italien-german" = "Перевод итальянский-немецкий";
+
+"Translation italien-spanish" = "Перевод итальянский-испанский";
+
+
+
+/* Lang */
+
+"English" = "Английский";
+
+"French" = "Французский";
+
+"Spanish" = "Испанский";
+
+"Russian" = "Русский";
+
+"German" = "Немецкий";
+
+"Italien" = "Итальянский";
+
+
+
+
+
+
+
+
+
+
+
