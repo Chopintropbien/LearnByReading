@@ -13,7 +13,7 @@ import Foundation
 class UserSave {
 
     static fileprivate let userDefaults = UserDefaults.standard
-    static fileprivate let separator = ";"
+    static let separator = ";"
     
     
     

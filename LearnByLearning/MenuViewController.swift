@@ -166,6 +166,15 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     
     @IBAction func showHome(_ sender: UIButton) {
+        let selectedCell = tblTableView.cellForRow(at: self.tblTableView.indexPathForSelectedRow!)!
+        selectedCell.contentView.backgroundColor = UIColor.clear
+        let homeCell = tblTableView.cellForRow(at: IndexPath(row: 0, section: 0))!
+        homeCell.contentView.backgroundColor = selectCellColor
+        
+        self.tblTableView.deselectRow(at: self.tblTableView.indexPathForSelectedRow!, animated: true)
+        self.tblTableView.selectRow(at: NSIndexPath(row: 0, section: 0) as IndexPath, animated: true, scrollPosition: .top)
+        
+        
         let idSeque = CellsMenu.getCorrespondingIdSegue(cell: CellsMenu.home)
         self.performSegue(withIdentifier: idSeque, sender: self)
     }

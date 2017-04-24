@@ -12,6 +12,9 @@ import Foundation
 
 class TextsData{
     
+    
+    static public let texts: [TraductedText] = [Sjurpriz, Svezhyj, ZakoldovannyjKrug, Alibi, Proverka, BytiKakVse, MyINalogi]
+    
     static public func get(nr: Int, lang: Lang) -> TraductedText?{
         return texts.filter{ (t) in
             t.hasThisId(nr: nr, lang: lang)
@@ -32,9 +35,9 @@ class TextsData{
     static func getIdsTextsFirstDowload() -> String{
         switch GetLearningLang() {
         case Lang.en:
-            return ZakoldovannyjKrug.id
+            return ZakoldovannyjKrug.id + UserSave.separator + Sjurpriz.id + UserSave.separator + Svezhyj.id + UserSave.separator + Alibi.id + UserSave.separator + Proverka.id + UserSave.separator + BytiKakVse.id + UserSave.separator + MyINalogi.id
         default:
-            return ZakoldovannyjKrug.id
+            return ZakoldovannyjKrug.id + UserSave.separator + Sjurpriz.id + UserSave.separator + Svezhyj.id + UserSave.separator + Alibi.id + UserSave.separator + Proverka.id + UserSave.separator + BytiKakVse.id + UserSave.separator + MyINalogi.id
         }
     }
     
@@ -85,6 +88,6 @@ class TextsData{
     
 
     
-    static public let texts: [TraductedText] = [Sjurpriz, Svezhyj, ZakoldovannyjKrug]
+    
     
 }

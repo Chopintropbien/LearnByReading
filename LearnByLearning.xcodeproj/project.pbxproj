@@ -34,6 +34,9 @@
 		9826BB161E9509F200E7CD1E /* Проверка.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826BB151E9509F200E7CD1E /* Проверка.swift */; };
 		9826BB191E950A1400E7CD1E /* Быть как все.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826BB181E950A1400E7CD1E /* Быть как все.swift */; };
 		9826BB1C1E950A3000E7CD1E /* Мы и налоги.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826BB1B1E950A3000E7CD1E /* Мы и налоги.swift */; };
+		982731681EA9F32B007FFF73 /* MyINalogi_mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 982731651EA9F32B007FFF73 /* MyINalogi_mid.mp3 */; };
+		982731691EA9F32B007FFF73 /* MyINalogi_fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 982731661EA9F32B007FFF73 /* MyINalogi_fast.mp3 */; };
+		9827316C1EA9F3B9007FFF73 /* MyINalogi_slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9827316B1EA9F3B9007FFF73 /* MyINalogi_slow.mp3 */; };
 		982D2AF11E9C24A400B590B1 /* YourAbonnementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982D2AF01E9C24A400B590B1 /* YourAbonnementVC.swift */; };
 		982ECD481E8F9234003B66F9 /* CreditsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982ECD471E8F9234003B66F9 /* CreditsVC.swift */; };
 		982ECD4A1E8FA0A3003B66F9 /* ReceiptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982ECD491E8FA0A3003B66F9 /* ReceiptManager.swift */; };
@@ -57,12 +60,12 @@
 		987D35121E7D6DA3008434A8 /* Alibi-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35001E7D6DA3008434A8 /* Alibi-fast.mp3 */; };
 		987D35131E7D6DA3008434A8 /* Alibi-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35011E7D6DA3008434A8 /* Alibi-mid.mp3 */; };
 		987D35141E7D6DA3008434A8 /* Alibi-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35021E7D6DA3008434A8 /* Alibi-slow.mp3 */; };
-		987D35151E7D6DA3008434A8 /* 5-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35031E7D6DA3008434A8 /* 5-fast.mp3 */; };
-		987D35161E7D6DA3008434A8 /* 5-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35041E7D6DA3008434A8 /* 5-mid.mp3 */; };
-		987D35171E7D6DA3008434A8 /* 5-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35051E7D6DA3008434A8 /* 5-slow.mp3 */; };
-		987D35181E7D6DA3008434A8 /* 25-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35061E7D6DA3008434A8 /* 25-fast.mp3 */; };
-		987D35191E7D6DA3008434A8 /* 25-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35071E7D6DA3008434A8 /* 25-mid.mp3 */; };
-		987D351A1E7D6DA3008434A8 /* 25-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35081E7D6DA3008434A8 /* 25-slow.mp3 */; };
+		987D35151E7D6DA3008434A8 /* Proverka-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35031E7D6DA3008434A8 /* Proverka-fast.mp3 */; };
+		987D35161E7D6DA3008434A8 /* Proverka-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35041E7D6DA3008434A8 /* Proverka-mid.mp3 */; };
+		987D35171E7D6DA3008434A8 /* Proverka-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35051E7D6DA3008434A8 /* Proverka-slow.mp3 */; };
+		987D35181E7D6DA3008434A8 /* BytiKakVse-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35061E7D6DA3008434A8 /* BytiKakVse-fast.mp3 */; };
+		987D35191E7D6DA3008434A8 /* BytiKakVse-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35071E7D6DA3008434A8 /* BytiKakVse-mid.mp3 */; };
+		987D351A1E7D6DA3008434A8 /* BytiKakVse-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35081E7D6DA3008434A8 /* BytiKakVse-slow.mp3 */; };
 		987D351C1E7DB768008434A8 /* preferedReadingSpeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987D351B1E7DB768008434A8 /* preferedReadingSpeed.swift */; };
 		987D351F1E7E9AB9008434A8 /* InviteFriendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987D351E1E7E9AB9008434A8 /* InviteFriendButton.swift */; };
 		987E15041E6173230080C9B6 /* TraductedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E15031E6173230080C9B6 /* TraductedText.swift */; };
@@ -143,6 +146,9 @@
 		9826BB1B1E950A3000E7CD1E /* Мы и налоги.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Мы и налоги.swift"; sourceTree = "<group>"; };
 		982731631EA7691D007FFF73 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		982731641EA7691E007FFF73 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		982731651EA9F32B007FFF73 /* MyINalogi_mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MyINalogi_mid.mp3; sourceTree = "<group>"; };
+		982731661EA9F32B007FFF73 /* MyINalogi_fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MyINalogi_fast.mp3; sourceTree = "<group>"; };
+		9827316B1EA9F3B9007FFF73 /* MyINalogi_slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MyINalogi_slow.mp3; sourceTree = "<group>"; };
 		982D2AF01E9C24A400B590B1 /* YourAbonnementVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourAbonnementVC.swift; sourceTree = "<group>"; };
 		982ECD471E8F9234003B66F9 /* CreditsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsVC.swift; sourceTree = "<group>"; };
 		982ECD491E8FA0A3003B66F9 /* ReceiptManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptManager.swift; sourceTree = "<group>"; };
@@ -166,12 +172,12 @@
 		987D35001E7D6DA3008434A8 /* Alibi-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Alibi-fast.mp3"; path = "LearnByLearning/Alibi-fast.mp3"; sourceTree = "<group>"; };
 		987D35011E7D6DA3008434A8 /* Alibi-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Alibi-mid.mp3"; path = "LearnByLearning/Alibi-mid.mp3"; sourceTree = "<group>"; };
 		987D35021E7D6DA3008434A8 /* Alibi-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Alibi-slow.mp3"; path = "LearnByLearning/Alibi-slow.mp3"; sourceTree = "<group>"; };
-		987D35031E7D6DA3008434A8 /* 5-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "5-fast.mp3"; sourceTree = "<group>"; };
-		987D35041E7D6DA3008434A8 /* 5-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "5-mid.mp3"; sourceTree = "<group>"; };
-		987D35051E7D6DA3008434A8 /* 5-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "5-slow.mp3"; sourceTree = "<group>"; };
-		987D35061E7D6DA3008434A8 /* 25-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "25-fast.mp3"; sourceTree = "<group>"; };
-		987D35071E7D6DA3008434A8 /* 25-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "25-mid.mp3"; sourceTree = "<group>"; };
-		987D35081E7D6DA3008434A8 /* 25-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "25-slow.mp3"; sourceTree = "<group>"; };
+		987D35031E7D6DA3008434A8 /* Proverka-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Proverka-fast.mp3"; path = "LearnByLearning/Proverka-fast.mp3"; sourceTree = "<group>"; };
+		987D35041E7D6DA3008434A8 /* Proverka-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Proverka-mid.mp3"; path = "LearnByLearning/Proverka-mid.mp3"; sourceTree = "<group>"; };
+		987D35051E7D6DA3008434A8 /* Proverka-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Proverka-slow.mp3"; path = "LearnByLearning/Proverka-slow.mp3"; sourceTree = "<group>"; };
+		987D35061E7D6DA3008434A8 /* BytiKakVse-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "BytiKakVse-fast.mp3"; path = "LearnByLearning/BytiKakVse-fast.mp3"; sourceTree = "<group>"; };
+		987D35071E7D6DA3008434A8 /* BytiKakVse-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "BytiKakVse-mid.mp3"; path = "LearnByLearning/BytiKakVse-mid.mp3"; sourceTree = "<group>"; };
+		987D35081E7D6DA3008434A8 /* BytiKakVse-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "BytiKakVse-slow.mp3"; path = "LearnByLearning/BytiKakVse-slow.mp3"; sourceTree = "<group>"; };
 		987D351B1E7DB768008434A8 /* preferedReadingSpeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = preferedReadingSpeed.swift; sourceTree = "<group>"; };
 		987D351E1E7E9AB9008434A8 /* InviteFriendButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteFriendButton.swift; sourceTree = "<group>"; };
 		987E15031E6173230080C9B6 /* TraductedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraductedText.swift; sourceTree = "<group>"; };
@@ -381,9 +387,6 @@
 				9826BB1A1E950A2400E7CD1E /* Мы и налоги */,
 				9826BB171E9509FC00E7CD1E /* Быть как все */,
 				9826BB141E9509E600E7CD1E /* Проверка */,
-				9826BB131E9509DA00E7CD1E /* Заколдованный круг */,
-				9826BB121E9509CE00E7CD1E /* Сюрприз */,
-				9826BB111E9509C400E7CD1E /* Алиби */,
 				9826BB0A1E94FCE100E7CD1E /* Свежий */,
 			);
 			name = A2;
@@ -392,6 +395,8 @@
 		9826BB051E94FB1B00E7CD1E /* B1 */ = {
 			isa = PBXGroup;
 			children = (
+				9826BB111E9509C400E7CD1E /* Алиби */,
+				9826BB131E9509DA00E7CD1E /* Заколдованный круг */,
 			);
 			name = B1;
 			sourceTree = "<group>";
@@ -399,6 +404,7 @@
 		9826BB061E94FB2200E7CD1E /* B2 */ = {
 			isa = PBXGroup;
 			children = (
+				9826BB121E9509CE00E7CD1E /* Сюрприз */,
 			);
 			name = B2;
 			sourceTree = "<group>";
@@ -458,6 +464,9 @@
 			isa = PBXGroup;
 			children = (
 				9826BB151E9509F200E7CD1E /* Проверка.swift */,
+				987D35031E7D6DA3008434A8 /* Proverka-fast.mp3 */,
+				987D35041E7D6DA3008434A8 /* Proverka-mid.mp3 */,
+				987D35051E7D6DA3008434A8 /* Proverka-slow.mp3 */,
 			);
 			name = "Проверка";
 			sourceTree = "<group>";
@@ -466,6 +475,9 @@
 			isa = PBXGroup;
 			children = (
 				9826BB181E950A1400E7CD1E /* Быть как все.swift */,
+				987D35061E7D6DA3008434A8 /* BytiKakVse-fast.mp3 */,
+				987D35071E7D6DA3008434A8 /* BytiKakVse-mid.mp3 */,
+				987D35081E7D6DA3008434A8 /* BytiKakVse-slow.mp3 */,
 			);
 			name = "Быть как все";
 			sourceTree = "<group>";
@@ -474,6 +486,9 @@
 			isa = PBXGroup;
 			children = (
 				9826BB1B1E950A3000E7CD1E /* Мы и налоги.swift */,
+				9827316B1EA9F3B9007FFF73 /* MyINalogi_slow.mp3 */,
+				982731651EA9F32B007FFF73 /* MyINalogi_mid.mp3 */,
+				982731661EA9F32B007FFF73 /* MyINalogi_fast.mp3 */,
 			);
 			name = "Мы и налоги";
 			sourceTree = "<group>";
@@ -499,12 +514,6 @@
 		987D34F61E7D6D8B008434A8 /* Russian */ = {
 			isa = PBXGroup;
 			children = (
-				987D35031E7D6DA3008434A8 /* 5-fast.mp3 */,
-				987D35041E7D6DA3008434A8 /* 5-mid.mp3 */,
-				987D35051E7D6DA3008434A8 /* 5-slow.mp3 */,
-				987D35061E7D6DA3008434A8 /* 25-fast.mp3 */,
-				987D35071E7D6DA3008434A8 /* 25-mid.mp3 */,
-				987D35081E7D6DA3008434A8 /* 25-slow.mp3 */,
 			);
 			name = Russian;
 			sourceTree = "<group>";
@@ -789,26 +798,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				987D35161E7D6DA3008434A8 /* 5-mid.mp3 in Resources */,
+				987D35161E7D6DA3008434A8 /* Proverka-mid.mp3 in Resources */,
 				987D350C1E7D6DA3008434A8 /* Svezhyj-fast.mp3 in Resources */,
 				988A72C81E352DF600BDE635 /* LaunchScreen.storyboard in Resources */,
 				987D35131E7D6DA3008434A8 /* Alibi-mid.mp3 in Resources */,
-				987D35151E7D6DA3008434A8 /* 5-fast.mp3 in Resources */,
-				987D35191E7D6DA3008434A8 /* 25-mid.mp3 in Resources */,
+				987D35151E7D6DA3008434A8 /* Proverka-fast.mp3 in Resources */,
+				987D35191E7D6DA3008434A8 /* BytiKakVse-mid.mp3 in Resources */,
 				987D35101E7D6DA3008434A8 /* ZakoldovannyjKrug-mid.mp3 in Resources */,
 				987D34F21E7AE3EE008434A8 /* Main.storyboard in Resources */,
-				987D35181E7D6DA3008434A8 /* 25-fast.mp3 in Resources */,
+				987D35181E7D6DA3008434A8 /* BytiKakVse-fast.mp3 in Resources */,
 				98EC9EF71E4D012B0062F9F2 /* Localizable.strings in Resources */,
 				987D350B1E7D6DA3008434A8 /* Sjurpriz-slow.mp3 in Resources */,
+				9827316C1EA9F3B9007FFF73 /* MyINalogi_slow.mp3 in Resources */,
 				987D35091E7D6DA3008434A8 /* Sjurpriz-fast.mp3 in Resources */,
-				987D35171E7D6DA3008434A8 /* 5-slow.mp3 in Resources */,
+				987D35171E7D6DA3008434A8 /* Proverka-slow.mp3 in Resources */,
 				987D35141E7D6DA3008434A8 /* Alibi-slow.mp3 in Resources */,
 				987D35121E7D6DA3008434A8 /* Alibi-fast.mp3 in Resources */,
 				987D350A1E7D6DA3008434A8 /* Sjurpriz-mid.mp3 in Resources */,
 				988A72C51E352DF600BDE635 /* Assets.xcassets in Resources */,
 				987D350D1E7D6DA3008434A8 /* Svezhyj-mid.mp3 in Resources */,
-				987D351A1E7D6DA3008434A8 /* 25-slow.mp3 in Resources */,
+				982731681EA9F32B007FFF73 /* MyINalogi_mid.mp3 in Resources */,
+				987D351A1E7D6DA3008434A8 /* BytiKakVse-slow.mp3 in Resources */,
 				98EC9EF81E4D012B0062F9F2 /* InfoPlist.strings in Resources */,
+				982731691EA9F32B007FFF73 /* MyINalogi_fast.mp3 in Resources */,
 				987D350F1E7D6DA3008434A8 /* ZakoldovannyjKrug-fast.mp3 in Resources */,
 				987D350E1E7D6DA3008434A8 /* Svezhyj-slow.mp3 in Resources */,
 				987D35111E7D6DA3008434A8 /* ZakoldovannyjKrug-slow.mp3 in Resources */,

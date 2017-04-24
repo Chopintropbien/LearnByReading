@@ -121,9 +121,7 @@ class AddText: UIViewController, UITableViewDelegate, UITableViewDataSource {
         widthBorderItem1 = CGFloat(basicButton.titleLabel!.frame.width) + offset
         widthBorderItem2 = CGFloat(basicButton.frame.width) + CGFloat(intermediateButton.titleLabel!.frame.width) + CGFloat(intermediateButton.titleLabel!.frame.minX) + offset
         widthBorderItem3 = levelView.frame.width
-        
-        
-        
+
         self.changeToBasic(doneButton)
         
     }
