@@ -11,7 +11,7 @@ import Foundation
 
 class Word: Hashable{
     
-    let hashValue: Int
+    var hashValue: Int
     let lang: Lang
     let neutralWord: String
     
@@ -48,6 +48,8 @@ class OriginalWord: Word{
         self.wordInText = wordInText
         self.isInUserSartedList = true
         super.init(lang: lang, neutralWord: neutralWord)
+        
+        self.hashValue = (neutralWord + wordInText + lang.rawValue).hashValue + isInUserSartedList.hashValue
     }
     
     func id() -> String {

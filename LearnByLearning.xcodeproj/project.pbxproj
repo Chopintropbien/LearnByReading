@@ -384,7 +384,6 @@
 		9826BB041E94FB1400E7CD1E /* A2 */ = {
 			isa = PBXGroup;
 			children = (
-				9826BB1A1E950A2400E7CD1E /* Мы и налоги */,
 				9826BB141E9509E600E7CD1E /* Проверка */,
 				9826BB0A1E94FCE100E7CD1E /* Свежий */,
 			);
@@ -411,6 +410,7 @@
 		9826BB071E94FB2700E7CD1E /* C1 */ = {
 			isa = PBXGroup;
 			children = (
+				9826BB1A1E950A2400E7CD1E /* Мы и налоги */,
 				9826BB171E9509FC00E7CD1E /* Быть как все */,
 			);
 			name = C1;

@@ -26,6 +26,10 @@ class YourAbonnementVC: UIViewController {
         let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : UIColor.black]
         
+        setText()
+    }
+    
+    func setText(){
         self.title = Localization("YourAbonnementVC title")
         self.yourSubcription.text = Localization("Your subcribtion runs till")
         self.dateLabel.text = Localization("")

@@ -43,16 +43,16 @@ class CreditsVC: UIViewController {
         self.title = Localization("CreditsVC title")
         
         self.trad1.text = Localization("Translation russian-english")
-        self.traductor1.text = ""
+        self.traductor1.text = "Anja Vladimirsdóttir"
         
         self.trad2.text = Localization("Translation russian-spanish")
-        self.traductor2.text = ""
+        self.traductor2.text = "Anja Vladimirsdóttir"
         
         self.trad3.text = Localization("Translation russian-german")
-        self.traductor3.text = ""
+        self.traductor3.text = "Moshtosh"
         
         self.trad4.text = Localization("Translation russian-french")
-        self.traductor4.text = ""
+        self.traductor4.text = "Amandine Felder"
     }
 
     override func didReceiveMemoryWarning() {
