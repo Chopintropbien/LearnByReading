@@ -9,14 +9,13 @@
 import UIKit
 
 class HighlightChoosePaymentPlanButtonView: ChoosePaymentPlanButtonView {
-
+    let labelHighlight = UILabel()
     
     override func setUp() {
         super.setUp()
         
         nbMonthView.backgroundColor = mainColor
-        
-        let labelHighlight = UILabel()
+
         labelHighlight.backgroundColor = mainColor
         labelHighlight.layer.cornerRadius = 1
         labelHighlight.layer.shadowColor = lightGray.cgColor

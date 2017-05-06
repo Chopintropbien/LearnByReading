@@ -1,23 +1,23 @@
 /* Common */
 
 // Ok
-"Ok" = "";
+"Ok" = "Ok";
 
-"yes" = "";
+"yes" = "Ja";
 
-"no" = "";
+"no" = "Nein";
 
 // Cancel
-"Cancel" = "";
+"Cancel" = "Abbrechen";
 
 // Please wait...
-"Please wait..." = "Annuler";
+"Please wait..." = "";
 
 // Could not send email
-"Could Not Send Email alert title" = "";
+"Could Not Send Email alert title" = "Die E-Mail konnte nicht versendet werden.";
 
 // Your device could not send e-mail.  Please check e-mail configuration and try again.
-"Could Not Send Email alert core" = "";
+"Could Not Send Email alert core" = "Das Gerät konnte die E-Mail nicht versenden. Bitte überprüfen Sie Ihre Mail-Einstellungen und versuchen Sie es noch ein mal.";
 
 
 
@@ -25,32 +25,32 @@
 /* Home */
 
 // Home title
-"Home title" = "";
+"Home title" = "Start";
 
 // Add new text button
-"Add new text" = "";
+"Add new text" = "Text hinzufügen";
 
 
 
 /* ReadTextOriginal */
 
 //ReadTextOriginal title
-"ReadTextOriginal title" = "";
+"ReadTextOriginal title" = "Original";
 
 // set speed label
-"set speed" = "";
+"set speed" = "Geschwindigkeit";
 
 // slow speed button
-"slow" = "";
+"slow" = "Langsam";
 
 // medium speed button
-"medium" = "";
+"medium" = "Mittel";
 
 // fast speed button
-"fast" = "";
+"fast" = "Schnell";
 
 // ORIGINAL tabBarItem
-"ORIGINAL" = "";
+"ORIGINAL" = "ORIGINAL";
 
 
 
@@ -59,67 +59,67 @@
 
 
 // ReadTextTraduction title
-"ReadTextTraduction title" = "";
+"ReadTextTraduction title" = "Übersetzung";
 
 // TRANSLATION tabBarItem
-"TRANSLATION" = "";
+"TRANSLATION" = "ÜBERSETZUNG";
 
 
 
 /* VocForText */
 
 // VocForText title
-"VocForText title" = "";
+"VocForText title" = "Vokabeln";
 
 // VOCABULARY tabBarItem
-"VOCABULARY" = "";
+"VOCABULARY" = "VOKABELN";
 
 
 
 /* AddTraductionVocForText */
 
 //
-"AddTraductionVocForText title" = "";
+"AddTraductionVocForText title" = "Wort hinzufügen";
 
 // Cancel UIBarButtonItem
-"Cancel" = "";
+"Cancel" = "Abbrechen";
 
 // Done UIBarButtonItem
-"Done AddTraductionVocForText" = "";
+"Done AddTraductionVocForText" = "Fertig";
 
 
 
 /* AddText */
 
 // AddText title
-"AddText title" = "";
+"AddText title" = "Text Hinzufügen";
 
 // basic level button
-"basic level" = "";
+"basic level" = "Leicht";
 
 // intermediate level button
-"intermediate level" = "";
+"intermediate level" = "Mittel";
 
 // hard level button
-"hard level" = "";
+"hard level" = "Schwer";
 
 // Done button AddText
-"Done AddText" = "";
+"Done AddText" = "Fertig";
 
 
 /* ChoosePaymentPlanCV */
 
 // ChoosePaymentPlanCV title
-"ChoosePaymentPlanCV title" = "";
+"ChoosePaymentPlanCV title" = "Abo wählen";
 
 // explanation choose PaymentPlan
-"explanation" = "";
+"explanation" = "Wählen Sie ein Abo-Option um den vollen Zugang zu der Sprache zu erhalten.";
 
 // Can not make payment title
-"Can not make payment title" = "";
+"Can not make payment title" = "Transaktion gescheitert.";
 
 // Can not make payment body
-"Can not make payment body" = "";
+"Can not make payment body" = "Sie sind nicht berechtigt eine Transaktion durchzuführen. Bitte überprüfen Sie die Einstellungen und versuchen Sie es noch ein mal.";
 
 
 
@@ -127,18 +127,18 @@
 /* ChoosePaymentPlanButtonView */
 
 //
-"1MONTH" = "";
+"1MONTH" = "MONAT";
 "%@ every month" = "%@ every month";
 
-"3MONTH" = "";
-"6MONTH" = "";
-"Just %@ /Month" = "Just %@ /Month";
+"3MONTH" = "MONATE";
+"6MONTH" = "MONATE";
+"Just %@ /Month" = "Nur %@ /Monat";
 
-"%@ every 3 months" = "%@ tous les %d mois";
-"%@ every 6 months" = "%@ tous les %d mois";
+"%@ every 3 months" = "%@ jede %d Monate";
+"%@ every 6 months" = "%@ jede %d Monate";
 
-"YEAR" = "";
-"%@ every year" = "%@ every year";
+"YEAR" = "JAHR";
+"%@ every year" = "%@ im Jahr";
 
 
 
@@ -147,75 +147,75 @@
 /* HighlightChoosePaymentPlanButtonView */
 
 // MOST POPULAR banner
-"MOST POPULAR" = "";
+"MOST POPULAR" = "BELIEBT";
 
 
 /* MenuViewController */
 
 // MenuViewController title
-"MenuViewController title" = "";
+"MenuViewController title" = "Menü";
 
 
 
 /* MyLanguagesViewController */
 
 // MyLanguagesViewController title
-"MyLanguagesViewController title" = "";
+"MyLanguagesViewController title" = "Meine Sprachen";
 
 // Choose an other language to learn
-"Choose an other language to learn" = "";
+"Choose an other language to learn" = "Wählen Sie eine neue Sprache, die Sie lernen wollen.";
 
 // Download other language to learn
-"Download other language to learn" = "";
+"Download other language to learn" = "Laden Sie andere Sprachen runter, die Sie lernen wollen.";
 
 
 
 /* InviteFriendViewController */
 
 // InviteFriendViewController title
-"InviteFriendViewController title" = "";
+"InviteFriendViewController title" = "Freunde einladen";
 
 // Do you love the app? label
-"Do you love the app?" = "";
+"Do you love the app?" = "Gefällt dir die App?";
 
 // You friend will surely love it too! Label
-"You friend will surely love it too! Share with them you experience!" = "";
+"You friend will surely love it too! Share with them you experience!" = "Dann werden deine Freunde es bestimmt es auch tun. Teile deine Erfahrung mit ihnen.";
 
 // Send a SMS button
-"Send a SMS" = "";
+"Send a SMS" = "Eine SMS senden";
 
 // Send an e-mail button
-"Send an e-mail" = "";
+"Send an e-mail" = "Eine E-Mail senden";
 
 // mail subjet
-"mail subjet InviteFriendViewController" = "";
+"mail subjet InviteFriendViewController" = "Kennst du schon Polyglott?";
 
 // mail body
-"mail body InviteFriendViewController" = "";
+"mail body InviteFriendViewController" = "Hallo,\n\nich habe eben eine neue App zum lernen von Russisch gefunden.\n\nEs heißt “Polyglott”. Es besteht aus Texten, die an deine Kenntnisse angepasst sind. Eine nicht-technische Stimme liest sie dir in der Sprache, die du lernen willst, in der Geschwindigkeit, die du magst vor. Vokabeln, die du nicht kennst sind bereits übersetzt. Und eine komplette Übersetzung des Textes ist jedenfalls verfügbar.\n\nKomm! Versuch sie auch!\n\n";
 
 // SMS body
-"SMS body InviteFriendViewController" = "";
+"SMS body InviteFriendViewController" = "Hallo! Ich habe soeben eine neue App zum lernen von Russisch gefunden. Guck es dir mal an.";
 
 // Can not send SMS title
-"Can not send SMS title" = "";
+"Can not send SMS title" = "Die SMS konnte nicht versendet werden";
 
 // Can not send SMS body
-"Can not send SMS body" = "";
+"Can not send SMS body" = "Das Gerät konnte die SMS nicht Versenden. Bitte überprüfen Sie Ihre Einstellungen und versuchen Sie es noch ein mal.";
 
 
 /* GradeAppViewController */
 
 // GradeAppViewController title
-"GradeAppViewController title" = "";
+"GradeAppViewController title" = "App bewerten";
 
 // Love the app? app
-"Love the app?" = "";
+"Love the app?" = "Magst du die App?";
 
 // Grade the app label
-"Grade the app" = "";
+"Grade the app" = "Hilf uns in dem du die App mit 5 Sternen bewertest.";
 
 // Access to the AppStore button
-"Access to the AppStore" = "";
+"Access to the AppStore" = "Gehe zum App Store";
 
 
 
@@ -243,41 +243,41 @@
 /* SettingsViewController */
 
 // Settings title
-"Settings title" = "";
+"Settings title" = "Einstellungen";
 
 //
-"General" = "";
+"General" = "Allgemein";
 
 //
-"Navigation language" = "";
+"Navigation language" = "Ausgangssprache";
 
 //
-"App purshase" = "";
+"App purshase" = "In-App-Käufen";
 
 //
-"Your abonnement" = "";
+"Your abonnement" = "Deine Abos";
 
 //
-"About" = "";
+"About" = "Info";
 
 //
-"Credits" = "";
+"Credits" = "Team";
 
 //
-"Term and conditions" = "";
+"Term and conditions" = "AGB";
 
 
 
 /* LanguageNav */
 
 //
-"LanguageNav title" = "";
+"LanguageNav title" = "Ausgangssprache";
 
 // refreshAlert title
-"Refresh" = "";
+"Refresh" = "Ausgangssprache wählen";
 
 // refreshAlert core
-"All data will be lost." = "";
+"All data will be lost." = "Möchten Sie die Ausgangssprache wechseln?"; //Manche Texte sind in dieser Sprache derzeit nicht verfügbar.
 
 
 
@@ -285,112 +285,112 @@
 /* YourAbonnementVC */
 
 //
-"YourAbonnementVC title" = "";
+"YourAbonnementVC title" = "Abonnements";
 
-"Your subcribtion runs till" = "";
+"Your subcribtion runs till" = "Ihr Abonnement ist gültig bis:";
 
-"Your did not subcribe to anything" = "";
+"Your did not subcribe to anything" = "Sie haben noch keine Abonnements";
 
-"To modify you subcribtion" = "";
+"To modify you subcribtion" = "Um Ihr Abonnement zu verwalten gehen Sie bitte auf:";
 
-"settings > iTunes" = "";
+"settings > iTunes" = "Einstellungen —> iTunes & App Store";
 
 
 
 /* CreditsVC title */
 
 // CreditsVC title
-"CreditsVC title" = "";
+"CreditsVC title" = "Team";
 
-"traductors" = "";
+"traductors" = "Die Übersetzer";
 
-"reader" = "";
+"reader" = "Der Leser";
 
 // Translation russian-
-"Translation russian-english" = "";
+"Translation russian-english" = "Übersetzung Russisch - Englisch";
 
-"Translation russian-spanish" = "";
+"Translation russian-spanish" = "Übersetzung Russisch - Spanisch";
 
-"Translation russian-german" = "";
+"Translation russian-german" = "Übersetzung Russisch - Deutsch";
 
-"Translation russian-french" = "";
+"Translation russian-french" = "Übersetzung Russisch - Französisch";
 
-"Translation russian-italien" = "";
+"Translation russian-italien" = "Übersetzung Russisch - Italienisch";
 
 
 // Translation german-
-"Translation german-english" = "";
+"Translation german-english" = "Übersetzung Deutsch - Englisch";
 
-"Translation german-spanish" = "";
+"Translation german-spanish" = "Übersetzung Deutsch - Spanisch";
 
-"Translation german-french" = "";
+"Translation german-french" = "Übersetzung Deutsch - Französisch";
 
-"Translation german-russian" = "";
+"Translation german-russian" = "Übersetzung Deutsch - Russisch";
 
-"Translation german-italien" = "";
+"Translation german-italien" = "Übersetzung Deutsch - Italienisch";
 
 
 // Translation english-
-"Translation english-russian" = "";
+"Translation english-russian" = "Übersetzung Englisch - Russisch";
 
-"Translation english-spanish" = "";
+"Translation english-spanish" = "Übersetzung Englisch - Spanisch";
 
-"Translation english-french" = "";
+"Translation english-french" = "Übersetzung Englisch - Französisch";
 
-"Translation english-german" = "";
+"Translation english-german" = "Übersetzung Englisch - Deutsch";
 
-"Translation english-italien" = "";
+"Translation english-italien" = "Übersetzung Englisch - Italienisch";
 
 
 // Translation spanish-
-"Translation spanish-english" = "";
+"Translation spanish-english" = "Übersetzung Spanisch - Englisch";
 
-"Translation spanish-russian" = "";
+"Translation spanish-russian" = "Übersetzung Spanisch - Russisch";
 
-"Translation spanish-french" = "";
+"Translation spanish-french" = "Übersetzung Spanisch - Französisch";
 
-"Translation spanish-italien" = "";
+"Translation spanish-italien" = "Übersetzung Spanisch - Italienisch";
 
-"Translation spanish-german" = "";
+"Translation spanish-german" = "Übersetzung Spanisch - Deutsch";
 
 // Translation french-
-"Translation french-english" = "";
+"Translation french-english" = "Übersetzung Französisch - Englisch";
 
-"Translation french-german" = "";
+"Translation french-german" = "Übersetzung Französisch - Deutsch";
 
-"Translation french-italien" = "";
+"Translation french-italien" = "Übersetzung Französisch - Italienisch";
 
-"Translation french-russian" = "";
+"Translation french-russian" = "Übersetzung Französisch - Russisch";
 
-"Translation german-spanish" = "";
+"Translation german-spanish" = "Übersetzung Französisch - Spanisch";
 
 
 // Translation italien-
-"Translation italien-english" = "";
+"Translation italien-english" = "Übersetzung Italienisch - Englisch";
 
-"Translation italien-russian" = "";
+"Translation italien-russian" = "Übersetzung Italienisch - Russisch";
 
-"Translation italien-french" = "";
+"Translation italien-french" = "Übersetzung Italienisch - Französisch";
 
-"Translation italien-german" = "";
+"Translation italien-german" = "Übersetzung Italienisch - Deutsch";
 
-"Translation italien-spanish" = "";
+"Translation italien-spanish" = "Übersetzung Italienisch - Spanisch";
 
 
 
 /* Lang */
 
-"English" = "";
+"English" = "Englisch";
 
-"French" = "";
+"French" = "Französisch";
 
-"Spanish" = "";
+"Spanish" = "Spanisch";
 
-"Russian" = "";
+"Russian" = "Russisch";
 
-"German" = "";
+"German" = "Deutsch";
 
-"Italien" = "";
+"Italien" = "Italienisch";
 
 
 

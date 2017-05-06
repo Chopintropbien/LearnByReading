@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -40,6 +40,9 @@
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="41"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="70"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,12 +50,18 @@
                             <constraint firstItem="NYi-s8-4If" firstAttribute="centerX" secondItem="p9x-64-bz1" secondAttribute="centerX" id="0zv-sW-ac7"/>
                             <constraint firstItem="6Cs-fd-TGD" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="8w6-ct-yOD"/>
                             <constraint firstItem="p9x-64-bz1" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="CJo-75-kcA"/>
-                            <constraint firstItem="NYi-s8-4If" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="80" id="Eji-Du-Vig"/>
+                            <constraint firstItem="NYi-s8-4If" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="80" id="Eji-Du-Vig">
+                                <variation key="heightClass=regular-widthClass=regular" constant="270"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="p9x-64-bz1" secondAttribute="trailing" id="HSI-wa-Os8"/>
                             <constraint firstItem="p9x-64-bz1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="KuP-rS-fjp"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="6Cs-fd-TGD" secondAttribute="bottom" constant="80" id="eex-ZK-TLE"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="6Cs-fd-TGD" secondAttribute="bottom" constant="80" id="eex-ZK-TLE">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
                             <constraint firstItem="6Cs-fd-TGD" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="hUT-Se-FVV"/>
-                            <constraint firstItem="NYi-s8-4If" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="180" id="oxZ-75-KK4"/>
+                            <constraint firstItem="NYi-s8-4If" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="180" id="oxZ-75-KK4">
+                                <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                            </constraint>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="p9x-64-bz1" secondAttribute="bottom" id="vXL-mV-KFb"/>
                         </constraints>
                     </view>

@@ -15,8 +15,6 @@ class UserSave {
     static fileprivate let userDefaults = UserDefaults.standard
     static let separator = ";"
     
-    
-    
     // texts associated with a lang that the user wants to learn
     
     static fileprivate func kTextPresentedHomeDefaultKey() -> String{

@@ -83,6 +83,13 @@ class AddText: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var widthBorderItem2: CGFloat!
     var widthBorderItem3: CGFloat!
     
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        // design
+        self.levelView.layer.addBorderFixBorder()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         texts = UserSave.getAllText()
@@ -102,8 +109,6 @@ class AddText: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
 
     override func viewWillAppear(_ animated: Bool) {
-        // design
-        self.levelView.layer.addBorderFixBorder()
         
         self.navigationController!.navigationBar.tintColor = UIColor.white
         let navbarFont = UIFont(name: "Avenir-Black", size: 17)!

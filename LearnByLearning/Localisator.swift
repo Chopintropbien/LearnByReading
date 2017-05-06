@@ -81,11 +81,24 @@ class Localisator {
                 currentLanguage = l
             }
         }
-        else if let defaultLang = Lang(rawValue: NSLocale.current.languageCode!){
-            currentLanguage = defaultLang
+        else if let lang = Lang(rawValue: NSLocale.current.languageCode!){            
+            if(TextsData.langInWichYouCanLearn(thisLang: GetLearningLang()).contains(lang)){
+                currentLanguage = lang
+            }
+            else{
+                currentLanguage = self.defaultLang
+                loadDictionaryForLanguage(currentLanguage)
+            }
+            
         }
-        else if let defaultLang = Lang(rawValue: NSLocale.preferredLanguages.first ?? "error"){
-            currentLanguage = defaultLang
+        else if let lang = Lang(rawValue: NSLocale.preferredLanguages.first ?? "error"){
+            if(TextsData.langInWichYouCanLearn(thisLang: GetLearningLang()).contains(lang)){
+                currentLanguage = lang
+            }
+            else{
+                currentLanguage = self.defaultLang
+                loadDictionaryForLanguage(currentLanguage)
+            }
         }
         else{
             currentLanguage = defaultLang

@@ -25,7 +25,7 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         case gradeApp = "GradeAppViewController title"
         case help = "HelpViewController title"
         
-        static let allValues = [home, languageToLearn, settings, inviteYourFriend, gradeApp/*, help*/]
+        static let allValues = [home/*, languageToLearn*/, settings, inviteYourFriend, gradeApp/*, help*/]
         static func getCorrespondingIdSegue(cell: CellsMenu) -> String{
             switch cell {
             case CellsMenu.home:
@@ -90,6 +90,7 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         // Do any additional setup after loading the view.
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

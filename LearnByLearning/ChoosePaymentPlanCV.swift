@@ -29,11 +29,16 @@ class ChoosePaymentPlanCV: UIViewController {
         SKProductsDidLoadFromiTunes()
     }
 
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         plan1.setUp()
         plan2.setUp()
         plan3.setUp()
         plan4.setUp()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         self.navigationController!.navigationBar.tintColor = UIColor.black
         let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
@@ -44,6 +49,7 @@ class ChoosePaymentPlanCV: UIViewController {
         /* Text */
         setText()
     }
+    
     
     func setText(){
         self.title = Localization("ChoosePaymentPlanCV title")

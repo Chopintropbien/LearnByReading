@@ -31,8 +31,16 @@ class YourAbonnementVC: UIViewController {
     
     func setText(){
         self.title = Localization("YourAbonnementVC title")
-        self.yourSubcription.text = Localization("Your subcribtion runs till")
-        self.dateLabel.text = Localization("")
+        
+        if StoreManager.shared.receiptManager.isSubscribed{
+            self.yourSubcription.text = Localization("Your subcribtion runs till")
+            self.dateLabel.text = StoreManager.shared.receiptManager.limiteDateIfSubscribed
+        }
+        else{
+            self.yourSubcription.text = Localization("Your did not subcribe to anything")
+            self.dateLabel.text = Localization("")
+        }
+        
         self.whereToChangeExplainationLabel.text = Localization("To modify you subcribtion")
         self.whereToChangeLabel.text = Localization("settings > iTunes")
     }
