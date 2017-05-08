@@ -44,8 +44,7 @@ class GradeAppViewController: UIViewController {
     
     
     @IBAction func rateMe(sender: AnyObject) {
-        let appStoreAppID = "1169020385"
-        UIApplication.shared.open(URL(string: "itms-apps://itunes.apple.com/app/id" + appStoreAppID)!)
+        UIApplication.shared.open(URL(string: Conf.openAppInAppleStore)!)
     }
 
 

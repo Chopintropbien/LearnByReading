@@ -42,6 +42,9 @@ class CreditsVC: UIViewController {
     func setText(){
         self.title = Localization("CreditsVC title")
         
+        
+        self.traductorsLabel.text = Localization("traductors")
+        
         self.trad1.text = Localization("Translation russian-english")
         self.traductor1.text = "Anja Vladimirsdóttir"
         

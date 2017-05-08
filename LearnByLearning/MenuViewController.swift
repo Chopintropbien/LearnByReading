@@ -14,6 +14,7 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     @IBOutlet weak var tblTableView: UITableView!
     
     @IBOutlet weak var bigHomeButton: UIButton!
+    
 
     
     
@@ -65,13 +66,15 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 
     override func viewWillAppear(_ animated: Bool) {
         self.title = Localization("MenuViewController title")
+        reloadCellText()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tblTableView.selectRow(at: IndexPath(row: 0, section: 0), animated: false, scrollPosition: .none)
-        let selectedCell = tblTableView.cellForRow(at: IndexPath(row: 0, section: 0))!
+        let initialSelectedRow: IndexPath = IndexPath(row: 0, section: 0)
+        tblTableView.selectRow(at: initialSelectedRow, animated: false, scrollPosition: .none)
+        let selectedCell = tblTableView.cellForRow(at: initialSelectedRow)!
         selectedCell.contentView.backgroundColor = selectCellColor
 
         
@@ -107,6 +110,16 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         cell.imgIcon.image = CellsMenu.iconArray(cell: CellsMenu.allValues[indexPath.row])
         
         return cell
+    }
+    
+    
+    
+    func reloadCellText(){ //TODO: BREURK the think with i
+        var i: Int = 0
+        self.tblTableView.visibleCells.forEach({
+            ($0 as! MenuCell).lblMenuname.text! = Localization(CellsMenu.allValues[i].rawValue)
+            i += 1
+        })
     }
     
     

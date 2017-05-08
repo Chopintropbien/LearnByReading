@@ -448,6 +448,9 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTF-80-r0k">
                                         <rect key="frame" x="10" y="8" width="71" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="71" id="aC3-yZ-AOK"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
                                         <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -508,7 +511,7 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                                     <constraint firstItem="cvF-QU-zzl" firstAttribute="leading" secondItem="UWx-BO-sBN" secondAttribute="leading" constant="3" id="kvm-Gb-T29"/>
                                     <constraint firstItem="8i0-H1-BcT" firstAttribute="leading" secondItem="UWx-BO-sBN" secondAttribute="leading" constant="3" id="lxn-LQ-Qtb"/>
                                     <constraint firstItem="VTF-80-r0k" firstAttribute="top" secondItem="UWx-BO-sBN" secondAttribute="top" constant="8" id="mTK-Lt-SRB">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="15"/>
                                     </constraint>
                                 </constraints>
                             </view>
@@ -1102,7 +1105,7 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="JUv-sP-GoZ"/>
                                     <constraint firstAttribute="width" constant="216" id="SG0-mg-Xff">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
                                     </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
@@ -1341,7 +1344,7 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="invite_friends" translatesAutoresizingMaskIntoConstraints="NO" id="hi9-ja-Pxi">
-                                <rect key="frame" x="46" y="84" width="228" height="228"/>
+                                <rect key="frame" x="46" y="82" width="228" height="228"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="hi9-ja-Pxi" secondAttribute="height" multiplier="1:1" id="PCR-pS-Owk"/>
                                     <constraint firstAttribute="width" constant="228" id="kYs-M9-563">
@@ -1350,13 +1353,13 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Love the app?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sf2-G8-dJP">
-                                <rect key="frame" x="16" y="337" width="288" height="24"/>
+                                <rect key="frame" x="16" y="330" width="288" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you like our App? It would be very great if you can grade us with 5 stars!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxq-cw-7pT">
-                                <rect key="frame" x="16" y="374" width="288" height="23.5"/>
+                                <rect key="frame" x="16" y="362" width="288" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1384,7 +1387,7 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="6Rx-jf-k5W"/>
                                     <constraint firstAttribute="height" constant="48" id="Noi-eb-A1d"/>
                                     <constraint firstAttribute="width" constant="216" id="TVK-uq-kK9">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
                                     </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
@@ -1405,18 +1408,18 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                             <constraint firstItem="UhY-vs-OKp" firstAttribute="centerX" secondItem="Mcg-7j-6ja" secondAttribute="centerX" id="JOL-ww-7Lc"/>
                             <constraint firstItem="Sf2-G8-dJP" firstAttribute="leading" secondItem="Mcg-7j-6ja" secondAttribute="leadingMargin" id="c0f-wu-Ias"/>
                             <constraint firstItem="j0a-8t-OVC" firstAttribute="centerX" secondItem="Mcg-7j-6ja" secondAttribute="centerX" id="fPd-Qy-SYX"/>
-                            <constraint firstItem="hi9-ja-Pxi" firstAttribute="top" secondItem="usQ-8k-QjQ" secondAttribute="bottom" constant="20" id="ljW-zi-OfL">
+                            <constraint firstItem="hi9-ja-Pxi" firstAttribute="top" secondItem="usQ-8k-QjQ" secondAttribute="bottom" constant="18" id="ljW-zi-OfL">
                                 <variation key="heightClass=regular-widthClass=regular" constant="200"/>
                             </constraint>
                             <constraint firstItem="Rxq-cw-7pT" firstAttribute="leading" secondItem="Mcg-7j-6ja" secondAttribute="leadingMargin" id="org-FG-kS3"/>
-                            <constraint firstItem="Sf2-G8-dJP" firstAttribute="top" secondItem="hi9-ja-Pxi" secondAttribute="bottom" constant="25" id="s1n-dR-02P">
+                            <constraint firstItem="Sf2-G8-dJP" firstAttribute="top" secondItem="hi9-ja-Pxi" secondAttribute="bottom" constant="20" id="s1n-dR-02P">
                                 <variation key="heightClass=regular-widthClass=regular" constant="100"/>
                             </constraint>
                             <constraint firstItem="UhY-vs-OKp" firstAttribute="top" secondItem="j0a-8t-OVC" secondAttribute="bottom" constant="12" id="tsJ-11-U7S">
                                 <variation key="heightClass=regular-widthClass=regular" constant="30"/>
                             </constraint>
                             <constraint firstItem="Sf2-G8-dJP" firstAttribute="trailing" secondItem="Mcg-7j-6ja" secondAttribute="trailingMargin" id="viK-Yc-SsL"/>
-                            <constraint firstItem="Rxq-cw-7pT" firstAttribute="top" secondItem="Sf2-G8-dJP" secondAttribute="bottom" constant="13" id="xfh-7N-MS6"/>
+                            <constraint firstItem="Rxq-cw-7pT" firstAttribute="top" secondItem="Sf2-G8-dJP" secondAttribute="bottom" constant="8" id="xfh-7N-MS6"/>
                             <constraint firstItem="Rxq-cw-7pT" firstAttribute="trailing" secondItem="Mcg-7j-6ja" secondAttribute="trailingMargin" id="z1T-8B-sLE"/>
                             <constraint firstItem="hi9-ja-Pxi" firstAttribute="centerX" secondItem="Mcg-7j-6ja" secondAttribute="centerX" id="zNO-Ap-QyW"/>
                         </constraints>
@@ -1613,11 +1616,11 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Russain to french" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xns-hO-fAE">
-                                <rect key="frame" x="26" y="150" width="263" height="20"/>
+                                <rect key="frame" x="26" y="150" width="278" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="KSI-yI-jRr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Russain to french" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ic-Q3-Pm3">
@@ -1630,11 +1633,11 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Russain to french" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiJ-B1-VJb">
-                                <rect key="frame" x="26" y="227" width="263" height="20"/>
+                                <rect key="frame" x="26" y="227" width="278" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Myg-Jo-Ij4"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Russain to french" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6x-Xo-ZfR">
@@ -1647,11 +1650,11 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Russain to french" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWT-Ql-ewn">
-                                <rect key="frame" x="26" y="304" width="263" height="20"/>
+                                <rect key="frame" x="26" y="304" width="278" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="WmM-Gh-IGg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Russain to french" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wa8-iM-H81">
@@ -1672,11 +1675,11 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Russain to french" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNd-EF-tDn">
-                                <rect key="frame" x="26" y="381" width="263" height="20"/>
+                                <rect key="frame" x="26" y="381" width="278" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="ohR-Xq-k9c"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Russain to french" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWk-HC-53t">
@@ -1692,7 +1695,7 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wnl-4J-w0X" firstAttribute="top" secondItem="36z-jJ-Z3L" secondAttribute="bottom" constant="20" id="1bJ-o7-PA8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dNd-EF-tDn" secondAttribute="trailing" constant="15" id="22k-5k-QKz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dNd-EF-tDn" secondAttribute="trailing" id="22k-5k-QKz"/>
                             <constraint firstItem="FiJ-B1-VJb" firstAttribute="top" secondItem="9ic-Q3-Pm3" secondAttribute="bottom" constant="29" id="4ca-6R-rbw"/>
                             <constraint firstItem="9ic-Q3-Pm3" firstAttribute="leading" secondItem="cme-Ie-C70" secondAttribute="leading" constant="50" id="5RU-r9-NNy"/>
                             <constraint firstAttribute="trailing" secondItem="X6x-Xo-ZfR" secondAttribute="trailing" constant="30" id="7Fo-hJ-77l"/>
@@ -1701,10 +1704,10 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                             <constraint firstAttribute="trailing" secondItem="9ic-Q3-Pm3" secondAttribute="trailing" constant="30" id="9W1-gi-1Bn"/>
                             <constraint firstItem="dNd-EF-tDn" firstAttribute="top" secondItem="Wa8-iM-H81" secondAttribute="bottom" constant="29" id="AgF-n5-98L"/>
                             <constraint firstItem="Wa8-iM-H81" firstAttribute="top" secondItem="jWT-Ql-ewn" secondAttribute="bottom" constant="8" id="CF7-aZ-ZgU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="jWT-Ql-ewn" secondAttribute="trailing" constant="15" id="Cxh-mU-89G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jWT-Ql-ewn" secondAttribute="trailing" id="Cxh-mU-89G"/>
                             <constraint firstItem="dNd-EF-tDn" firstAttribute="leading" secondItem="cme-Ie-C70" secondAttribute="leadingMargin" constant="10" id="HlT-Zb-OUS"/>
                             <constraint firstItem="xns-hO-fAE" firstAttribute="top" secondItem="wnl-4J-w0X" secondAttribute="bottom" constant="46" id="IDa-Zh-3E9"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xns-hO-fAE" secondAttribute="trailing" constant="15" id="NO1-IX-Obn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xns-hO-fAE" secondAttribute="trailing" id="NO1-IX-Obn"/>
                             <constraint firstItem="xns-hO-fAE" firstAttribute="leading" secondItem="cme-Ie-C70" secondAttribute="leadingMargin" constant="10" id="XQD-Cb-TfB"/>
                             <constraint firstItem="wnl-4J-w0X" firstAttribute="leading" secondItem="cme-Ie-C70" secondAttribute="leadingMargin" constant="8" id="ahY-NG-oEY"/>
                             <constraint firstItem="9ic-Q3-Pm3" firstAttribute="top" secondItem="xns-hO-fAE" secondAttribute="bottom" constant="8" id="fHj-1W-Irx"/>
@@ -1714,7 +1717,7 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                             <constraint firstItem="Wa8-iM-H81" firstAttribute="leading" secondItem="cme-Ie-C70" secondAttribute="leading" constant="50" id="obM-p9-Zvb"/>
                             <constraint firstItem="HWk-HC-53t" firstAttribute="leading" secondItem="cme-Ie-C70" secondAttribute="leadingMargin" constant="34" id="uRZ-9v-nnK"/>
                             <constraint firstItem="jWT-Ql-ewn" firstAttribute="leading" secondItem="cme-Ie-C70" secondAttribute="leadingMargin" constant="10" id="ush-6D-5TY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="FiJ-B1-VJb" secondAttribute="trailing" constant="15" id="wSR-gq-G8I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FiJ-B1-VJb" secondAttribute="trailing" id="wSR-gq-G8I"/>
                             <constraint firstItem="jWT-Ql-ewn" firstAttribute="top" secondItem="X6x-Xo-ZfR" secondAttribute="bottom" constant="29" id="x0w-Xg-m3d"/>
                             <constraint firstItem="wnl-4J-w0X" firstAttribute="trailing" secondItem="cme-Ie-C70" secondAttribute="trailingMargin" constant="8" id="x28-uY-34O"/>
                             <constraint firstItem="X6x-Xo-ZfR" firstAttribute="top" secondItem="FiJ-B1-VJb" secondAttribute="bottom" constant="8" id="y6B-z9-yHj"/>
@@ -1781,8 +1784,8 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="4Yt-gq-2g9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
-                                <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11-01-2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgm-9b-k55">
@@ -1791,7 +1794,8 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                                     <constraint firstAttribute="width" constant="132" id="hdX-IF-lbY"/>
                                     <constraint firstAttribute="height" constant="20" id="zVI-uY-iFl"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To modify your subscription, go to" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iff-ED-D7y">
@@ -1799,8 +1803,8 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="De3-mL-ciJ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
-                                <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings &gt; iTunes &amp; App Store." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkH-Vw-KlZ">
@@ -1808,7 +1812,8 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="JYp-nG-HxK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

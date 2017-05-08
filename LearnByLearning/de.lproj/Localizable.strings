@@ -11,7 +11,7 @@
 "Cancel" = "Abbrechen";
 
 // Please wait...
-"Please wait..." = "";
+"Please wait..." = "Bitte Warten...";
 
 // Could not send email
 "Could Not Send Email alert title" = "Die E-Mail konnte nicht versendet werden.";
@@ -38,7 +38,7 @@
 "ReadTextOriginal title" = "Original";
 
 // set speed label
-"set speed" = "Geschwindigkeit";
+"set speed" = "Tempo";
 
 // slow speed button
 "slow" = "Langsam";
@@ -128,7 +128,7 @@
 
 //
 "1MONTH" = "MONAT";
-"%@ every month" = "%@ every month";
+"%@ every month" = "%@ Monatlich";
 
 "3MONTH" = "MONATE";
 "6MONTH" = "MONATE";

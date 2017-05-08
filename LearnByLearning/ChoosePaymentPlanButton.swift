@@ -164,7 +164,7 @@ class ChoosePaymentPlanButtonView: UIView {
             
             let price = product.localizedPrice(nbMonth: Decimal(nbMonth))
             pricePerMonthLabel.text = String(format:Localization("Just %@ /Month"), price.perMonth)
-            totalPriceLabel.text = String(format:Localization("%@ every %d /Month"), price.total, nbMonth)
+            totalPriceLabel.text = String(format:Localization("%@ every 3 months"), price.total, nbMonth)
         case "lauriane.molllier.learnByReading.russian.6month":
             let nbMonth = 6
             nbMonthLabel.text = String(nbMonth)
@@ -172,7 +172,7 @@ class ChoosePaymentPlanButtonView: UIView {
             
             let price = product.localizedPrice(nbMonth: Decimal(nbMonth))
             pricePerMonthLabel.text = String(format:Localization("Just %@ /Month"), price.perMonth)
-            totalPriceLabel.text = String(format:Localization("%@ every %d /Month"), price.total, nbMonth)
+            totalPriceLabel.text = String(format:Localization("%@ every 6 months"), price.total, nbMonth)
         case "lauriane.molllier.learnByReading.russian.12month":
             let nbMonth = 12
             nbMonthLabel.text = String("1")

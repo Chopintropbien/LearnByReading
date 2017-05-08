@@ -22,7 +22,7 @@ class InviteFriendButton: UIButton {
         
         // set the label
         
-        self.titleEdgeInsets.left = self.frame.width * 0.3
+        self.titleEdgeInsets.left = self.frame.width * 0.25
         self.contentHorizontalAlignment = .left
 
         

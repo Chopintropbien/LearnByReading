@@ -89,7 +89,7 @@ class InviteFriendViewController: UIViewController, MFMailComposeViewControllerD
         
         mailComposerVC.setToRecipients([])
         mailComposerVC.setSubject(Localization("mail subjet InviteFriendViewController"))
-        mailComposerVC.setMessageBody(Localization("mail body InviteFriendViewController"), isHTML: false)
+        mailComposerVC.setMessageBody(Localization("mail body InviteFriendViewController" + "\n\n" + urlAppleStore), isHTML: false)
         
         return mailComposerVC
     }
@@ -127,7 +127,7 @@ class InviteFriendViewController: UIViewController, MFMailComposeViewControllerD
         if (MFMessageComposeViewController.canSendText()) {
             let messageVC = MFMessageComposeViewController()
             
-            messageVC.body = Localization("SMS body InviteFriendViewController");
+            messageVC.body = Localization("SMS body InviteFriendViewController") + "\n\n" + urlAppleStore;
             messageVC.recipients = []
             messageVC.messageComposeDelegate = self;
             
