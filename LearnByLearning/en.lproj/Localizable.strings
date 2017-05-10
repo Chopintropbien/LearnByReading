@@ -189,7 +189,7 @@
 
 
 // mail body.
-"mail body InviteFriendViewController" = "Hello,/n/nI just discovered a new application for learning Russian. It’s called Polyglott./n\nIt consists of short texts adapted to your level! A non-artificial voice reads the text in the language you want to learn, on the speed of your choice; the vocabulary you don’t know is translated, and you have got the text translation as a compliment./n/nGo and try it now!";
+"mail body InviteFriendViewController" = "Hello,\n\nI just discovered a new application for learning Russian. It’s called Polyglott.\n\nIt consists of short texts adapted to your level! A non-artificial voice reads the text in the language you want to learn, on the speed of your choice; the vocabulary you don’t know is translated, and you have got the text translation as a compliment.\n\nGo and try it now!";
 
 // SMS body
 "SMS body InviteFriendViewController" = "Hello! I just discovered a new application for learning Russian.\nTake a look, it’s cool!";

@@ -94,7 +94,7 @@ class AddText: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
         texts = UserSave.getAllText()
         basicText = texts.filter({$0.0.level == Level.A2})
-        intermediateText = texts.filter({$0.0.level == Level.B1})
+        intermediateText = texts.filter({$0.0.level == Level.B1 || $0.0.level == Level.B2})
         hardText = texts.filter({$0.0.level == Level.C1})
         
         currentText = basicText

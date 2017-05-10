@@ -32,12 +32,15 @@ class TextsData{
     }
     
     
+    
     static func getIdsTextsFirstDowload() -> String{
+        print("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm")
+        print(foldl(list: Conf.textsFirstDownload.map{$0.id}, base: "", transform: {$0 + UserSave.separator + $1}))
         switch GetLearningLang() {
         case Lang.en:
-            return foldl(list: Conf.textsFirstDownload.map{$0.id}, base: "", transform: {$0 + $1})
+            return foldl(list: Conf.textsFirstDownload.map{$0.id}, base: "", transform: {$0 + UserSave.separator + $1})
         default:
-            return foldl(list: Conf.textsFirstDownload.map{$0.id}, base: "", transform: {$0 + $1})
+            return foldl(list: Conf.textsFirstDownload.map{$0.id}, base: "", transform: {$0 + UserSave.separator + $1})
         }
     }
     

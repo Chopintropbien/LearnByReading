@@ -45,7 +45,6 @@
 		983B529F1E4F8BED004F820F /* AddTraductionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B529E1E4F8BEC004F820F /* AddTraductionCell.swift */; };
 		983B52A41E50E378004F820F /* AddText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B52A31E50E378004F820F /* AddText.swift */; };
 		983B52A61E50E45A004F820F /* AddTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B52A51E50E45A004F820F /* AddTextCell.swift */; };
-		984146181EC3092A0029011C /* FoldlFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984146171EC3092A0029011C /* FoldlFunction.swift */; };
 		987D34ED1E798A76008434A8 /* SettingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987D34EC1E798A76008434A8 /* SettingButton.swift */; };
 		987D34F21E7AE3EE008434A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 987D34F01E7AE3EE008434A8 /* Main.storyboard */; };
 		987D34F41E7D2B0F008434A8 /* SpeedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987D34F31E7D2B0F008434A8 /* SpeedButton.swift */; };
@@ -81,6 +80,7 @@
 		988A72EC1E352EEA00BDE635 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988A72EB1E352EEA00BDE635 /* Home.swift */; };
 		988A72F01E352F6E00BDE635 /* ReadTextTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988A72EF1E352F6E00BDE635 /* ReadTextTabBarController.swift */; };
 		988A72F91E367A3500BDE635 /* VocForText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988A72F81E367A3500BDE635 /* VocForText.swift */; };
+		98D00EE31EC32686004030D0 /* foldlFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D00EE21EC32686004030D0 /* foldlFunction.swift */; };
 		98D73E141E369C1800BAF0C1 /* ReadTextOriginal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D73E131E369C1800BAF0C1 /* ReadTextOriginal.swift */; };
 		98D73E161E369C7A00BAF0C1 /* ReadTextTraduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D73E151E369C7A00BAF0C1 /* ReadTextTraduction.swift */; };
 		98DDC6CB1E7453A6004A367C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DDC6CA1E7453A6004A367C /* Color.swift */; };
@@ -156,7 +156,6 @@
 		983B529E1E4F8BEC004F820F /* AddTraductionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTraductionCell.swift; sourceTree = "<group>"; };
 		983B52A31E50E378004F820F /* AddText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddText.swift; sourceTree = "<group>"; };
 		983B52A51E50E45A004F820F /* AddTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTextCell.swift; sourceTree = "<group>"; };
-		984146171EC3092A0029011C /* FoldlFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldlFunction.swift; sourceTree = "<group>"; };
 		987D34EC1E798A76008434A8 /* SettingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingButton.swift; sourceTree = "<group>"; };
 		987D34F11E7AE3EE008434A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LearnByLearning/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		987D34F31E7D2B0F008434A8 /* SpeedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedButton.swift; sourceTree = "<group>"; };
@@ -204,6 +203,7 @@
 		988A72EB1E352EEA00BDE635 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		988A72EF1E352F6E00BDE635 /* ReadTextTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadTextTabBarController.swift; sourceTree = "<group>"; };
 		988A72F81E367A3500BDE635 /* VocForText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VocForText.swift; sourceTree = "<group>"; };
+		98D00EE21EC32686004030D0 /* foldlFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = foldlFunction.swift; sourceTree = "<group>"; };
 		98D73E131E369C1800BAF0C1 /* ReadTextOriginal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadTextOriginal.swift; sourceTree = "<group>"; };
 		98D73E151E369C7A00BAF0C1 /* ReadTextTraduction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadTextTraduction.swift; sourceTree = "<group>"; };
 		98DDC6CA1E7453A6004A367C /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -606,7 +606,7 @@
 				982194541E8C032B00043300 /* In-App Purchase */,
 				982194571E8CD7C800043300 /* Slide manager */,
 				982ECD4B1E9120EA003B66F9 /* WaitAlert.swift */,
-				984146171EC3092A0029011C /* FoldlFunction.swift */,
+				98D00EE21EC32686004030D0 /* foldlFunction.swift */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -855,7 +855,6 @@
 				98D73E141E369C1800BAF0C1 /* ReadTextOriginal.swift in Sources */,
 				98E8BB121E4CE1A4002134B0 /* MenuViewController.swift in Sources */,
 				9823AE981E66028200AB376C /* LanguageNav.swift in Sources */,
-				984146181EC3092A0029011C /* FoldlFunction.swift in Sources */,
 				983B52A61E50E45A004F820F /* AddTextCell.swift in Sources */,
 				98D73E161E369C7A00BAF0C1 /* ReadTextTraduction.swift in Sources */,
 				982D2AF11E9C24A400B590B1 /* YourAbonnementVC.swift in Sources */,
@@ -881,6 +880,7 @@
 				9826BB161E9509F200E7CD1E /* Проверка.swift in Sources */,
 				982ECD481E8F9234003B66F9 /* CreditsVC.swift in Sources */,
 				9826BB091E94FB4A00E7CD1E /* Свежий.swift in Sources */,
+				98D00EE31EC32686004030D0 /* foldlFunction.swift in Sources */,
 				982194531E8BF21100043300 /* HighlightChoosePaymentPlanButtonView.swift in Sources */,
 				98DDC6CB1E7453A6004A367C /* Color.swift in Sources */,
 				98E8BB251E4CF39D002134B0 /* SettingsViewController.swift in Sources */,
