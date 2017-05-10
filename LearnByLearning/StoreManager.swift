@@ -16,6 +16,9 @@ enum ProductType:String{
 }
 
 
+var choosePaymentPlanCV: ChoosePaymentPlanCV? // TODO: HORRIBLE!!!!! A REVOIR
+
+
 
 
 class StoreManager: NSObject {
@@ -289,22 +292,24 @@ extension StoreManager:SKPaymentTransactionObserver{
     
     func unlockContentForTransaction(trans:SKPaymentTransaction){
         WaitAlert.hideWait()
-        
-        if let topController = UIApplication.topViewController(){
-            print(topController.classForCoder)
-        }
-        
-        
+
         if let topController = UIApplication.topViewController()  {
-            let pop = topController.navigationController?.popViewController(animated: true)
-            if let under = pop as? UIAlertView{
+
+            if (topController as? UIAlertController) != nil{
                 topController.navigationController?.popViewController(animated: true)
+                topController.navigationController?.popViewController(animated: true)
+                choosePaymentPlanCV?.dismiss(animated: true, completion: nil)
+                choosePaymentPlanCV?.closePopUp(UIBarButtonItem())
+            
             }
             else{
-                
+                topController.navigationController?.popViewController(animated: true)
+                choosePaymentPlanCV?.dismiss(animated: true, completion: nil)
+                choosePaymentPlanCV?.closePopUp(UIBarButtonItem())
             }
-
-            print("coucocu les marmottes")
+            
+            
+            
         }
         
         print("Should unlock the content for product ID", trans.payment.productIdentifier)

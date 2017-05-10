@@ -13,7 +13,7 @@ import Foundation
 class TextsData{
     
     
-    static public let texts: [TraductedText] = [Sjurpriz, Svezhyj, ZakoldovannyjKrug, Alibi, Proverka, BytiKakVse, MyINalogi]
+    static public let texts: [TraductedText] = Conf.texts
     
     static public func get(nr: Int, lang: Lang) -> TraductedText?{
         return texts.filter{ (t) in
@@ -35,9 +35,9 @@ class TextsData{
     static func getIdsTextsFirstDowload() -> String{
         switch GetLearningLang() {
         case Lang.en:
-            return ZakoldovannyjKrug.id + UserSave.separator + Sjurpriz.id + UserSave.separator + Svezhyj.id + UserSave.separator + Alibi.id + UserSave.separator + Proverka.id + UserSave.separator + BytiKakVse.id + UserSave.separator + MyINalogi.id
+            return foldl(list: Conf.textsFirstDownload.map{$0.id}, base: "", transform: {$0 + $1})
         default:
-            return ZakoldovannyjKrug.id + UserSave.separator + Sjurpriz.id + UserSave.separator + Svezhyj.id + UserSave.separator + Alibi.id + UserSave.separator + Proverka.id + UserSave.separator + BytiKakVse.id + UserSave.separator + MyINalogi.id
+            return foldl(list: Conf.textsFirstDownload.map{$0.id}, base: "", transform: {$0 + $1})
         }
     }
     
@@ -85,9 +85,5 @@ class TextsData{
             })
         })
     }
-    
 
-    
-    
-    
 }

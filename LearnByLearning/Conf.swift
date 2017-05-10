@@ -20,4 +20,9 @@ class Conf{
     static let urlAppleStore = "https://itunes.apple.com/us/app/itunes-u/id" + appleID
     
     static let appleID = "1220896542"
+    
+    
+    static public let texts: [TraductedText] = [Sjurpriz, Svezhyj, ZakoldovannyjKrug, Alibi, Proverka, BytiKakVse, MyINalogi]
+    
+    static public let textsFirstDownload: [TraductedText] = [Svezhyj, ZakoldovannyjKrug, MyINalogi]
 }

@@ -286,6 +286,9 @@ class ReadTextOriginal: UIViewController {
     
     func updateSlider(){
         slider.value = Float((audioPlayer?.currentTime)!)
+        if(Float((audioPlayer?.currentTime)!) >= Float((audioPlayer?.duration)!)){
+            setPayOrPauseImg()
+        }
         updateTimeLabels()
     }
     

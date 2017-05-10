@@ -34,9 +34,9 @@
 		9826BB161E9509F200E7CD1E /* Проверка.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826BB151E9509F200E7CD1E /* Проверка.swift */; };
 		9826BB191E950A1400E7CD1E /* Быть как все.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826BB181E950A1400E7CD1E /* Быть как все.swift */; };
 		9826BB1C1E950A3000E7CD1E /* Мы и налоги.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826BB1B1E950A3000E7CD1E /* Мы и налоги.swift */; };
-		982731681EA9F32B007FFF73 /* MyINalogi_mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 982731651EA9F32B007FFF73 /* MyINalogi_mid.mp3 */; };
-		982731691EA9F32B007FFF73 /* MyINalogi_fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 982731661EA9F32B007FFF73 /* MyINalogi_fast.mp3 */; };
-		9827316C1EA9F3B9007FFF73 /* MyINalogi_slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9827316B1EA9F3B9007FFF73 /* MyINalogi_slow.mp3 */; };
+		982731681EA9F32B007FFF73 /* MyINalogi-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 982731651EA9F32B007FFF73 /* MyINalogi-mid.mp3 */; };
+		982731691EA9F32B007FFF73 /* MyINalogi-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 982731661EA9F32B007FFF73 /* MyINalogi-fast.mp3 */; };
+		9827316C1EA9F3B9007FFF73 /* MyINalogi-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9827316B1EA9F3B9007FFF73 /* MyINalogi-slow.mp3 */; };
 		982D2AF11E9C24A400B590B1 /* YourAbonnementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982D2AF01E9C24A400B590B1 /* YourAbonnementVC.swift */; };
 		982ECD481E8F9234003B66F9 /* CreditsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982ECD471E8F9234003B66F9 /* CreditsVC.swift */; };
 		982ECD4A1E8FA0A3003B66F9 /* ReceiptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982ECD491E8FA0A3003B66F9 /* ReceiptManager.swift */; };
@@ -45,6 +45,7 @@
 		983B529F1E4F8BED004F820F /* AddTraductionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B529E1E4F8BEC004F820F /* AddTraductionCell.swift */; };
 		983B52A41E50E378004F820F /* AddText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B52A31E50E378004F820F /* AddText.swift */; };
 		983B52A61E50E45A004F820F /* AddTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B52A51E50E45A004F820F /* AddTextCell.swift */; };
+		984146181EC3092A0029011C /* FoldlFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984146171EC3092A0029011C /* FoldlFunction.swift */; };
 		987D34ED1E798A76008434A8 /* SettingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987D34EC1E798A76008434A8 /* SettingButton.swift */; };
 		987D34F21E7AE3EE008434A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 987D34F01E7AE3EE008434A8 /* Main.storyboard */; };
 		987D34F41E7D2B0F008434A8 /* SpeedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987D34F31E7D2B0F008434A8 /* SpeedButton.swift */; };
@@ -144,9 +145,9 @@
 		9826BB151E9509F200E7CD1E /* Проверка.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Проверка.swift"; sourceTree = "<group>"; };
 		9826BB181E950A1400E7CD1E /* Быть как все.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Быть как все.swift"; sourceTree = "<group>"; };
 		9826BB1B1E950A3000E7CD1E /* Мы и налоги.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Мы и налоги.swift"; sourceTree = "<group>"; };
-		982731651EA9F32B007FFF73 /* MyINalogi_mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MyINalogi_mid.mp3; sourceTree = "<group>"; };
-		982731661EA9F32B007FFF73 /* MyINalogi_fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MyINalogi_fast.mp3; sourceTree = "<group>"; };
-		9827316B1EA9F3B9007FFF73 /* MyINalogi_slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MyINalogi_slow.mp3; sourceTree = "<group>"; };
+		982731651EA9F32B007FFF73 /* MyINalogi-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "MyINalogi-mid.mp3"; sourceTree = "<group>"; };
+		982731661EA9F32B007FFF73 /* MyINalogi-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "MyINalogi-fast.mp3"; sourceTree = "<group>"; };
+		9827316B1EA9F3B9007FFF73 /* MyINalogi-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "MyINalogi-slow.mp3"; sourceTree = "<group>"; };
 		982D2AF01E9C24A400B590B1 /* YourAbonnementVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourAbonnementVC.swift; sourceTree = "<group>"; };
 		982ECD471E8F9234003B66F9 /* CreditsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsVC.swift; sourceTree = "<group>"; };
 		982ECD491E8FA0A3003B66F9 /* ReceiptManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptManager.swift; sourceTree = "<group>"; };
@@ -155,6 +156,7 @@
 		983B529E1E4F8BEC004F820F /* AddTraductionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTraductionCell.swift; sourceTree = "<group>"; };
 		983B52A31E50E378004F820F /* AddText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddText.swift; sourceTree = "<group>"; };
 		983B52A51E50E45A004F820F /* AddTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTextCell.swift; sourceTree = "<group>"; };
+		984146171EC3092A0029011C /* FoldlFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldlFunction.swift; sourceTree = "<group>"; };
 		987D34EC1E798A76008434A8 /* SettingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingButton.swift; sourceTree = "<group>"; };
 		987D34F11E7AE3EE008434A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LearnByLearning/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		987D34F31E7D2B0F008434A8 /* SpeedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedButton.swift; sourceTree = "<group>"; };
@@ -362,6 +364,8 @@
 				9823AE961E65CC1C00AB376C /* Lang */,
 				987E15021E6173090080C9B6 /* Texts */,
 				987D351B1E7DB768008434A8 /* preferedReadingSpeed.swift */,
+				98DDC6CA1E7453A6004A367C /* Color.swift */,
+				98822AF91EC0689F00C57038 /* Conf.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -492,9 +496,9 @@
 			isa = PBXGroup;
 			children = (
 				9826BB1B1E950A3000E7CD1E /* Мы и налоги.swift */,
-				9827316B1EA9F3B9007FFF73 /* MyINalogi_slow.mp3 */,
-				982731651EA9F32B007FFF73 /* MyINalogi_mid.mp3 */,
-				982731661EA9F32B007FFF73 /* MyINalogi_fast.mp3 */,
+				9827316B1EA9F3B9007FFF73 /* MyINalogi-slow.mp3 */,
+				982731651EA9F32B007FFF73 /* MyINalogi-mid.mp3 */,
+				982731661EA9F32B007FFF73 /* MyINalogi-fast.mp3 */,
 			);
 			name = "Мы и налоги";
 			sourceTree = "<group>";
@@ -506,22 +510,6 @@
 				983B52A51E50E45A004F820F /* AddTextCell.swift */,
 			);
 			name = AddText;
-			sourceTree = "<group>";
-		};
-		987D34F51E7D6D7B008434A8 /* AudioText */ = {
-			isa = PBXGroup;
-			children = (
-				987D34F61E7D6D8B008434A8 /* Russian */,
-			);
-			name = AudioText;
-			path = LearnByLearning;
-			sourceTree = "<group>";
-		};
-		987D34F61E7D6D8B008434A8 /* Russian */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Russian;
 			sourceTree = "<group>";
 		};
 		987D351D1E7E9A98008434A8 /* InviteFriend */ = {
@@ -536,7 +524,6 @@
 		987E15021E6173090080C9B6 /* Texts */ = {
 			isa = PBXGroup;
 			children = (
-				987D34F51E7D6D7B008434A8 /* AudioText */,
 				981F89641E80450300D1BF9D /* TextsData */,
 				987E15031E6173230080C9B6 /* TraductedText.swift */,
 				9823AE861E61CD4E00AB376C /* Word.swift */,
@@ -591,8 +578,6 @@
 				988A72C61E352DF600BDE635 /* LaunchScreen.storyboard */,
 				988A72C91E352DF600BDE635 /* Info.plist */,
 				988A72BB1E352DF600BDE635 /* AppDelegate.swift */,
-				98DDC6CA1E7453A6004A367C /* Color.swift */,
-				98822AF91EC0689F00C57038 /* Conf.swift */,
 			);
 			path = LearnByLearning;
 			sourceTree = "<group>";
@@ -621,6 +606,7 @@
 				982194541E8C032B00043300 /* In-App Purchase */,
 				982194571E8CD7C800043300 /* Slide manager */,
 				982ECD4B1E9120EA003B66F9 /* WaitAlert.swift */,
+				984146171EC3092A0029011C /* FoldlFunction.swift */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -817,7 +803,7 @@
 				987D35181E7D6DA3008434A8 /* BytiKakVse-fast.mp3 in Resources */,
 				98EC9EF71E4D012B0062F9F2 /* Localizable.strings in Resources */,
 				987D350B1E7D6DA3008434A8 /* Sjurpriz-slow.mp3 in Resources */,
-				9827316C1EA9F3B9007FFF73 /* MyINalogi_slow.mp3 in Resources */,
+				9827316C1EA9F3B9007FFF73 /* MyINalogi-slow.mp3 in Resources */,
 				987D35091E7D6DA3008434A8 /* Sjurpriz-fast.mp3 in Resources */,
 				987D35171E7D6DA3008434A8 /* Proverka-slow.mp3 in Resources */,
 				987D35141E7D6DA3008434A8 /* Alibi-slow.mp3 in Resources */,
@@ -826,10 +812,10 @@
 				988A72C51E352DF600BDE635 /* Assets.xcassets in Resources */,
 				98822AF81EBEDF0700C57038 /* Main.strings in Resources */,
 				987D350D1E7D6DA3008434A8 /* Svezhyj-mid.mp3 in Resources */,
-				982731681EA9F32B007FFF73 /* MyINalogi_mid.mp3 in Resources */,
+				982731681EA9F32B007FFF73 /* MyINalogi-mid.mp3 in Resources */,
 				987D351A1E7D6DA3008434A8 /* BytiKakVse-slow.mp3 in Resources */,
 				98EC9EF81E4D012B0062F9F2 /* InfoPlist.strings in Resources */,
-				982731691EA9F32B007FFF73 /* MyINalogi_fast.mp3 in Resources */,
+				982731691EA9F32B007FFF73 /* MyINalogi-fast.mp3 in Resources */,
 				987D350F1E7D6DA3008434A8 /* ZakoldovannyjKrug-fast.mp3 in Resources */,
 				987D350E1E7D6DA3008434A8 /* Svezhyj-slow.mp3 in Resources */,
 				987D35111E7D6DA3008434A8 /* ZakoldovannyjKrug-slow.mp3 in Resources */,
@@ -869,6 +855,7 @@
 				98D73E141E369C1800BAF0C1 /* ReadTextOriginal.swift in Sources */,
 				98E8BB121E4CE1A4002134B0 /* MenuViewController.swift in Sources */,
 				9823AE981E66028200AB376C /* LanguageNav.swift in Sources */,
+				984146181EC3092A0029011C /* FoldlFunction.swift in Sources */,
 				983B52A61E50E45A004F820F /* AddTextCell.swift in Sources */,
 				98D73E161E369C7A00BAF0C1 /* ReadTextTraduction.swift in Sources */,
 				982D2AF11E9C24A400B590B1 /* YourAbonnementVC.swift in Sources */,

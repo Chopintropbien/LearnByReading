@@ -26,9 +26,9 @@ class TraductedText{
     let author: String
     let titleAudio: String
     
-    var voc: [OriginalWord: [Word]]
+    var voc: [(key: OriginalWord, value: [Word])]
     
-    public init(originalText: Text, traductedText: [Text], voc: [OriginalWord: [Word]], level: Level, author: String, titleAudio: String){
+    public init(originalText: Text, traductedText: [Text], voc: [(OriginalWord, [Word])], level: Level, author: String, titleAudio: String){
         self.originalText = originalText
         self.traductedText = traductedText
         self.voc = voc
@@ -36,7 +36,7 @@ class TraductedText{
         self.author = author
         self.titleAudio = titleAudio
         
-        self.id = originalText.1
+        self.id = titleAudio
     }
     
     public func hasThisId(nr: Int, lang: Lang) -> Bool{
@@ -97,11 +97,6 @@ class TraductedText{
             (($0.key, $0.value.filter{$0.lang == lang}.first!), ids.contains($0.key.id()))
         }
     }
-    
-    
-    
-    
-    
 }
 
 

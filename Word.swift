@@ -46,7 +46,7 @@ class OriginalWord: Word{
     
     init(lang: Lang, wordInText: String, neutralWord: String, isInUserSartedList: Bool = true) {
         self.wordInText = wordInText
-        self.isInUserSartedList = true
+        self.isInUserSartedList = isInUserSartedList
         super.init(lang: lang, neutralWord: neutralWord)
         
         self.hashValue = (neutralWord + wordInText + lang.rawValue).hashValue + isInUserSartedList.hashValue

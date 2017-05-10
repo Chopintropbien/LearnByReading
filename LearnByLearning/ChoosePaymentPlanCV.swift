@@ -21,6 +21,8 @@ class ChoosePaymentPlanCV: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        choosePaymentPlanCV = self
+        
         NotificationCenter.default.addObserver(self, selector: #selector(self.SKProductsDidLoadFromiTunes), name: NSNotification.Name.init("SKProductsHaveLoaded"), object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(self.SKProductsDidLoadFromiTunes), name: NSNotification.Name.init(rawValue: "ReceiptDidUpdated"), object: nil)

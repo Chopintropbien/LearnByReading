@@ -191,7 +191,7 @@
 "mail subjet InviteFriendViewController" = "Kennst du schon Polyglott?";
 
 // mail body
-"mail body InviteFriendViewController" = "Hallo,\n\nich habe eben eine neue App zum lernen von Russisch gefunden.\n\nEs heißt “Polyglott”. Es besteht aus Texten, die an deine Kenntnisse angepasst sind. Eine nicht-technische Stimme liest sie dir in der Sprache, die du lernen willst, in der Geschwindigkeit, die du magst vor. Vokabeln, die du nicht kennst sind bereits übersetzt. Und eine komplette Übersetzung des Textes ist jedenfalls verfügbar.\n\nKomm! Versuch sie auch!\n\n";
+"mail body InviteFriendViewController" = "Hallo,\n\nich habe eben eine neue App zum lernen von Russisch gefunden.\n\nEs heißt “Polyglott”. Es besteht aus Texten, die an deine Kenntnisse angepasst sind. Eine nicht-technische Stimme liest sie dir in der Sprache, die du lernen willst, in der Geschwindigkeit, die du magst vor. Vokabeln, die du nicht kennst sind bereits übersetzt. Und eine komplette Übersetzung des Textes ist jedenfalls verfügbar.\n\nKomm! Versuch sie auch!";
 
 // SMS body
 "SMS body InviteFriendViewController" = "Hallo! Ich habe soeben eine neue App zum lernen von Russisch gefunden. Guck es dir mal an.";

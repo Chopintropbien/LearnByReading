@@ -99,7 +99,8 @@ class LanguageNav: UITableViewController {
         }))
         
         refreshAlert.addAction(UIAlertAction(title: Localization("no"), style: .cancel, handler: { (action: UIAlertAction!) in
-            self.selectedMenuItem = (indexPath as NSIndexPath).row
+            tableView.reloadData()
+            tableView.selectRow(at: IndexPath(row: self.selectedMenuItem, section: 0), animated: false, scrollPosition: .middle)
         }))
         
         present(refreshAlert, animated: true, completion: nil)
