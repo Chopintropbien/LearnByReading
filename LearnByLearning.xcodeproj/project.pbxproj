@@ -1033,7 +1033,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1078,7 +1078,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1094,6 +1094,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = EQPGG2M7LV;
 				INFOPLIST_FILE = LearnByLearning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lauriane.molllier.learnByReading.russian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1114,6 +1115,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = EQPGG2M7LV;
 				INFOPLIST_FILE = LearnByLearning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lauriane.molllier.learnByReading.russian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1196,7 +1198,7 @@
 				988A72E11E352DF600BDE635 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		988A72E21E352DF600BDE635 /* Build configuration list for PBXNativeTarget "LearnByLearning" */ = {
 			isa = XCConfigurationList;
@@ -1205,7 +1207,7 @@
 				988A72E41E352DF600BDE635 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		988A72E51E352DF600BDE635 /* Build configuration list for PBXNativeTarget "LearnByLearningTests" */ = {
 			isa = XCConfigurationList;
@@ -1214,7 +1216,7 @@
 				988A72E71E352DF600BDE635 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		988A72E81E352DF600BDE635 /* Build configuration list for PBXNativeTarget "LearnByLearningUITests" */ = {
 			isa = XCConfigurationList;
@@ -1223,7 +1225,7 @@
 				988A72EA1E352DF600BDE635 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
