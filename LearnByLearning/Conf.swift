@@ -11,9 +11,9 @@ import Foundation
 
 
 class Conf{
-    static let langToLearn = Lang.en
+    static let langToLearn = Lang.ru
     
-    static let defaulfNavLang = Lang.es
+    static let defaulfNavLang = Lang.en
     
     static let openAppInAppleStore = "itms-apps://itunes.apple.com/app/id" + appleID
     
