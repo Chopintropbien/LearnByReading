@@ -9,7 +9,7 @@
 import Foundation
 
 
-let GM_Food: TraductedText = TraductedText(
+let The_Sack_Garden: TraductedText = TraductedText(
     originalText: Text(lang: Lang.en,
                        title: "",
                        text: ""),
@@ -27,4 +27,4 @@ let GM_Food: TraductedText = TraductedText(
              title: "",
              text: ""),
         ],
-    voc: [], level: Level.A2, author: "", titleAudio: "GM_Food")
+    voc: [], level: Level.A2, author: "", titleAudio: "The_Sack_Garden")

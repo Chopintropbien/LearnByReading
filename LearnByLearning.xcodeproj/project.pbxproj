@@ -80,6 +80,16 @@
 		988A72EC1E352EEA00BDE635 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988A72EB1E352EEA00BDE635 /* Home.swift */; };
 		988A72F01E352F6E00BDE635 /* ReadTextTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988A72EF1E352F6E00BDE635 /* ReadTextTabBarController.swift */; };
 		988A72F91E367A3500BDE635 /* VocForText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988A72F81E367A3500BDE635 /* VocForText.swift */; };
+		989514921ECB3C00003FBC1B /* The Sack Garden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989514911ECB3C00003FBC1B /* The Sack Garden.swift */; };
+		989514941ECB3C1D003FBC1B /* Val's Garden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989514931ECB3C1D003FBC1B /* Val's Garden.swift */; };
+		989514961ECB3CB5003FBC1B /* Raven and the First People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989514951ECB3CB5003FBC1B /* Raven and the First People.swift */; };
+		989514981ECB3CC0003FBC1B /* Raven steals the Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989514971ECB3CC0003FBC1B /* Raven steals the Light.swift */; };
+		9895149D1ECB3CEB003FBC1B /* The choking dog (Part 1).swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895149C1ECB3CEB003FBC1B /* The choking dog (Part 1).swift */; };
+		989514A01ECB3CFC003FBC1B /* The choking dog (Part 2).swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895149F1ECB3CFC003FBC1B /* The choking dog (Part 2).swift */; };
+		989514A31ECB3D0B003FBC1B /* The Most Amazing Structure on Earth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989514A21ECB3D0B003FBC1B /* The Most Amazing Structure on Earth.swift */; };
+		989514A61ECB3D21003FBC1B /* From Carrots to Renovations (Part 1).swift in Sources */ = {isa = PBXBuildFile; fileRef = 989514A51ECB3D21003FBC1B /* From Carrots to Renovations (Part 1).swift */; };
+		989514A91ECB3D35003FBC1B /* From Carrots to Renovations (Part 2).swift in Sources */ = {isa = PBXBuildFile; fileRef = 989514A81ECB3D35003FBC1B /* From Carrots to Renovations (Part 2).swift */; };
+		989514AC1ECB3D4D003FBC1B /* The Causes of Floods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989514AB1ECB3D4D003FBC1B /* The Causes of Floods.swift */; };
 		98D00EE31EC32686004030D0 /* foldlFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D00EE21EC32686004030D0 /* foldlFunction.swift */; };
 		98D73E141E369C1800BAF0C1 /* ReadTextOriginal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D73E131E369C1800BAF0C1 /* ReadTextOriginal.swift */; };
 		98D73E161E369C7A00BAF0C1 /* ReadTextTraduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D73E151E369C7A00BAF0C1 /* ReadTextTraduction.swift */; };
@@ -203,6 +213,16 @@
 		988A72EB1E352EEA00BDE635 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		988A72EF1E352F6E00BDE635 /* ReadTextTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadTextTabBarController.swift; sourceTree = "<group>"; };
 		988A72F81E367A3500BDE635 /* VocForText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VocForText.swift; sourceTree = "<group>"; };
+		989514911ECB3C00003FBC1B /* The Sack Garden.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "The Sack Garden.swift"; sourceTree = "<group>"; };
+		989514931ECB3C1D003FBC1B /* Val's Garden.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Val's Garden.swift"; sourceTree = "<group>"; };
+		989514951ECB3CB5003FBC1B /* Raven and the First People.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Raven and the First People.swift"; sourceTree = "<group>"; };
+		989514971ECB3CC0003FBC1B /* Raven steals the Light.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Raven steals the Light.swift"; sourceTree = "<group>"; };
+		9895149C1ECB3CEB003FBC1B /* The choking dog (Part 1).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "The choking dog (Part 1).swift"; sourceTree = "<group>"; };
+		9895149F1ECB3CFC003FBC1B /* The choking dog (Part 2).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "The choking dog (Part 2).swift"; sourceTree = "<group>"; };
+		989514A21ECB3D0B003FBC1B /* The Most Amazing Structure on Earth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "The Most Amazing Structure on Earth.swift"; sourceTree = "<group>"; };
+		989514A51ECB3D21003FBC1B /* From Carrots to Renovations (Part 1).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "From Carrots to Renovations (Part 1).swift"; sourceTree = "<group>"; };
+		989514A81ECB3D35003FBC1B /* From Carrots to Renovations (Part 2).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "From Carrots to Renovations (Part 2).swift"; sourceTree = "<group>"; };
+		989514AB1ECB3D4D003FBC1B /* The Causes of Floods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "The Causes of Floods.swift"; sourceTree = "<group>"; };
 		98D00EE21EC32686004030D0 /* foldlFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = foldlFunction.swift; sourceTree = "<group>"; };
 		98D73E131E369C1800BAF0C1 /* ReadTextOriginal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadTextOriginal.swift; sourceTree = "<group>"; };
 		98D73E151E369C7A00BAF0C1 /* ReadTextTraduction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadTextTraduction.swift; sourceTree = "<group>"; };
@@ -285,7 +305,9 @@
 		981F89661E80452400D1BF9D /* A2 */ = {
 			isa = PBXGroup;
 			children = (
-				981F896B1E80457800D1BF9D /* GM Food.swift */,
+				989514901ECB3B94003FBC1B /* Val's Garden */,
+				9895148F1ECB3B8B003FBC1B /* The Sack Garden */,
+				9895148E1ECB3B6F003FBC1B /* GM Food */,
 			);
 			name = A2;
 			sourceTree = "<group>";
@@ -293,6 +315,8 @@
 		981F89671E80453100D1BF9D /* B1 */ = {
 			isa = PBXGroup;
 			children = (
+				9895149A1ECB3CD0003FBC1B /* Raven and the First People */,
+				989514991ECB3CC6003FBC1B /* Raven steals the Light */,
 			);
 			name = B1;
 			sourceTree = "<group>";
@@ -300,6 +324,9 @@
 		981F89681E80453800D1BF9D /* B2 */ = {
 			isa = PBXGroup;
 			children = (
+				989514A11ECB3D05003FBC1B /* The Most Amazing Structure on Earth */,
+				9895149E1ECB3CF0003FBC1B /* The choking dog (Part 2) */,
+				9895149B1ECB3CE5003FBC1B /* The choking dog (Part 1) */,
 			);
 			name = B2;
 			sourceTree = "<group>";
@@ -307,6 +334,9 @@
 		981F89691E80453E00D1BF9D /* C1 */ = {
 			isa = PBXGroup;
 			children = (
+				989514AA1ECB3D3C003FBC1B /* The Causes of Floods */,
+				989514A71ECB3D2D003FBC1B /* From Carrots to Renovations (Part 2) */,
+				989514A41ECB3D18003FBC1B /* From Carrots to Renovations (Part 1) */,
 			);
 			name = C1;
 			sourceTree = "<group>";
@@ -611,6 +641,94 @@
 			name = Library;
 			sourceTree = "<group>";
 		};
+		9895148E1ECB3B6F003FBC1B /* GM Food */ = {
+			isa = PBXGroup;
+			children = (
+				981F896B1E80457800D1BF9D /* GM Food.swift */,
+			);
+			name = "GM Food";
+			sourceTree = "<group>";
+		};
+		9895148F1ECB3B8B003FBC1B /* The Sack Garden */ = {
+			isa = PBXGroup;
+			children = (
+				989514911ECB3C00003FBC1B /* The Sack Garden.swift */,
+			);
+			name = "The Sack Garden";
+			sourceTree = "<group>";
+		};
+		989514901ECB3B94003FBC1B /* Val's Garden */ = {
+			isa = PBXGroup;
+			children = (
+				989514931ECB3C1D003FBC1B /* Val's Garden.swift */,
+			);
+			name = "Val's Garden";
+			sourceTree = "<group>";
+		};
+		989514991ECB3CC6003FBC1B /* Raven steals the Light */ = {
+			isa = PBXGroup;
+			children = (
+				989514971ECB3CC0003FBC1B /* Raven steals the Light.swift */,
+			);
+			name = "Raven steals the Light";
+			sourceTree = "<group>";
+		};
+		9895149A1ECB3CD0003FBC1B /* Raven and the First People */ = {
+			isa = PBXGroup;
+			children = (
+				989514951ECB3CB5003FBC1B /* Raven and the First People.swift */,
+			);
+			name = "Raven and the First People";
+			sourceTree = "<group>";
+		};
+		9895149B1ECB3CE5003FBC1B /* The choking dog (Part 1) */ = {
+			isa = PBXGroup;
+			children = (
+				9895149C1ECB3CEB003FBC1B /* The choking dog (Part 1).swift */,
+			);
+			name = "The choking dog (Part 1)";
+			sourceTree = "<group>";
+		};
+		9895149E1ECB3CF0003FBC1B /* The choking dog (Part 2) */ = {
+			isa = PBXGroup;
+			children = (
+				9895149F1ECB3CFC003FBC1B /* The choking dog (Part 2).swift */,
+			);
+			name = "The choking dog (Part 2)";
+			sourceTree = "<group>";
+		};
+		989514A11ECB3D05003FBC1B /* The Most Amazing Structure on Earth */ = {
+			isa = PBXGroup;
+			children = (
+				989514A21ECB3D0B003FBC1B /* The Most Amazing Structure on Earth.swift */,
+			);
+			name = "The Most Amazing Structure on Earth";
+			sourceTree = "<group>";
+		};
+		989514A41ECB3D18003FBC1B /* From Carrots to Renovations (Part 1) */ = {
+			isa = PBXGroup;
+			children = (
+				989514A51ECB3D21003FBC1B /* From Carrots to Renovations (Part 1).swift */,
+			);
+			name = "From Carrots to Renovations (Part 1)";
+			sourceTree = "<group>";
+		};
+		989514A71ECB3D2D003FBC1B /* From Carrots to Renovations (Part 2) */ = {
+			isa = PBXGroup;
+			children = (
+				989514A81ECB3D35003FBC1B /* From Carrots to Renovations (Part 2).swift */,
+			);
+			name = "From Carrots to Renovations (Part 2)";
+			sourceTree = "<group>";
+		};
+		989514AA1ECB3D3C003FBC1B /* The Causes of Floods */ = {
+			isa = PBXGroup;
+			children = (
+				989514AB1ECB3D4D003FBC1B /* The Causes of Floods.swift */,
+			);
+			name = "The Causes of Floods";
+			sourceTree = "<group>";
+		};
 		98D73E171E369C8400BAF0C1 /* ReadText */ = {
 			isa = PBXGroup;
 			children = (
@@ -847,6 +965,7 @@
 				987E15081E61803F0080C9B6 /* AddTraductionVocForText.swift in Sources */,
 				987D351C1E7DB768008434A8 /* preferedReadingSpeed.swift in Sources */,
 				9823AE891E61CFA400AB376C /* TextsData.swift in Sources */,
+				989514961ECB3CB5003FBC1B /* Raven and the First People.swift in Sources */,
 				981F896C1E80457800D1BF9D /* GM Food.swift in Sources */,
 				9821945F1E8CD7E000043300 /* UITableViewVibrantCell.swift in Sources */,
 				983B52A41E50E378004F820F /* AddText.swift in Sources */,
@@ -858,6 +977,7 @@
 				983B52A61E50E45A004F820F /* AddTextCell.swift in Sources */,
 				98D73E161E369C7A00BAF0C1 /* ReadTextTraduction.swift in Sources */,
 				982D2AF11E9C24A400B590B1 /* YourAbonnementVC.swift in Sources */,
+				9895149D1ECB3CEB003FBC1B /* The choking dog (Part 1).swift in Sources */,
 				9826BB191E950A1400E7CD1E /* Быть как все.swift in Sources */,
 				982ECD4C1E9120EB003B66F9 /* WaitAlert.swift in Sources */,
 				988A72F91E367A3500BDE635 /* VocForText.swift in Sources */,
@@ -868,22 +988,27 @@
 				987E15041E6173230080C9B6 /* TraductedText.swift in Sources */,
 				983B529D1E4F8BDA004F820F /* TraductionCell.swift in Sources */,
 				9823AE921E65CBA800AB376C /* LearningLang.swift in Sources */,
+				989514921ECB3C00003FBC1B /* The Sack Garden.swift in Sources */,
 				98E8BB221E4CF375002134B0 /* MyLanguagesViewController.swift in Sources */,
 				982ECD4A1E8FA0A3003B66F9 /* ReceiptManager.swift in Sources */,
 				983B529F1E4F8BED004F820F /* AddTraductionCell.swift in Sources */,
 				98EC9F021E4DB40E0062F9F2 /* CurrentLanguageCell.swift in Sources */,
 				98E8BB141E4CE1C9002134B0 /* MenuCell.swift in Sources */,
+				989514A31ECB3D0B003FBC1B /* The Most Amazing Structure on Earth.swift in Sources */,
 				9823AE871E61CD4E00AB376C /* Word.swift in Sources */,
 				9826BB0C1E95096B00E7CD1E /* Заколдованный круг.swift in Sources */,
 				9826BB0E1E95099100E7CD1E /* Сюрприз.swift in Sources */,
 				98E8BB1A1E4CEF00002134B0 /* Localisator.swift in Sources */,
 				9826BB161E9509F200E7CD1E /* Проверка.swift in Sources */,
 				982ECD481E8F9234003B66F9 /* CreditsVC.swift in Sources */,
+				989514A91ECB3D35003FBC1B /* From Carrots to Renovations (Part 2).swift in Sources */,
 				9826BB091E94FB4A00E7CD1E /* Свежий.swift in Sources */,
+				989514A01ECB3CFC003FBC1B /* The choking dog (Part 2).swift in Sources */,
 				98D00EE31EC32686004030D0 /* foldlFunction.swift in Sources */,
 				982194531E8BF21100043300 /* HighlightChoosePaymentPlanButtonView.swift in Sources */,
 				98DDC6CB1E7453A6004A367C /* Color.swift in Sources */,
 				98E8BB251E4CF39D002134B0 /* SettingsViewController.swift in Sources */,
+				989514A61ECB3D21003FBC1B /* From Carrots to Renovations (Part 1).swift in Sources */,
 				98E538B71E80596F0067E639 /* TemplateText .swift in Sources */,
 				98E538B51E8059040067E639 /* El jardín de Val.swift in Sources */,
 				982194561E8C033C00043300 /* StoreManager.swift in Sources */,
@@ -894,7 +1019,10 @@
 				9823AE941E65CBBC00AB376C /* Lang.swift in Sources */,
 				987D351F1E7E9AB9008434A8 /* InviteFriendButton.swift in Sources */,
 				981F89611E7F1C8F00D1BF9D /* languageCollecVCell.swift in Sources */,
+				989514981ECB3CC0003FBC1B /* Raven steals the Light.swift in Sources */,
+				989514941ECB3C1D003FBC1B /* Val's Garden.swift in Sources */,
 				98226BD21E7408BC00060F26 /* HomeCell.swift in Sources */,
+				989514AC1ECB3D4D003FBC1B /* The Causes of Floods.swift in Sources */,
 				988A72EC1E352EEA00BDE635 /* Home.swift in Sources */,
 				987D34ED1E798A76008434A8 /* SettingButton.swift in Sources */,
 				981F89631E7F1CCC00D1BF9D /* ChooseLanguageToLearnCollectionVC.swift in Sources */,
