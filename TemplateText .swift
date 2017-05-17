@@ -18,8 +18,14 @@ import Foundation
 //             title: "",
 //             text: ""),
 //        ],
-//    voc: [
-//        
-//        
-//        
-//    ], level: Level.A2, author: "", titleAudio: "Alibi")
+//    voc: VovSvezhyj().voc, level: Level.A2, author: "", titleAudio: "Alibi")
+
+
+//class VovSvezhyj{
+
+    //var voc: [(key: OriginalWord, value: [Word])] = []
+    
+    //init(){
+
+//    }
+//}

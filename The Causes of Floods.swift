@@ -27,4 +27,17 @@ let The_Causes_of_Floods: TraductedText = TraductedText(
              title: "",
              text: ""),
         ],
-    voc: [], level: Level.A2, author: "", titleAudio: "The_Causes_of_Floods")
+    voc: VovThe_Causes_of_Floods().voc, level: Level.A2, author: "", titleAudio: "The_Causes_of_Floods")
+
+
+
+
+class VovThe_Causes_of_Floods{
+    
+    var voc: [(key: OriginalWord, value: [Word])] = []
+    
+    init(){
+        
+    }
+}
+

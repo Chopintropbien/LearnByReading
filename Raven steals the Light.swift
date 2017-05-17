@@ -27,4 +27,17 @@ let Raven_steals_the_Light: TraductedText = TraductedText(
              title: "",
              text: ""),
         ],
-    voc: [], level: Level.A2, author: "", titleAudio: "Raven_steals_the_Light")
+    voc: VovRaven_steals_the_Light().voc, level: Level.B1, author: "Mary Mahoney", titleAudio: "Raven_steals_the_Light")
+
+
+
+class VovRaven_steals_the_Light{
+    
+    var voc: [(key: OriginalWord, value: [Word])] = []
+    
+    init(){
+        
+    }
+}
+
+

@@ -27,4 +27,16 @@ let From_Carrots_to_Renovations_1: TraductedText = TraductedText(
              title: "",
              text: ""),
         ],
-    voc: [], level: Level.A2, author: "", titleAudio: "From_Carrots_to_Renovations_1")
+    voc: VovFrom_Carrots_to_Renovations_1().voc, level: Level.A2, author: "", titleAudio: "From_Carrots_to_Renovations_1")
+
+
+
+class VovFrom_Carrots_to_Renovations_1{
+    
+    var voc: [(key: OriginalWord, value: [Word])] = []
+    
+    init(){
+        
+    }
+}
+

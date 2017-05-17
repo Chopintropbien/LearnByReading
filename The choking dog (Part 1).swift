@@ -27,4 +27,15 @@ let The_choking_dog_1: TraductedText = TraductedText(
              title: "",
              text: ""),
         ],
-    voc: [], level: Level.A2, author: "", titleAudio: "The_choking_dog_1")
+    voc: VovThe_choking_dog_1().voc, level: Level.A2, author: "", titleAudio: "The_choking_dog_1")
+
+
+
+class VovThe_choking_dog_1{
+    
+    var voc: [(key: OriginalWord, value: [Word])] = []
+    
+    init(){
+        
+    }
+}
