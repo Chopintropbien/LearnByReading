@@ -19,6 +19,8 @@ class Conf{
     
     static let urlAppleStore = "https://itunes.apple.com/us/app/itunes-u/id" + appleID
     
+    static let sharedSecret = "7947eaec1084499fabce5e0265583fcf"
+    
     static let appleID = "1220896542"
     
     

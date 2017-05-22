@@ -128,17 +128,17 @@
 
 //
 "1MONTH" = "MES";
-"%@ every month" = "%@ cada mes";
+"%@ every month" = "%@ pago mensual";
 
 "3MONTH" = "MESES";
 "6MONTH" = "MESES";
 "Just %@ /Month" = "Solo %@ /Mes";
 
-"%@ every 3 months" = "%@ cada %d meses";
-"%@ every 6 months" = "%@ cada %d meses";
+"%@ every 3 months" = "%@ pago cada %d meses";
+"%@ every 6 months" = "%@ pago cada %d meses";
 
 "YEAR" = "AÑO";
-"%@ every year" = "%@ al año";
+"%@ every year" = "%@ pago cada 12 meses";
 
 
 
@@ -275,6 +275,8 @@
 //
 "Term and conditions" = "Términos de uso";
 
+// private policy
+"Private policy" = "";
 
 
 /* LanguageNav */
@@ -388,6 +390,24 @@
 
 
 
+
+/* Term and conditions */
+"Term and conditions title" = "Términos de uso";
+
+"Term and conditions text" = "";
+
+
+/* Private policy */
+"Private policy title" = "";
+
+"Private policy text" = "";
+
+
+
+
+
+
+
 /* Lang */
 
 "English" = "Inglés";
@@ -401,4 +421,13 @@
 "German" = "Alemán";
 
 "Italien" = "Italiano";
+
+
+
+
+
+
+
+
+
 

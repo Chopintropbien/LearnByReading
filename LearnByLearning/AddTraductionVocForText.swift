@@ -134,7 +134,6 @@ class AddTraductionVocForText: UIViewController, UITableViewDelegate, UITableVie
     
     @IBAction func cancel(_ sender: UIBarButtonItem) {
         navigationController?.popViewController(animated: true)
-        
     }
     @IBAction func done(_ sender: UIBarButtonItem) {
         UserSave.saveVocWantedByUser(text: text, vocs: allVoc)

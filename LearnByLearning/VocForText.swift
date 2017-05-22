@@ -12,6 +12,7 @@ class VocForText: UITableViewController {
     
     var text: TraductedText!
     var voc: [(OriginalWord, Word)]!
+    var emptyRowData: (OriginalWord, Word)! // TODO: to fix design problem
     
     @IBOutlet weak var addTradButton: UIBarButtonItem!
     
@@ -20,8 +21,10 @@ class VocForText: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addTradButton.accessibilityElementsHidden = false
-        voc = UserSave.getVocSaved(text: text)
         tableView.allowsSelection = false
+        
+        voc = UserSave.getVocSaved(text: text)
+        emptyRowData = (OriginalWord(lang: voc.first!.0.lang , wordInText: "", neutralWord: "", isInUserSartedList: false), Word(lang: voc.first!.1.lang, neutralWord: ""))
         
         
         // Uncomment the following line to preserve selection between presentations
@@ -40,7 +43,11 @@ class VocForText: UITableViewController {
         
         tabBarController?.navigationItem.rightBarButtonItem = addTradButton
         tabBarController?.navigationItem.leftBarButtonItem = customBack
+
         voc = UserSave.getVocSaved(text: text)
+        
+        // TODO: to fix design problem
+        voc.append(emptyRowData)
         tableView.reloadData()
         
         /* text */
@@ -116,6 +123,13 @@ class VocForText: UITableViewController {
         if editingStyle == .delete {
             UserSave.removeWordFromVocSaved(text: text, word: voc[indexPath.row])
             voc.remove(at: indexPath.row)
+            
+            voc.remove(at: voc.count - 1) // TODO: to fix design problem
+            
+            UserSave.saveVocWantedByUser(text: text, vocs: voc)
+            
+            voc.append(emptyRowData) // TODO: to fix design problem
+            
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view

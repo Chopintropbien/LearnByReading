@@ -34,9 +34,6 @@
 		9826BB161E9509F200E7CD1E /* Проверка.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826BB151E9509F200E7CD1E /* Проверка.swift */; };
 		9826BB191E950A1400E7CD1E /* Быть как все.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826BB181E950A1400E7CD1E /* Быть как все.swift */; };
 		9826BB1C1E950A3000E7CD1E /* Мы и налоги.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826BB1B1E950A3000E7CD1E /* Мы и налоги.swift */; };
-		982731681EA9F32B007FFF73 /* MyINalogi-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 982731651EA9F32B007FFF73 /* MyINalogi-mid.mp3 */; };
-		982731691EA9F32B007FFF73 /* MyINalogi-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 982731661EA9F32B007FFF73 /* MyINalogi-fast.mp3 */; };
-		9827316C1EA9F3B9007FFF73 /* MyINalogi-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9827316B1EA9F3B9007FFF73 /* MyINalogi-slow.mp3 */; };
 		982D2AF11E9C24A400B590B1 /* YourAbonnementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982D2AF01E9C24A400B590B1 /* YourAbonnementVC.swift */; };
 		982ECD481E8F9234003B66F9 /* CreditsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982ECD471E8F9234003B66F9 /* CreditsVC.swift */; };
 		982ECD4A1E8FA0A3003B66F9 /* ReceiptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982ECD491E8FA0A3003B66F9 /* ReceiptManager.swift */; };
@@ -45,27 +42,65 @@
 		983B529F1E4F8BED004F820F /* AddTraductionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B529E1E4F8BEC004F820F /* AddTraductionCell.swift */; };
 		983B52A41E50E378004F820F /* AddText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B52A31E50E378004F820F /* AddText.swift */; };
 		983B52A61E50E45A004F820F /* AddTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B52A51E50E45A004F820F /* AddTextCell.swift */; };
+		987681AE1ED1C48900EC5503 /* PrivatePolicyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987681AD1ED1C48900EC5503 /* PrivatePolicyVC.swift */; };
+		987681B01ED1C4A800EC5503 /* TermConditionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987681AF1ED1C4A800EC5503 /* TermConditionVC.swift */; };
+		987681B41ED2E4FA00EC5503 /* From_Carrots_to_Renovations_1-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681B11ED2E4FA00EC5503 /* From_Carrots_to_Renovations_1-fast.mp3 */; };
+		987681B51ED2E4FA00EC5503 /* From_Carrots_to_Renovations_1-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681B21ED2E4FA00EC5503 /* From_Carrots_to_Renovations_1-mid.mp3 */; };
+		987681B61ED2E4FA00EC5503 /* From_Carrots_to_Renovations_1-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681B31ED2E4FA00EC5503 /* From_Carrots_to_Renovations_1-slow.mp3 */; };
+		987681BA1ED2E50B00EC5503 /* From_Carrots_to_Renovations_2-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681B71ED2E50B00EC5503 /* From_Carrots_to_Renovations_2-fast.mp3 */; };
+		987681BB1ED2E50B00EC5503 /* From_Carrots_to_Renovations_2-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681B81ED2E50B00EC5503 /* From_Carrots_to_Renovations_2-mid.mp3 */; };
+		987681BC1ED2E50B00EC5503 /* From_Carrots_to_Renovations_2-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681B91ED2E50B00EC5503 /* From_Carrots_to_Renovations_2-slow.mp3 */; };
+		987681C01ED2E53600EC5503 /* GM_Food-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681BD1ED2E53600EC5503 /* GM_Food-fast.mp3 */; };
+		987681C11ED2E53600EC5503 /* GM_Food-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681BE1ED2E53600EC5503 /* GM_Food-mid.mp3 */; };
+		987681C21ED2E53600EC5503 /* GM_Food-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681BF1ED2E53600EC5503 /* GM_Food-slow.mp3 */; };
+		987681C61ED2E54200EC5503 /* Raven_and_the_First_People-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681C31ED2E54200EC5503 /* Raven_and_the_First_People-fast.mp3 */; };
+		987681C71ED2E54200EC5503 /* Raven_and_the_First_People-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681C41ED2E54200EC5503 /* Raven_and_the_First_People-mid.mp3 */; };
+		987681C81ED2E54200EC5503 /* Raven_and_the_First_People-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681C51ED2E54200EC5503 /* Raven_and_the_First_People-slow.mp3 */; };
+		987681CC1ED2E55300EC5503 /* Raven_steals_the_Light-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681C91ED2E55300EC5503 /* Raven_steals_the_Light-fast.mp3 */; };
+		987681CD1ED2E55300EC5503 /* Raven_steals_the_Light-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681CA1ED2E55300EC5503 /* Raven_steals_the_Light-mid.mp3 */; };
+		987681CE1ED2E55300EC5503 /* Raven_steals_the_Light-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681CB1ED2E55300EC5503 /* Raven_steals_the_Light-slow.mp3 */; };
+		987681D21ED2E56E00EC5503 /* The_Causes_of_Floods-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681CF1ED2E56E00EC5503 /* The_Causes_of_Floods-fast.mp3 */; };
+		987681D31ED2E56E00EC5503 /* The_Causes_of_Floods-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681D01ED2E56E00EC5503 /* The_Causes_of_Floods-mid.mp3 */; };
+		987681D41ED2E56E00EC5503 /* The_Causes_of_Floods-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681D11ED2E56E00EC5503 /* The_Causes_of_Floods-slow.mp3 */; };
+		987681D81ED2E5B700EC5503 /* The_choking_dog_1-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681D51ED2E5B700EC5503 /* The_choking_dog_1-fast.mp3 */; };
+		987681D91ED2E5B700EC5503 /* The_choking_dog_1-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681D61ED2E5B700EC5503 /* The_choking_dog_1-mid.mp3 */; };
+		987681DA1ED2E5B700EC5503 /* The_choking_dog_1-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681D71ED2E5B700EC5503 /* The_choking_dog_1-slow.mp3 */; };
+		987681DE1ED2E5C300EC5503 /* The_choking_dog_2-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681DB1ED2E5C300EC5503 /* The_choking_dog_2-fast.mp3 */; };
+		987681DF1ED2E5C300EC5503 /* The_choking_dog_2-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681DC1ED2E5C300EC5503 /* The_choking_dog_2-mid.mp3 */; };
+		987681E01ED2E5C300EC5503 /* The_choking_dog_2-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681DD1ED2E5C300EC5503 /* The_choking_dog_2-slow.mp3 */; };
+		987681E41ED2E5D000EC5503 /* The_Most_Amazing_Structure-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681E11ED2E5D000EC5503 /* The_Most_Amazing_Structure-fast.mp3 */; };
+		987681E51ED2E5D000EC5503 /* The_Most_Amazing_Structure-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681E21ED2E5D000EC5503 /* The_Most_Amazing_Structure-mid.mp3 */; };
+		987681E61ED2E5D000EC5503 /* The_Most_Amazing_Structure-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681E31ED2E5D000EC5503 /* The_Most_Amazing_Structure-slow.mp3 */; };
+		987681EA1ED2E5E200EC5503 /* The_Sack_Garden-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681E71ED2E5E200EC5503 /* The_Sack_Garden-fast.mp3 */; };
+		987681EB1ED2E5E200EC5503 /* The_Sack_Garden-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681E81ED2E5E200EC5503 /* The_Sack_Garden-mid.mp3 */; };
+		987681EC1ED2E5E200EC5503 /* The_Sack_Garden-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681E91ED2E5E200EC5503 /* The_Sack_Garden-slow.mp3 */; };
+		987681F01ED2E5ED00EC5503 /* Vals_Garden-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681ED1ED2E5ED00EC5503 /* Vals_Garden-fast.mp3 */; };
+		987681F11ED2E5ED00EC5503 /* Vals_Garden-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681EE1ED2E5ED00EC5503 /* Vals_Garden-mid.mp3 */; };
+		987681F21ED2E5ED00EC5503 /* Vals_Garden-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681EF1ED2E5ED00EC5503 /* Vals_Garden-slow.mp3 */; };
+		987681F61ED2E78900EC5503 /* Alibi-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681F31ED2E78900EC5503 /* Alibi-fast.mp3 */; };
+		987681F71ED2E78900EC5503 /* Alibi-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681F41ED2E78900EC5503 /* Alibi-mid.mp3 */; };
+		987681F81ED2E78900EC5503 /* Alibi-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681F51ED2E78900EC5503 /* Alibi-slow.mp3 */; };
+		987681FC1ED2E79500EC5503 /* BytiKakVse-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681F91ED2E79500EC5503 /* BytiKakVse-fast.mp3 */; };
+		987681FD1ED2E79500EC5503 /* BytiKakVse-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681FA1ED2E79500EC5503 /* BytiKakVse-mid.mp3 */; };
+		987681FE1ED2E79500EC5503 /* BytiKakVse-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681FB1ED2E79500EC5503 /* BytiKakVse-slow.mp3 */; };
+		987682021ED2E7A200EC5503 /* MyINalogi-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987681FF1ED2E7A200EC5503 /* MyINalogi-fast.mp3 */; };
+		987682031ED2E7A200EC5503 /* MyINalogi-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987682001ED2E7A200EC5503 /* MyINalogi-mid.mp3 */; };
+		987682041ED2E7A200EC5503 /* MyINalogi-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987682011ED2E7A200EC5503 /* MyINalogi-slow.mp3 */; };
+		987682081ED2E7AD00EC5503 /* Proverka-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987682051ED2E7AD00EC5503 /* Proverka-fast.mp3 */; };
+		987682091ED2E7AD00EC5503 /* Proverka-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987682061ED2E7AD00EC5503 /* Proverka-mid.mp3 */; };
+		9876820A1ED2E7AD00EC5503 /* Proverka-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987682071ED2E7AD00EC5503 /* Proverka-slow.mp3 */; };
+		9876820E1ED2E7B900EC5503 /* Sjurpriz-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9876820B1ED2E7B900EC5503 /* Sjurpriz-fast.mp3 */; };
+		9876820F1ED2E7B900EC5503 /* Sjurpriz-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9876820C1ED2E7B900EC5503 /* Sjurpriz-mid.mp3 */; };
+		987682101ED2E7B900EC5503 /* Sjurpriz-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9876820D1ED2E7B900EC5503 /* Sjurpriz-slow.mp3 */; };
+		987682141ED2E7C600EC5503 /* Svezhyj-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987682111ED2E7C600EC5503 /* Svezhyj-fast.mp3 */; };
+		987682151ED2E7C600EC5503 /* Svezhyj-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987682121ED2E7C600EC5503 /* Svezhyj-mid.mp3 */; };
+		987682161ED2E7C600EC5503 /* Svezhyj-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987682131ED2E7C600EC5503 /* Svezhyj-slow.mp3 */; };
+		9876821A1ED2E7D100EC5503 /* ZakoldovannyjKrug-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987682171ED2E7D100EC5503 /* ZakoldovannyjKrug-fast.mp3 */; };
+		9876821B1ED2E7D100EC5503 /* ZakoldovannyjKrug-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987682181ED2E7D100EC5503 /* ZakoldovannyjKrug-mid.mp3 */; };
+		9876821C1ED2E7D100EC5503 /* ZakoldovannyjKrug-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987682191ED2E7D100EC5503 /* ZakoldovannyjKrug-slow.mp3 */; };
 		987D34ED1E798A76008434A8 /* SettingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987D34EC1E798A76008434A8 /* SettingButton.swift */; };
 		987D34F21E7AE3EE008434A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 987D34F01E7AE3EE008434A8 /* Main.storyboard */; };
 		987D34F41E7D2B0F008434A8 /* SpeedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987D34F31E7D2B0F008434A8 /* SpeedButton.swift */; };
-		987D35091E7D6DA3008434A8 /* Sjurpriz-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34F71E7D6DA3008434A8 /* Sjurpriz-fast.mp3 */; };
-		987D350A1E7D6DA3008434A8 /* Sjurpriz-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34F81E7D6DA3008434A8 /* Sjurpriz-mid.mp3 */; };
-		987D350B1E7D6DA3008434A8 /* Sjurpriz-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34F91E7D6DA3008434A8 /* Sjurpriz-slow.mp3 */; };
-		987D350C1E7D6DA3008434A8 /* Svezhyj-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34FA1E7D6DA3008434A8 /* Svezhyj-fast.mp3 */; };
-		987D350D1E7D6DA3008434A8 /* Svezhyj-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34FB1E7D6DA3008434A8 /* Svezhyj-mid.mp3 */; };
-		987D350E1E7D6DA3008434A8 /* Svezhyj-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34FC1E7D6DA3008434A8 /* Svezhyj-slow.mp3 */; };
-		987D350F1E7D6DA3008434A8 /* ZakoldovannyjKrug-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34FD1E7D6DA3008434A8 /* ZakoldovannyjKrug-fast.mp3 */; };
-		987D35101E7D6DA3008434A8 /* ZakoldovannyjKrug-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34FE1E7D6DA3008434A8 /* ZakoldovannyjKrug-mid.mp3 */; };
-		987D35111E7D6DA3008434A8 /* ZakoldovannyjKrug-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D34FF1E7D6DA3008434A8 /* ZakoldovannyjKrug-slow.mp3 */; };
-		987D35121E7D6DA3008434A8 /* Alibi-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35001E7D6DA3008434A8 /* Alibi-fast.mp3 */; };
-		987D35131E7D6DA3008434A8 /* Alibi-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35011E7D6DA3008434A8 /* Alibi-mid.mp3 */; };
-		987D35141E7D6DA3008434A8 /* Alibi-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35021E7D6DA3008434A8 /* Alibi-slow.mp3 */; };
-		987D35151E7D6DA3008434A8 /* Proverka-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35031E7D6DA3008434A8 /* Proverka-fast.mp3 */; };
-		987D35161E7D6DA3008434A8 /* Proverka-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35041E7D6DA3008434A8 /* Proverka-mid.mp3 */; };
-		987D35171E7D6DA3008434A8 /* Proverka-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35051E7D6DA3008434A8 /* Proverka-slow.mp3 */; };
-		987D35181E7D6DA3008434A8 /* BytiKakVse-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35061E7D6DA3008434A8 /* BytiKakVse-fast.mp3 */; };
-		987D35191E7D6DA3008434A8 /* BytiKakVse-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35071E7D6DA3008434A8 /* BytiKakVse-mid.mp3 */; };
-		987D351A1E7D6DA3008434A8 /* BytiKakVse-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987D35081E7D6DA3008434A8 /* BytiKakVse-slow.mp3 */; };
 		987D351C1E7DB768008434A8 /* preferedReadingSpeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987D351B1E7DB768008434A8 /* preferedReadingSpeed.swift */; };
 		987D351F1E7E9AB9008434A8 /* InviteFriendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987D351E1E7E9AB9008434A8 /* InviteFriendButton.swift */; };
 		987E15041E6173230080C9B6 /* TraductedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E15031E6173230080C9B6 /* TraductedText.swift */; };
@@ -90,39 +125,6 @@
 		989514A61ECB3D21003FBC1B /* From Carrots to Renovations (Part 1).swift in Sources */ = {isa = PBXBuildFile; fileRef = 989514A51ECB3D21003FBC1B /* From Carrots to Renovations (Part 1).swift */; };
 		989514A91ECB3D35003FBC1B /* From Carrots to Renovations (Part 2).swift in Sources */ = {isa = PBXBuildFile; fileRef = 989514A81ECB3D35003FBC1B /* From Carrots to Renovations (Part 2).swift */; };
 		989514AC1ECB3D4D003FBC1B /* The Causes of Floods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989514AB1ECB3D4D003FBC1B /* The Causes of Floods.swift */; };
-		989514AE1ECB4F51003FBC1B /* GM_Food-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514AD1ECB4F51003FBC1B /* GM_Food-fast.mp3 */; };
-		989514B11ECB4F60003FBC1B /* GM_Food-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514AF1ECB4F60003FBC1B /* GM_Food-mid.mp3 */; };
-		989514B21ECB4F60003FBC1B /* GM_Food-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514B01ECB4F60003FBC1B /* GM_Food-slow.mp3 */; };
-		989514B61ECB5554003FBC1B /* The_Sack_Garden-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514B31ECB5554003FBC1B /* The_Sack_Garden-fast.mp3 */; };
-		989514B71ECB5554003FBC1B /* The_Sack_Garden-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514B41ECB5554003FBC1B /* The_Sack_Garden-mid.mp3 */; };
-		989514B81ECB5554003FBC1B /* The_Sack_Garden-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514B51ECB5554003FBC1B /* The_Sack_Garden-slow.mp3 */; };
-		989514BC1ECB561D003FBC1B /* Vals_Garden-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514B91ECB561D003FBC1B /* Vals_Garden-fast.mp3 */; };
-		989514BD1ECB561D003FBC1B /* Vals_Garden-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514BA1ECB561D003FBC1B /* Vals_Garden-mid.mp3 */; };
-		989514BE1ECB561D003FBC1B /* Vals_Garden-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514BB1ECB561D003FBC1B /* Vals_Garden-slow.mp3 */; };
-		989514C21ECB5701003FBC1B /* Raven_and_the_First_People-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514BF1ECB5701003FBC1B /* Raven_and_the_First_People-fast.mp3 */; };
-		989514C31ECB5701003FBC1B /* Raven_and_the_First_People-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514C01ECB5701003FBC1B /* Raven_and_the_First_People-mid.mp3 */; };
-		989514C41ECB5701003FBC1B /* Raven_and_the_First_People-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514C11ECB5701003FBC1B /* Raven_and_the_First_People-slow.mp3 */; };
-		989514C81ECB5AD0003FBC1B /* Raven_steals_the_Light-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514C51ECB5AD0003FBC1B /* Raven_steals_the_Light-fast.mp3 */; };
-		989514C91ECB5AD0003FBC1B /* Raven_steals_the_Light-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514C61ECB5AD0003FBC1B /* Raven_steals_the_Light-mid.mp3 */; };
-		989514CA1ECB5AD0003FBC1B /* Raven_steals_the_Light-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514C71ECB5AD0003FBC1B /* Raven_steals_the_Light-slow.mp3 */; };
-		989514CE1ECB77F9003FBC1B /* From_Carrots_to_Renovations_1-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514CB1ECB77F9003FBC1B /* From_Carrots_to_Renovations_1-slow.mp3 */; };
-		989514CF1ECB77F9003FBC1B /* From_Carrots_to_Renovations_1-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514CC1ECB77F9003FBC1B /* From_Carrots_to_Renovations_1-mid.mp3 */; };
-		989514D01ECB77F9003FBC1B /* From_Carrots_to_Renovations_1-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514CD1ECB77F9003FBC1B /* From_Carrots_to_Renovations_1-fast.mp3 */; };
-		989514D41ECB78C6003FBC1B /* From_Carrots_to_Renovations_2-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514D11ECB78C6003FBC1B /* From_Carrots_to_Renovations_2-slow.mp3 */; };
-		989514D51ECB78C6003FBC1B /* From_Carrots_to_Renovations_2-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514D21ECB78C6003FBC1B /* From_Carrots_to_Renovations_2-mid.mp3 */; };
-		989514D61ECB78C6003FBC1B /* From_Carrots_to_Renovations_2-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514D31ECB78C6003FBC1B /* From_Carrots_to_Renovations_2-fast.mp3 */; };
-		989514DA1ECB7932003FBC1B /* The_Most_Amazing_Structure-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514D71ECB7932003FBC1B /* The_Most_Amazing_Structure-fast.mp3 */; };
-		989514DB1ECB7932003FBC1B /* The_Most_Amazing_Structure-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514D81ECB7932003FBC1B /* The_Most_Amazing_Structure-mid.mp3 */; };
-		989514DC1ECB7932003FBC1B /* The_Most_Amazing_Structure-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514D91ECB7932003FBC1B /* The_Most_Amazing_Structure-slow.mp3 */; };
-		989514E01ECB7955003FBC1B /* The_choking_dog_1-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514DD1ECB7955003FBC1B /* The_choking_dog_1-slow.mp3 */; };
-		989514E11ECB7955003FBC1B /* The_choking_dog_1-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514DE1ECB7955003FBC1B /* The_choking_dog_1-mid.mp3 */; };
-		989514E21ECB7955003FBC1B /* The_choking_dog_1-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514DF1ECB7955003FBC1B /* The_choking_dog_1-fast.mp3 */; };
-		989514E61ECB7989003FBC1B /* The_choking_dog_2-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514E31ECB7989003FBC1B /* The_choking_dog_2-slow.mp3 */; };
-		989514E71ECB7989003FBC1B /* The_choking_dog_2-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514E41ECB7989003FBC1B /* The_choking_dog_2-fast.mp3 */; };
-		989514E81ECB7989003FBC1B /* The_choking_dog_2-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514E51ECB7989003FBC1B /* The_choking_dog_2-mid.mp3 */; };
-		989514EC1ECB79AF003FBC1B /* The_Causes_of_Floods-fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514E91ECB79AF003FBC1B /* The_Causes_of_Floods-fast.mp3 */; };
-		989514ED1ECB79AF003FBC1B /* The_Causes_of_Floods-mid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514EA1ECB79AF003FBC1B /* The_Causes_of_Floods-mid.mp3 */; };
-		989514EE1ECB79AF003FBC1B /* The_Causes_of_Floods-slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 989514EB1ECB79AF003FBC1B /* The_Causes_of_Floods-slow.mp3 */; };
 		98D00EE31EC32686004030D0 /* foldlFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D00EE21EC32686004030D0 /* foldlFunction.swift */; };
 		98D73E141E369C1800BAF0C1 /* ReadTextOriginal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D73E131E369C1800BAF0C1 /* ReadTextOriginal.swift */; };
 		98D73E161E369C7A00BAF0C1 /* ReadTextTraduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D73E151E369C7A00BAF0C1 /* ReadTextTraduction.swift */; };
@@ -188,9 +190,6 @@
 		9826BB151E9509F200E7CD1E /* Проверка.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Проверка.swift"; sourceTree = "<group>"; };
 		9826BB181E950A1400E7CD1E /* Быть как все.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Быть как все.swift"; sourceTree = "<group>"; };
 		9826BB1B1E950A3000E7CD1E /* Мы и налоги.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Мы и налоги.swift"; sourceTree = "<group>"; };
-		982731651EA9F32B007FFF73 /* MyINalogi-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "MyINalogi-mid.mp3"; sourceTree = "<group>"; };
-		982731661EA9F32B007FFF73 /* MyINalogi-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "MyINalogi-fast.mp3"; sourceTree = "<group>"; };
-		9827316B1EA9F3B9007FFF73 /* MyINalogi-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "MyINalogi-slow.mp3"; sourceTree = "<group>"; };
 		982D2AF01E9C24A400B590B1 /* YourAbonnementVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourAbonnementVC.swift; sourceTree = "<group>"; };
 		982ECD471E8F9234003B66F9 /* CreditsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsVC.swift; sourceTree = "<group>"; };
 		982ECD491E8FA0A3003B66F9 /* ReceiptManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptManager.swift; sourceTree = "<group>"; };
@@ -199,27 +198,65 @@
 		983B529E1E4F8BEC004F820F /* AddTraductionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTraductionCell.swift; sourceTree = "<group>"; };
 		983B52A31E50E378004F820F /* AddText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddText.swift; sourceTree = "<group>"; };
 		983B52A51E50E45A004F820F /* AddTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTextCell.swift; sourceTree = "<group>"; };
+		987681AD1ED1C48900EC5503 /* PrivatePolicyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivatePolicyVC.swift; sourceTree = "<group>"; };
+		987681AF1ED1C4A800EC5503 /* TermConditionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermConditionVC.swift; sourceTree = "<group>"; };
+		987681B11ED2E4FA00EC5503 /* From_Carrots_to_Renovations_1-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "From_Carrots_to_Renovations_1-fast.mp3"; sourceTree = "<group>"; };
+		987681B21ED2E4FA00EC5503 /* From_Carrots_to_Renovations_1-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "From_Carrots_to_Renovations_1-mid.mp3"; sourceTree = "<group>"; };
+		987681B31ED2E4FA00EC5503 /* From_Carrots_to_Renovations_1-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "From_Carrots_to_Renovations_1-slow.mp3"; sourceTree = "<group>"; };
+		987681B71ED2E50B00EC5503 /* From_Carrots_to_Renovations_2-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "From_Carrots_to_Renovations_2-fast.mp3"; sourceTree = "<group>"; };
+		987681B81ED2E50B00EC5503 /* From_Carrots_to_Renovations_2-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "From_Carrots_to_Renovations_2-mid.mp3"; sourceTree = "<group>"; };
+		987681B91ED2E50B00EC5503 /* From_Carrots_to_Renovations_2-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "From_Carrots_to_Renovations_2-slow.mp3"; sourceTree = "<group>"; };
+		987681BD1ED2E53600EC5503 /* GM_Food-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "GM_Food-fast.mp3"; sourceTree = "<group>"; };
+		987681BE1ED2E53600EC5503 /* GM_Food-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "GM_Food-mid.mp3"; sourceTree = "<group>"; };
+		987681BF1ED2E53600EC5503 /* GM_Food-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "GM_Food-slow.mp3"; sourceTree = "<group>"; };
+		987681C31ED2E54200EC5503 /* Raven_and_the_First_People-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Raven_and_the_First_People-fast.mp3"; sourceTree = "<group>"; };
+		987681C41ED2E54200EC5503 /* Raven_and_the_First_People-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Raven_and_the_First_People-mid.mp3"; sourceTree = "<group>"; };
+		987681C51ED2E54200EC5503 /* Raven_and_the_First_People-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Raven_and_the_First_People-slow.mp3"; sourceTree = "<group>"; };
+		987681C91ED2E55300EC5503 /* Raven_steals_the_Light-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Raven_steals_the_Light-fast.mp3"; sourceTree = "<group>"; };
+		987681CA1ED2E55300EC5503 /* Raven_steals_the_Light-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Raven_steals_the_Light-mid.mp3"; sourceTree = "<group>"; };
+		987681CB1ED2E55300EC5503 /* Raven_steals_the_Light-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Raven_steals_the_Light-slow.mp3"; sourceTree = "<group>"; };
+		987681CF1ED2E56E00EC5503 /* The_Causes_of_Floods-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Causes_of_Floods-fast.mp3"; sourceTree = "<group>"; };
+		987681D01ED2E56E00EC5503 /* The_Causes_of_Floods-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Causes_of_Floods-mid.mp3"; sourceTree = "<group>"; };
+		987681D11ED2E56E00EC5503 /* The_Causes_of_Floods-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Causes_of_Floods-slow.mp3"; sourceTree = "<group>"; };
+		987681D51ED2E5B700EC5503 /* The_choking_dog_1-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_choking_dog_1-fast.mp3"; sourceTree = "<group>"; };
+		987681D61ED2E5B700EC5503 /* The_choking_dog_1-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_choking_dog_1-mid.mp3"; sourceTree = "<group>"; };
+		987681D71ED2E5B700EC5503 /* The_choking_dog_1-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_choking_dog_1-slow.mp3"; sourceTree = "<group>"; };
+		987681DB1ED2E5C300EC5503 /* The_choking_dog_2-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_choking_dog_2-fast.mp3"; sourceTree = "<group>"; };
+		987681DC1ED2E5C300EC5503 /* The_choking_dog_2-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_choking_dog_2-mid.mp3"; sourceTree = "<group>"; };
+		987681DD1ED2E5C300EC5503 /* The_choking_dog_2-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_choking_dog_2-slow.mp3"; sourceTree = "<group>"; };
+		987681E11ED2E5D000EC5503 /* The_Most_Amazing_Structure-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Most_Amazing_Structure-fast.mp3"; sourceTree = "<group>"; };
+		987681E21ED2E5D000EC5503 /* The_Most_Amazing_Structure-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Most_Amazing_Structure-mid.mp3"; sourceTree = "<group>"; };
+		987681E31ED2E5D000EC5503 /* The_Most_Amazing_Structure-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Most_Amazing_Structure-slow.mp3"; sourceTree = "<group>"; };
+		987681E71ED2E5E200EC5503 /* The_Sack_Garden-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Sack_Garden-fast.mp3"; sourceTree = "<group>"; };
+		987681E81ED2E5E200EC5503 /* The_Sack_Garden-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Sack_Garden-mid.mp3"; sourceTree = "<group>"; };
+		987681E91ED2E5E200EC5503 /* The_Sack_Garden-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Sack_Garden-slow.mp3"; sourceTree = "<group>"; };
+		987681ED1ED2E5ED00EC5503 /* Vals_Garden-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Vals_Garden-fast.mp3"; sourceTree = "<group>"; };
+		987681EE1ED2E5ED00EC5503 /* Vals_Garden-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Vals_Garden-mid.mp3"; sourceTree = "<group>"; };
+		987681EF1ED2E5ED00EC5503 /* Vals_Garden-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Vals_Garden-slow.mp3"; sourceTree = "<group>"; };
+		987681F31ED2E78900EC5503 /* Alibi-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Alibi-fast.mp3"; sourceTree = "<group>"; };
+		987681F41ED2E78900EC5503 /* Alibi-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Alibi-mid.mp3"; sourceTree = "<group>"; };
+		987681F51ED2E78900EC5503 /* Alibi-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Alibi-slow.mp3"; sourceTree = "<group>"; };
+		987681F91ED2E79500EC5503 /* BytiKakVse-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "BytiKakVse-fast.mp3"; sourceTree = "<group>"; };
+		987681FA1ED2E79500EC5503 /* BytiKakVse-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "BytiKakVse-mid.mp3"; sourceTree = "<group>"; };
+		987681FB1ED2E79500EC5503 /* BytiKakVse-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "BytiKakVse-slow.mp3"; sourceTree = "<group>"; };
+		987681FF1ED2E7A200EC5503 /* MyINalogi-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "MyINalogi-fast.mp3"; sourceTree = "<group>"; };
+		987682001ED2E7A200EC5503 /* MyINalogi-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "MyINalogi-mid.mp3"; sourceTree = "<group>"; };
+		987682011ED2E7A200EC5503 /* MyINalogi-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "MyINalogi-slow.mp3"; sourceTree = "<group>"; };
+		987682051ED2E7AD00EC5503 /* Proverka-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Proverka-fast.mp3"; sourceTree = "<group>"; };
+		987682061ED2E7AD00EC5503 /* Proverka-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Proverka-mid.mp3"; sourceTree = "<group>"; };
+		987682071ED2E7AD00EC5503 /* Proverka-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Proverka-slow.mp3"; sourceTree = "<group>"; };
+		9876820B1ED2E7B900EC5503 /* Sjurpriz-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sjurpriz-fast.mp3"; sourceTree = "<group>"; };
+		9876820C1ED2E7B900EC5503 /* Sjurpriz-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sjurpriz-mid.mp3"; sourceTree = "<group>"; };
+		9876820D1ED2E7B900EC5503 /* Sjurpriz-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sjurpriz-slow.mp3"; sourceTree = "<group>"; };
+		987682111ED2E7C600EC5503 /* Svezhyj-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Svezhyj-fast.mp3"; sourceTree = "<group>"; };
+		987682121ED2E7C600EC5503 /* Svezhyj-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Svezhyj-mid.mp3"; sourceTree = "<group>"; };
+		987682131ED2E7C600EC5503 /* Svezhyj-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Svezhyj-slow.mp3"; sourceTree = "<group>"; };
+		987682171ED2E7D100EC5503 /* ZakoldovannyjKrug-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ZakoldovannyjKrug-fast.mp3"; sourceTree = "<group>"; };
+		987682181ED2E7D100EC5503 /* ZakoldovannyjKrug-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ZakoldovannyjKrug-mid.mp3"; sourceTree = "<group>"; };
+		987682191ED2E7D100EC5503 /* ZakoldovannyjKrug-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ZakoldovannyjKrug-slow.mp3"; sourceTree = "<group>"; };
 		987D34EC1E798A76008434A8 /* SettingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingButton.swift; sourceTree = "<group>"; };
 		987D34F11E7AE3EE008434A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LearnByLearning/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		987D34F31E7D2B0F008434A8 /* SpeedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedButton.swift; sourceTree = "<group>"; };
-		987D34F71E7D6DA3008434A8 /* Sjurpriz-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Sjurpriz-fast.mp3"; path = "LearnByLearning/Sjurpriz-fast.mp3"; sourceTree = "<group>"; };
-		987D34F81E7D6DA3008434A8 /* Sjurpriz-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Sjurpriz-mid.mp3"; path = "LearnByLearning/Sjurpriz-mid.mp3"; sourceTree = "<group>"; };
-		987D34F91E7D6DA3008434A8 /* Sjurpriz-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Sjurpriz-slow.mp3"; path = "LearnByLearning/Sjurpriz-slow.mp3"; sourceTree = "<group>"; };
-		987D34FA1E7D6DA3008434A8 /* Svezhyj-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Svezhyj-fast.mp3"; path = "LearnByLearning/Svezhyj-fast.mp3"; sourceTree = "<group>"; };
-		987D34FB1E7D6DA3008434A8 /* Svezhyj-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Svezhyj-mid.mp3"; path = "LearnByLearning/Svezhyj-mid.mp3"; sourceTree = "<group>"; };
-		987D34FC1E7D6DA3008434A8 /* Svezhyj-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Svezhyj-slow.mp3"; path = "LearnByLearning/Svezhyj-slow.mp3"; sourceTree = "<group>"; };
-		987D34FD1E7D6DA3008434A8 /* ZakoldovannyjKrug-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "ZakoldovannyjKrug-fast.mp3"; path = "LearnByLearning/ZakoldovannyjKrug-fast.mp3"; sourceTree = "<group>"; };
-		987D34FE1E7D6DA3008434A8 /* ZakoldovannyjKrug-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "ZakoldovannyjKrug-mid.mp3"; path = "LearnByLearning/ZakoldovannyjKrug-mid.mp3"; sourceTree = "<group>"; };
-		987D34FF1E7D6DA3008434A8 /* ZakoldovannyjKrug-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "ZakoldovannyjKrug-slow.mp3"; path = "LearnByLearning/ZakoldovannyjKrug-slow.mp3"; sourceTree = "<group>"; };
-		987D35001E7D6DA3008434A8 /* Alibi-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Alibi-fast.mp3"; path = "LearnByLearning/Alibi-fast.mp3"; sourceTree = "<group>"; };
-		987D35011E7D6DA3008434A8 /* Alibi-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Alibi-mid.mp3"; path = "LearnByLearning/Alibi-mid.mp3"; sourceTree = "<group>"; };
-		987D35021E7D6DA3008434A8 /* Alibi-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Alibi-slow.mp3"; path = "LearnByLearning/Alibi-slow.mp3"; sourceTree = "<group>"; };
-		987D35031E7D6DA3008434A8 /* Proverka-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Proverka-fast.mp3"; path = "LearnByLearning/Proverka-fast.mp3"; sourceTree = "<group>"; };
-		987D35041E7D6DA3008434A8 /* Proverka-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Proverka-mid.mp3"; path = "LearnByLearning/Proverka-mid.mp3"; sourceTree = "<group>"; };
-		987D35051E7D6DA3008434A8 /* Proverka-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Proverka-slow.mp3"; path = "LearnByLearning/Proverka-slow.mp3"; sourceTree = "<group>"; };
-		987D35061E7D6DA3008434A8 /* BytiKakVse-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "BytiKakVse-fast.mp3"; path = "LearnByLearning/BytiKakVse-fast.mp3"; sourceTree = "<group>"; };
-		987D35071E7D6DA3008434A8 /* BytiKakVse-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "BytiKakVse-mid.mp3"; path = "LearnByLearning/BytiKakVse-mid.mp3"; sourceTree = "<group>"; };
-		987D35081E7D6DA3008434A8 /* BytiKakVse-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "BytiKakVse-slow.mp3"; path = "LearnByLearning/BytiKakVse-slow.mp3"; sourceTree = "<group>"; };
 		987D351B1E7DB768008434A8 /* preferedReadingSpeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = preferedReadingSpeed.swift; sourceTree = "<group>"; };
 		987D351E1E7E9AB9008434A8 /* InviteFriendButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteFriendButton.swift; sourceTree = "<group>"; };
 		987E15031E6173230080C9B6 /* TraductedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraductedText.swift; sourceTree = "<group>"; };
@@ -256,39 +293,6 @@
 		989514A51ECB3D21003FBC1B /* From Carrots to Renovations (Part 1).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "From Carrots to Renovations (Part 1).swift"; sourceTree = "<group>"; };
 		989514A81ECB3D35003FBC1B /* From Carrots to Renovations (Part 2).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "From Carrots to Renovations (Part 2).swift"; sourceTree = "<group>"; };
 		989514AB1ECB3D4D003FBC1B /* The Causes of Floods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "The Causes of Floods.swift"; sourceTree = "<group>"; };
-		989514AD1ECB4F51003FBC1B /* GM_Food-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "GM_Food-fast.mp3"; sourceTree = "<group>"; };
-		989514AF1ECB4F60003FBC1B /* GM_Food-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "GM_Food-mid.mp3"; sourceTree = "<group>"; };
-		989514B01ECB4F60003FBC1B /* GM_Food-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "GM_Food-slow.mp3"; sourceTree = "<group>"; };
-		989514B31ECB5554003FBC1B /* The_Sack_Garden-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Sack_Garden-fast.mp3"; sourceTree = "<group>"; };
-		989514B41ECB5554003FBC1B /* The_Sack_Garden-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Sack_Garden-mid.mp3"; sourceTree = "<group>"; };
-		989514B51ECB5554003FBC1B /* The_Sack_Garden-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Sack_Garden-slow.mp3"; sourceTree = "<group>"; };
-		989514B91ECB561D003FBC1B /* Vals_Garden-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Vals_Garden-fast.mp3"; sourceTree = "<group>"; };
-		989514BA1ECB561D003FBC1B /* Vals_Garden-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Vals_Garden-mid.mp3"; sourceTree = "<group>"; };
-		989514BB1ECB561D003FBC1B /* Vals_Garden-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Vals_Garden-slow.mp3"; sourceTree = "<group>"; };
-		989514BF1ECB5701003FBC1B /* Raven_and_the_First_People-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Raven_and_the_First_People-fast.mp3"; sourceTree = "<group>"; };
-		989514C01ECB5701003FBC1B /* Raven_and_the_First_People-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Raven_and_the_First_People-mid.mp3"; sourceTree = "<group>"; };
-		989514C11ECB5701003FBC1B /* Raven_and_the_First_People-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Raven_and_the_First_People-slow.mp3"; sourceTree = "<group>"; };
-		989514C51ECB5AD0003FBC1B /* Raven_steals_the_Light-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Raven_steals_the_Light-fast.mp3"; sourceTree = "<group>"; };
-		989514C61ECB5AD0003FBC1B /* Raven_steals_the_Light-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Raven_steals_the_Light-mid.mp3"; sourceTree = "<group>"; };
-		989514C71ECB5AD0003FBC1B /* Raven_steals_the_Light-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Raven_steals_the_Light-slow.mp3"; sourceTree = "<group>"; };
-		989514CB1ECB77F9003FBC1B /* From_Carrots_to_Renovations_1-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "From_Carrots_to_Renovations_1-slow.mp3"; sourceTree = "<group>"; };
-		989514CC1ECB77F9003FBC1B /* From_Carrots_to_Renovations_1-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "From_Carrots_to_Renovations_1-mid.mp3"; sourceTree = "<group>"; };
-		989514CD1ECB77F9003FBC1B /* From_Carrots_to_Renovations_1-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "From_Carrots_to_Renovations_1-fast.mp3"; sourceTree = "<group>"; };
-		989514D11ECB78C6003FBC1B /* From_Carrots_to_Renovations_2-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "From_Carrots_to_Renovations_2-slow.mp3"; sourceTree = "<group>"; };
-		989514D21ECB78C6003FBC1B /* From_Carrots_to_Renovations_2-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "From_Carrots_to_Renovations_2-mid.mp3"; sourceTree = "<group>"; };
-		989514D31ECB78C6003FBC1B /* From_Carrots_to_Renovations_2-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "From_Carrots_to_Renovations_2-fast.mp3"; sourceTree = "<group>"; };
-		989514D71ECB7932003FBC1B /* The_Most_Amazing_Structure-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Most_Amazing_Structure-fast.mp3"; sourceTree = "<group>"; };
-		989514D81ECB7932003FBC1B /* The_Most_Amazing_Structure-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Most_Amazing_Structure-mid.mp3"; sourceTree = "<group>"; };
-		989514D91ECB7932003FBC1B /* The_Most_Amazing_Structure-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Most_Amazing_Structure-slow.mp3"; sourceTree = "<group>"; };
-		989514DD1ECB7955003FBC1B /* The_choking_dog_1-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_choking_dog_1-slow.mp3"; sourceTree = "<group>"; };
-		989514DE1ECB7955003FBC1B /* The_choking_dog_1-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_choking_dog_1-mid.mp3"; sourceTree = "<group>"; };
-		989514DF1ECB7955003FBC1B /* The_choking_dog_1-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_choking_dog_1-fast.mp3"; sourceTree = "<group>"; };
-		989514E31ECB7989003FBC1B /* The_choking_dog_2-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_choking_dog_2-slow.mp3"; sourceTree = "<group>"; };
-		989514E41ECB7989003FBC1B /* The_choking_dog_2-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_choking_dog_2-fast.mp3"; sourceTree = "<group>"; };
-		989514E51ECB7989003FBC1B /* The_choking_dog_2-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_choking_dog_2-mid.mp3"; sourceTree = "<group>"; };
-		989514E91ECB79AF003FBC1B /* The_Causes_of_Floods-fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Causes_of_Floods-fast.mp3"; sourceTree = "<group>"; };
-		989514EA1ECB79AF003FBC1B /* The_Causes_of_Floods-mid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Causes_of_Floods-mid.mp3"; sourceTree = "<group>"; };
-		989514EB1ECB79AF003FBC1B /* The_Causes_of_Floods-slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Causes_of_Floods-slow.mp3"; sourceTree = "<group>"; };
 		98D00EE21EC32686004030D0 /* foldlFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = foldlFunction.swift; sourceTree = "<group>"; };
 		98D73E131E369C1800BAF0C1 /* ReadTextOriginal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadTextOriginal.swift; sourceTree = "<group>"; };
 		98D73E151E369C7A00BAF0C1 /* ReadTextTraduction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadTextTraduction.swift; sourceTree = "<group>"; };
@@ -525,10 +529,10 @@
 		9826BB0A1E94FCE100E7CD1E /* Свежий */ = {
 			isa = PBXGroup;
 			children = (
-				987D34FA1E7D6DA3008434A8 /* Svezhyj-fast.mp3 */,
-				987D34FB1E7D6DA3008434A8 /* Svezhyj-mid.mp3 */,
-				987D34FC1E7D6DA3008434A8 /* Svezhyj-slow.mp3 */,
 				9826BB081E94FB4A00E7CD1E /* Свежий.swift */,
+				987682111ED2E7C600EC5503 /* Svezhyj-fast.mp3 */,
+				987682121ED2E7C600EC5503 /* Svezhyj-mid.mp3 */,
+				987682131ED2E7C600EC5503 /* Svezhyj-slow.mp3 */,
 			);
 			name = "Свежий";
 			sourceTree = "<group>";
@@ -537,9 +541,9 @@
 			isa = PBXGroup;
 			children = (
 				9826BB0F1E9509C000E7CD1E /* Алиби.swift */,
-				987D35001E7D6DA3008434A8 /* Alibi-fast.mp3 */,
-				987D35011E7D6DA3008434A8 /* Alibi-mid.mp3 */,
-				987D35021E7D6DA3008434A8 /* Alibi-slow.mp3 */,
+				987681F31ED2E78900EC5503 /* Alibi-fast.mp3 */,
+				987681F41ED2E78900EC5503 /* Alibi-mid.mp3 */,
+				987681F51ED2E78900EC5503 /* Alibi-slow.mp3 */,
 			);
 			name = "Алиби";
 			sourceTree = "<group>";
@@ -547,10 +551,10 @@
 		9826BB121E9509CE00E7CD1E /* Сюрприз */ = {
 			isa = PBXGroup;
 			children = (
-				987D34F71E7D6DA3008434A8 /* Sjurpriz-fast.mp3 */,
-				987D34F81E7D6DA3008434A8 /* Sjurpriz-mid.mp3 */,
-				987D34F91E7D6DA3008434A8 /* Sjurpriz-slow.mp3 */,
 				9826BB0D1E95099100E7CD1E /* Сюрприз.swift */,
+				9876820B1ED2E7B900EC5503 /* Sjurpriz-fast.mp3 */,
+				9876820C1ED2E7B900EC5503 /* Sjurpriz-mid.mp3 */,
+				9876820D1ED2E7B900EC5503 /* Sjurpriz-slow.mp3 */,
 			);
 			name = "Сюрприз";
 			sourceTree = "<group>";
@@ -559,9 +563,9 @@
 			isa = PBXGroup;
 			children = (
 				9826BB0B1E95096B00E7CD1E /* Заколдованный круг.swift */,
-				987D34FD1E7D6DA3008434A8 /* ZakoldovannyjKrug-fast.mp3 */,
-				987D34FE1E7D6DA3008434A8 /* ZakoldovannyjKrug-mid.mp3 */,
-				987D34FF1E7D6DA3008434A8 /* ZakoldovannyjKrug-slow.mp3 */,
+				987682171ED2E7D100EC5503 /* ZakoldovannyjKrug-fast.mp3 */,
+				987682181ED2E7D100EC5503 /* ZakoldovannyjKrug-mid.mp3 */,
+				987682191ED2E7D100EC5503 /* ZakoldovannyjKrug-slow.mp3 */,
 			);
 			name = "Заколдованный круг";
 			sourceTree = "<group>";
@@ -570,9 +574,9 @@
 			isa = PBXGroup;
 			children = (
 				9826BB151E9509F200E7CD1E /* Проверка.swift */,
-				987D35031E7D6DA3008434A8 /* Proverka-fast.mp3 */,
-				987D35041E7D6DA3008434A8 /* Proverka-mid.mp3 */,
-				987D35051E7D6DA3008434A8 /* Proverka-slow.mp3 */,
+				987682051ED2E7AD00EC5503 /* Proverka-fast.mp3 */,
+				987682061ED2E7AD00EC5503 /* Proverka-mid.mp3 */,
+				987682071ED2E7AD00EC5503 /* Proverka-slow.mp3 */,
 			);
 			name = "Проверка";
 			sourceTree = "<group>";
@@ -581,9 +585,9 @@
 			isa = PBXGroup;
 			children = (
 				9826BB181E950A1400E7CD1E /* Быть как все.swift */,
-				987D35061E7D6DA3008434A8 /* BytiKakVse-fast.mp3 */,
-				987D35071E7D6DA3008434A8 /* BytiKakVse-mid.mp3 */,
-				987D35081E7D6DA3008434A8 /* BytiKakVse-slow.mp3 */,
+				987681F91ED2E79500EC5503 /* BytiKakVse-fast.mp3 */,
+				987681FA1ED2E79500EC5503 /* BytiKakVse-mid.mp3 */,
+				987681FB1ED2E79500EC5503 /* BytiKakVse-slow.mp3 */,
 			);
 			name = "Быть как все";
 			sourceTree = "<group>";
@@ -592,9 +596,9 @@
 			isa = PBXGroup;
 			children = (
 				9826BB1B1E950A3000E7CD1E /* Мы и налоги.swift */,
-				9827316B1EA9F3B9007FFF73 /* MyINalogi-slow.mp3 */,
-				982731651EA9F32B007FFF73 /* MyINalogi-mid.mp3 */,
-				982731661EA9F32B007FFF73 /* MyINalogi-fast.mp3 */,
+				987681FF1ED2E7A200EC5503 /* MyINalogi-fast.mp3 */,
+				987682001ED2E7A200EC5503 /* MyINalogi-mid.mp3 */,
+				987682011ED2E7A200EC5503 /* MyINalogi-slow.mp3 */,
 			);
 			name = "Мы и налоги";
 			sourceTree = "<group>";
@@ -711,9 +715,9 @@
 			isa = PBXGroup;
 			children = (
 				981F896B1E80457800D1BF9D /* GM Food.swift */,
-				989514AD1ECB4F51003FBC1B /* GM_Food-fast.mp3 */,
-				989514AF1ECB4F60003FBC1B /* GM_Food-mid.mp3 */,
-				989514B01ECB4F60003FBC1B /* GM_Food-slow.mp3 */,
+				987681BD1ED2E53600EC5503 /* GM_Food-fast.mp3 */,
+				987681BE1ED2E53600EC5503 /* GM_Food-mid.mp3 */,
+				987681BF1ED2E53600EC5503 /* GM_Food-slow.mp3 */,
 			);
 			name = "GM Food";
 			sourceTree = "<group>";
@@ -722,9 +726,9 @@
 			isa = PBXGroup;
 			children = (
 				989514911ECB3C00003FBC1B /* The Sack Garden.swift */,
-				989514B31ECB5554003FBC1B /* The_Sack_Garden-fast.mp3 */,
-				989514B41ECB5554003FBC1B /* The_Sack_Garden-mid.mp3 */,
-				989514B51ECB5554003FBC1B /* The_Sack_Garden-slow.mp3 */,
+				987681E71ED2E5E200EC5503 /* The_Sack_Garden-fast.mp3 */,
+				987681E81ED2E5E200EC5503 /* The_Sack_Garden-mid.mp3 */,
+				987681E91ED2E5E200EC5503 /* The_Sack_Garden-slow.mp3 */,
 			);
 			name = "The Sack Garden";
 			sourceTree = "<group>";
@@ -733,9 +737,9 @@
 			isa = PBXGroup;
 			children = (
 				989514931ECB3C1D003FBC1B /* Val's Garden.swift */,
-				989514B91ECB561D003FBC1B /* Vals_Garden-fast.mp3 */,
-				989514BA1ECB561D003FBC1B /* Vals_Garden-mid.mp3 */,
-				989514BB1ECB561D003FBC1B /* Vals_Garden-slow.mp3 */,
+				987681ED1ED2E5ED00EC5503 /* Vals_Garden-fast.mp3 */,
+				987681EE1ED2E5ED00EC5503 /* Vals_Garden-mid.mp3 */,
+				987681EF1ED2E5ED00EC5503 /* Vals_Garden-slow.mp3 */,
 			);
 			name = "Val's Garden";
 			sourceTree = "<group>";
@@ -744,9 +748,9 @@
 			isa = PBXGroup;
 			children = (
 				989514971ECB3CC0003FBC1B /* Raven steals the Light.swift */,
-				989514C51ECB5AD0003FBC1B /* Raven_steals_the_Light-fast.mp3 */,
-				989514C61ECB5AD0003FBC1B /* Raven_steals_the_Light-mid.mp3 */,
-				989514C71ECB5AD0003FBC1B /* Raven_steals_the_Light-slow.mp3 */,
+				987681C91ED2E55300EC5503 /* Raven_steals_the_Light-fast.mp3 */,
+				987681CA1ED2E55300EC5503 /* Raven_steals_the_Light-mid.mp3 */,
+				987681CB1ED2E55300EC5503 /* Raven_steals_the_Light-slow.mp3 */,
 			);
 			name = "Raven steals the Light";
 			sourceTree = "<group>";
@@ -755,9 +759,9 @@
 			isa = PBXGroup;
 			children = (
 				989514951ECB3CB5003FBC1B /* Raven and the First People.swift */,
-				989514BF1ECB5701003FBC1B /* Raven_and_the_First_People-fast.mp3 */,
-				989514C01ECB5701003FBC1B /* Raven_and_the_First_People-mid.mp3 */,
-				989514C11ECB5701003FBC1B /* Raven_and_the_First_People-slow.mp3 */,
+				987681C31ED2E54200EC5503 /* Raven_and_the_First_People-fast.mp3 */,
+				987681C41ED2E54200EC5503 /* Raven_and_the_First_People-mid.mp3 */,
+				987681C51ED2E54200EC5503 /* Raven_and_the_First_People-slow.mp3 */,
 			);
 			name = "Raven and the First People";
 			sourceTree = "<group>";
@@ -766,9 +770,9 @@
 			isa = PBXGroup;
 			children = (
 				9895149C1ECB3CEB003FBC1B /* The choking dog (Part 1).swift */,
-				989514DD1ECB7955003FBC1B /* The_choking_dog_1-slow.mp3 */,
-				989514DE1ECB7955003FBC1B /* The_choking_dog_1-mid.mp3 */,
-				989514DF1ECB7955003FBC1B /* The_choking_dog_1-fast.mp3 */,
+				987681D51ED2E5B700EC5503 /* The_choking_dog_1-fast.mp3 */,
+				987681D61ED2E5B700EC5503 /* The_choking_dog_1-mid.mp3 */,
+				987681D71ED2E5B700EC5503 /* The_choking_dog_1-slow.mp3 */,
 			);
 			name = "The choking dog (Part 1)";
 			sourceTree = "<group>";
@@ -777,9 +781,9 @@
 			isa = PBXGroup;
 			children = (
 				9895149F1ECB3CFC003FBC1B /* The choking dog (Part 2).swift */,
-				989514E31ECB7989003FBC1B /* The_choking_dog_2-slow.mp3 */,
-				989514E41ECB7989003FBC1B /* The_choking_dog_2-fast.mp3 */,
-				989514E51ECB7989003FBC1B /* The_choking_dog_2-mid.mp3 */,
+				987681DB1ED2E5C300EC5503 /* The_choking_dog_2-fast.mp3 */,
+				987681DC1ED2E5C300EC5503 /* The_choking_dog_2-mid.mp3 */,
+				987681DD1ED2E5C300EC5503 /* The_choking_dog_2-slow.mp3 */,
 			);
 			name = "The choking dog (Part 2)";
 			sourceTree = "<group>";
@@ -788,9 +792,9 @@
 			isa = PBXGroup;
 			children = (
 				989514A21ECB3D0B003FBC1B /* The Most Amazing Structure on Earth.swift */,
-				989514D71ECB7932003FBC1B /* The_Most_Amazing_Structure-fast.mp3 */,
-				989514D81ECB7932003FBC1B /* The_Most_Amazing_Structure-mid.mp3 */,
-				989514D91ECB7932003FBC1B /* The_Most_Amazing_Structure-slow.mp3 */,
+				987681E11ED2E5D000EC5503 /* The_Most_Amazing_Structure-fast.mp3 */,
+				987681E21ED2E5D000EC5503 /* The_Most_Amazing_Structure-mid.mp3 */,
+				987681E31ED2E5D000EC5503 /* The_Most_Amazing_Structure-slow.mp3 */,
 			);
 			name = "The Most Amazing Structure on Earth";
 			sourceTree = "<group>";
@@ -799,9 +803,9 @@
 			isa = PBXGroup;
 			children = (
 				989514A51ECB3D21003FBC1B /* From Carrots to Renovations (Part 1).swift */,
-				989514CB1ECB77F9003FBC1B /* From_Carrots_to_Renovations_1-slow.mp3 */,
-				989514CC1ECB77F9003FBC1B /* From_Carrots_to_Renovations_1-mid.mp3 */,
-				989514CD1ECB77F9003FBC1B /* From_Carrots_to_Renovations_1-fast.mp3 */,
+				987681B11ED2E4FA00EC5503 /* From_Carrots_to_Renovations_1-fast.mp3 */,
+				987681B21ED2E4FA00EC5503 /* From_Carrots_to_Renovations_1-mid.mp3 */,
+				987681B31ED2E4FA00EC5503 /* From_Carrots_to_Renovations_1-slow.mp3 */,
 			);
 			name = "From Carrots to Renovations (Part 1)";
 			sourceTree = "<group>";
@@ -810,9 +814,9 @@
 			isa = PBXGroup;
 			children = (
 				989514A81ECB3D35003FBC1B /* From Carrots to Renovations (Part 2).swift */,
-				989514D11ECB78C6003FBC1B /* From_Carrots_to_Renovations_2-slow.mp3 */,
-				989514D21ECB78C6003FBC1B /* From_Carrots_to_Renovations_2-mid.mp3 */,
-				989514D31ECB78C6003FBC1B /* From_Carrots_to_Renovations_2-fast.mp3 */,
+				987681B71ED2E50B00EC5503 /* From_Carrots_to_Renovations_2-fast.mp3 */,
+				987681B81ED2E50B00EC5503 /* From_Carrots_to_Renovations_2-mid.mp3 */,
+				987681B91ED2E50B00EC5503 /* From_Carrots_to_Renovations_2-slow.mp3 */,
 			);
 			name = "From Carrots to Renovations (Part 2)";
 			sourceTree = "<group>";
@@ -821,9 +825,9 @@
 			isa = PBXGroup;
 			children = (
 				989514AB1ECB3D4D003FBC1B /* The Causes of Floods.swift */,
-				989514E91ECB79AF003FBC1B /* The_Causes_of_Floods-fast.mp3 */,
-				989514EA1ECB79AF003FBC1B /* The_Causes_of_Floods-mid.mp3 */,
-				989514EB1ECB79AF003FBC1B /* The_Causes_of_Floods-slow.mp3 */,
+				987681CF1ED2E56E00EC5503 /* The_Causes_of_Floods-fast.mp3 */,
+				987681D01ED2E56E00EC5503 /* The_Causes_of_Floods-mid.mp3 */,
+				987681D11ED2E56E00EC5503 /* The_Causes_of_Floods-slow.mp3 */,
 			);
 			name = "The Causes of Floods";
 			sourceTree = "<group>";
@@ -876,6 +880,8 @@
 				987D34EC1E798A76008434A8 /* SettingButton.swift */,
 				982ECD471E8F9234003B66F9 /* CreditsVC.swift */,
 				982D2AF01E9C24A400B590B1 /* YourAbonnementVC.swift */,
+				987681AD1ED1C48900EC5503 /* PrivatePolicyVC.swift */,
+				987681AF1ED1C4A800EC5503 /* TermConditionVC.swift */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -1009,66 +1015,66 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				987D35161E7D6DA3008434A8 /* Proverka-mid.mp3 in Resources */,
-				989514B81ECB5554003FBC1B /* The_Sack_Garden-slow.mp3 in Resources */,
-				987D350C1E7D6DA3008434A8 /* Svezhyj-fast.mp3 in Resources */,
-				989514D61ECB78C6003FBC1B /* From_Carrots_to_Renovations_2-fast.mp3 in Resources */,
-				989514C41ECB5701003FBC1B /* Raven_and_the_First_People-slow.mp3 in Resources */,
-				989514BC1ECB561D003FBC1B /* Vals_Garden-fast.mp3 in Resources */,
-				989514EC1ECB79AF003FBC1B /* The_Causes_of_Floods-fast.mp3 in Resources */,
+				987681F61ED2E78900EC5503 /* Alibi-fast.mp3 in Resources */,
+				987682081ED2E7AD00EC5503 /* Proverka-fast.mp3 in Resources */,
+				987681FC1ED2E79500EC5503 /* BytiKakVse-fast.mp3 in Resources */,
+				987682141ED2E7C600EC5503 /* Svezhyj-fast.mp3 in Resources */,
+				987681E61ED2E5D000EC5503 /* The_Most_Amazing_Structure-slow.mp3 in Resources */,
+				987681E51ED2E5D000EC5503 /* The_Most_Amazing_Structure-mid.mp3 in Resources */,
+				987681BA1ED2E50B00EC5503 /* From_Carrots_to_Renovations_2-fast.mp3 in Resources */,
+				987681EA1ED2E5E200EC5503 /* The_Sack_Garden-fast.mp3 in Resources */,
 				988A72C81E352DF600BDE635 /* LaunchScreen.storyboard in Resources */,
-				989514C31ECB5701003FBC1B /* Raven_and_the_First_People-mid.mp3 in Resources */,
-				989514CA1ECB5AD0003FBC1B /* Raven_steals_the_Light-slow.mp3 in Resources */,
-				987D35131E7D6DA3008434A8 /* Alibi-mid.mp3 in Resources */,
-				987D35151E7D6DA3008434A8 /* Proverka-fast.mp3 in Resources */,
-				987D35191E7D6DA3008434A8 /* BytiKakVse-mid.mp3 in Resources */,
-				989514B71ECB5554003FBC1B /* The_Sack_Garden-mid.mp3 in Resources */,
-				987D35101E7D6DA3008434A8 /* ZakoldovannyjKrug-mid.mp3 in Resources */,
 				987D34F21E7AE3EE008434A8 /* Main.storyboard in Resources */,
-				987D35181E7D6DA3008434A8 /* BytiKakVse-fast.mp3 in Resources */,
-				989514EE1ECB79AF003FBC1B /* The_Causes_of_Floods-slow.mp3 in Resources */,
+				987681F81ED2E78900EC5503 /* Alibi-slow.mp3 in Resources */,
+				987681F11ED2E5ED00EC5503 /* Vals_Garden-mid.mp3 in Resources */,
+				987681F71ED2E78900EC5503 /* Alibi-mid.mp3 in Resources */,
 				98EC9EF71E4D012B0062F9F2 /* Localizable.strings in Resources */,
-				987D350B1E7D6DA3008434A8 /* Sjurpriz-slow.mp3 in Resources */,
-				9827316C1EA9F3B9007FFF73 /* MyINalogi-slow.mp3 in Resources */,
-				987D35091E7D6DA3008434A8 /* Sjurpriz-fast.mp3 in Resources */,
-				989514E11ECB7955003FBC1B /* The_choking_dog_1-mid.mp3 in Resources */,
-				987D35171E7D6DA3008434A8 /* Proverka-slow.mp3 in Resources */,
-				989514E61ECB7989003FBC1B /* The_choking_dog_2-slow.mp3 in Resources */,
-				989514AE1ECB4F51003FBC1B /* GM_Food-fast.mp3 in Resources */,
-				987D35141E7D6DA3008434A8 /* Alibi-slow.mp3 in Resources */,
-				989514E81ECB7989003FBC1B /* The_choking_dog_2-mid.mp3 in Resources */,
-				987D35121E7D6DA3008434A8 /* Alibi-fast.mp3 in Resources */,
-				989514B61ECB5554003FBC1B /* The_Sack_Garden-fast.mp3 in Resources */,
-				987D350A1E7D6DA3008434A8 /* Sjurpriz-mid.mp3 in Resources */,
+				987681C81ED2E54200EC5503 /* Raven_and_the_First_People-slow.mp3 in Resources */,
+				987681FE1ED2E79500EC5503 /* BytiKakVse-slow.mp3 in Resources */,
+				987681CD1ED2E55300EC5503 /* Raven_steals_the_Light-mid.mp3 in Resources */,
 				988A72C51E352DF600BDE635 /* Assets.xcassets in Resources */,
-				989514DC1ECB7932003FBC1B /* The_Most_Amazing_Structure-slow.mp3 in Resources */,
-				989514BD1ECB561D003FBC1B /* Vals_Garden-mid.mp3 in Resources */,
-				989514E21ECB7955003FBC1B /* The_choking_dog_1-fast.mp3 in Resources */,
-				989514B21ECB4F60003FBC1B /* GM_Food-slow.mp3 in Resources */,
+				987681D31ED2E56E00EC5503 /* The_Causes_of_Floods-mid.mp3 in Resources */,
+				987681FD1ED2E79500EC5503 /* BytiKakVse-mid.mp3 in Resources */,
+				987681DE1ED2E5C300EC5503 /* The_choking_dog_2-fast.mp3 in Resources */,
+				9876821C1ED2E7D100EC5503 /* ZakoldovannyjKrug-slow.mp3 in Resources */,
+				987681CE1ED2E55300EC5503 /* Raven_steals_the_Light-slow.mp3 in Resources */,
+				987681D81ED2E5B700EC5503 /* The_choking_dog_1-fast.mp3 in Resources */,
+				987681BC1ED2E50B00EC5503 /* From_Carrots_to_Renovations_2-slow.mp3 in Resources */,
+				9876821B1ED2E7D100EC5503 /* ZakoldovannyjKrug-mid.mp3 in Resources */,
+				987681F21ED2E5ED00EC5503 /* Vals_Garden-slow.mp3 in Resources */,
+				987681C01ED2E53600EC5503 /* GM_Food-fast.mp3 in Resources */,
+				987681D41ED2E56E00EC5503 /* The_Causes_of_Floods-slow.mp3 in Resources */,
+				987681CC1ED2E55300EC5503 /* Raven_steals_the_Light-fast.mp3 in Resources */,
+				9876820E1ED2E7B900EC5503 /* Sjurpriz-fast.mp3 in Resources */,
+				987681E01ED2E5C300EC5503 /* The_choking_dog_2-slow.mp3 in Resources */,
+				987682041ED2E7A200EC5503 /* MyINalogi-slow.mp3 in Resources */,
+				987681B51ED2E4FA00EC5503 /* From_Carrots_to_Renovations_1-mid.mp3 in Resources */,
+				9876821A1ED2E7D100EC5503 /* ZakoldovannyjKrug-fast.mp3 in Resources */,
+				987682161ED2E7C600EC5503 /* Svezhyj-slow.mp3 in Resources */,
+				987682021ED2E7A200EC5503 /* MyINalogi-fast.mp3 in Resources */,
+				987681BB1ED2E50B00EC5503 /* From_Carrots_to_Renovations_2-mid.mp3 in Resources */,
+				987681C71ED2E54200EC5503 /* Raven_and_the_First_People-mid.mp3 in Resources */,
+				987681DF1ED2E5C300EC5503 /* The_choking_dog_2-mid.mp3 in Resources */,
 				98822AF81EBEDF0700C57038 /* Main.strings in Resources */,
-				987D350D1E7D6DA3008434A8 /* Svezhyj-mid.mp3 in Resources */,
-				982731681EA9F32B007FFF73 /* MyINalogi-mid.mp3 in Resources */,
-				989514CF1ECB77F9003FBC1B /* From_Carrots_to_Renovations_1-mid.mp3 in Resources */,
-				989514BE1ECB561D003FBC1B /* Vals_Garden-slow.mp3 in Resources */,
-				989514E71ECB7989003FBC1B /* The_choking_dog_2-fast.mp3 in Resources */,
-				989514B11ECB4F60003FBC1B /* GM_Food-mid.mp3 in Resources */,
-				989514DA1ECB7932003FBC1B /* The_Most_Amazing_Structure-fast.mp3 in Resources */,
-				987D351A1E7D6DA3008434A8 /* BytiKakVse-slow.mp3 in Resources */,
-				989514C21ECB5701003FBC1B /* Raven_and_the_First_People-fast.mp3 in Resources */,
-				989514C81ECB5AD0003FBC1B /* Raven_steals_the_Light-fast.mp3 in Resources */,
-				989514C91ECB5AD0003FBC1B /* Raven_steals_the_Light-mid.mp3 in Resources */,
-				989514ED1ECB79AF003FBC1B /* The_Causes_of_Floods-mid.mp3 in Resources */,
 				98EC9EF81E4D012B0062F9F2 /* InfoPlist.strings in Resources */,
-				982731691EA9F32B007FFF73 /* MyINalogi-fast.mp3 in Resources */,
-				989514E01ECB7955003FBC1B /* The_choking_dog_1-slow.mp3 in Resources */,
-				987D350F1E7D6DA3008434A8 /* ZakoldovannyjKrug-fast.mp3 in Resources */,
-				989514CE1ECB77F9003FBC1B /* From_Carrots_to_Renovations_1-slow.mp3 in Resources */,
-				989514D01ECB77F9003FBC1B /* From_Carrots_to_Renovations_1-fast.mp3 in Resources */,
-				987D350E1E7D6DA3008434A8 /* Svezhyj-slow.mp3 in Resources */,
-				989514D51ECB78C6003FBC1B /* From_Carrots_to_Renovations_2-mid.mp3 in Resources */,
-				989514D41ECB78C6003FBC1B /* From_Carrots_to_Renovations_2-slow.mp3 in Resources */,
-				987D35111E7D6DA3008434A8 /* ZakoldovannyjKrug-slow.mp3 in Resources */,
-				989514DB1ECB7932003FBC1B /* The_Most_Amazing_Structure-mid.mp3 in Resources */,
+				987681C11ED2E53600EC5503 /* GM_Food-mid.mp3 in Resources */,
+				9876820F1ED2E7B900EC5503 /* Sjurpriz-mid.mp3 in Resources */,
+				987681C21ED2E53600EC5503 /* GM_Food-slow.mp3 in Resources */,
+				987681F01ED2E5ED00EC5503 /* Vals_Garden-fast.mp3 in Resources */,
+				987681D21ED2E56E00EC5503 /* The_Causes_of_Floods-fast.mp3 in Resources */,
+				987681C61ED2E54200EC5503 /* Raven_and_the_First_People-fast.mp3 in Resources */,
+				987682031ED2E7A200EC5503 /* MyINalogi-mid.mp3 in Resources */,
+				987682101ED2E7B900EC5503 /* Sjurpriz-slow.mp3 in Resources */,
+				987681B41ED2E4FA00EC5503 /* From_Carrots_to_Renovations_1-fast.mp3 in Resources */,
+				987681DA1ED2E5B700EC5503 /* The_choking_dog_1-slow.mp3 in Resources */,
+				9876820A1ED2E7AD00EC5503 /* Proverka-slow.mp3 in Resources */,
+				987681D91ED2E5B700EC5503 /* The_choking_dog_1-mid.mp3 in Resources */,
+				987681B61ED2E4FA00EC5503 /* From_Carrots_to_Renovations_1-slow.mp3 in Resources */,
+				987681E41ED2E5D000EC5503 /* The_Most_Amazing_Structure-fast.mp3 in Resources */,
+				987681EC1ED2E5E200EC5503 /* The_Sack_Garden-slow.mp3 in Resources */,
+				987681EB1ED2E5E200EC5503 /* The_Sack_Garden-mid.mp3 in Resources */,
+				987682091ED2E7AD00EC5503 /* Proverka-mid.mp3 in Resources */,
+				987682151ED2E7C600EC5503 /* Svezhyj-mid.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1095,6 +1101,7 @@
 			files = (
 				9823AE901E65783800AB376C /* HelpViewController.swift in Sources */,
 				987E15081E61803F0080C9B6 /* AddTraductionVocForText.swift in Sources */,
+				987681AE1ED1C48900EC5503 /* PrivatePolicyVC.swift in Sources */,
 				987D351C1E7DB768008434A8 /* preferedReadingSpeed.swift in Sources */,
 				9823AE891E61CFA400AB376C /* TextsData.swift in Sources */,
 				989514961ECB3CB5003FBC1B /* Raven and the First People.swift in Sources */,
@@ -1124,6 +1131,7 @@
 				98E8BB221E4CF375002134B0 /* MyLanguagesViewController.swift in Sources */,
 				982ECD4A1E8FA0A3003B66F9 /* ReceiptManager.swift in Sources */,
 				983B529F1E4F8BED004F820F /* AddTraductionCell.swift in Sources */,
+				987681B01ED1C4A800EC5503 /* TermConditionVC.swift in Sources */,
 				98EC9F021E4DB40E0062F9F2 /* CurrentLanguageCell.swift in Sources */,
 				98E8BB141E4CE1C9002134B0 /* MenuCell.swift in Sources */,
 				989514A31ECB3D0B003FBC1B /* The Most Amazing Structure on Earth.swift in Sources */,

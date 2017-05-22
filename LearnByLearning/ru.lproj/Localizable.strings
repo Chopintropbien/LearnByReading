@@ -128,18 +128,18 @@
 
 //
 "1MONTH" = "МЕСЯЦ";
-"%@ every month" = "%@ every month";
+"%@ every month" = "стоимость %@ за месяц";
 
 "3MONTH" = "МЕСЯЦА";
 "6MONTH" = "MЕСЯЦЕВ";
 "Just %@ /Month" = "Только %@ /Месяц";
 
-"%@ every 3 months" = "%@ за %d месяца";
-"%@ every 6 months" = "%@ за %d месяцев";
+"%@ every 3 months" = "стоимость %@ за %d месяца";
+"%@ every 6 months" = "стоимость %@ за %d месяцев";
 
 
 "YEAR" = "ГОД";
-"%@ every year" = "%@ в год";
+"%@ every year" = "стоимость %@ в год";
 
 
 
@@ -267,7 +267,8 @@
 //
 "Term and conditions" = "Правила и условия";
 
-
+// private policy
+"Private policy" = "";
 
 /* LanguageNav */
 
@@ -279,6 +280,7 @@
 
 // refreshAlert core
 "All data will be lost." = "Желаете поменять язык навигации?"; //Некоторые тексты недоступны на новом языке
+
 
 
 
@@ -376,6 +378,25 @@
 "Translation italien-german" = "Перевод итальянский-немецкий";
 
 "Translation italien-spanish" = "Перевод итальянский-испанский";
+
+
+
+
+/* Term and conditions */
+"Term and conditions title" = "Правила и условия";
+
+"Term and conditions text" = "";
+
+
+/* Private policy */
+"Private policy title" = "";
+
+"Private policy text" = "";
+
+
+
+
+
 
 
 

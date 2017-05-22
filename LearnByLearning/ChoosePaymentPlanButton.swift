@@ -137,7 +137,7 @@ class ChoosePaymentPlanButtonView: UIView {
         totalPriceLabel.frame = monthLabel.frame
         totalPriceLabel.frame.origin.x = monthLabel.frame.size.width
         totalPriceLabel.frame.size.width = button.frame.size.width - monthLabel.frame.size.width
-        totalPriceLabel.font = UIFont(name: "Avenir-Black", size: 13)
+        totalPriceLabel.font = UIFont(name: "Avenir-Black", size: 11)
         totalPriceLabel.adjustsFontSizeToFitWidth = true
         totalPriceLabel.textColor = gray
         totalPriceLabel.textAlignment = .center

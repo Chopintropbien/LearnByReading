@@ -127,7 +127,7 @@ class ReceiptManager: NSObject {
         //Now we need to wrap our data with our Secret Shared and then send it to apple server
         var dic:[String:AnyObject] = ["receipt-data":receiptsString as AnyObject]
         
-        let sharedSecret = "7947eaec1084499fabce5e0265583fcf" //<< This is my sharedSecret yours is different
+        let sharedSecret = Conf.sharedSecret //<< This is my sharedSecret yours is different
         dic["password"] = sharedSecret as AnyObject?
         
         

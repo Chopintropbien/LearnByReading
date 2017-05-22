@@ -120,18 +120,18 @@
 
 //
 "1MONTH" = "MOIS";
-"%@ every month" = "%@ tous les mois";
+"%@ every month" = "%@ prélevés chaque mois";
 
 "3MONTH" = "MOIS";
 "6MONTH" = "MOIS";
-"Just %@ /Month" = "Seulement %@ /Mois";
+"Just %@ /Month" = "%@ /Mois";
 
-"%@ every 3 months" = "%@ tous les %d mois";
-"%@ every 6 months" = "%@ tous les %d mois";
+"%@ every 3 months" = "%@ prélevés tous les %d mois";
+"%@ every 6 months" = "%@ prélevés tous les %d mois";
 
 
 "YEAR" = "AN";
-"%@ every year" = "%@ tous les ans";
+"%@ every year" = "%@ prélevés tous les ans";
 
 
 
@@ -259,6 +259,9 @@
 //
 "Term and conditions" = "CGV";
 
+// private policy
+"Private policy" = "";
+
 
 
 /* LanguageNav */
@@ -325,7 +328,7 @@
 
 
 // Translation english-
-"Translation english-german" = "Traduction anglais-russe";
+"Translation english-german" = "Traduction anglais-allemand";
 
 "Translation english-spanish" = "Traduction anglais-espagnol";
 
@@ -337,38 +340,58 @@
 
 
 // Translation spanish-
-"Translation spanish-english" = "";
+"Translation spanish-english" = "Traduction espagnol-anglais";
 
-"Translation spanish-russian" = "";
+"Translation spanish-russian" = "Traduction espagnol-russe";
 
-"Translation spanish-french" = "";
+"Translation spanish-french" = "Traduction espagnol-français";
 
-"Translation spanish-italien" = "";
+"Translation spanish-italien" = "Traduction espagnol-italien";
 
-"Translation spanish-german" = "";
+"Translation spanish-german" = "Traduction espagnol-allemand";
 
 // Translation french-
-"Translation french-english" = "";
+"Translation french-english" = "Traduction français-anglais";
 
-"Translation french-german" = "";
+"Translation french-german" = "Traduction français-allemand";
 
-"Translation french-italien" = "";
+"Translation french-italien" = "Traduction français-italien";
 
-"Translation french-russian" = "";
+"Translation french-russian" = "Traduction français-russe";
 
-"Translation german-spanish" = "";
+"Translation french-spanish" = "Traduction français-espagnol";
 
 
 // Translation italien-
-"Translation italien-english" = "";
+"Translation italien-english" = "Traduction italien-anglais";
 
-"Translation italien-russian" = "";
+"Translation italien-russian" = "Traduction italien-russe";
 
-"Translation italien-french" = "";
+"Translation italien-french" = "Traduction italien-français";
 
-"Translation italien-german" = "";
+"Translation italien-german" = "Traduction italien-allemand";
 
-"Translation italien-spanish" = "";
+"Translation italien-spanish" = "Traduction italien-espagnol";
+
+
+
+/* Term and conditions */
+"Term and conditions title" = "CGV";
+
+"Term and conditions text" = "";
+
+
+/* Private policy */
+"Private policy title" = "";
+
+"Private policy text" = "";
+
+
+
+
+
+
+
 
 
 

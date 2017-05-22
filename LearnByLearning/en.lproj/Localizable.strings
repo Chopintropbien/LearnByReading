@@ -125,17 +125,17 @@
 
 //
 "1MONTH" = "MONTH";
-"%@ every month" = "%@ every month";
+"%@ every month" = "%@ charged every month";
 
 "3MONTH" = "MONTHS";
 "6MONTH" = "MONTHS";
 "Just %@ /Month" = "Just %@ /Month";
 
-"%@ every 3 months" = "%@ every %d months";
-"%@ every 6 months" = "%@ every %d months";
+"%@ every 3 months" = "%@ charged every %d months";
+"%@ every 6 months" = "%@ charged every %d months";
 
 "YEAR" = "YEAR";
-"%@ every year" = "%@ every year";
+"%@ every year" = "%@ charged every 12 months";
 
 
 
@@ -264,6 +264,9 @@
 //
 "Term and conditions" = "Terms and conditions";
 
+// private policy
+"Private policy" = "";
+
 
 
 /* LanguageNav */
@@ -375,6 +378,32 @@
 "Translation italien-german" = "Translation italian-german";
 
 "Translation italien-spanish" = "Translation italian-spanish";
+
+
+
+
+/* Term and conditions */
+"Term and conditions title" = "Terms and conditions";
+
+"Term and conditions text" = "";
+
+
+/* Private policy */
+"Private policy title" = "";
+
+"Private policy text" = "";
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

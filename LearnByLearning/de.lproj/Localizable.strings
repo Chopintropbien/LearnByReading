@@ -128,17 +128,17 @@
 
 //
 "1MONTH" = "MONAT";
-"%@ every month" = "%@ Monatlich";
+"%@ every month" = "%@ Abbuchung jeden Monat";
 
 "3MONTH" = "MONATE";
 "6MONTH" = "MONATE";
 "Just %@ /Month" = "Nur %@ /Monat";
 
-"%@ every 3 months" = "%@ jede %d Monate";
-"%@ every 6 months" = "%@ jede %d Monate";
+"%@ every 3 months" = "%@ Abbuchung jede %d Monate";
+"%@ every 6 months" = "%@ Abbuchung jede %d Monate";
 
 "YEAR" = "JAHR";
-"%@ every year" = "%@ im Jahr";
+"%@ every year" = "%@ Abbuchung jede 12 Monate";
 
 
 
@@ -266,6 +266,8 @@
 //
 "Term and conditions" = "AGB";
 
+// private policy
+"Private policy" = "";
 
 
 /* LanguageNav */
@@ -375,6 +377,24 @@
 "Translation italien-german" = "Übersetzung Italienisch - Deutsch";
 
 "Translation italien-spanish" = "Übersetzung Italienisch - Spanisch";
+
+
+
+/* Term and conditions */
+"Term and conditions title" = "AGB";
+
+"Term and conditions text" = "";
+
+
+/* Private policy */
+"Private policy title" = "";
+
+"Private policy text" = "";
+
+
+
+
+
 
 
 

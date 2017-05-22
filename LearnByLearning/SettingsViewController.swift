@@ -23,6 +23,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var aboutLabel: UILabel!
     @IBOutlet weak var creditsButton: SettingButton!
     @IBOutlet weak var termAndConditionButton: SettingButton!
+    @IBOutlet weak var privatePolicyButton: SettingButton!
     
     
     override func viewDidLoad() {
@@ -30,10 +31,11 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
 
         
-        languageButton.setUp(imgName: "language icon")
-        aboButton.setUp(imgName: "business-plan icon")
-        creditsButton.setUp(imgName: "credits icon")
-        termAndConditionButton.setUp(imgName: "term-condition icon")
+        languageButton.setUp(img: #imageLiteral(resourceName: "language icon"))
+        aboButton.setUp(img: #imageLiteral(resourceName: "business-plan icon"))
+        creditsButton.setUp(img: #imageLiteral(resourceName: "credits icon"))
+        termAndConditionButton.setUp(img: #imageLiteral(resourceName: "term-condition icon"))
+        privatePolicyButton.setUp(img: #imageLiteral(resourceName: "private policy icon"))
         
     }
     
@@ -58,6 +60,8 @@ class SettingsViewController: UIViewController {
         self.aboutLabel.text = Localization("About")
         self.creditsButton.setTitle(Localization("Credits"), for: .normal)
         self.termAndConditionButton.setTitle(Localization("Term and conditions"), for: .normal)
+        self.privatePolicyButton.setTitle(Localization("Private policy"), for: .normal)
+        
     }
 
     override func didReceiveMemoryWarning() {

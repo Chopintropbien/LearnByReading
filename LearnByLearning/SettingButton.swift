@@ -10,11 +10,10 @@ import UIKit
 
 class SettingButton: UIButton {
     
-    public func setUp(imgName: String){
+    public func setUp(img: UIImage){
         // set the icon
-        let img = UIImage(named: imgName)
-        let imageView = UIImageView(image: img!)
-        let imgRation = imageView.frame.height / imageView.frame.width
+        let imageView = UIImageView(image: img)
+        let imgRation = imageView.frame.width / imageView.frame.height
         let imgHeight = self.frame.height * 0.7065
         
         let imgY = (self.frame.height - imgHeight) / 2

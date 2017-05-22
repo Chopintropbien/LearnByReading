@@ -95,6 +95,7 @@ class UserSave {
         }
     }
     
+    
     static public func saveVocWantedByUser(text: TraductedText, vocs: [((OriginalWord, Word), Bool)]){
         let key = vocs.filter{$0.1}.map{ $0.0.0.id()}.joined(separator: separator)
         userDefaults.setValue(key, forKey: kVocForTextDefaultKey(text: text))
