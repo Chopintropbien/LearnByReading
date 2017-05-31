@@ -217,6 +217,8 @@
 // Access to the AppStore button
 "Access to the AppStore" = "Gehe zum App Store";
 
+"Explaination that you have to subcription" = "";
+
 
 
 /* HelpViewController */
