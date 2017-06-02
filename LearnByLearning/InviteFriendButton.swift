@@ -20,8 +20,6 @@ class InviteFriendButton: UIButton {
             imgHeight = self.frame.height * 0.35
         }
         
-        
-        
         let imgY = (self.frame.height - imgHeight) / 2
         imageView.frame = CGRect(x: self.frame.width * 0.07, y: imgY, width: imgHeight * imgRation, height: imgHeight)
         self.addSubview(imageView)

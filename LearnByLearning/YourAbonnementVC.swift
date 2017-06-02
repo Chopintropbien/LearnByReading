@@ -15,6 +15,10 @@ class YourAbonnementVC: UIViewController {
     
     @IBOutlet weak var whereToChangeExplainationLabel: UILabel!
     @IBOutlet weak var whereToChangeLabel: UILabel!
+    
+    @IBOutlet weak var explainationSubcription: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,6 +31,17 @@ class YourAbonnementVC: UIViewController {
         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName : UIColor.black]
         
         setText()
+        
+        if StoreManager.shared.receiptManager.isSubscribed{
+            self.whereToChangeExplainationLabel.isHidden = false
+            self.whereToChangeLabel.isHidden = false
+            self.explainationSubcription.isHidden = true
+        }
+        else{
+            self.whereToChangeExplainationLabel.isHidden = true
+            self.whereToChangeLabel.isHidden = true
+            self.explainationSubcription.isHidden = false
+        }
     }
     
     func setText(){
@@ -43,6 +58,8 @@ class YourAbonnementVC: UIViewController {
         
         self.whereToChangeExplainationLabel.text = Localization("To modify you subcribtion")
         self.whereToChangeLabel.text = Localization("settings > iTunes")
+        
+        self.explainationSubcription.text = Localization("Explaination that you have to subcription")
     }
     
     override func didReceiveMemoryWarning() {

@@ -306,6 +306,8 @@
 
 "settings > iTunes" = "Ajustes > iTunes & App Store";
 
+"Explaination that you have to subcription" = "Por favor ten en cuenta que:\n\nPara acceder a todas las herramientas de la aplicación para aprender idiomas es necesaria una suscripción. Para cada idioma hay disponible cuatro tipos de suscripción diferentes:\n\n1 mes de suscripción\n3 meses de suscripción\n6 meses de suscripción\n12 meses de suscripción\n\nLa renovación de cada suscripción se hará automáticamente a no ser que el suscriptor la desactive al menos 24 horas antes de que finalice el periodo actual de facturación.\n\nAdemás, dentro de las 24 horas antes de que finalice el periodo abonado, tu cuenta de iTunes será cargada con el mismo importe de la renovación de la suscripción, a no ser que cambies tus preferencias en los ajustes de tu cuenta de usuario.\n\nEn caso de cancelación de tu suscripción, se denegará el acceso al curso y a las herramientas de la aplicación, a partir de la finalización del periodo abonado.";
+
 
 
 /* CreditsVC title */
@@ -394,13 +396,21 @@
 /* Term and conditions */
 "Term and conditions title" = "Términos de uso";
 
-"Term and conditions text" = "";
+/*
+ TODO: [INSERT LINK TO THE PAGE WHERE SUBSCRIPTION FEES ARE LISTED]
+ %@: [INSERT POLYGLOTT EMAIL ADDRESS]
+ */
+
+"Term and conditions text %@ %@" = "";
 
 
 /* Private policy */
 "Private policy title" = "";
 
-"Private policy text" = "";
+/*
+ %@: [INSERT POLYGLOTT EMAIL ADDRESS]
+ */
+"Private policy text %@" = "";
 
 
 

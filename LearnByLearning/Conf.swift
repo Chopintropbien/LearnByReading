@@ -15,6 +15,8 @@ class Conf{
     
     static let defaulfNavLang = Lang.en
     
+    static let emailPolyglott = "info@polygglot.com"
+    
     static let openAppInAppleStore = "itms-apps://itunes.apple.com/app/id" + appleID
     
     static let urlAppleStore = "https://itunes.apple.com/us/app/itunes-u/id" + appleID
@@ -22,7 +24,6 @@ class Conf{
     static let sharedSecret = "7947eaec1084499fabce5e0265583fcf"
     
     static let appleID = "1220896542"
-    
     
     static public let texts: [TraductedText] = [Sjurpriz, Svezhyj, ZakoldovannyjKrug, Alibi, Proverka, BytiKakVse, MyINalogi]
     

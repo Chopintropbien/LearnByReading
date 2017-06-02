@@ -217,6 +217,8 @@
 // Access to the AppStore button
 "Access to the AppStore" = "Gehe zum App Store";
 
+"Explaination that you have to subcription" = "Bitte beachte, dass:\n\nEin Abo ist erforderlich, um die kompletten Features der Sprachlern-App nutzen zu können. Für jede Sprache gibt es vier unterschiedliche Abo-Möglichkeiten:\n\n1 Monat Zugangs-Abo\n3 Monate Zugangs-Abo\n6 Monate Zugangs-Abo\n12 Monate Zugangs-Abo\n\nDie Erneuerung jedes Abos erfolgt automatisch, es sei denn, es wird mindestens 24 Stunden vor Ablauf des aktuellen Abrechnungszeitraums deaktiviert.  \n\nDarüber hinaus, innerhalb der 24 Stunden vor Ablauf des Abrechnungszeitraums, wird das Konto bei iTunes automatisch mit identischem Betrag in Höhe der Abo-Erneuerung belastet, es sei denn, die Einstellungen des Kundenkontos wird frühzeitig geändert. \n\nIm Falle einer Stornierung des Abonnements endet der Zugriff zu Kursen und Features der App zum Ende der abonnierten Frist.";
+
 
 
 /* HelpViewController */
@@ -383,13 +385,20 @@
 /* Term and conditions */
 "Term and conditions title" = "AGB";
 
-"Term and conditions text" = "";
+/*
+ TODO: [INSERT LINK TO THE PAGE WHERE SUBSCRIPTION FEES ARE LISTED]
+ %@: [INSERT POLYGLOTT EMAIL ADDRESS]
+ */
+"Term and conditions text %@ %@" = "";
 
 
 /* Private policy */
 "Private policy title" = "";
 
-"Private policy text" = "";
+/*
+ %@: [INSERT POLYGLOTT EMAIL ADDRESS]
+ */
+"Private policy text %@" = "";
 
 
 

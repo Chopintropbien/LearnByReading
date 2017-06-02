@@ -35,7 +35,8 @@ class PrivatePolicyVC: UIViewController {
     func setText(){
         self.title = Localization("Private policy title")
 
-        self.text.text = Localization("Private policy text")
+        self.text.text = String(format:Localization("Private policy text %@"), Conf.emailPolyglott)
+        
     }
     
 
