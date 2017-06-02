@@ -298,7 +298,11 @@
 
 "settings > iTunes" = "Settings > iTunes & App Store";
 
+<<<<<<< HEAD
 "Explaination that you have to subcription" = "Conditions of access to the application\n\n\nNote that:\n\nTo access the full application tools for language learning, a subscription is required. For each language, there are four types of subscription available:\n\n    -1 months of subscriptions\n    -3 months of subscriptions\n    -6 months of subscriptions\n    -12 months of subscriptions\n\nThe renewal of each subscription will be done automatically unless it is deactivated by the subscriber at least 24 hours before the end of the period of the current payment.\n\nMoreover, within 24 hours before the end of the payment period your iTunes account will automatically be billed at the same price as the subscription renewal, unless you change preferences in your account settings.\n\nIn case of cancellation of a subscription, access to courses and application features expire until the end of the payment period.";
+=======
+"Explaination that you have to subcription" = "Explaination that you have to subcription";
+>>>>>>> 1a3423bce989188b8c37428d82bb84d2d86aa89e
 
 
 

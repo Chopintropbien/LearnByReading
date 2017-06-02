@@ -1914,7 +1914,11 @@ adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna ali
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="You have to subcribe!!!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LoZ-ID-ceL">
+=======
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You have to subcribe!!!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LoZ-ID-ceL">
+>>>>>>> 1a3423bce989188b8c37428d82bb84d2d86aa89e
                                 <rect key="frame" x="16" y="178" width="288" height="338"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>

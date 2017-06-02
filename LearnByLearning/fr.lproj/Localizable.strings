@@ -293,7 +293,11 @@
 
 "settings > iTunes" = "Général > iTunes & App Store";
 
+<<<<<<< HEAD
 "Explaination that you have to subcription" = "Conditions d’accès à l’application\n\n\nIl faut noter que:\n\nPour avoir  accès aux outils complet de l’application pour l’apprentissage de langue, un abonnement est requis. Pour chaque langue, il existe quatre types d’abonnement disponible, il s’agit de :\n\n    -1 mois d’abonnements\n    -3 mois d’abonnements\n    -6 mois d’abonnements\n    -12 mois d’abonnements\n\nLe renouvellement de chaque abonnement  se fera automatiquement sauf s’il est désactivé par le souscripteur au moins 24 heures avant la fin de la période du paiement en cours.\n\nDe plus, dans les 24 heures précédant la fin de la période de paiement votre compte iTunes sera automatiquement facturé au même prix que celui du renouvellement d’abonnement, à moins que vous changer les préférences dans les paramètres de votre compte.\n\nEn cas d’annulation d’un abonnement, l’accès au cours et aux fonctionnalités de l’application expirera jusqu’à la fin de la période de paiement. ";
+=======
+"Explaination that you have to subcription" = "";
+>>>>>>> 1a3423bce989188b8c37428d82bb84d2d86aa89e
 
 
 /* CreditsVC title */

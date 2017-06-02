@@ -217,7 +217,11 @@
 // Access to the AppStore button
 "Access to the AppStore" = "Gehe zum App Store";
 
+<<<<<<< HEAD
 "Explaination that you have to subcription" = "Bitte beachte, dass:\n\nEin Abo ist erforderlich, um die kompletten Features der Sprachlern-App nutzen zu können. Für jede Sprache gibt es vier unterschiedliche Abo-Möglichkeiten:\n\n1 Monat Zugangs-Abo\n3 Monate Zugangs-Abo\n6 Monate Zugangs-Abo\n12 Monate Zugangs-Abo\n\nDie Erneuerung jedes Abos erfolgt automatisch, es sei denn, es wird mindestens 24 Stunden vor Ablauf des aktuellen Abrechnungszeitraums deaktiviert.  \n\nDarüber hinaus, innerhalb der 24 Stunden vor Ablauf des Abrechnungszeitraums, wird das Konto bei iTunes automatisch mit identischem Betrag in Höhe der Abo-Erneuerung belastet, es sei denn, die Einstellungen des Kundenkontos wird frühzeitig geändert. \n\nIm Falle einer Stornierung des Abonnements endet der Zugriff zu Kursen und Features der App zum Ende der abonnierten Frist.";
+=======
+"Explaination that you have to subcription" = "";
+>>>>>>> 1a3423bce989188b8c37428d82bb84d2d86aa89e
 
 
 
