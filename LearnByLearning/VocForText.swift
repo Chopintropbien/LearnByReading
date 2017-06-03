@@ -14,6 +14,8 @@ class VocForText: UITableViewController {
     var voc: [(OriginalWord, Word)]!
     var emptyRowData: (OriginalWord, Word)! // TODO: to fix design problem
     
+    var heightOfHearder: CGFloat = 66 // witch should be equal to the hight of VocRevisionHeader.xib
+    
     @IBOutlet weak var addTradButton: UIBarButtonItem!
     
     @IBOutlet weak var customBack: UIBarButtonItem!
@@ -76,6 +78,46 @@ class VocForText: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return voc.count
     }
+    
+    
+    /* revision voc
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return heightOfHearder
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        // you can not add a segue the templateButton. So I create my own button, displayedButton, and and copy the design from templateButton. 
+        // So if you want to change the design of this button, you have to do it in VocRevisionHeader.xib
+        
+        let headerViewTemplate = Bundle.main.loadNibNamed("VocRevisionHeader", owner: self, options: nil)?.first as! VocRevisionHeader
+        
+        let templateButton  = headerViewTemplate.VocRevisionButton
+        
+
+        
+        
+        let displayedButton: UIButton = UIButton(frame: CGRect(x: tableView.frame.size.width - 200, y: 0, width: 150, height: 50))
+        displayedButton.setTitle(templateButton?.title(for: .normal), for: .normal)
+        displayedButton.setTitleColor(templateButton?.titleColor(for: .normal), for: .normal)
+        displayedButton.titleLabel!.font = templateButton?.titleLabel!.font
+        displayedButton.backgroundColor = templateButton?.backgroundColor
+        
+        // action
+        displayedButton.addTarget(self, action: #selector(vocRevisionButtonAction), for: UIControlEvents.touchUpInside)
+        
+        // add to subview
+        let headerView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: tableView.frame.size.height))
+        headerView.addSubview(displayedButton)
+        
+        return headerView
+    }
+    
+    func vocRevisionButtonAction(){
+        self.performSegue(withIdentifier: "RevisionVocSegue", sender: self)
+    }
+    */
+    
     
     
     
@@ -155,6 +197,12 @@ class VocForText: UITableViewController {
      return true
      }
      */
+    
+    
+    
+    
+
+    
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

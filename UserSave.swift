@@ -69,13 +69,21 @@ class UserSave {
     
     // Voc associated with a text
     
+    // idVoc##MM-dd-yyyy;idVoc##MM-dd-yyyy
+    // MM-dd-yyyy when you have to review the voc
+    static let separatorVocBetweenIdAndDate = "##"
+    
+    
     static fileprivate func kVocForTextDefaultKey(text: TraductedText) -> String{
         return "kVocForTextDefaultKey" + text.id
     }
     
     static public func getVocSaved(text: TraductedText) -> [(OriginalWord, Word)]{
         if let vocSaved = userDefaults.object(forKey: kVocForTextDefaultKey(text: text)) as? String{
-            let vocIds = vocSaved.components(separatedBy: separator)
+            let vocIds = vocSaved.components(separatedBy: separator).map{
+                $0.components(separatedBy: separatorVocBetweenIdAndDate)[0]
+            }
+            
             return text.getVocSavedByUser(ids: vocIds, lang: GetLanguageNav())
         }
         else{
@@ -87,7 +95,9 @@ class UserSave {
     
     static public func getVocInfoSaved(text: TraductedText) -> [((OriginalWord, Word), Bool)]{
         if let vocSaved = userDefaults.object(forKey: kVocForTextDefaultKey(text: text)) as? String{
-            let vocIds = vocSaved.components(separatedBy: separator)
+            let vocIds = vocSaved.components(separatedBy: separator).map{
+                $0.components(separatedBy: separatorVocBetweenIdAndDate)[0]
+            }
             return text.getVocInfoSaved(ids: vocIds, lang: GetLanguageNav())
         }
         else{
@@ -97,23 +107,25 @@ class UserSave {
     
     
     static public func saveVocWantedByUser(text: TraductedText, vocs: [((OriginalWord, Word), Bool)]){
-        let key = vocs.filter{$0.1}.map{ $0.0.0.id()}.joined(separator: separator)
+        let key = vocs.filter{$0.1}.map{ $0.0.0.id() + "##11-11-1911"}.joined(separator: separator)
         userDefaults.setValue(key, forKey: kVocForTextDefaultKey(text: text))
         userDefaults.synchronize()
     }
     
     static public func saveVocWantedByUser(text: TraductedText, vocs: [(OriginalWord, Word)]){
-        let key = vocs.map{ $0.0.id()}.joined(separator: separator)
+        let key = vocs.map{ $0.0.id() + "##11-11-1911"}.joined(separator: separator)
         userDefaults.setValue(key, forKey: kVocForTextDefaultKey(text: text))
         userDefaults.synchronize()
     }
     
     static public func removeWordFromVocSaved(text: TraductedText, word: (OriginalWord, Word)){
         let vocSaved = userDefaults.object(forKey: kVocForTextDefaultKey(text: text)) as! String
-        var vocIds = vocSaved.components(separatedBy: separator)
+        var vocIds = vocSaved.components(separatedBy: separator).map{
+            $0.components(separatedBy: separatorVocBetweenIdAndDate)[0]
+        }
         vocIds.remove(at: vocIds.index(of: word.0.id())!)
         
-        let key = vocIds.joined(separator: separator)
+        let key = vocIds.map{$0 + "##11-11-1911"}.joined(separator: separator)
         userDefaults.setValue(key, forKey: kVocForTextDefaultKey(text: text))
         userDefaults.synchronize()
     }

@@ -27,6 +27,10 @@
 		9823AE921E65CBA800AB376C /* LearningLang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823AE911E65CBA800AB376C /* LearningLang.swift */; };
 		9823AE941E65CBBC00AB376C /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823AE931E65CBBC00AB376C /* Lang.swift */; };
 		9823AE981E66028200AB376C /* LanguageNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823AE971E66028200AB376C /* LanguageNav.swift */; };
+		9824F6CA1ED5832300B117B8 /* RevisionVocVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9824F6C91ED5832300B117B8 /* RevisionVocVC.swift */; };
+		9824F6CC1ED584E500B117B8 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9824F6CB1ED584E500B117B8 /* Sounds.swift */; };
+		9824F6D11ED5902600B117B8 /* VocRevisionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9824F6CF1ED5902600B117B8 /* VocRevisionHeader.swift */; };
+		9824F6D21ED5902600B117B8 /* VocRevisionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9824F6D01ED5902600B117B8 /* VocRevisionHeader.xib */; };
 		9826BB091E94FB4A00E7CD1E /* Свежий.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826BB081E94FB4A00E7CD1E /* Свежий.swift */; };
 		9826BB0C1E95096B00E7CD1E /* Заколдованный круг.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826BB0B1E95096B00E7CD1E /* Заколдованный круг.swift */; };
 		9826BB0E1E95099100E7CD1E /* Сюрприз.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826BB0D1E95099100E7CD1E /* Сюрприз.swift */; };
@@ -183,6 +187,10 @@
 		9823AE971E66028200AB376C /* LanguageNav.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageNav.swift; sourceTree = "<group>"; };
 		9823AE9A1E66E3B800AB376C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9823AE9B1E66E3B800AB376C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9824F6C91ED5832300B117B8 /* RevisionVocVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevisionVocVC.swift; sourceTree = "<group>"; };
+		9824F6CB1ED584E500B117B8 /* Sounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
+		9824F6CF1ED5902600B117B8 /* VocRevisionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VocRevisionHeader.swift; sourceTree = "<group>"; };
+		9824F6D01ED5902600B117B8 /* VocRevisionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VocRevisionHeader.xib; sourceTree = "<group>"; };
 		9826BB081E94FB4A00E7CD1E /* Свежий.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Свежий.swift"; sourceTree = "<group>"; };
 		9826BB0B1E95096B00E7CD1E /* Заколдованный круг.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Заколдованный круг.swift"; sourceTree = "<group>"; };
 		9826BB0D1E95099100E7CD1E /* Сюрприз.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Сюрприз.swift"; sourceTree = "<group>"; };
@@ -466,6 +474,7 @@
 				987D351B1E7DB768008434A8 /* preferedReadingSpeed.swift */,
 				98DDC6CA1E7453A6004A367C /* Color.swift */,
 				98822AF91EC0689F00C57038 /* Conf.swift */,
+				9824F6CB1ED584E500B117B8 /* Sounds.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -478,6 +487,14 @@
 				9823AE931E65CBBC00AB376C /* Lang.swift */,
 			);
 			name = Lang;
+			sourceTree = "<group>";
+		};
+		9824F6C81ED5830D00B117B8 /* RevisionVoc */ = {
+			isa = PBXGroup;
+			children = (
+				9824F6C91ED5832300B117B8 /* RevisionVocVC.swift */,
+			);
+			name = RevisionVoc;
 			sourceTree = "<group>";
 		};
 		9826BB031E94FAFF00E7CD1E /* Russian */ = {
@@ -835,6 +852,7 @@
 		98D73E171E369C8400BAF0C1 /* ReadText */ = {
 			isa = PBXGroup;
 			children = (
+				9824F6C81ED5830D00B117B8 /* RevisionVoc */,
 				988A72EF1E352F6E00BDE635 /* ReadTextTabBarController.swift */,
 				98D73E131E369C1800BAF0C1 /* ReadTextOriginal.swift */,
 				98D73E151E369C7A00BAF0C1 /* ReadTextTraduction.swift */,
@@ -843,6 +861,8 @@
 				983B529E1E4F8BEC004F820F /* AddTraductionCell.swift */,
 				987E15071E61803F0080C9B6 /* AddTraductionVocForText.swift */,
 				987D34F31E7D2B0F008434A8 /* SpeedButton.swift */,
+				9824F6CF1ED5902600B117B8 /* VocRevisionHeader.swift */,
+				9824F6D01ED5902600B117B8 /* VocRevisionHeader.xib */,
 			);
 			name = ReadText;
 			sourceTree = "<group>";
@@ -1039,6 +1059,7 @@
 				9876821C1ED2E7D100EC5503 /* ZakoldovannyjKrug-slow.mp3 in Resources */,
 				987681CE1ED2E55300EC5503 /* Raven_steals_the_Light-slow.mp3 in Resources */,
 				987681D81ED2E5B700EC5503 /* The_choking_dog_1-fast.mp3 in Resources */,
+				9824F6D21ED5902600B117B8 /* VocRevisionHeader.xib in Resources */,
 				987681BC1ED2E50B00EC5503 /* From_Carrots_to_Renovations_2-slow.mp3 in Resources */,
 				9876821B1ED2E7D100EC5503 /* ZakoldovannyjKrug-mid.mp3 in Resources */,
 				987681F21ED2E5ED00EC5503 /* Vals_Garden-slow.mp3 in Resources */,
@@ -1114,6 +1135,7 @@
 				98E8BB121E4CE1A4002134B0 /* MenuViewController.swift in Sources */,
 				9823AE981E66028200AB376C /* LanguageNav.swift in Sources */,
 				983B52A61E50E45A004F820F /* AddTextCell.swift in Sources */,
+				9824F6CC1ED584E500B117B8 /* Sounds.swift in Sources */,
 				98D73E161E369C7A00BAF0C1 /* ReadTextTraduction.swift in Sources */,
 				982D2AF11E9C24A400B590B1 /* YourAbonnementVC.swift in Sources */,
 				9895149D1ECB3CEB003FBC1B /* The choking dog (Part 1).swift in Sources */,
@@ -1126,6 +1148,7 @@
 				9821945C1E8CD7E000043300 /* SideMenuManager.swift in Sources */,
 				987E15041E6173230080C9B6 /* TraductedText.swift in Sources */,
 				983B529D1E4F8BDA004F820F /* TraductionCell.swift in Sources */,
+				9824F6D11ED5902600B117B8 /* VocRevisionHeader.swift in Sources */,
 				9823AE921E65CBA800AB376C /* LearningLang.swift in Sources */,
 				989514921ECB3C00003FBC1B /* The Sack Garden.swift in Sources */,
 				98E8BB221E4CF375002134B0 /* MyLanguagesViewController.swift in Sources */,
@@ -1169,6 +1192,7 @@
 				988A72BC1E352DF600BDE635 /* AppDelegate.swift in Sources */,
 				9823AE8B1E61D74200AB376C /* UserSave.swift in Sources */,
 				9821945D1E8CD7E000043300 /* SideMenuTransition.swift in Sources */,
+				9824F6CA1ED5832300B117B8 /* RevisionVocVC.swift in Sources */,
 				9821945E1E8CD7E000043300 /* UISideMenuNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

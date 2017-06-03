@@ -34,7 +34,8 @@ class TermConditionVC: UIViewController {
     func setText(){
         self.title = Localization("Term and conditions title")
         
-        self.text.text = Localization("Term and conditions text")
+        self.text.text = String(format:Localization("Term and conditions text %@ %@"), Conf.emailPolyglott, Conf.emailPolyglott)
+
     }
     
 
