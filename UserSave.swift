@@ -107,13 +107,21 @@ class UserSave {
     
     
     static public func saveVocWantedByUser(text: TraductedText, vocs: [((OriginalWord, Word), Bool)]){
+<<<<<<< HEAD
         let key = vocs.filter{$0.1}.map{ $0.0.0.id() + "##11-11-1911"}.joined(separator: separator)
+=======
+        let key = vocs.filter{$0.1}.map{ $0.0.0.id() + "##MM-dd-yyyy"}.joined(separator: separator)
+>>>>>>> 27862345eae23d357b548ddc5e0ef665ee0099d5
         userDefaults.setValue(key, forKey: kVocForTextDefaultKey(text: text))
         userDefaults.synchronize()
     }
     
     static public func saveVocWantedByUser(text: TraductedText, vocs: [(OriginalWord, Word)]){
+<<<<<<< HEAD
         let key = vocs.map{ $0.0.id() + "##11-11-1911"}.joined(separator: separator)
+=======
+        let key = vocs.map{ $0.0.id() + "##MM-dd-yyyy"}.joined(separator: separator)
+>>>>>>> 27862345eae23d357b548ddc5e0ef665ee0099d5
         userDefaults.setValue(key, forKey: kVocForTextDefaultKey(text: text))
         userDefaults.synchronize()
     }
@@ -125,7 +133,11 @@ class UserSave {
         }
         vocIds.remove(at: vocIds.index(of: word.0.id())!)
         
+<<<<<<< HEAD
         let key = vocIds.map{$0 + "##11-11-1911"}.joined(separator: separator)
+=======
+        let key = vocIds.map{$0 + "##MM-dd-yyyy"}.joined(separator: separator)
+>>>>>>> 27862345eae23d357b548ddc5e0ef665ee0099d5
         userDefaults.setValue(key, forKey: kVocForTextDefaultKey(text: text))
         userDefaults.synchronize()
     }
