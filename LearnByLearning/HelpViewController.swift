@@ -19,7 +19,6 @@ class HelpViewController: UIViewController, MFMailComposeViewControllerDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         self.navigationController!.navigationBar.tintColor = UIColor.white
         self.title = Localization("Help title")
         let navbarFont = UIFont(name: "Avenir-Black", size: 17)!
