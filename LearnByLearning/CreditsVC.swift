@@ -45,17 +45,37 @@ class CreditsVC: UIViewController {
         
         self.traductorsLabel.text = Localization("traductors")
         
-        self.trad1.text = Localization("Translation russian-english")
-        self.traductor1.text = "Anja Vladimirsdóttir"
         
-        self.trad2.text = Localization("Translation russian-spanish")
-        self.traductor2.text = "Anja Vladimirsdóttir"
+        switch Conf.langToLearn{
+        case Lang.ru:
+            self.trad1.text = Localization("Translation russian-english")
+            self.traductor1.text = "Anja Vladimirsdóttir"
+            
+            self.trad2.text = Localization("Translation russian-spanish")
+            self.traductor2.text = "Anja Vladimirsdóttir"
+            
+            self.trad3.text = Localization("Translation russian-german")
+            self.traductor3.text = "Moshtosh"
+            
+            self.trad4.text = Localization("Translation russian-french")
+            self.traductor4.text = "Amandine Felder"
+        case Lang.en:
+            self.trad1.text = Localization("Translation english-german")
+            self.traductor1.text = "Leonor Buehler"
+            
+            self.trad2.text = Localization("Translation english-french")
+            self.traductor2.text = "Dulin Gaston"
+            
+            self.trad3.text = Localization("Translation english-spanish")
+            self.traductor3.text = "Leonor Buehler"
+            
+            self.trad4.text = Localization("Translation english-russian")
+            self.traductor4.text = "Anja Vladimirsdóttir"
         
-        self.trad3.text = Localization("Translation russian-german")
-        self.traductor3.text = "Moshtosh"
+        default: break
+        }
         
-        self.trad4.text = Localization("Translation russian-french")
-        self.traductor4.text = "Amandine Felder"
+        
     }
 
     override func didReceiveMemoryWarning() {
