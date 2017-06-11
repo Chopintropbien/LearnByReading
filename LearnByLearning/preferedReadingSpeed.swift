@@ -18,7 +18,7 @@ enum ReadingSpeed: String{
 class PreferedReadingSpeed{
     
     static fileprivate let userDefaults = UserDefaults.standard
-    static fileprivate let key = "PreferedReadingSpeedUserDefaultsKey"
+    static fileprivate let key = Conf.appleID + "PreferedReadingSpeedUserDefaultsKey"
     
     
     static public func get() -> ReadingSpeed{

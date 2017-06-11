@@ -27,7 +27,7 @@ let The_Most_Amazing_Structure: TraductedText = TraductedText(
              title: "",
              text: ""),
         ],
-    voc: VovThe_Most_Amazing_Structure().voc, level: Level.A2, author: "Shantel Ivits", titleAudio: "The_Most_Amazing_Structure")
+    voc: VovThe_Most_Amazing_Structure().voc, level: Level.B2, author: "Shantel Ivits", titleAudio: "The_Most_Amazing_Structure")
 
 
 class VovThe_Most_Amazing_Structure{

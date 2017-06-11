@@ -13,7 +13,7 @@ import UIKit
 
 
 
-let kNotificationLanguageChanged: String = "kNotificationLanguageChanged";
+let kNotificationLanguageChanged: String = Conf.appleID + "kNotificationLanguageChanged";
 
 func Localization(_ string:String) -> String{
     return Localisator.sharedInstance.localizedStringForKey(string)
@@ -37,7 +37,7 @@ class Localisator {
     fileprivate var dicoLocalisation:NSDictionary!
     
     
-    fileprivate let kSaveLanguageDefaultKey = "kSaveLanguageDefaultKey"
+    fileprivate let kSaveLanguageDefaultKey = Conf.appleID + "kSaveLanguageDefaultKey"
     
     // MARK: - Public properties
     
