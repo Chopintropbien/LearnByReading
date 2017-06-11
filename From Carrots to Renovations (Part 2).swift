@@ -27,7 +27,7 @@ let From_Carrots_to_Renovations_2: TraductedText = TraductedText(
              title: "",
              text: ""),
         ],
-    voc: VovFrom_Carrots_to_Renovations_2().voc, level: Level.A2, author: "", titleAudio: "From_Carrots_to_Renovations_2")
+    voc: VovFrom_Carrots_to_Renovations_2().voc, level: Level.C1, author: "unknown", titleAudio: "From_Carrots_to_Renovations_2")
 
 
 
