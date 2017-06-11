@@ -13,7 +13,7 @@ import Foundation
 class Sounds{
     
     static fileprivate let userDefaults = UserDefaults.standard
-    static fileprivate let key = "ActiveSoundsUserDefaultsKey"
+    static fileprivate let key = Conf.appleID + "ActiveSoundsUserDefaultsKey"
     
     static public func get() -> Bool{
         let sounds = userDefaults.object(forKey: key) as? Bool

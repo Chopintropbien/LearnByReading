@@ -18,7 +18,7 @@ class UserSave {
     // texts associated with a lang that the user wants to learn
     
     static fileprivate func kTextPresentedHomeDefaultKey() -> String{
-        return "kTextPresentedHomeDefaultKey" + GetLanguageNav().rawValue + "-" + GetLearningLang().rawValue
+        return Conf.appleID + "kTextPresentedHomeDefaultKey" + GetLanguageNav().rawValue + "-" + GetLearningLang().rawValue
     }
     
     static public func getTextSaved() -> [TraductedText]{
@@ -75,7 +75,7 @@ class UserSave {
     
     
     static fileprivate func kVocForTextDefaultKey(text: TraductedText) -> String{
-        return "kVocForTextDefaultKey" + text.id
+        return Conf.appleID + "kVocForTextDefaultKey" + text.id
     }
     
     static public func getVocSaved(text: TraductedText) -> [(OriginalWord, Word)]{
